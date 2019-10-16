@@ -1,0 +1,62 @@
+.header {
+  padding-top: 8px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 278px;
+    background: linear-gradient(180deg, #DEE2E3 0%, rgba(222, 226, 227, 0) 100%);
+    z-index: -1;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 13px 32px 13px;
+    position: relative;
+    margin-bottom: 1px;
+    background-color: $white;
+  }
+  &__bottom {
+    font-size: 20px;
+    width: 100%;
+     background-color: $white;
+    padding: 9px 32px 12px 36px;
+  }
+  &__cart {
+    cursor: pointer;
+    width: 28px;
+    height: 29px;
+  }
+
+  &__logo {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    & > svg {
+      width: 151px;
+      height: 36px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__phone {
+    font-family: $rft-font;
+    font-weight: $semi-bold;
+    font-size: $fz-base;
+    letter-spacing: 1px;
+    color: $black;
+    text-decoration: none;
+  }
+
+}

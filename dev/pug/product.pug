@@ -1,0 +1,25 @@
+include utils/mixins
+
+include components/head
+body
+    include components/header
+    main.main-container
+        section.product-variant
+            .container
+                .row
+                    .product-variant__left
+                        include components/breadcrumbs
+                        h1.product-variant__title Межкомнатная дверь Б18
+                        span.product-variant__order Под заказ до 45 дней
+                        p.product-variant__description Классическая модель двери с изящным резным наличником, капителем и строгими опорами. Неповторимый шарм придаёт пескоструйный витраж с витиеватым рисунком. Бронзовая фурнитура подчёркивает благородство модели.
+                    .product-variant__middle
+                        img(src="images/product-1.png" alt="product").product-variant__img
+                    .product-variant__right
+                        .product-variant__card
+                            h4.product-variant__card-title Варианты исполнения
+                            .product-variant__card-material Эмаль
+                            .catalog-item__colors
+                                .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                .catalog-item__color.catalog-item__color--grey
+                                .catalog-item__color.catalog-item__color--brown
+                            .product-variant__card-description  Дверь в таком варианте исполнения установлена в фирменных салонах на пр-те Дзержинского, 122 и Кальварийской, 7Б, ТЦ «Трюм»

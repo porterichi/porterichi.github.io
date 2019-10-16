@@ -1,0 +1,21 @@
+.category-separator {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 182px;
+
+  &__title {
+    font-family: $minion-font;
+    font-size: 72px;
+    color: $gold;
+    font-style: italic;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+  }
+
+&__text {
+    font-family: $minion-font;
+    font-size: 27px;
+    line-height: 36px;
+    color: $black;
+  }
+}

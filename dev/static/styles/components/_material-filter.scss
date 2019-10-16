@@ -1,0 +1,42 @@
+.material-filter {
+  display: flex;
+  padding-left: 29px;
+  margin: 0;
+
+  &__item {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    font-weight: $bold;
+    font-family: $rft-font;
+    position: relative;
+    list-style-type: none;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 63px;
+    }
+    
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -28px;
+      top: 50%;
+      width: 19px;
+      height: 1px;
+      background-color: $black;
+    }
+
+    &--active {
+      color: #868686;
+      &:before {
+        content: '';
+        background-color: #868686;
+      }
+    }
+  }
+
+}

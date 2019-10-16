@@ -1,0 +1,93 @@
+.product-variant {
+
+
+  &__title {
+    font-size: 61px;
+    line-height: 63px;
+    font-family: $minion-font;
+    font-weight: $regular;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  &__order {
+    font-size: 18px;
+    color: $gold;
+    font-style: italic;
+    display: block;
+    margin-top: 16px;
+    padding-left: 3px;
+    margin-bottom: 32px;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: .8px;
+  }
+
+  & .breadcrumbs {
+    margin-top: 84px;
+    margin-bottom: 8px;
+  }
+
+  &__left, &__right {
+    flex: 0 0 31.25%;
+    max-width: 31.25%;
+  }
+
+  &__right {
+    margin-top: 80px;
+  }
+
+  &__middle {
+    flex: 0 0 37.5%;
+    max-width: 37.5%;
+    justify-content: center;
+    min-height: 1017px;
+    position: relative;
+  }
+
+  &__img {
+    width: 438px;
+    height: 931px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 220px);
+  }
+
+  &__card {
+    background-color: $white;
+    padding-top: 47px;
+    padding-left: 38px;
+    padding-bottom: 54px;
+    
+    &-title {
+      font-size: 36px;
+      margin: 0;
+      padding: 0;
+      font-family: $minion-font;
+      font-weight: $regular;
+    }
+
+    &-material {
+      font-family: $rft-font;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: $grey-5;
+    }
+
+    &-description {
+      font-size: 18px;
+      line-height: 27px;
+      padding: 15px 0 12px 15px;
+      background: linear-gradient(300.92deg, #FFFFFF 13.54%, #EDEDED 86.46%);
+      font-style: italic;
+    }
+
+  }
+
+}

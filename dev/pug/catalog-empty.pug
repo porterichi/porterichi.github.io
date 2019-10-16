@@ -1,0 +1,102 @@
+include utils/mixins
+
+include components/head
+body
+    include components/header
+    main.main-container
+    include components/breadcrumbs
+    section.catalog
+        .container
+            .row.flex-column
+                h1.catalog__title Двустворчатые межкомнатные двери
+                .d-flex.justify-content-between
+                    ul.material-filter
+                        li.material-filter__item.material-filter__item--active все материалы
+                        li.material-filter__item экошпон
+                        li.material-filter__item шпон
+                        li.material-filter__item эмаль
+                        li.material-filter__item шпон и эмаль
+                        li.material-filter__item глянец
+                    .sort-filter
+                        .sort-filter__name по возрастанию цены
+                        .sort-filter__icon
+            .row
+                .main-filter
+                    .main-filter__row
+                        ul.main-filter__list
+                            li.main-filter__item.main-filter__item--arrow
+                                span.main-filter__counter
+                                span.main-filter__name Стиль
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item.main-filter__item--arrow
+                                span.main-filter__counter
+                                span.main-filter__name Коллекция
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item.main-filter__item--arrow
+                                span.main-filter__counter
+                                span.main-filter__name Цвет
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item.main-filter__item--arrow.main-filter__item--active
+                                span.main-filter__counter 1
+                                span.main-filter__name Тип
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item.main-filter__item--arrow.main-filter__item--active
+                                span.main-filter__counter 3
+                                span.main-filter__name Система
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item
+                                span.main-filter__counter
+                                span.main-filter__name Скрытый монтаж
+                            li.main-filter__item
+                                span.main-filter__counter
+                                span.main-filter__name Со стеклом
+                    .main-filter__delete
+                        +icon('trash')
+            .row
+                .catalog__snippet-container
+                    .catalog-scheme
+                        .catalog-scheme__left
+                            .catalog-scheme__img
+                                img(src="images/scheme-1.png" alt="img")
+                            .catalog-scheme__block
+                                .catalog-scheme__block-title Одностворчатая дверь
+                                .catalog-scheme__block-img
+                                    img(src="images/scheme-block-1.svg" alt="img")
+                        .catalog-scheme__right
+                            h2.catalog-scheme__title
+                                | Дверь-пенал освободит место
+                                br
+                                |рядом с проёмом
+
+                            p.catalog-scheme__text При открывании полотна сдвигаются в специальные ниши в стене. Двери перемещаются по горизонтали в одной плоскости с коробом. До установки модели необходимо выполнить монтаж пенала.
+                            img(src="images/scheme-2.png" alt="img").catalog-scheme__right-img
+                            .catalog-scheme__block
+                                .catalog-scheme__block-title Двустворчатая дверь
+                                .catalog-scheme__block-img
+                                    img(src="images/scheme-block-2.svg" alt="img")
+                    .catalog-scheme
+                        .catalog-scheme__left.catalog-scheme__left--half
+                            .catalog-scheme__img
+                                img(src="images/scheme-3.png" alt="img")
+                            .catalog-scheme__block
+                                .catalog-scheme__block-title Одностворчатая дверь
+                                .catalog-scheme__block-img
+                                    img(src="images/scheme-block-1.svg" alt="img")
+                        .catalog-scheme__right.catalog-scheme__right--center
+                            h2.catalog-scheme__title
+                                | Внутрипроёмная дверь
+                                br
+                                | разделит большую
+                                br
+                                | комнату на зоны
+
+                            p.catalog-scheme__text
+                                | Два полотна движутся в одной плоскости
+                                br
+                                | со стеной навстречу друг другу, оставляя
+                                br
+                                | свободным только половину проёма.
+                                br
+                                | Створки двигаются по отдельным
+                                br
+                                | направляющим.

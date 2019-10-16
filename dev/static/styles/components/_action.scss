@@ -1,0 +1,70 @@
+.action {
+  width: 100%;
+  background-color: $black;
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  padding-top: 33px;
+  padding-left: 63px;
+  padding-bottom: 45px;
+  margin-bottom: 180px;
+  @include media-breakpoint-between(md, lg) {
+    margin-bottom: 100px;
+  }
+  
+
+  &__left {
+    padding-right: 97px;
+  }
+
+  &__right {
+    padding-top: 12px;
+  }
+
+  &__title {
+    color: $white;
+    width: 456px;
+    letter-spacing: .6px;
+    padding-bottom: 68px;
+  }
+
+  &__link {
+    color: $white;
+    display: inline-flex;
+    position: relative;
+    text-transform: uppercase;
+    font-family: $rft-font;
+    font-weight: $bold;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-decoration: none;
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: $white;
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+    }
+  }
+
+  &__text {
+    width: 246px;
+    color: $white;
+    letter-spacing: .6px;
+  }
+
+  &__img {
+    background-image: url('../../images/action-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 281px;
+    height: 301px;
+    position: absolute;
+    bottom: 0;
+    right: 85px;
+  }
+
+}

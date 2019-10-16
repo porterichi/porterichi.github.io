@@ -1,0 +1,44 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 178px;
+  &__number {
+    width: 81px;
+    margin-right: 18px;
+
+    &--active {
+      background: linear-gradient(110.37deg, #F8F8F8 13.54%, #EDEDED 86.46%);
+    }
+
+  }
+
+  &__next, &__back {
+    width: 180px;
+    letter-spacing: 3px;
+  }
+
+  &__back {
+    margin-right: 18px;
+  }
+
+  &__download {
+    width: 342px;
+    margin-left: auto;
+    letter-spacing: 3px;
+  }
+
+  & > * {
+    font-family: $rft-font;
+    font-weight: $bold;
+    font-size: 11px;
+    text-transform: uppercase;
+    border: 1px solid $grey-6;
+    text-decoration: none;
+    color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 81px;
+  }
+}

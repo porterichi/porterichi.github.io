@@ -1,0 +1,26 @@
+.sort-filter {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__name {
+    font-family: $rft-font;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: flex;
+    margin-right: 4px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+
+    .icon-sort-filter-arrow {
+      width: 7px;
+      fill: transparent;
+      stroke: #000;
+      height: 7px;
+    }
+  }
+}

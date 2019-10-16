@@ -1,0 +1,106 @@
+.catalog-factoid {
+  height: 864px;
+  width: 405px;
+  background: linear-gradient(99.81deg, #F8F8F8 13.54%, #EDEDED 86.46%);
+  border-bottom: 1px solid $grey-2;
+  padding-left: 30px;
+  padding-top: 42px;
+  padding-right: 75px;
+  position: relative;
+
+  $context: &;
+
+  &--format.catalog-factoid {
+    & .catalog-factoid__title {
+      width: 430px;
+    }
+  }
+
+  &--entrance {
+
+    & .catalog-factoid__title {
+      width: 400px;
+    }
+  }
+
+  &--grid {
+    width: 100%;
+    height: 729px;
+    padding-top: 53px;
+    padding-left: 36px;
+    position: relative;
+
+    & #{$context}__title {
+      margin-bottom: 23px;
+      letter-spacing: .5px;
+    }
+
+    & #{$context}__text {
+      flex-grow: 1;
+    }
+
+    & #{$context}__link {
+      margin-bottom: 65px;
+    }
+
+    & #{$context}__link {
+      @include link-with-border($black, $black);
+      position: absolute;
+      bottom: 0;
+      left: 35px;
+    }
+    & #{$context}__img {
+
+    }
+
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    letter-spacing: .7px;
+  }
+
+  &__img {
+    position: absolute;
+    height: 487px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    &--woman {
+      bottom: 88px;
+    }
+
+    &--sofa {
+      bottom: -35px;
+      left: 43%;
+    }
+    &--door {
+      bottom: -4px;
+      left: 51.5%;
+    }
+  }
+
+  &__descr {
+    position: absolute;
+    bottom: 35px;
+    left: 29px;
+    color: $black;
+    font-family: $minion-font;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+
+    &--top {
+      font-size: 22px;
+    }
+
+    &--bottom {
+      font-size: 18px;
+      margin-top: 5px;
+    }
+  }
+}

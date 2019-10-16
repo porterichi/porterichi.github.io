@@ -1,0 +1,93 @@
+include utils/mixins
+
+include components/head
+body
+    include components/header
+    main.main-container
+    include components/breadcrumbs
+    section.catalog
+        .container
+            .row.flex-column
+                h1.catalog__title Двустворчатые межкомнатные двери
+                .d-flex.justify-content-between
+                    ul.material-filter
+                        li.material-filter__item.material-filter__item--active все материалы
+                        li.material-filter__item экошпон
+                        li.material-filter__item шпон
+                        li.material-filter__item эмаль
+                        li.material-filter__item шпон и эмаль
+                        li.material-filter__item глянец
+                    .sort-filter
+                        .sort-filter__name по возрастанию цены
+                        .sort-filter__icon
+            .row
+                .main-filter
+                    .main-filter__row
+                        ul.main-filter__list
+                            li.main-filter__item.main-filter__item--arrow
+                                span.main-filter__counter
+                                span.main-filter__name Стиль
+                                +icon('sort-filter-arrow')
+                                .header-dropdown
+                                    form
+                                        label.header-dropdown__label
+                                            input(type="checkbox").header-dropdown__input
+                                            .header-dropdown__checkbox
+                                            .header-dropdown__name Авангард
+                                        label.header-dropdown__label
+                                            input(type="checkbox").header-dropdown__input
+                                            .header-dropdown__checkbox
+                                            .header-dropdown__name Авангард
+                                        label.header-dropdown__label
+                                            input(type="checkbox").header-dropdown__input
+                                            .header-dropdown__checkbox
+                                            .header-dropdown__name Авангард
+                                        label.header-dropdown__label
+                                            input(type="checkbox").header-dropdown__input
+                                            .header-dropdown__checkbox
+                                            .header-dropdown__name Авангард
+                                        label.header-dropdown__label
+                                            input(type="checkbox").header-dropdown__input
+                                            .header-dropdown__checkbox
+                                            .header-dropdown__name Авангард
+
+                            li.main-filter__item.main-filter__item--arrow
+                                span.main-filter__counter
+                                span.main-filter__name Коллекция
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item.main-filter__item--arrow
+                                span.main-filter__counter
+                                span.main-filter__name Цвет
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item.main-filter__item--arrow.main-filter__item--active
+                                span.main-filter__counter 1
+                                span.main-filter__name Тип
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item.main-filter__item--arrow.main-filter__item--active
+                                span.main-filter__counter 3
+                                span.main-filter__name Система
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item
+                                span.main-filter__counter
+                                span.main-filter__name Скрытый монтаж
+                            li.main-filter__item
+                                span.main-filter__counter
+                                span.main-filter__name Со стеклом
+                    .main-filter__delete
+                        +icon('trash')
+            .row
+                .catalog__snippet-container
+                    .catalog-empty
+                        h2.catalog-empty__text
+                            | По вашему запросу дверей
+                            br
+                            | не найдено.
+                            a(href="#").catalog-empty__link Сбросьте фильтры
+                            | ,
+                            br
+                            | чтобы выбрать новые.
+
+            include components/recently-viewed
+
+include components/view-instagram
+include components/footer

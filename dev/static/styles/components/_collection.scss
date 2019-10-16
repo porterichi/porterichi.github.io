@@ -1,0 +1,50 @@
+.collection {
+  width: 100%;
+  margin-bottom: 194px;
+
+  &__img {
+    padding-left: 34px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      width: 737px;
+      height: 536px;
+      border: 1px solid #CBA576;
+      position: absolute;
+      top: -36px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  &__block {
+    margin-top: 126px;
+  }
+
+  &__about {
+    font-family: $rft-font;
+    font-weight: $bold;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $grey-5;
+    margin-bottom: 11px;
+  }
+
+  &__descr {
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    color: $gold;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    @include link-with-border( $black, $black );
+  }
+
+}
+

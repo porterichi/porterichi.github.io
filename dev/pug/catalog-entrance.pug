@@ -1,0 +1,309 @@
+include utils/mixins
+
+include components/head
+body
+    include components/header
+    main.main-container
+    include components/breadcrumbs
+    section.catalog
+        .container
+            .row.flex-column
+                h1.catalog__title Входные двери
+                .d-flex.justify-content-between
+                    ul.material-filter
+                        li.material-filter__item.material-filter__item--active все модели
+                        li.material-filter__item для квартиры
+                        li.material-filter__item для дома
+                    .sort-filter
+                        .sort-filter__name по возрастанию цены
+                        .sort-filter__icon
+            .row
+                .main-filter
+                    .main-filter__row
+                        ul.main-filter__list
+                            li.main-filter__item.main-filter__item--arrow
+                                span.main-filter__counter
+                                span.main-filter__name Стиль
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item.main-filter__item--arrow
+                                span.main-filter__counter
+                                span.main-filter__name Коллекция
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item.main-filter__item--arrow
+                                span.main-filter__counter
+                                span.main-filter__name Цвет
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item.main-filter__item--arrow.main-filter__item--active
+                                span.main-filter__counter 1
+                                span.main-filter__name Тип
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item.main-filter__item--arrow.main-filter__item--active
+                                span.main-filter__counter 3
+                                span.main-filter__name Система
+                                +icon('sort-filter-arrow')
+                            li.main-filter__item
+                                span.main-filter__counter
+                                span.main-filter__name Скрытый монтаж
+                            li.main-filter__item
+                                span.main-filter__counter
+                                span.main-filter__name Со стеклом
+                    .main-filter__delete
+                        +icon('trash')
+            .row
+                .catalog__snippet-container.catalog__snippet-container--bivalve
+                    .catalog-item.catalog-item--bivalve.catalog-item--entrance
+                        a(href="#").catalog-item__link
+                            .catalog-item__mask
+                            .catalog-item__img
+                                img(src="images/entrance-1.png", alt="catalog item")
+                            .catalog-item__footer
+                                .catalog-item__row
+                                    span.catalog-item__name MK01K
+                                    span.catalog-item__price 833 руб.
+                                .catalog-item__row
+                                    .catalog-item__material-container
+                                        span.catalog-item__material Шпон и эмаль
+                                    .catalog-item__colors
+                                        .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                        .catalog-item__color.catalog-item__color--grey
+                                        .catalog-item__color.catalog-item__color--brown
+                                        .catalog-item__color.catalog-item__color--grey-light
+                                        .catalog-item__color.catalog-item__color--multicolor
+                    .catalog-item.catalog-item--bivalve.catalog-item--entrance.catalog-item--new
+                        a(href="#").catalog-item__link
+                            .catalog-item__mask
+                            .catalog-item__img.catalog-item__img--discount
+                                img(src="images/entrance-1.png", alt="catalog item")
+                            .catalog-item__footer
+                                .catalog-item__row
+                                    span.catalog-item__name MK01K
+                                    span.catalog-item__price 833 руб.
+                                .catalog-item__row
+                                    .catalog-item__material-container
+                                        span.catalog-item__material Шпон и эмаль
+                                    .catalog-item__colors
+                                        .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                        .catalog-item__color.catalog-item__color--grey
+                                        .catalog-item__color.catalog-item__color--brown
+                                        .catalog-item__color.catalog-item__color--grey-light
+                                        .catalog-item__color.catalog-item__color--multicolor
+                    .choose-bivalve
+                        .row.no-gutters
+                            .col-lg-7
+                                .catalog-item.catalog-item--bivalve.catalog-item--entrance
+                                    a(href="#").catalog-item__link
+                                        .catalog-item__mask
+                                        .catalog-item__img
+                                            img(src="images/entrance-1.png", alt="catalog item")
+                                        .catalog-item__footer
+                                            .catalog-item__row
+                                                span.catalog-item__name MK01K
+                                                span.catalog-item__price 833 руб.
+                                            .catalog-item__row
+                                                .catalog-item__material-container
+                                                    span.catalog-item__material Шпон и эмаль
+                                                .catalog-item__colors
+                                                    .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                                    .catalog-item__color.catalog-item__color--grey
+                                                    .catalog-item__color.catalog-item__color--brown
+                                                    .catalog-item__color.catalog-item__color--grey-light
+                                                    .catalog-item__color.catalog-item__color--multicolor
+                            .offset-lg-2.col-lg-7
+                                .catalog-factoid.catalog-factoid--grid.catalog-factoid--entrance
+                                    h2.catalog-factoid__title Двери в классическом стиле — благородное дополнение интерьера
+                                    p.catalog-factoid__text
+                                        | Модели с отделками в древесных
+                                        br
+                                        | цветах с фурнитурой
+                                        br
+                                        | в традиционных оттенках будут
+                                        br
+                                        | органично смотреться
+                                        br
+                                        | в интерьере викторианского
+                                        br
+                                        | стиля, стиля барокко и ампир.
+                                    a(href='#').catalog-factoid__link перейти в каталог
+                                    .catalog-factoid__img.catalog-factoid__img--sofa
+                                        img( src='images/entrance-factoid.svg' alt='sofa').catalog-factoid__img--sofa
+                    .action
+                        .action__left
+                            h2.action__title Купите дверь и выиграйте путешествие в Италию
+                            a(href="#").action__link узнать условия
+                        .action__right
+                            p.action__text Акция действует с 13 мая по 14 июня включительно. Выбрать можно любую дверь из каталога на сайте. Розыгрыш призов состоится 19 июня в 15:00 с помощью закрытого лототрона.
+                        .action__img
+                    .catalog-item.catalog-item--bivalve.catalog-item--entrance
+                        a(href="#").catalog-item__link
+                            .catalog-item__mask
+                            .catalog-item__img
+                                img(src="images/entrance-1.png", alt="catalog item")
+                            .catalog-item__footer
+                                .catalog-item__row
+                                    span.catalog-item__name MK01K
+                                    span.catalog-item__price 833 руб.
+                                .catalog-item__row
+                                    .catalog-item__material-container
+                                        span.catalog-item__material Шпон и эмаль
+                                    .catalog-item__colors
+                                        .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                        .catalog-item__color.catalog-item__color--grey
+                                        .catalog-item__color.catalog-item__color--brown
+                                        .catalog-item__color.catalog-item__color--grey-light
+                                        .catalog-item__color.catalog-item__color--multicolor
+                    .catalog-item.catalog-item--bivalve.catalog-item--entrance.catalog-item--new.catalog-item--mask
+                        a(href="#").catalog-item__link
+                            .catalog-item__mask.catalog-item__mask--big
+                            .catalog-item__img.catalog-item__img--discount
+                                img(src="images/entrance-1.png", alt="catalog item")
+                            .catalog-item__footer
+                                .catalog-item__row
+                                    span.catalog-item__name MK01K
+                                    span.catalog-item__price 833 руб.
+                                .catalog-item__row
+                                    .catalog-item__material-container
+                                        span.catalog-item__material Шпон и эмаль
+                                    .catalog-item__colors
+                                        .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                        .catalog-item__color.catalog-item__color--grey
+                                        .catalog-item__color.catalog-item__color--brown
+                                        .catalog-item__color.catalog-item__color--grey-light
+                                        .catalog-item__color.catalog-item__color--multicolor
+
+                    .choose-bivalve
+                        .row
+                            .choose-bivalve__left
+                                .catalog-factoid.catalog-factoid--grid.catalog-factoid--entrance.catalog-factoid--format
+                                    h2.catalog-factoid__title Входные двери «Порте Ричи» представлены в двух фирменных салонах
+                                    p.catalog-factoid__text
+                                        | Вживую удобнее
+                                        br
+                                        | рассматривать фрезеровки
+                                        br
+                                        | в традиционных оттенках будут
+                                        br
+                                        | и цвет отделок, проверять
+                                        br
+                                        | плавность хода двери,
+                                        br
+                                        | работу замков и удобство
+                                        br
+                                        | дверных ручек. И всегда
+                                        br
+                                        | можно обратиться
+                                        br
+                                        | за консультацией
+                                        br
+                                        | к менеджеру
+                                    a(href='#').catalog-factoid__link посмотреть на карте
+                                    .catalog-factoid__img.catalog-factoid__img--door
+                                        img( src='images/entrance-factoid-2.svg' alt='sofa').catalog-factoid__img--door
+                            .choose-bivalve__right
+                                .catalog-item.catalog-item--bivalve.catalog-item--entrance
+                                    a(href="#").catalog-item__link
+                                        .catalog-item__mask
+                                        .catalog-item__img
+                                            img(src="images/entrance-1.png", alt="catalog item")
+                                        .catalog-item__footer
+                                            .catalog-item__row
+                                                span.catalog-item__name MK01K
+                                                span.catalog-item__price 833 руб.
+                                            .catalog-item__row
+                                                .catalog-item__material-container
+                                                    span.catalog-item__material Шпон и эмаль
+                                                .catalog-item__colors
+                                                    .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                                    .catalog-item__color.catalog-item__color--grey
+                                                    .catalog-item__color.catalog-item__color--brown
+                                                    .catalog-item__color.catalog-item__color--grey-light
+                                                    .catalog-item__color.catalog-item__color--multicolor
+                    .catalog-item.catalog-item--bivalve.catalog-item--entrance
+                        a(href="#").catalog-item__link
+                            .catalog-item__mask
+                            .catalog-item__img
+                                img(src="images/entrance-1.png", alt="catalog item")
+                            .catalog-item__footer
+                                .catalog-item__row
+                                    span.catalog-item__name MK01K
+                                    span.catalog-item__price 833 руб.
+                                .catalog-item__row
+                                    .catalog-item__material-container
+                                        span.catalog-item__material Шпон и эмаль
+                                    .catalog-item__colors
+                                        .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                        .catalog-item__color.catalog-item__color--grey
+                                        .catalog-item__color.catalog-item__color--brown
+                                        .catalog-item__color.catalog-item__color--grey-light
+                                        .catalog-item__color.catalog-item__color--multicolor
+                    .catalog-item.catalog-item--bivalve.catalog-item--entrance
+                        a(href="#").catalog-item__link
+                            .catalog-item__mask
+                            .catalog-item__img
+                                img(src="images/entrance-1.png", alt="catalog item")
+                            .catalog-item__footer
+                                .catalog-item__row
+                                    span.catalog-item__name MK01K
+                                    span.catalog-item__price 833 руб.
+                                .catalog-item__row
+                                    .catalog-item__material-container
+                                        span.catalog-item__material Шпон и эмаль
+                                    .catalog-item__colors
+                                        .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                        .catalog-item__color.catalog-item__color--grey
+                                        .catalog-item__color.catalog-item__color--brown
+                                        .catalog-item__color.catalog-item__color--grey-light
+                                        .catalog-item__color.catalog-item__color--multicolor
+                    .catalog-item.catalog-item--bivalve.catalog-item--entrance
+                        a(href="#").catalog-item__link
+                            .catalog-item__mask
+                            .catalog-item__img
+                                img(src="images/entrance-1.png", alt="catalog item")
+                            .catalog-item__footer
+                                .catalog-item__row
+                                    span.catalog-item__name MK01K
+                                    span.catalog-item__price 833 руб.
+                                .catalog-item__row
+                                    .catalog-item__material-container
+                                        span.catalog-item__material Шпон и эмаль
+                                    .catalog-item__colors
+                                        .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                        .catalog-item__color.catalog-item__color--grey
+                                        .catalog-item__color.catalog-item__color--brown
+                                        .catalog-item__color.catalog-item__color--grey-light
+                                        .catalog-item__color.catalog-item__color--multicolor
+                    .catalog-item.catalog-item--bivalve.catalog-item--entrance
+                        a(href="#").catalog-item__link
+                            .catalog-item__mask
+                            .catalog-item__img
+                                img(src="images/entrance-1.png", alt="catalog item")
+                            .catalog-item__footer
+                                .catalog-item__row
+                                    span.catalog-item__name MK01K
+                                    span.catalog-item__price 833 руб.
+                                .catalog-item__row
+                                    .catalog-item__material-container
+                                        span.catalog-item__material Шпон и эмаль
+                                    .catalog-item__colors
+                                        .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                        .catalog-item__color.catalog-item__color--grey
+                                        .catalog-item__color.catalog-item__color--brown
+                                        .catalog-item__color.catalog-item__color--grey-light
+                                        .catalog-item__color.catalog-item__color--multicolor
+                    .full-item
+                        a(href="#").full-item__link
+                         .full-item__block-small
+                            .full-item__row
+                                h2.full-item__name Грейт Классик G01
+                                .full-item__materials
+                                    span.full-item__material Для дома
+                                    span.full-item__material Под заказ
+                                    span.full-item__material Хит
+                                span.full-item__price 2 048 руб.
+                                .catalog-item__colors
+                                    .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                    .catalog-item__color.catalog-item__color--grey
+                                    .catalog-item__color.catalog-item__color--brown
+                                    .catalog-item__color.catalog-item__color--grey-light
+                                    .catalog-item__color.catalog-item__color--multicolor
+                         .full-item__block-big
+                             img(src="images/entrance-full-1.png" alt="door").full-item__img
