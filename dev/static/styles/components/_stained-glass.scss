@@ -1,0 +1,65 @@
+.stained-glass {
+  padding-top: 18px;
+  margin-bottom: 141px;
+
+
+
+  &__title {
+    margin-bottom: 27px;
+  }
+
+  &__text {
+    font-size: 19px;
+    line-height: 27px;
+
+    &--first {
+      margin-bottom: 36px;
+    }
+
+    &--second {
+      padding-top: 27px;
+      padding-bottom: 27px;
+      background-color: $white-2;
+      font-size: 17px;
+      padding-left: 27px;
+      margin-bottom: 54px;
+    }
+  }
+
+  &__block {
+    background: $white-2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    &--small {
+      height: 340.79px;
+      position: relative;
+    }
+
+    &--big {
+      height: 531px;
+      position: relative;
+    }
+
+    &-name {
+      font-size: 17px;
+      font-style: italic;
+      position: absolute;
+      top: 18px;
+      right: 18px;
+    }
+
+    &-descr {
+      position: absolute;
+      bottom: -21px;
+      left: 0;
+      letter-spacing: 0.01em;
+      color: $grey-6;
+      font-size: 13px;
+      font-weight: $semi-bold;
+      font-family: $rft-font;
+    }
+
+  }
+}

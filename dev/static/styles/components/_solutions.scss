@@ -1,0 +1,48 @@
+.solutions {
+  margin-top: 185px;
+  margin-bottom: 212px;
+
+  &__title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 54px;
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  &__block {
+    &--one {
+      width: 279px;
+    }
+    &--two {
+      width: 412px;
+    }
+    &--three {
+      width: 480px;
+    }
+  }
+
+  &__number {
+    letter-spacing: 0.03em;
+    font-size: 22px;
+    margin-bottom: 36px;
+  }
+
+  &__name {
+    font-size: 27px;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 18px;
+  }
+
+}

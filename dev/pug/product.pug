@@ -13,13 +13,184 @@ body
                         span.product-variant__order Под заказ до 45 дней
                         p.product-variant__description Классическая модель двери с изящным резным наличником, капителем и строгими опорами. Неповторимый шарм придаёт пескоструйный витраж с витиеватым рисунком. Бронзовая фурнитура подчёркивает благородство модели.
                     .product-variant__middle
-                        img(src="images/product-1.png" alt="product").product-variant__img
+                        img(src="images/product-1.png", data-door='black', alt="product").product-variant__img.product-variant__img--active
+                        img(src="images/product-2.png", data-door='red', alt="product").product-variant__img
                     .product-variant__right
-                        .product-variant__card
+                        .product-variant__card.product-variant__card--new
                             h4.product-variant__card-title Варианты исполнения
                             .product-variant__card-material Эмаль
                             .catalog-item__colors
-                                .catalog-item__color.catalog-item__color--active.catalog-item__color--black
-                                .catalog-item__color.catalog-item__color--grey
-                                .catalog-item__color.catalog-item__color--brown
+                                .catalog-item__color(data-color='black').catalog-item__color--active.catalog-item__color--black
+                                .catalog-item__color(data-color='red').catalog-item__color--grey
+                                .catalog-item__color(data-color='white').catalog-item__color--brown
                             .product-variant__card-description  Дверь в таком варианте исполнения установлена в фирменных салонах на пр-те Дзержинского, 122 и Кальварийской, 7Б, ТЦ «Трюм»
+                            .product-variant__card-price.product-variant__card-price--new
+                                h6 цена комплекта
+                                span 1685 рублей
+                                span.product-variant__card-oldprice.with--line  2456 рублей
+                            .product-variant__card-counter
+                                .product-variant__card-left количество
+                                .product-variant__card-right
+                                    .product-variant__card-minus
+                                    .product-variant__card-number 99
+                                    .product-variant__card-plus
+                            .product-variant__card-cost
+                                span что входит в стоимость
+                            button.product-variant__card-add  добавить к заказу
+        section.action-block
+            .container
+                .row
+                    include components/action
+        section.collection-block
+            .container
+                include components/collection
+        section.product-cost
+            .container
+                .row.no-gutters
+                    .col-lg-4
+                        h2.product-cost__title
+                            | Что входит
+                            brsdf
+                            | в стоимость
+                        p.product-cost__text.product-cost__text--left Мы предлагаем готовый вариант двери. Весь необходимый погонаж и фурнитура уже включены в стоимость.
+                        .product-cost__table.product-cost__table--left
+                            .product-cost__table-head
+                                .product-cost__table-title элемент
+                                .product-cost__table-title цена, руб
+                            .product-cost__table-body
+                                .product-cost__table-row
+                                    .product-cost__table-text дверное полотно
+                                    .product-cost__table-text 600
+                                .product-cost__table-row
+                                    .product-cost__table-text коробка
+                                    .product-cost__table-text 200
+                                .product-cost__table-row
+                                    .product-cost__table-text наличники
+                                    .product-cost__table-text 200
+                                .product-cost__table-row
+                                    .product-cost__table-text фурнитура
+                                    .product-cost__table-text 655
+                        .product-cost__price
+                            .product-cost__price-text цена комплекта
+                            .product-cost__price-number 1685 рублей
+                    .col-lg-8
+                        .product-cost__img-wrap
+                            .product-cost__img
+                                img(src="images/cost-1.png", alt="door", class="product-cost__img-door")
+                                .product-cost__img-material Строганный шпон, Американский орех
+                    .col-lg-4
+                        .product-cost__title Дверное полотно
+                        p.product-cost__text.product-cost__table--right Выполнено из клеенного бруса хвойных пород дерева. Подложка под отделку — ДВП или ХДФ .
+                        .product-cost__table.product-cost__table--right.product-cost__table--line
+                            .product-cost__table-head
+                                .product-cost__table-title Параметры
+                                .product-cost__table-title мм
+                            .product-cost__table-body
+                                .product-cost__table-row
+                                    .product-cost__table-text высота
+                                    .product-cost__table-text 2000
+                                .product-cost__table-row
+                                    .product-cost__table-text ширина
+                                    .product-cost__table-text 600, 700, 800, 900
+                                .product-cost__table-row
+                                    .product-cost__table-text толщина
+                                    .product-cost__table-text 40
+                        .product-cost__title Телескопическая коробка
+                        p.product-cost__text.product-cost__text--bottom В конструкции не используют гвозди. Наличники крепятся в специальные пазы. Коробка легко снимается и устанавливается, перекрывает зазоры между стеной и дверью.
+                        .product-cost__table-body
+                            .product-cost__table-row
+                                .product-cost__table-text Ширина
+                                .product-cost__table-text 74 мм
+        section.stained-glass
+          .container
+              .row
+                  .col-lg-4
+                    h2.stained-glass__title
+                        | Витраж дополняет
+                        br
+                        | дизайн двери
+                    p.stained-glass__text.stained-glass__text--first Белое или бронзовое матовое стекло с плоским рисунком. Изображение наносится методом пескоструйной обработки. Витражи удачно смотрятся на классических моделях дверей. Освежают дизайн полотна и делают его более оригинальным.
+                    p.stained-glass__text.stained-glass__text--second  Доступна технология нанесения объёмного рисунка. На заводе выполняется глубокое матирование стекла. Рифлёное изображение придаёт изделию более богатый вид.
+                  .offset-lg-2.col-lg-3
+                      .stained-glass__block.stained-glass__block--small
+                          .stained-glass__block-name PVC
+                          img(src="images/glass-1.png", alt="door").stained-glass__block-img
+                          .stained-glass__block-descr Входит в стоимость
+                  .offset-lg-2.col-lg-5
+                    .stained-glass__block.stained-glass__block--big
+                        .stained-glass__block-name PVC
+                        img(src="images/glass-2.png", alt="door").stained-glass__block-img
+                        .stained-glass__block-descr + 35 рублей
+        section.choose-box
+            .container
+                .row
+                    .col-lg-4
+                        h2.choose-box__title Выбирайте коробку,
+                            br
+                            | которая подходит
+                            br
+                            |  к вашему дизайну
+                        ul.choose-box__list
+                            li.choose-box__item Телескопическая
+                            li.choose-box__item Скрытого монтажа
+                            li.choose-box__item Гвоздевая
+                            li.choose-box__item.choose-box__item--active Компланарная
+                        p.choose-box__text.choose-box__text--first Образует единую плоскость для дверного полотна и наличника. Скрытые петли в закрытом состоянии «прячутся» внутри коробки.
+                        p.choose-box__text.choose-box__text--background Допустимое отклонение стен от вертикали — 2 мм на метр. Ширина коробки — 89 мм.
+                    .offset-lg-2.col-lg-4
+                        .choose-box__block.choose-box__block--small
+                            img(src="images/choose-1.png", alt="door").choose-box__block-img
+                            .choose-box__block-text Скрывает эффект ступенчатости при закрытии дверей.
+                    .offset-lg-1.col-lg-5
+                        .choose-box__block.choose-box__block--big
+                            img(src="images/choose-2.png", alt="door").choose-box__block-img
+                            .choose-box__block-text Подходит для минималистичного дизайна.
+        section.extras
+            .container
+                .row.extras__background
+                   .offset-lg-1.col-lg-4
+                       h2.extras__title Дополняйте образ двери доборами
+                       p.extras__text Доборы закрывают торцевые стенки, укрепляют короб и не дают ему расшататься. Служат для стыковки дверной коробки и наличника, когда толщина стены больше 9 см. Необходимость заказа доборов определяет мастер на этапе замера проёма.
+                .row
+                    .col-lg-6
+                        .extras__link Примеры дверей с доборами
+                    .col-lg-4
+                        p.extras__descr
+                            strong Доборы
+                            | сочетаются со стилем и цветом двери. Их помогает подобрать менеджер, устанавливает мастер на этапе монтажа
+                    .offset-lg-1.col-lg-4
+                        p.extras__descr
+                            strong Без доборов
+                            | откосы выглядят неэстетично. Потребуется самостоятельно отделать их штукатуркой или другим материалом.
+        section.solutions
+            h2.solutions__title Предлагаем решения
+                br
+                | для нестандартных проёмов
+            .container
+                .row.solutions__grid
+                    .solutions__block.solutions__block--one
+                        .solutions__number 01
+                        .solutions__name Размер под заказ
+                        img(src="images/solution-1.svg", alt="door").solutions__img
+                        p.solutions__text Максимальная высота дверного полотна под заказ — 2700 мм, ширина — 1030 мм.
+
+                    .solutions__block.solutions__block--two
+                        .solutions__number 02
+                        .solutions__name Двустворчатая дверь
+                        img(src="images/solutions-2.svg", alt="door").solutions__img
+                        p.solutions__text Оптимальное решение для проёмов шириной более 1200 мм. Двустворчатая дверь состоит из двух полотен.
+
+                    .solutions__block.solutions__block--three
+                        .solutions__number 03
+                        .solutions__name Фрамуги
+                        img(src="images/solution-3.svg", alt="door").solutions__img
+                        p.solutions__text Декоративные элементы устанавливают сбоку или над дверным полотном. Дизайнер подберёт материал и вид для фрамуги.
+
+
+
+
+
+
+script(src="static/js/jquery-3.3.1.min.js", defer)
+script(src="static/js/libs.min.js", defer)
+script(src='static/js/product-card.js', defer)

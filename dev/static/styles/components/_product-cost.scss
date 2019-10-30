@@ -1,0 +1,163 @@
+.product-cost {
+  background-color: $white-2;
+  padding-top: 90px;
+  margin-bottom: 193px;
+
+  &__text {
+    font-size: 19px;
+    line-height: 27px;
+    font-family: $minion-font;
+
+    &--left {
+      margin-bottom: 36px;
+    }
+
+    &--right {
+      margin-bottom: 27px;
+    }
+
+    &--bottom {
+      margin-bottom: 18px;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -212px;
+        top: 50px;
+        background-image: url('../../images/icons/small-line-descr.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 128px;
+        height: 15px;
+      }
+    }
+  }
+
+  &__title {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: $grey-10;
+    margin-bottom: 9px;
+    font-weight: $bold;
+    font-family: $rft-font;
+
+  }
+
+  &__table {
+
+    &--line {
+      position: relative;
+
+      &:before {
+        content: '';
+        background-image: url('../../images/icons/big-line-descr.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        left: -350px;
+        top: 0;
+        width: 261px;
+        height: 15px;
+      }
+    }
+
+    &--right {
+      margin-bottom: 54px;
+    }
+
+    &--left {
+      margin-bottom: 159px;
+    }
+
+    &-body {
+      border-top: 1px solid $grey-2;
+      border-bottom: 1px solid $grey-2;
+
+      &-bottom {
+        margin-top: 18px;
+      }
+    }
+
+    &-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 9px;
+    }
+
+    &-title {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-family: $rft-font;
+      font-size: 12px;
+      color: $grey-10;
+    }
+
+    &-row {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $grey-2;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &-text {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: $semi-bold;
+      font-family: $rft-font;
+    }
+
+  }
+
+  &__price {
+    padding-bottom: 90px;
+    &-text {
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: $grey-10;
+      margin-bottom: 9px;
+      font-weight: $bold;
+      font-family: $rft-font;
+    }
+    &-number {
+      font-size: 36px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    height: 100%;
+
+    &-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-door {
+      width: 340px;
+      height: 100%;
+    }
+
+    &-material {
+      position: absolute;
+      left: -166px;
+      bottom: 172px;
+      color: $grey-6;
+      font-size: 18px;
+      transform: rotate(-90deg);
+      font-family: $minion-font;
+      font-style: italic;
+    }
+  }
+
+}
