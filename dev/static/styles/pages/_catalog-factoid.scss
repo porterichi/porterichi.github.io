@@ -2,7 +2,6 @@
   height: 864px;
   width: 405px;
   background: linear-gradient(99.81deg, #F8F8F8 13.54%, #EDEDED 86.46%);
-  border-bottom: 1px solid $grey-2;
   padding-left: 30px;
   padding-top: 42px;
   padding-right: 75px;
@@ -79,8 +78,8 @@
       left: 43%;
     }
     &--door {
-      bottom: -4px;
-      left: 51.5%;
+      bottom: -2px;
+      left: 54.5%;
     }
   }
 

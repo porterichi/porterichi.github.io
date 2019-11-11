@@ -1,0 +1,39 @@
+.reviews {
+  margin-bottom: 99px;
+  overflow: hidden;
+  padding-left: 17.2%;
+
+  &__title {
+    margin-bottom: 36px;
+    font-weight: $bold;
+  }
+
+  &__container {
+    display: flex;
+
+  }
+
+  &__block {
+    width: 489px;
+    &:not(:first-child) {
+      margin-left: 127px;
+    }
+    &-title {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-family: $rft-font;
+      font-weight: $bold;
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+    &-text {
+      font-size: 20px;
+      line-height: 27px;
+      &:not(:last-child){
+        margin-bottom: 18px;
+      }
+    }
+
+  }
+
+}

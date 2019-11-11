@@ -1,0 +1,29 @@
+.hidden-loops {
+  margin-bottom: 168px;
+  &__title {
+    margin-bottom: 18px;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 54px;
+  }
+  &__block {
+    margin: 0 0 18px 0;
+  }
+  &__descr {
+    font-size: 18px;
+    line-height: 27px;
+    font-style: italic;
+    color: $black-3;
+  }
+  &__img {
+    margin-bottom: 18px;
+    &--small {
+      height: 603px;
+    }
+    &--big {
+      height: 891px;
+    }
+  }
+}

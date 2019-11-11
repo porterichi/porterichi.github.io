@@ -2,6 +2,7 @@
   padding-top: 50px;
   padding-bottom: 31px;
   border-bottom: 1px solid $grey-7;
+  background-color: $white-2;
 
   &__title {
     font-family: $rft-font;
@@ -40,6 +41,8 @@
     padding-top: 15px;
     padding-bottom: 22px;
     font-family: $minion-font;
+    background-color: $white-2;
+
   }
   &__site {
     font-size: 16px;

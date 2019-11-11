@@ -6,6 +6,12 @@
 @import "base/grid/bootstrap-grid";
 @import "base/base";
 
+// --- Libs
+@import "libs/slick";
+@import "libs/jquery-ui.min";
+@import "libs/owl.carousel.min";
+
+
 // --- Components
 @import "components/header";
 @import "components/nav";
@@ -32,6 +38,17 @@
 @import "components/choose-box";
 @import "components/extras";
 @import "components/solutions";
+@import "components/measurement";
+@import "components/coating";
+@import "components/colors";
+@import "components/hidden-loops";
+@import "components/threshold";
+@import "components/helper";
+@import "components/bonus";
+@import "components/reviews";
+@import "components/one-style";
+@import "components/similar-style";
+@import "components/hardware";
 
 
 // --- Pages

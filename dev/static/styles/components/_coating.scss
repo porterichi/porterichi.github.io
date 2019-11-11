@@ -1,0 +1,43 @@
+.coating {
+  height: 1133px;
+  display: flex;
+  margin: 180px;
+  
+  &__left {
+    background-image: url('../../images/coating-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 64%;
+    height: 100%;
+  }
+
+  &__right {
+    width: 36%;
+    height: 100%;
+  }
+
+  &__description {
+    height: 50%;
+    width: 100%;
+    background-color: $green;
+    padding-top: 72px;
+    padding-left: 72px;
+  }
+
+  &__text {
+    line-height: 27px;
+    font-size: 20px;
+  }
+
+  &__title {
+    margin-bottom: 27px;
+  }
+
+  &__img {
+    background-image: url('../../images/coating-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+  }
+
+}

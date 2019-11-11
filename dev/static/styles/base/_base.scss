@@ -1,11 +1,13 @@
 body {
   color: $black;
+  font-family: $minion-font;
+  font-weight: 300;
 }
 
 h2 {
   font-size: 41px;
   line-height: 54px;
-  font-family: $minion-font;
+  font-family: $minion-display;
   margin: 0;
   padding: 0;
   font-weight: $regular;
@@ -15,6 +17,7 @@ p {
   font-size: 20px;
   line-height: 27px;
   font-family: $minion-font;
+  font-weight: $regular;
   margin: 0;
   padding: 0;
 }

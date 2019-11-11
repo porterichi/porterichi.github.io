@@ -1,0 +1,72 @@
+.colors {
+  margin-bottom: 180px;
+  
+  &__title {
+    margin-bottom: 27px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 27px;
+    width: 472px;
+    text-align: center;
+  }
+
+  &__made {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 81px;
+  }
+
+  &__flag {
+    background-image: url('../../images/icons/italy.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 55px;
+    height: 33px;
+    margin-right: 18px;
+
+  }
+
+  &__country {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: $rft-font;
+    font-weight: $semi-bold;
+    font-size: 12px;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 135px;
+    width: 100%;
+    background-image: url('../../images/colors-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+
+  }
+
+  &__link {
+    width: 350px;
+    height: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $grey-6;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $black;
+    font-family: $rft-font;
+    font-weight: $bold;
+    font-size: 12px;
+    margin: 0 auto;
+  }
+
+}

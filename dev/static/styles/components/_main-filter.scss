@@ -2,9 +2,12 @@
   display: flex;
   align-items: center;
   width: 100%;
-  border: 1px solid $grey;
   margin-top: 40px;
   justify-content: space-between;
+
+  &__row {
+    border-left: 1px solid $grey;
+  }
 
   &__list {
     display: flex;
@@ -13,6 +16,8 @@
     margin: 0;
     height: 42px;
     position: relative;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
     &:hover .header-dropdown {
       opacity: 1;
       visibility: visible;
@@ -26,7 +31,7 @@
     width: 19px;
     height: 19px;
     background-color: $grey-5;
-    font-size: 15px;
+    font-size: 14px;
     font-family: $minion-font;
     margin-right: 9px;
     border-radius: 50%;
@@ -55,8 +60,8 @@
         content: '';
         position: absolute;
         top: -1px;
-        left: 0;
-        width: 100%;
+        left: -1px;
+        width: calc(100% + 2px );
         height: 2px;
         background-color: $gold;
       }
@@ -84,6 +89,7 @@
     background: linear-gradient(110.79deg, #F8F8F8 13.54%, #EDEDED 86.46%);
     height: 100%;
     cursor: pointer;
+    border: 1px solid $grey;
 
   .svg-sprite-icon {
     width: 24px;

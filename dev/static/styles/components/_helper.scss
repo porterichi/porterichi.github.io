@@ -1,0 +1,49 @@
+.helper {
+  margin-bottom: 180px;
+
+  &__figure {
+    margin: 0 0 72px 0;
+    &-title {
+      font-size: 26px;
+      line-height: 36px;
+      margin-bottom: 9px;
+      font-family: $minion-font;
+    }
+    &-text {
+      font-size: 21px;
+      line-height: 27px;
+      font-family: $minion-font;
+    }
+    &-img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 18px;
+    }
+    &--left {
+      margin-bottom: 146px;
+    }
+  }
+
+  &__miniature {
+    &-title {
+      font-family: $minion-font;
+      font-size: 27px;
+      line-height: 36px;
+      margin-bottom: 9px;
+    }
+    &-text {
+      font-family: $minion-font;
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+  &__title {
+    margin-bottom: 18px;
+  }
+
+  &__descr {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 72px;
+  }
+}

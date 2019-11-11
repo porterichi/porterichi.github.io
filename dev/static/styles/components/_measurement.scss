@@ -1,0 +1,84 @@
+.measurement {
+  margin-bottom: 180px;
+
+  &__background {
+    background-color: $white-2;
+    padding: 45px 45px 54px 54px;
+  }
+
+  &__title {
+    width: 284px;
+  }
+
+  &__block {
+    position: relative;
+    height: 100%;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: -53px;
+    left: 0;
+  }
+
+  &__descr {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 27px;
+  }
+
+  &__submit {
+    background-image: url('../../images/measurement-arrow.svg');
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 27px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  &__input {
+    position: relative;
+
+    & input {
+      border: none;
+      border-bottom: 1px solid $grey-10;
+      height: 36px;
+      color: $grey-3;
+      font-size: 19px;
+      font-style: italic;
+      width: 100%;
+      background-color: transparent;
+      &::placeholder {
+        color: $grey-3;
+        font-style: italic;
+      }
+    }
+  }
+
+  &__right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 18px;
+  }
+
+  &__name {
+    font-size: 22px;
+    line-height: 27px;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+
+  &__position {
+    font-size: 18px;
+    line-height: 18px;
+    font-style: italic;
+  }
+
+}

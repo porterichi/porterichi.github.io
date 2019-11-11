@@ -42,6 +42,9 @@
     & #{$context}__material {
       color: $white;
     }
+    & #{$context}__footer {
+      border-bottom: none;
+    }
   }
 
   &--entrance.catalog-item {
@@ -108,6 +111,7 @@
         background-image: url('../../images/discount-icon.svg');
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -171,10 +175,10 @@
     &--active:after {
       content: '';
       position: absolute;
-      width: 30px;
-      height: 30px;
-      left: -5px;
-      top: -5px;
+      width: 29px;
+      height: 29px;
+      left: -4px;
+      top: -4px;
       border-radius: 50%;
       border: 1px solid $grey-3;
       transition: .25s;

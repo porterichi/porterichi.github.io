@@ -24,6 +24,13 @@
   font-family: 'MinionPro';
   font-style: normal;
   font-weight: $regular;
+  src: url("./../../fonts/MinionPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'MinionProDisplay';
+  font-style: normal;
+  font-weight: $regular;
   src: url("./../../fonts/MinionPro-Disp.otf") format("opentype");
 }
 

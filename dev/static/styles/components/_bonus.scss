@@ -1,0 +1,41 @@
+.bonus {
+  margin-bottom: 180px;
+
+  &__wrap {
+    display: flex;
+
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+
+    &:not(:first-child) {
+      margin-left: 99px;
+    }
+  }
+
+  &__title {
+    font-size: 27px;
+    line-height: 36px;
+    margin-bottom: 9px;
+    & span {
+      display: inline-flex;
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  &__img {
+    margin-right: auto;
+    margin-bottom: 18px;
+    width: 50px;
+    height: 50px;
+  }
+
+}

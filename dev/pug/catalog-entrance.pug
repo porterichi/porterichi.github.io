@@ -2,7 +2,33 @@ include utils/mixins
 
 include components/head
 body
-    include components/header
+    header.header
+        .container
+            .row
+                .header__top
+                    .header__cart
+                        include ../static/images/svg/cart.svg
+                    a(href="#" class="header__logo")
+                        include ../static/images/svg/logo.svg
+                    a(href="tel:+375291613033" class="header__phone") +375 29 161 30 33
+                .header__bottom
+                    nav.nav
+                        ul.nav__list
+                            li.nav__item
+                                a(href="#" class="nav__link") входные двери
+                            li.nav__item
+                                a(href="#" class="nav__link") межкомнатные
+                            li.nav__item
+                                a(href="#" class="nav__link") комплексные решения
+                            li.nav__item
+                                a(href="#" class="nav__link") замер
+                            li.nav__item
+                                a(href="#" class="nav__link") оплата
+                            li.nav__item
+                                a(href="#" class="nav__link") доставка и установка
+                            li.nav__item
+                                a(href="#" class="nav__link") контакты
+
     main.main-container
     include components/breadcrumbs
     section.catalog
@@ -17,6 +43,7 @@ body
                     .sort-filter
                         .sort-filter__name по возрастанию цены
                         .sort-filter__icon
+                            +icon('sort-filter-arrow')
             .row
                 .main-filter
                     .main-filter__row
