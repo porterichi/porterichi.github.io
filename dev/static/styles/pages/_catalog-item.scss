@@ -67,7 +67,7 @@
   }
 
   &--bivalve {
-    width: 43.75%;
+    width: 598px;
     & #{$context}__mask {
       display: none;
     }
@@ -177,8 +177,8 @@
       position: absolute;
       width: 29px;
       height: 29px;
-      left: -4px;
-      top: -4px;
+      left: -5px;
+      top: -5px;
       border-radius: 50%;
       border: 1px solid $grey-3;
       transition: .25s;
