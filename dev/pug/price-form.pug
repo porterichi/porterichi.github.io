@@ -1,0 +1,53 @@
+include utils/mixins
+
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+        link(rel="stylesheet" type='text/css' href="./static/css/styles.min.css")
+
+        <!--[if lt IE 9]>
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
+        <![endif]-->
+
+    body
+        section.price-form
+            h1.price-form__title Форма ценника для межкомнатной двери
+            form.price-form__form
+                .price-form__block
+                    .price-form__name Серия
+                    input(type="text", disabled="disabled", value="Камея", data-price="series").price-form__input
+                .price-form__block
+                    .price-form__name Название
+                    input(type="text", placeholder="ЛН 180", data-price="name").price-form__input
+                .price-form__block
+                    .price-form__name Цена
+                    input(type="text", placeholder="1741", data-price="price").price-form__input
+                    span р.
+                .price-form__block
+                    button.price-form__submit создать файл для печати
+
+            .price-form__result
+                .price-form__result-series серия «Камея»
+                .price-form__result-title Межкомнатная дверь «ЛН 180»
+                .price-form__result-price 1 520,0 р.
+                .price-form__result-cost стоимость комплекта без учёта доставки и монтажа
+
+                .price-form__footer
+                    .price-form__footer-left
+                        | Согласно СТБ 2433-2015
+                        br
+                        | Производитель: Республика Беларусь
+                        br
+                        | ООО «Дверной сезон» УНП 790823530
+
+
+    script(src="static/js/jquery-3.3.1.min.js")
+    script(src="static/js/price-form.js")
