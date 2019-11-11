@@ -76,6 +76,10 @@
     padding: 18px;
     display: none;
     border: 1px solid $gold;
+    @media print {
+        width: 9cm;
+        height: 17.5cm;
+    }
 
     &-series {
       color: #C7A477;
@@ -122,5 +126,6 @@
     }
 
   }
+
 
 }
