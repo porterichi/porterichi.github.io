@@ -163,6 +163,7 @@
   &__colors {
     display: flex;
     align-items: center;
+
   }
 
   &__color {
@@ -171,6 +172,7 @@
     border-radius: 50%;
     position: relative;
     transition: .25s;
+
 
     &--active:after {
       content: '';
@@ -202,6 +204,10 @@
     
     &--grey-light {
       background-color: $grey-light;
+    }
+
+    &--entrance {
+      margin-left: auto;
     }
 
     &--multicolor {

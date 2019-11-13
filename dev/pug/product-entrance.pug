@@ -1,0 +1,86 @@
+include utils/mixins
+
+include components/head
+body
+    include components/header
+    main.main-container
+        section.product-variant
+            .container
+                .row
+                    .offset-lg-1.col-lg-6
+                        .product-variant__img--entrance
+                            img(src="images/product-variant-1.png", alt="door")
+                            .product-variant__img--disc Снаружи Муар, Серый графит
+                            img(src="images/refresh.svg", alt="refresh").product-variant__img--refresh
+                    .offset-lg-1.col-lg-8
+                        .product-variant__block--entrance.col-lg-12
+                            include components/breadcrumbs
+                            h1.product-variant__title Термо Максима W96
+                            span.product-variant__order
+                                span Для дома
+                                span Под заказ до 45 рабочих  дней
+                                span Хит
+                            p.product-variant__description.product-variant__description--entrance Дверь с основанием из оцинкованной стали и атмосферостойким покрытием. Полотно устойчиво к коррозии, а покрытие — к влаге, перепадам температур и солнечным лучам
+                            .product-variant__colors-title варианты исполнения
+                            .catalog-item__colors
+                                .catalog-item__color(data-color='black').catalog-item__color--active.catalog-item__color--black
+                                .catalog-item__color(data-color='red').catalog-item__color--grey
+                                .catalog-item__color(data-color='red').catalog-item__color--grey
+                                .catalog-item__color(data-color='red').catalog-item__color--grey
+                                .catalog-item__color(data-color='white').catalog-item__color--brown
+                                .catalog-item__color(data-color='white').catalog-item__color--brown
+                                .catalog-item__color(data-color='white').catalog-item__color--brown
+                                .catalog-item__color(data-color='white').catalog-item__color--brown
+                                .catalog-item__color(data-color='white').catalog-item__color--multicolor.catalog-item__color--entrance
+
+                            .product-variant__card-counter.product-variant__card-counter--border
+                                .product-variant__card-left комплектация максимальная
+
+                            .product-variant__card-price.product-variant__card-price--entrance
+                                span.product-variant__card-price--inner от 1685 рублей
+
+                            button.product-variant__card-add  Добавить к заказу
+                        .product-variant__see
+                            h2.product-variant__see-title Посмотрите в салоне
+                            small.product-variant__see-text Модель установлена в салоне на Кальварийской 7Б в ТЦ «Трюм»‎
+
+        section.miniature
+            .container
+                .row
+                    .miniature__left
+                        img(src="images/miniature-1.png", alt="door")
+                        span Дверь с геометрическим акцентом будет органично
+                            br
+                            | смотреться в современном интерьере
+                    .miniature__right.offset-lg-10.col-lg-6
+                        img(src="images/miniature-2.png", alt="door")
+                        span Светлый оттенок отделки визуально
+                            br
+                            | расширит пространство в прихожей
+
+        section.complex
+            .container
+                .row
+                    .col-lg-5
+                        .complex__left
+                            h2.complex__title Комплексная защита от промерзания
+                            p.complex__text Устойчивость входной двери к перепадам температур и влажности зависит от её конструкции и качества монтажа.
+                            p.complex__text Порошково-полимерное покрытие в 7 слоёв и 3-х уровневая антикоррозийная обработка защищает от коррозии и отслаивания.
+                            p.complex__text Термовлагостойкий МДФ заламинирован со всех четырёх сторон. Так панель на 100% защищена от попадания влаги внутрь.
+                            p.complex__text Полотно и коробка утеплены в несколько слоёв по контуру двери, поэтому попадание влаги внутрь исключено.
+
+
+                    .offset-lg-1.col-lg-4
+                        .complex__middle
+                            img(src="images/complex-1.svg", alt="door")
+                    .offset-lg-1.col-lg-5
+                        .complex__right
+                            h3 Терморазрыв дверного полотна и коробки
+                            p.complex__text Специальные утеплители по рёбрам жёсткости и двум частям коробки отделяют металлические элементы — «мостики холода» от наружней стороны двери. Так, если место монтажа выбрано правильно, дверь не промёрзнет при температуре до -30 С.
+                            h3 «Тёплый монтаж»
+                            p.complex__text Утепления откосов, монтажных швов и разрыва стяжки на полу исключает продувание двери и возникновение конденсата из-за резкого охлаждения.
+
+
+
+        section.install
+            

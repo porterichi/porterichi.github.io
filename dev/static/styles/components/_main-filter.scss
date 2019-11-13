@@ -28,15 +28,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 19px;
-    height: 19px;
-    background-color: $grey-5;
+    width: 20px;
+    height: 20px;
     font-size: 14px;
     font-family: $minion-font;
+    background-color: #868686;
     margin-right: 9px;
     border-radius: 50%;
     color: $white;
     line-height: 20px;
+    position: relative;
+    z-index: 1;
+    /*&::after {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 0;
+      width: 19px;
+      height: 19px;
+      background-color: #868686;
+      border-radius: 50%;
+      z-index: -1;
+    }*/
     &:empty {
       display: none;
     }

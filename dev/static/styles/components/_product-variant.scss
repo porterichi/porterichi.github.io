@@ -8,6 +8,41 @@
     cursor: pointer;
   }
 
+  &__see {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(131.05deg, #F8F8F8 13.54%, #EDEDED 86.46%);
+    width: 422px;
+    height: 180px;
+    padding-right: 37px;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+
+    &-title {
+      width: 206px;
+      position: absolute;
+      left: -88px;
+    }
+    &-text {
+      width: 248px;
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+
+  & &__block {
+    &--entrance {
+      background-color: $white;
+      padding: 54px 36px;
+      margin-top: 45px;
+      margin-bottom: 117px;
+      & .breadcrumbs {
+        margin-top: 0;
+      }
+    }
+  }
+
   .catalog-item__color--active:after {
     content: '';
     position: absolute;
@@ -17,6 +52,18 @@
     top: -5px;
     border-radius: 50%;
     border: 1px solid #9D9DA1;
+  }
+
+  &__colors {
+    &-title {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-family: $rft-font;
+      font-weight: $bold;
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 9px;
+    }
   }
 
   &__title {
@@ -37,6 +84,23 @@
     margin-top: 16px;
     padding-left: 3px;
     margin-bottom: 32px;
+    & > span {
+      display: inline-block;
+      &:not(:last-child) {
+        &::after {
+          content: '';
+          position: relative;
+          width: 2px;
+          height: 2px;
+          background-color: $gold;
+          display: inline-block;
+          margin-left: 9px;
+          margin-right: 9px;
+          top: -3px;
+        }
+      }
+
+    }
   }
 
   &__description {
@@ -45,6 +109,12 @@
     letter-spacing: .8px;
     margin-bottom: 63px;
     font-family: $minion-font;
+
+    &--entrance {
+      padding-bottom: 36px;
+      border-bottom: 1px solid $grey;
+      margin-bottom: 18px;
+    }
   }
 
   & .breadcrumbs {
@@ -79,6 +149,34 @@
     &--active {
       display: block;
     }
+
+    &--disc {
+      position: absolute;
+      top: 103px;
+      left: -135px;
+      font-size: 18px;
+      line-height: 27px;
+      font-style: italic;
+      transform: rotate(-90deg);
+      color: $black-3;
+    }
+
+    &--refresh {
+      position: absolute;
+      top: calc(50% - 10px);
+      left: calc(50% - 10px);
+      width: 21px;
+      height: 21px;
+    }
+
+    &--entrance {
+      height: 1062px;
+      width: 100%;
+      cursor: pointer;
+      position: relative;
+      margin-top: 45px;
+    }
+
   }
 
   &__card {
@@ -87,6 +185,7 @@
     padding-left: 38px;
     padding-bottom: 54px;
     position: relative;
+
 
     &-oldprice.with--line {
       color: $grey-6;
@@ -121,7 +220,7 @@
       letter-spacing: 3px;
       text-transform: uppercase;
       font-family: $rft-font;
-      font-size: 13px;
+      font-size: 12px;
       cursor: pointer;
       will-change: background, color;
       margin-top: 27px;
@@ -181,6 +280,11 @@
       justify-content: space-between;
       padding: 18px 0;
       border-bottom: 1px solid $grey-2;
+
+      &--border {
+        border-top: 1px solid $grey-2;
+      }
+
     }
 
     &-minus, &-plus {
@@ -242,6 +346,16 @@
     &-price {
       padding-bottom: 9px;
       border-bottom: 1px solid $grey-2;
+
+
+     &--entrance {
+       border-bottom: none;
+       margin-top: 27px;
+       & > span.product-variant__card-price--inner {
+         margin-bottom: 0;
+       }
+     }
+
       &--new {
         position: relative;
         span {

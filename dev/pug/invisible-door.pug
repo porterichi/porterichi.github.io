@@ -1,0 +1,59 @@
+include utils/mixins
+
+include components/head
+body
+    include components/header
+    main.main-container
+       section.big-screen.big-screen--invisible
+            .container
+                .row
+                    .offset-lg-8.col-lg-6
+                        .product-variant__card
+                            include components/breadcrumbs
+                            h1.product-variant__title Дверь-РДА10
+                            span.product-variant__order
+                                span Под заказ до 45 дней
+                            p.product-variant__description Дверь устанавливается вровень со стеной. Поверхность полотна покрыта грунт-плёнкой. Отделывается в цвет стены краской, обоями или другим материалом.
+                            .product-variant__card-description  Дверь в таком варианте исполнения установлена в фирменных салонах на пр-те Дзержинского, 122 и Кальварийской, 7Б, ТЦ «Трюм»
+                            .product-variant__card-price.product-variant__card-price--new
+                                h6 цена комплекта
+                                span 1685 рублей
+                                span.product-variant__card-oldprice.with--line  2456 рублей
+                            .product-variant__card-counter
+                                .product-variant__card-left количество
+                                .product-variant__card-right
+                                    .product-variant__card-minus
+                                    .product-variant__card-number 99
+                                    .product-variant__card-plus
+                            .product-variant__card-cost
+                                span что входит в стоимость
+                            button.product-variant__card-add  добавить к заказу
+
+       section.action__block
+            .container
+                .row
+                    include components/action
+
+       .collection
+            .container
+                .row
+                    .offset-lg-1.col-lg-7
+                        .collection__img
+                            img(src="images/invisible-collection.png" alt='collection')
+                    .offset-lg-1.col-lg-6
+                        .collection__block
+                            .collection__about Коллекция дверей
+                            h2.collection__title  Классицизм
+                            p.collection__descr
+                                | Двери в сдержанном классическом
+                                br
+                                | дизайне. Модели украшены патиной,
+                                br
+                                | дополнены стеклянными вставками
+                                br
+                                | и рисунками. Отделаны эмалью от
+                                br
+                                | итальянского производителя.
+                            a(href="#").collection__link все двери коллекции
+
+

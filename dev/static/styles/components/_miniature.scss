@@ -1,0 +1,32 @@
+.miniature {
+  margin-bottom: 180px;
+  & span {
+    font-family: $minion-font;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: right;
+    display: block;
+  }
+
+  img {
+    margin-bottom: 27px;
+  }
+
+  &__left {
+    width: 54.25%;
+    position: absolute;
+    left: 0;
+
+    img {
+      height: 630px;
+    }
+  }
+
+  &__right {
+    img {
+      height: 766px;
+    }
+  }
+
+}
