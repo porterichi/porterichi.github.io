@@ -3,14 +3,18 @@
   font-family: 'RFTone';
   font-style: normal;
   font-weight: $semi-bold;
-  src: url("./../../fonts/RFToneSemibold.ttf");
+  src: url('./../../fonts/RF-Tone-Semibold.eot') format("eot"),
+  url('./../../fonts/RF-Tone-Semibold.woff2') format('woff2'),
+  url('./../../fonts/RF-Tone-Semibold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'RFTone';
   font-style: normal;
   font-weight: $bold;
-  src: url("./../../fonts/RFToneBold.ttf");
+  src: url('./../../fonts/RF-Tone-Bold.eot') format("eot"),
+    url('./../../fonts/RF-Tone-Bold.woff2') format('woff2'),
+    url('./../../fonts/RF-Tone-Bold.woff') format('woff');
 }
 
 @font-face {
