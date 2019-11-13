@@ -1,6 +1,6 @@
 .catalog-item {
   position: relative;
-  margin-bottom: 184px;
+  margin-bottom: 169px;
 
 
 
@@ -8,7 +8,7 @@
     position: relative;
     &:after {
       content: '';
-      background-image: url('../../images/new-logo.svg');
+      background-image: url('../../images/new-logo.png');
       background-repeat: no-repeat;
       background-position: center;
       width: 110px;
@@ -27,7 +27,7 @@
   }
   &--interior {
     width: 372px;
-    padding-top: 70px;
+    padding-top: 85px;
 
 
   }
@@ -83,7 +83,8 @@
 
     & #{$context}__img {
       padding-right: 0;
-      height: 827px;
+      height: 800px;
+      width: 598px;
       & > img {
         width: 100%;
         height: 100%;
@@ -93,8 +94,8 @@
 
   &__mask {
     position: absolute;
-    height: 752px;
-    width: 302px;
+    height: 755px;
+    width: 300px;
     background: #E1D7DA;
     right: 0;
     top: 0;
@@ -105,6 +106,12 @@
     height: 682px;
     position: relative;
     padding-right: 49px;
+    img {
+      width: 285px;
+      height: 670px;
+      object-fit: cover;
+
+    }
     &--discount {
       &:after {
         content: '';
@@ -123,7 +130,7 @@
   }
 
   &__footer {
-    margin-top: 21px;
+    margin-top: 8px;
     padding-bottom: 23px;
     border-bottom: 1px solid $grey-2;
   }
@@ -167,8 +174,8 @@
   }
 
   &__color {
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
     border-radius: 50%;
     position: relative;
     transition: .25s;

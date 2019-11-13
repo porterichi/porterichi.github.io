@@ -3,10 +3,10 @@
   background-color: $black;
   display: flex;
   position: relative;
-  margin-top: 20px;
+  margin-top: 33px;
   padding-top: 33px;
   padding-left: 63px;
-  padding-bottom: 45px;
+  padding-bottom: 44px;
   margin-bottom: 180px;
   @include media-breakpoint-between(md, lg) {
     margin-bottom: 100px;
@@ -51,7 +51,7 @@
   }
 
   &__text {
-    width: 246px;
+    width: 260px;
     color: $white;
     letter-spacing: .6px;
   }
