@@ -3,6 +3,13 @@
   padding-left: 29px;
   margin: 0;
 
+  &__link {
+    font-size: 13px;
+    text-decoration: none;
+    color: $black;
+
+  }
+
   &__item {
     font-size: 13px;
     line-height: 18px;
@@ -32,6 +39,9 @@
 
     &--active {
       color: #868686;
+      & > a {
+        color: #868686;
+      }
       &:before {
         content: '';
         background-color: #868686;
