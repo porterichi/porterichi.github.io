@@ -20,6 +20,10 @@
     position: relative;
     list-style-type: none;
     cursor: pointer;
+    transition: .3s;
+    &:not(.material-filter__item--active):hover {
+      color: $gold;
+    }
 
     &:not(:last-child) {
       margin-right: 63px;

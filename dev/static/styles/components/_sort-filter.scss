@@ -2,6 +2,15 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
+  transition: .3s;
+  $context: &;
+  &:hover #{$context}__dropdown {
+    height: 100px;
+    padding: 27px 18px;
+    overflow: visible;
+    opacity: 1;
+  }
 
   &__name {
     font-family: $rft-font;
@@ -22,6 +31,61 @@
       fill: transparent;
       stroke: #000;
       height: 7px;
+    }
+  }
+
+  &__dropdown {
+    background-color: $white;
+    position: absolute;
+    top: 47px;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.25);
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: .3s;
+    opacity: 0;
+
+    &:before {
+      content: '';
+      height: 33px;
+      width: 100%;
+      position: absolute;
+      top: -33px;
+      left: 0;
+      background-color: transparent;
+    }
+
+    &-link {
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: $black;
+      font-family: $rft-font;
+      font-weight: $bold;
+      display: block;
+      text-decoration: none;
+      transition: .25s;
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+      &:hover {
+        color: $gold;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: -12px;
+      right: 34px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 27.5px 28px 27.5px;
+      border-color: transparent transparent #ffffff transparent;
     }
   }
 }

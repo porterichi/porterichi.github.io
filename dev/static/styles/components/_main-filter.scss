@@ -18,10 +18,7 @@
     position: relative;
     border-top: 1px solid $grey;
     border-bottom: 1px solid $grey;
-    &:hover .header-dropdown {
-      opacity: 1;
-      visibility: visible;
-    }
+
   }
 
   &__counter {
@@ -64,6 +61,11 @@
     height: 100%;
     cursor: pointer;
     position: relative;
+    &:hover .header-dropdown {
+      opacity: 1;
+      visibility: visible;
+    }
+
 
 
     &--active {
