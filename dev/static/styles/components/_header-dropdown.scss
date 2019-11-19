@@ -35,6 +35,9 @@
     align-items: center;
     cursor: pointer;
     margin-bottom: 22px;
+    &:hover .header-dropdown__name {
+      color: $gold;
+    }
   }
   &__input {
     display: none;
@@ -62,7 +65,7 @@
     &:after {
       content: '';
       position: absolute;
-      left: calc(50% - 3px);
+      left: calc(50% - 4px);
       top: calc(50% - 4px);
       width: 7px;
       height: 7px;
@@ -99,5 +102,6 @@
     font-size: 20px;
     color: $black-2;
     margin-left: 9px;
+    transition: .25s;
   }
 }
