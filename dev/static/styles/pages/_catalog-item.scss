@@ -180,8 +180,12 @@
     position: relative;
     transition: .25s;
 
-    &__multicolor-dropdown {
+    &-dropdown {
       position: absolute;
+      min-width: 148px;
+      height: 35px;
+      background-color: $grey-10;
+      border-radius: 3px;
     }
 
 
