@@ -6,6 +6,10 @@ $(document).ready(function () {
         active: 'catalog-item__color--active'
     };
 
+    const maskColors = {
+
+    };
+
     // Catalog UI
 
     // Change Product Color

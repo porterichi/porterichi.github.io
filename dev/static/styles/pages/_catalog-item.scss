@@ -183,9 +183,44 @@
     &-dropdown {
       position: absolute;
       min-width: 148px;
-      height: 35px;
-      background-color: $grey-10;
+      height: 0;
+      padding-bottom: 7px;
+      padding-top: 7px;
+      left: -168px;
+      top: -9px;
+      background-color: $white;
       border-radius: 3px;
+      font-size: 18px;
+      font-style: italic;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $black;
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.25);
+      visibility: hidden;
+      transition: .2s;
+      opacity: 0;
+      &:after {
+        content: '';
+        position: absolute;
+        right: -11px;
+        top: 6px;
+        width: 0;
+        height: 0;
+        z-index: 100;
+        border-style: solid;
+        border-width: 12px 0 12px 20px;
+        border-color: transparent transparent transparent #ffffff;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        width: 26px;
+        height: 35px;
+        right: -20px;
+        top: 0;
+      }
+
     }
 
 
@@ -230,6 +265,12 @@
       background-repeat: no-repeat;
       background-position: center;
       position: relative;
+
+      &:hover .catalog-item__color-dropdown {
+        height: 35px;
+        visibility: visible;
+        opacity: 1;
+      }
     }
   }
 
