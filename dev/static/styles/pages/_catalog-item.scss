@@ -180,6 +180,10 @@
     position: relative;
     transition: .25s;
 
+    &__multicolor-dropdown {
+      position: absolute;
+    }
+
 
     &--active:after {
       content: '';
@@ -222,7 +226,6 @@
       background-repeat: no-repeat;
       background-position: center;
       position: relative;
-
     }
   }
 
