@@ -22,8 +22,10 @@ html(lang="ru-RU")
             .container
                 .row
                     .header__top
-                        .header__cart
+                        a(href="#").header__cart
                             include ../static/images/svg/cart.svg
+                            .header__cart-counter
+                                span 3
                         a(href="#" class="header__logo")
                             include ../static/images/svg/logo.svg
                         a(href="tel:+375291613033" class="header__phone") +375 29 161 30 33
@@ -114,6 +116,101 @@ html(lang="ru-RU")
                                         span.main-filter__counter
                                         span.main-filter__name Коллекция
                                         +icon('sort-filter-arrow')
+                                        .header-dropdown.header-dropdown--filter
+                                            form.header-dropdown--long
+                                                .header-dropdown__block
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox" disabled).header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Авангард
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Ампир
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Барокко
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Баухауз
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Венеция
+
+                                                .header-dropdown__block
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Авангард
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Ампир
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Барокко
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Баухауз
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Венеция
+
+                                                .header-dropdown__block
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Авангард
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Ампир
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Барокко
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Баухауз
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Венеция
+
+                                                .header-dropdown__block
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Авангард
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Ампир
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Барокко
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Баухауз
+                                                    label.header-dropdown__label
+                                                        input(type="checkbox").header-dropdown__input
+                                                        .header-dropdown__checkbox
+                                                        .header-dropdown__name Венеция
+
+                                                .header-dropdown__img
+                                                    img(src="images/dropdown-door.png", alt="doors")
+                                                    img(src="images/dropdown-door.png", alt="doors")
+                                                    img(src="images/dropdown-door.png", alt="doors")
+
 
                                     li.main-filter__item.main-filter__item--arrow
                                         span.main-filter__counter

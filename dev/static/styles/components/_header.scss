@@ -34,6 +34,21 @@
     height: 29px;
     position: relative;
     z-index: 3;
+    text-decoration: none;
+    &-counter {
+      width: 19px;
+      height: 19px;
+      background-color: $grey-5;
+      font-size: 15px;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: -4px;
+    }
     & > svg {
       transition: .25s;
       fill: $black;
