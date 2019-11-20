@@ -65,7 +65,15 @@
 
   &__text {
     letter-spacing: .7px;
-
+    &--choose {
+      width: 229px;
+    }
+    &--classic {
+      width: 289px;
+    }
+    &--porte {
+      width: 249px;
+    }
   }
 
   &__img {

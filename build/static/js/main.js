@@ -7,6 +7,27 @@ $(document).ready(function () {
     };
 
     const maskColors = {
+        'ampir': '#E1D7DA',
+        'barokko': '#CDDBEC',
+        'bauhouse': '#CDDBEC',
+        'venezia': '#ACA7A8',
+        'versal': '#E1D7DA',
+        'georg': '#CEBB95',
+        'industrial ': '#CEBB95',
+        'italiano': '#D2C8BC',
+        'lounge': '#BBBEBB',
+        'loft': '#D4D8CF',
+        'mayer': '#EBDAB1',
+        'military': '#CDC693',
+        'minimal': '#8C786C',
+        'modern': '#E0D7C6',
+        'neoclassic': '#CBC8B7',
+        'eclectic': '#CCCECB',
+        'ecostyle': '#D2DDD0',
+        'nova': '#D6CDC8',
+        'hitech': '#E0E0E0',
+        'rustik': '#A9A7A3',
+        'techno': '#AEB2BD'
 
     };
 
