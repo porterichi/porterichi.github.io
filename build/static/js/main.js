@@ -31,6 +31,16 @@ $(document).ready(function () {
 
     };
 
+    const allElements = $('.catalog-item');
+
+    $.each(allElements, function(i, val) {
+        const mask = $(val).find('.catalog-item__mask');
+        const maskColor = mask.data('mask');
+        if(maskColor !== undefined) {
+            mask.css( 'background-color', maskColors[maskColor] );
+        }
+    });
+
     // Catalog UI
 
     // Change Product Color
@@ -42,7 +52,6 @@ $(document).ready(function () {
         const collection = parent.find(state.items);
 
         if(!el.hasClass(state.active)) {
-
             collection.removeClass(state.active);
             el.addClass(state.active);
         }
