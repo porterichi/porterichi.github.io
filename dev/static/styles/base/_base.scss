@@ -44,4 +44,10 @@ h3 {
 .no-padding {
   padding-left: 0;
   padding-right: 0;
+  &-left {
+    padding-left: 0;
+  }
+  &-right {
+    padding-right: 0;
+  }
 }

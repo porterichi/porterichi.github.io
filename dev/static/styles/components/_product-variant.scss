@@ -1,8 +1,16 @@
 .product-variant {
-  margin-bottom: 227px;
+  margin-bottom: 194px;
+  
+  &--vitrage {
+    background-image: url('../../images/product-vitrage.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
 
   .catalog-item__colors {
     margin-bottom: 27px;
+    padding-left: 3px;
   }
   .catalog-item__color {
     cursor: pointer;
@@ -73,6 +81,7 @@
     font-weight: $regular;
     margin: 0;
     padding: 0;
+    letter-spacing: -2px;
 
   }
 
@@ -104,9 +113,9 @@
   }
 
   &__description {
-    font-size: 21px;
+    font-size: 19px;
     line-height: 27px;
-    letter-spacing: .8px;
+    letter-spacing: .5px;
     margin-bottom: 63px;
     font-family: $minion-font;
 
@@ -140,7 +149,7 @@
   }
 
   &__img {
-    width: 438px;
+    width: 398px;
     height: 931px;
     display: none;
     position: absolute;
@@ -181,11 +190,8 @@
 
   &__card {
     background-color: $white;
-    padding-top: 47px;
-    padding-left: 38px;
-    padding-bottom: 54px;
+    padding: 41px 36px 54px 48px;
     position: relative;
-
 
     &-oldprice.with--line {
       color: $grey-6;
@@ -217,13 +223,14 @@
       border: 1px solid #9D9DA1;
       transition: .3s;
       color: $black;
-      letter-spacing: 3px;
+      letter-spacing: 3.7px;
       text-transform: uppercase;
       font-family: $rft-font;
-      font-size: 12px;
+      font-size: 11px;
       cursor: pointer;
       will-change: background, color;
-      margin-top: 27px;
+      margin-top: 18px;
+      font-weight: $bold;
       &:hover {
         background-color: $grey-5;
         color: $white;
@@ -245,13 +252,14 @@
         display: inline-block;
         border-bottom: 1px solid $black;
         margin-bottom: 9px;
+        letter-spacing: 2.2px;
       }
 
       &:after {
         content: '';
         position: absolute;
         top: 14px;
-        right: 0;
+        right: 5px;
         background-image: url('../../images/icons/catalog-arrow.svg');
         width: 24px;
         height: 24px;
@@ -263,22 +271,23 @@
     &-right {
       display: flex;
       align-items: center;
+      margin-right: 7px;
     }
 
     &-left {
-      letter-spacing: 3px;
       text-transform: uppercase;
       color: $black;
       font-weight: $bold;
       font-family: $rft-font;
       font-size: 13px;
+      letter-spacing: 2.2px;
     }
 
     &-counter {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 18px 0;
+      padding: 13px 0 16px 0;
       border-bottom: 1px solid $grey-2;
 
       &--border {
@@ -340,7 +349,7 @@
       font-size: 13px;
       font-family: $rft-font;
       font-weight: $bold;
-      margin: 0 5px;
+      margin: 0 8px;
     }
 
     &-price {
@@ -365,16 +374,18 @@
 
       h6 {
         color: #9D9DA1;
-        letter-spacing: 3px;
+        letter-spacing: 2.2px;
         font-size: 13px;
         margin-bottom: 9px;
         font-family: $rft-font;
         text-transform: uppercase;
+        margin-top: 49px;
       }
       span {
         font-size: 36px;
         display: inline-block;
-        margin-bottom: 18px;
+        margin-bottom: 4px;
+        letter-spacing: -1px;
       }
 
     }
@@ -386,6 +397,7 @@
       font-family: $minion-font;
       font-weight: $regular;
       margin-bottom: 18px;
+      letter-spacing: -1.3px;
     }
 
     &-material {
@@ -394,13 +406,13 @@
       letter-spacing: 3px;
       text-transform: uppercase;
       color: $grey-5;
-      margin-bottom: 9px;
+      margin-bottom: 14px;
     }
 
     &-description {
       font-size: 18px;
       line-height: 27px;
-      padding: 15px 0 12px 15px;
+      padding: 15px 50px 17px 15px;
       background: linear-gradient(300.92deg, #FFFFFF 13.54%, #EDEDED 86.46%);
       font-style: italic;
     }

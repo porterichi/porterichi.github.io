@@ -4,7 +4,7 @@ include components/head
 body
     include components/header
     main.main-container
-        section.product-variant
+        section.product-variant.product-variant--vitrage
             .container
                 .row
                     .product-variant__left
@@ -13,8 +13,8 @@ body
                         span.product-variant__order Под заказ до 45 дней
                         p.product-variant__description Классическая модель двери с изящным резным наличником, капителем и строгими опорами. Неповторимый шарм придаёт пескоструйный витраж с витиеватым рисунком. Бронзовая фурнитура подчёркивает благородство модели.
                     .product-variant__middle
-                        img(src="images/product-1.png", data-door='black', alt="product").product-variant__img.product-variant__img--active
-                        img(src="images/product-2.png", data-door='red', alt="product").product-variant__img
+                        img(src="images/product-variant-vitrage.png", data-door='black', alt="product").product-variant__img.product-variant__img--active
+                        img(src="images/product-1.png", data-door='red', alt="product").product-variant__img
                     .product-variant__right
                         .product-variant__card.product-variant__card--new
                             h4.product-variant__card-title Варианты исполнения
@@ -32,7 +32,7 @@ body
                                 .product-variant__card-left количество
                                 .product-variant__card-right
                                     .product-variant__card-minus
-                                    .product-variant__card-number 99
+                                    .product-variant__card-number 1
                                     .product-variant__card-plus
                             .product-variant__card-cost
                                 span что входит в стоимость
@@ -46,11 +46,11 @@ body
                 include components/collection
         section.product-cost
             .container
-                .row.no-gutters
-                    .col-lg-4
+                .row
+                    .col-lg-4.no-padding-left
                         h2.product-cost__title
                             | Что входит
-                            brsdf
+                            br
                             | в стоимость
                         p.product-cost__text.product-cost__text--left Мы предлагаем готовый вариант двери. Весь необходимый погонаж и фурнитура уже включены в стоимость.
                         .product-cost__table.product-cost__table--left
@@ -70,6 +70,9 @@ body
                                 .product-cost__table-row
                                     .product-cost__table-text фурнитура
                                     .product-cost__table-text 655
+                                .product-cost__table-row
+                                    .product-cost__table-text врезка под фурнитуру
+                                    .product-cost__table-text 50
                         .product-cost__price
                             .product-cost__price-text цена комплекта
                             .product-cost__price-number 1685 рублей
@@ -78,7 +81,7 @@ body
                             .product-cost__img
                                 img(src="images/cost-1.png", alt="door", class="product-cost__img-door")
                                 .product-cost__img-material Строганный шпон, Американский орех
-                    .col-lg-4
+                    .col-lg-4.no-padding-right
                         .product-cost__title Дверное полотно
                         p.product-cost__text.product-cost__table--right Выполнено из клеенного бруса хвойных пород дерева. Подложка под отделку — ДВП или ХДФ .
                         .product-cost__table.product-cost__table--right.product-cost__table--line
@@ -114,17 +117,17 @@ body
                   .offset-lg-2.col-lg-3
                       .stained-glass__block.stained-glass__block--small
                           .stained-glass__block-name PVC
-                          img(src="images/glass-1.png", alt="door").stained-glass__block-img
+                          img(src="images/glass-1.png", alt="door").stained-glass__block-img.stained-glass__block-img--small
                           .stained-glass__block-descr Входит в стоимость
-                  .offset-lg-2.col-lg-5
+                  .offset-lg-1.col-lg-5
                     .stained-glass__block.stained-glass__block--big
                         .stained-glass__block-name PVC
-                        img(src="images/glass-2.png", alt="door").stained-glass__block-img
+                        img(src="images/glass-2.png", alt="door").stained-glass__block-img.stained-glass__block-img--big
                         .stained-glass__block-descr + 35 рублей
         section.choose-box
             .container
                 .row
-                    .col-lg-4
+                    .col-lg-4.no-padding-left
                         h2.choose-box__title Выбирайте коробку,
                             br
                             | которая подходит
@@ -139,16 +142,16 @@ body
                         p.choose-box__text.choose-box__text--background Допустимое отклонение стен от вертикали — 2 мм на метр. Ширина коробки — 89 мм.
                     .offset-lg-2.col-lg-4
                         .choose-box__block.choose-box__block--small
-                            img(src="images/choose-1.png", alt="door").choose-box__block-img
+                            img(src="images/choose-1.png", alt="door").choose-box__block-img.choose-box__block-img--small
                             .choose-box__block-text Скрывает эффект ступенчатости при закрытии дверей.
-                    .offset-lg-1.col-lg-5
+                    .offset-lg-1.col-lg-5.no-padding-right
                         .choose-box__block.choose-box__block--big
-                            img(src="images/choose-2.png", alt="door").choose-box__block-img
+                            img(src="images/choose-2.png", alt="door").choose-box__block-img.choose-box__block-img--big
                             .choose-box__block-text Подходит для минималистичного дизайна.
         section.extras
             .container
                 .row.extras__background
-                   .offset-lg-1.col-lg-4
+                   .offset-lg-1.col-lg-4.no-padding-left
                        h2.extras__title Дополняйте образ двери доборами
                        p.extras__text Доборы закрывают торцевые стенки, укрепляют короб и не дают ему расшататься. Служат для стыковки дверной коробки и наличника, когда толщина стены больше 9 см. Необходимость заказа доборов определяет мастер на этапе замера проёма.
                 .row

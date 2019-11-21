@@ -57,7 +57,7 @@
     </div>
   </header>
   <main class="main-container">
-    <section class="product-variant">
+    <section class="product-variant product-variant--vitrage">
       <div class="container">
         <div class="row">
           <div class="product-variant__left">
@@ -74,7 +74,7 @@
             <h1 class="product-variant__title">Межкомнатная дверь Б18</h1><span class="product-variant__order">Под заказ до 45 дней</span>
             <p class="product-variant__description">Классическая модель двери с изящным резным наличником, капителем и строгими опорами. Неповторимый шарм придаёт пескоструйный витраж с витиеватым рисунком. Бронзовая фурнитура подчёркивает благородство модели.</p>
           </div>
-          <div class="product-variant__middle"><img class="product-variant__img product-variant__img--active" src="images/product-1.png" data-door="black" alt="product"><img class="product-variant__img" src="images/product-2.png" data-door="red" alt="product"></div>
+          <div class="product-variant__middle"><img class="product-variant__img product-variant__img--active" src="images/product-variant-vitrage.png" data-door="black" alt="product"><img class="product-variant__img" src="images/product-1.png" data-door="red" alt="product"></div>
           <div class="product-variant__right">
             <div class="product-variant__card product-variant__card--new">
               <h4 class="product-variant__card-title">Варианты исполнения</h4>
@@ -92,7 +92,7 @@
                 <div class="product-variant__card-left">количество</div>
                 <div class="product-variant__card-right">
                   <div class="product-variant__card-minus"></div>
-                  <div class="product-variant__card-number">99</div>
+                  <div class="product-variant__card-number">1</div>
                   <div class="product-variant__card-plus"></div>
                 </div>
               </div>
@@ -111,7 +111,7 @@
               <h2 class="action__title">Купите дверь и выиграйте путешествие в Италию</h2><a class="action__link" href="#">узнать условия</a>
             </div>
             <div class="action__right">
-              <p class="action__text">Акция действует с 13 мая по 14 июня включительно. Выбрать можно любую дверь из каталога на сайте. Розыгрыш призов состоится 19 июня в 15:00 с помощью закрытого лототрона.</p>
+              <p class="action__text">Акция действует с 13 мая по 14 июня включительно. Выбрать можно любую дверь из каталога на сайте. Розыгрыш состоится 19 июня в 15:00 с помощью лототрона.</p>
             </div>
             <div class="action__img"></div>
           </div>
@@ -138,11 +138,9 @@
     </section>
     <section class="product-cost">
       <div class="container">
-        <div class="row no-gutters">
-          <div class="col-lg-4">
-            <h2 class="product-cost__title">Что входит
-              <brsdf></brsdf>в стоимость
-            </h2>
+        <div class="row">
+          <div class="col-lg-4 no-padding-left">
+            <h2 class="product-cost__title">Что входит<br>в стоимость</h2>
             <p class="product-cost__text product-cost__text--left">Мы предлагаем готовый вариант двери. Весь необходимый погонаж и фурнитура уже включены в стоимость.</p>
             <div class="product-cost__table product-cost__table--left">
               <div class="product-cost__table-head">
@@ -166,6 +164,10 @@
                   <div class="product-cost__table-text">фурнитура</div>
                   <div class="product-cost__table-text">655</div>
                 </div>
+                <div class="product-cost__table-row">
+                  <div class="product-cost__table-text">врезка под фурнитуру</div>
+                  <div class="product-cost__table-text">50</div>
+                </div>
               </div>
             </div>
             <div class="product-cost__price">
@@ -180,7 +182,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 no-padding-right">
             <div class="product-cost__title">Дверное полотно</div>
             <p class="product-cost__text product-cost__table--right">Выполнено из клеенного бруса хвойных пород дерева. Подложка под отделку — ДВП или ХДФ .</p>
             <div class="product-cost__table product-cost__table--right product-cost__table--line">
@@ -225,13 +227,13 @@
           </div>
           <div class="offset-lg-2 col-lg-3">
             <div class="stained-glass__block stained-glass__block--small">
-              <div class="stained-glass__block-name">PVC</div><img class="stained-glass__block-img" src="images/glass-1.png" alt="door">
+              <div class="stained-glass__block-name">PVC</div><img class="stained-glass__block-img stained-glass__block-img--small" src="images/glass-1.png" alt="door">
               <div class="stained-glass__block-descr">Входит в стоимость</div>
             </div>
           </div>
-          <div class="offset-lg-2 col-lg-5">
+          <div class="offset-lg-1 col-lg-5">
             <div class="stained-glass__block stained-glass__block--big">
-              <div class="stained-glass__block-name">PVC</div><img class="stained-glass__block-img" src="images/glass-2.png" alt="door">
+              <div class="stained-glass__block-name">PVC</div><img class="stained-glass__block-img stained-glass__block-img--big" src="images/glass-2.png" alt="door">
               <div class="stained-glass__block-descr">+ 35 рублей</div>
             </div>
           </div>
@@ -241,7 +243,7 @@
     <section class="choose-box">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 no-padding-left">
             <h2 class="choose-box__title">Выбирайте коробку,<br>которая подходит<br> к вашему дизайну</h2>
             <ul class="choose-box__list">
               <li class="choose-box__item">Телескопическая</li>
@@ -253,12 +255,12 @@
             <p class="choose-box__text choose-box__text--background">Допустимое отклонение стен от вертикали — 2 мм на метр. Ширина коробки — 89 мм.</p>
           </div>
           <div class="offset-lg-2 col-lg-4">
-            <div class="choose-box__block choose-box__block--small"><img class="choose-box__block-img" src="images/choose-1.png" alt="door">
+            <div class="choose-box__block choose-box__block--small"><img class="choose-box__block-img choose-box__block-img--small" src="images/choose-1.png" alt="door">
               <div class="choose-box__block-text">Скрывает эффект ступенчатости при закрытии дверей.</div>
             </div>
           </div>
-          <div class="offset-lg-1 col-lg-5">
-            <div class="choose-box__block choose-box__block--big"><img class="choose-box__block-img" src="images/choose-2.png" alt="door">
+          <div class="offset-lg-1 col-lg-5 no-padding-right">
+            <div class="choose-box__block choose-box__block--big"><img class="choose-box__block-img choose-box__block-img--big" src="images/choose-2.png" alt="door">
               <div class="choose-box__block-text">Подходит для минималистичного дизайна.</div>
             </div>
           </div>
@@ -268,7 +270,7 @@
     <section class="extras">
       <div class="container">
         <div class="row extras__background">
-          <div class="offset-lg-1 col-lg-4">
+          <div class="offset-lg-1 col-lg-4 no-padding-left">
             <h2 class="extras__title">Дополняйте образ двери доборами</h2>
             <p class="extras__text">Доборы закрывают торцевые стенки, укрепляют короб и не дают ему расшататься. Служат для стыковки дверной коробки и наличника, когда толщина стены больше 9 см. Необходимость заказа доборов определяет мастер на этапе замера проёма.</p>
           </div>

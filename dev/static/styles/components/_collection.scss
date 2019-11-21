@@ -3,7 +3,7 @@
   margin-bottom: 194px;
 
   &__img {
-    padding-left: 34px;
+    padding-left: 22px;
     position: relative;
     z-index: 1;
 
@@ -14,7 +14,7 @@
       border: 1px solid #CBA576;
       position: absolute;
       top: -36px;
-      left: 0;
+      left: -15px;
       z-index: -1;
     }
   }
@@ -27,7 +27,7 @@
     font-family: $rft-font;
     font-weight: $bold;
     font-size: 11px;
-    letter-spacing: 3px;
+    letter-spacing: 3.3px;
     text-transform: uppercase;
     color: $grey-5;
     margin-bottom: 11px;

@@ -1,20 +1,20 @@
 .action {
   width: 100%;
-  background-color: $black;
+  background-color: $black-4;
   display: flex;
   position: relative;
   margin-top: 33px;
   padding-top: 33px;
-  padding-left: 63px;
-  padding-bottom: 44px;
-  margin-bottom: 180px;
+  padding-left: 57px;
+  padding-bottom: 47px;
+  margin-bottom: 216px;
   @include media-breakpoint-between(md, lg) {
     margin-bottom: 100px;
   }
   
 
   &__left {
-    padding-right: 97px;
+    padding-right: 104px;
   }
 
   &__right {
@@ -25,7 +25,7 @@
     color: $white;
     width: 456px;
     letter-spacing: .6px;
-    padding-bottom: 68px;
+    padding-bottom: 40px;
   }
 
   &__link {
@@ -53,7 +53,8 @@
   &__text {
     width: 260px;
     color: $white;
-    letter-spacing: .6px;
+    letter-spacing: .3px;
+    font-size: 19px;
   }
 
   &__img {
