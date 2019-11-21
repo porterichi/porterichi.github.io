@@ -1,5 +1,5 @@
 .colors {
-  margin-bottom: 180px;
+  margin-bottom: 226px;
   
   &__title {
     margin-bottom: 27px;
@@ -8,7 +8,7 @@
   &__text {
     font-size: 20px;
     line-height: 27px;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
     width: 472px;
     text-align: center;
   }
@@ -16,7 +16,7 @@
   &__made {
     display: flex;
     align-items: center;
-    margin: 0 auto 81px;
+    margin: 0 auto 63px;
   }
 
   &__flag {
@@ -59,14 +59,19 @@
     justify-content: center;
     align-items: center;
     border: 1px solid $grey-6;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
     color: $black;
     font-family: $rft-font;
     font-weight: $bold;
-    font-size: 12px;
+    font-size: 13px;
     margin: 0 auto;
+    transition: .25s;
+    &:hover {
+      background-color: $grey-5;
+      color: $white;
+    }
   }
 
 }

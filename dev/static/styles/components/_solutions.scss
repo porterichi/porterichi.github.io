@@ -1,11 +1,16 @@
 .solutions {
-  margin-top: 185px;
-  margin-bottom: 212px;
+  margin-top: 181px;
+  margin-bottom: 243px;
 
   &__title {
     text-align: center;
     width: 100%;
     margin-bottom: 54px;
+  }
+
+  &__img {
+    height: 544px;
+    width: 100%;
   }
 
   &__grid {
@@ -18,7 +23,7 @@
 
   &__block {
     &--one {
-      width: 279px;
+      width: 296px;
     }
     &--two {
       width: 412px;
@@ -37,6 +42,7 @@
   &__name {
     font-size: 27px;
     margin-bottom: 18px;
+    letter-spacing: -1px;
   }
 
   &__text {

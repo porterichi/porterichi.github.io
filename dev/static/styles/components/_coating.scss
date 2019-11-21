@@ -1,13 +1,13 @@
 .coating {
   height: 1133px;
   display: flex;
-  margin: 180px;
+  margin-bottom: 180px;
   
   &__left {
     background-image: url('../../images/coating-1.png');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 64%;
+    width: 67%;
     height: 100%;
   }
 
@@ -20,8 +20,8 @@
     height: 50%;
     width: 100%;
     background-color: $green;
-    padding-top: 72px;
-    padding-left: 72px;
+    padding-top: 75px;
+    padding-left: 77px;
   }
 
   &__text {
@@ -30,13 +30,15 @@
   }
 
   &__title {
-    margin-bottom: 27px;
+    margin-bottom: 21px;
+    letter-spacing: 1.1px;
   }
 
   &__img {
     background-image: url('../../images/coating-2.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: -280px;
     height: 50%;
   }
 

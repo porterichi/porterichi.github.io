@@ -1,8 +1,8 @@
 .helper {
-  margin-bottom: 180px;
+  margin-bottom: 140px;
 
   &__figure {
-    margin: 0 0 72px 0;
+    margin: 0 0 46px 0;
     &-title {
       font-size: 26px;
       line-height: 36px;
@@ -16,15 +16,18 @@
     }
     &-img {
       width: 100%;
-      height: auto;
+      height: 623px;
       margin-bottom: 18px;
     }
     &--left {
-      margin-bottom: 146px;
+      margin-bottom: 76px;
     }
   }
 
   &__miniature {
+
+    padding-left: 53px;
+
     &-title {
       font-family: $minion-font;
       font-size: 27px;
