@@ -1,5 +1,5 @@
 .bonus {
-  margin-bottom: 180px;
+  margin-bottom: 177px;
 
   &__wrap {
     display: flex;
@@ -9,7 +9,7 @@
   &__block {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 269px;
 
     &:not(:first-child) {
       margin-left: 99px;
@@ -19,7 +19,8 @@
   &__title {
     font-size: 27px;
     line-height: 36px;
-    margin-bottom: 9px;
+    margin-bottom: 7px;
+    font-family: $minion-display;
     & span {
       display: inline-flex;
       border-bottom: 1px solid $black;

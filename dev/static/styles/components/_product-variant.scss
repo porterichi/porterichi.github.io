@@ -203,8 +203,8 @@
     &--new {
       &:after {
         background-image: url('../../images/new-logo.png');
-        width: 108px;
-        height: 108px;
+        width: 113px;
+        height: 113px;
         background-repeat: no-repeat;
         background-position: center;
         position: absolute;
@@ -289,6 +289,7 @@
       justify-content: space-between;
       padding: 13px 0 16px 0;
       border-bottom: 1px solid $grey-2;
+      user-select: none;
 
       &--border {
         border-top: 1px solid $grey-2;
@@ -305,6 +306,17 @@
       width: 22px;
       height: 22px;
       cursor: pointer;
+      transition: .25s;
+      user-select: none;
+
+      &:hover {
+        color: $gold;
+        border-color: $gold;
+        &:after, &:before {
+          background-color: $gold;
+        }
+      }
+
     }
 
     &-plus {
