@@ -4,23 +4,33 @@
   background-repeat: no-repeat;
   &--invisible {
     background-image: url('../../images/invisible-screen.png');
-    height: 1125px;
+    height: 1116px;
     margin-top: -107px;
-    margin-bottom: 180px;
+    margin-bottom: 168px;
 
     .product-variant__card {
       padding-right: 36px;
       padding-left: 36px;
       margin-top: 170px;
+      padding-top: 48px;
+    }
+
+    .product-variant__card-description {
+      padding-top: 8px;
+    }
+
+    .product-variant__card-price h6 {
+      margin-top: 25px;
     }
 
     .breadcrumbs {
       margin-top: 0;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .product-variant__order {
-      margin-bottom: 18px;
+      margin-bottom: 13px;
+      margin-top: 14px;
     }
 
     .product-variant__description {

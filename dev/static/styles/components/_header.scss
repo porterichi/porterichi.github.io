@@ -21,12 +21,18 @@
     position: relative;
     margin-bottom: 1px;
     background-color: $white;
+    @include media-breakpoint-down(lg) {
+      padding: 13px 8px 13px;
+    }
   }
   &__bottom {
     font-size: 20px;
     width: 100%;
      background-color: $white;
     padding: 9px 32px 12px 36px;
+    @include media-breakpoint-down(lg) {
+      padding: 9px 8px;
+    }
   }
   &__cart {
     cursor: pointer;
