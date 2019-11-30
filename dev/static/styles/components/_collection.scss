@@ -1,20 +1,73 @@
 .collection {
   width: 100%;
   margin-bottom: 194px;
+  $context: &;
+  &-invisible {
+
+    margin-bottom: 179px;
+
+    #{$context}__block {
+      margin-top: 217px;
+      padding-left: 8px;
+    }
+
+    #{$context}__descr {
+      font-size: 27px;
+      line-height: 36px;
+      letter-spacing: -1px;
+    }
+
+    &__title.collection__title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 27px;
+      strong {
+        font-family: $minion-display;
+        font-size: 121px;
+        line-height: 54px;
+        color: $gold;
+      }
+      span {
+        font-size: 42px;
+        line-height: 54px;
+        color: $black;
+        font-family: $minion-display;
+        padding-left: 16px;
+        margin-top: -2px;
+      }
+    }
+
+    &__img {
+      position: relative;
+      z-index: 1;
+
+      &:before {
+        content: '';
+        width: 597px;
+        height: 820px;
+        border: 1px solid #CBA576;
+        position: absolute;
+        top: -36px;
+        left: -36px;
+        z-index: -1;
+      }
+    }
+
+
+  }
 
   &__img {
-    padding-left: 22px;
     position: relative;
     z-index: 1;
 
     &:before {
       content: '';
-      width: 737px;
-      height: 536px;
+      width: 597px;
+      height: 820px;
       border: 1px solid #CBA576;
       position: absolute;
       top: -36px;
-      left: -15px;
+      left: -36px;
       z-index: -1;
     }
   }

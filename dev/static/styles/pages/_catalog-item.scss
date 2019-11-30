@@ -179,6 +179,10 @@
     border-radius: 50%;
     position: relative;
     transition: .25s;
+    &:not(.catalog-item__color--multicolor) div {
+      overflow: hidden;
+      border-radius: 50%;
+    }
 
     &-dropdown {
       position: absolute;

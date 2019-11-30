@@ -2,6 +2,229 @@
   position: relative;
   margin-bottom: 172px;
 
+
+
+  &__features {
+    height: 1116px;
+    background-image: url('../../images/invisible-features.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    $context: &;
+
+    &-title {
+      color: $white;
+      margin-top: 124px;
+      margin-bottom: 19px;
+    }
+
+    &-tooltipe {
+      color: $white;
+      font-size: 18px;
+      line-height: 27px;
+      background-color: #9e9da2;
+      font-family: $minion-font;
+      font-style: italic;
+      width: 246px;
+      height: 105px;
+      position: absolute;
+      top: 22px;
+      left: -18px;
+      transform: rotate(90deg);
+      padding-left: 15px;
+      padding-top: 11px;
+      padding-right: 10px;
+      opacity: 0;
+      visibility: hidden;
+      transition: .25s;
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 29px 19px 0 19px;
+        border-color: #9e9da2 transparent transparent transparent;
+        position: absolute;
+        bottom: -11px;
+        left: 30px;
+      }
+
+    }
+
+    &-text {
+      color: $white;
+    }
+
+    &-block {
+      width: 100%;
+      position: relative;
+      height: 1116px;
+    }
+
+    &-plus {
+      width: 16px;
+      height: 2px;
+      background-color: $white;
+      transform: rotate(-90deg);
+      position: relative;
+      &:after {
+        content: '';
+        width: 16px;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $white;
+        transform: rotate(90deg);
+      }
+    }
+
+    &-circle {
+      width: 37px;
+      height: 37px;
+      background-color: $white;
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      border-radius: 50%;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1.2);
+      transition: .3s;
+      will-change: opacity, visibility, transform;
+    }
+
+    &-add {
+      width: 49px;
+      height: 49px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      &:hover {
+        #{$context}-circle {
+          visibility: visible;
+          opacity: 1;
+          transform: scale(1);
+        }
+        #{$context}-plus {
+          background-color: $grey-10;
+          z-index: 3;
+          &:after {
+            background-color: $grey-10;
+            z-index: 3;
+          }
+        }
+        #{$context}-tooltipe {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      &--top {
+        position: absolute;
+        top: 580px;
+        left: -24px;
+      }
+
+      &--bottom {
+        position: absolute;
+        bottom: 41px;
+        left: 223px;
+      }
+
+    }
+
+  }
+
+  &__system {
+    margin-bottom: 179px;
+
+    &-block {
+      background-color: $grey-11;
+      margin-top: 153px;
+      padding-top: 51px;
+      padding-left: 86px;
+      padding-bottom: 143px;
+    }
+
+    &-title {
+      width: 322px;
+      margin-bottom: 13px;
+    }
+    &-text {
+      width: 344px;
+      font-size: 27px;
+      line-height: 36px;
+      font-family: $minion-display;
+    }
+    &-img {
+      background-image: url('../../images/invisible-system-bg.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 874px;
+    }
+  }
+
+  &__hidden {
+    position: relative;
+    margin-bottom: 181px;
+
+    &-left {
+      position: absolute;
+      height: 100%;
+      width: 58.7%;
+      background-image: url('../../images/invisible-lock-bg.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      left: 0;
+      top: 0;
+    }
+
+    &-title {
+      width: 367px;
+      margin-top: 81px;
+      letter-spacing: 1px;
+    }
+
+    &-text {
+      width: 419px;
+      margin-top: 32px;
+      margin-bottom: 174px;
+    }
+
+    &-block {
+      width: 311px;
+      height: 297px;
+      background-color: $white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 50%;
+      img {
+        width: 139px;
+        height: 164px;
+      }
+      span {
+        letter-spacing: 0;
+        color: #9D9DA1;
+        font-family: $rft-font;
+        font-weight: $semi-bold;
+        font-size: 16px;
+        margin-top: 18px;
+      }
+    }
+
+  }
+
+
   &__img {
     position: relative;
   }
@@ -60,6 +283,11 @@
 
   & .catalog-factoid {
     margin-top: 39px;
+  }
+
+  &__hidden {
+    background-color: $grey-8;
+    min-height: 1035px;
   }
 
 }

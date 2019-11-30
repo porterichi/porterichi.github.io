@@ -39,26 +39,235 @@ body
                 .row
                     include components/action
 
-       .collection
-            .container
+       .collection.collection-invisible
+            .wrap
                 .row
                     .offset-lg-1.col-lg-7
-                        .collection__img
+                        .collection__img.collection-invisible__img
                             img(src="images/invisible-collection.png" alt='collection')
-                    .offset-lg-1.col-lg-6
+                    .offset-lg-1.col-lg-6.no-padding-left
                         .collection__block
-                            .collection__about Коллекция дверей
-                            h2.collection__title  Классицизм
-                            p.collection__descr
-                                | Двери в сдержанном классическом
+                            h2.collection__title.collection-invisible__title
+                                strong Д
+                                span верь-невидимка — продолжение интерьера
+                            p.collection__descr У скрытой двери нет наличников
                                 br
-                                | дизайне. Модели украшены патиной,
+                                | и традиционной коробки. Такая конструкция не занимает место на стенах и визуально расширяет пространство помещения.
                                 br
-                                | дополнены стеклянными вставками
+                                | Дверь-невидимка сливается с обстановкой
                                 br
-                                | и рисунками. Отделаны эмалью от
-                                br
-                                | итальянского производителя.
-                            a(href="#").collection__link все двери коллекции
+                                | и становится незаметной, но при этом функциональной частью интерьера.
+       section.product-cost.product-cost__invisible
+            .product-cost__slider.owl-carousel
+                .product-cost__slide
+                    .container
+                        .row
+                            .col-lg-4.no-padding-left
+                                h2.product-cost__title.product-cost__title-main
+                                    | Что входит
+                                    br
+                                    | в стоимость
+                                p.product-cost__text.product-cost__text--left  Мы предлагаем готовый вариант двери с открыванием на себя. Все необходимые элементы и фурнитура уже включены в стоимость.
+                                .product-cost__table.product-cost__table--left
+                                    .product-cost__table-head
+                                        .product-cost__table-title элемент
+                                        .product-cost__table-title цена, руб
+                                    .product-cost__table-body
+                                        .product-cost__table-row
+                                            .product-cost__table-text дверное полотно
+                                            .product-cost__table-text 600
+                                        .product-cost__table-row
+                                            .product-cost__table-text коробка
+                                            .product-cost__table-text 200
+                                        .product-cost__table-row
+                                            .product-cost__table-text фурнитура
+                                            .product-cost__table-text 655
+                                .product-cost__price
+                                    .product-cost__price-text цена комплекта
+                                    .product-cost__price-number 1685 рублей
+                            .col-lg-8
+
+                            .col-lg-4.no-padding-right
+                                .product-cost__title Дверное полотно
+                                p.product-cost__text.product-cost__table--right Выполнено из переклеенного масива хвойных пород дерева. Алюминиевая кромка защищает края створки от повреждений, подчёркивает геометрию двери.
+                                .product-cost__table.product-cost__table--right.product-cost__table--line
+                                    .product-cost__table-head
+                                        .product-cost__table-title Параметры
+                                        .product-cost__table-title мм
+                                    .product-cost__table-body
+                                        .product-cost__table-row
+                                            .product-cost__table-text высота
+                                            .product-cost__table-text 2000
+                                        .product-cost__table-row
+                                            .product-cost__table-text ширина
+                                            .product-cost__table-text 600, 700, 800, 900
+                                        .product-cost__table-row
+                                            .product-cost__table-text толщина
+                                            .product-cost__table-text 40
+                                .product-cost__title Коробка скрытого монтажа
+                                p.product-cost__text.product-cost__text--bottom Аллюминиевая конструкция устанавливается в одной плоскости со стеной без наличника и зашивается листом гипсокартона.
+                                .product-cost__table-body
+                                    .product-cost__table-row
+                                        .product-cost__table-text Ширина
+                                        .product-cost__table-text 74 мм
+                .product-cost__slide
+                    .container
+                        .row
+                            .col-lg-4.no-padding-left
+                                h2.product-cost__title.product-cost__title-main
+                                    | Что входит
+                                    br
+                                    | в стоимость
+                                p.product-cost__text.product-cost__text--left  Мы предлагаем готовый вариант двери с открыванием на себя. Все необходимые элементы и фурнитура уже включены в стоимость.
+                                .product-cost__table.product-cost__table--left
+                                    .product-cost__table-head
+                                        .product-cost__table-title элемент
+                                        .product-cost__table-title цена, руб
+                                    .product-cost__table-body
+                                        .product-cost__table-row
+                                            .product-cost__table-text дверное полотно
+                                            .product-cost__table-text 600
+                                        .product-cost__table-row
+                                            .product-cost__table-text коробка
+                                            .product-cost__table-text 200
+                                        .product-cost__table-row
+                                            .product-cost__table-text фурнитура
+                                            .product-cost__table-text 655
+                                .product-cost__price
+                                    .product-cost__price-text цена комплекта
+                                    .product-cost__price-number 1685 рублей
+                            .col-lg-8
+
+                            .col-lg-4.no-padding-right
+                                .product-cost__title Дверное полотно
+                                p.product-cost__text.product-cost__table--right Выполнено из переклеенного масива хвойных пород дерева. Алюминиевая кромка защищает края створки от повреждений, подчёркивает геометрию двери.
+                                .product-cost__table.product-cost__table--right.product-cost__table--line
+                                    .product-cost__table-head
+                                        .product-cost__table-title Параметры
+                                        .product-cost__table-title мм
+                                    .product-cost__table-body
+                                        .product-cost__table-row
+                                            .product-cost__table-text высота
+                                            .product-cost__table-text 2000
+                                        .product-cost__table-row
+                                            .product-cost__table-text ширина
+                                            .product-cost__table-text 600, 700, 800, 900
+                                        .product-cost__table-row
+                                            .product-cost__table-text толщина
+                                            .product-cost__table-text 40
+                                .product-cost__title Коробка скрытого монтажа
+                                p.product-cost__text.product-cost__text--bottom Аллюминиевая конструкция устанавливается в одной плоскости со стеной без наличника и зашивается листом гипсокартона.
+                                .product-cost__table-body
+                                    .product-cost__table-row
+                                        .product-cost__table-text Ширина
+                                        .product-cost__table-text 74 мм
+
+       section.hardware.hardware-invisible
+            .hardware__left
+                h2.hardware__title Подбирайте фурнитуру к интерьеру
+                p.hardware__text Предлагаем дверные ручки, механизмы закрывания и петли от 10 производителей фурнитуры из Италии, Турции и Греции.
+                p.hardware__bottom Сделаем врезку под ручки, замки и петли на заводе. Избавим вас от лишнего шума и мусора во время монтажа. Заводская врезка точная и аккуратная. Петли не просядут со временем, ручки не расшатаются
+            .hardware__right
+                .hardware__slider-wrap
+                    .hardware__slider
+                        .hardware__slide
+                            img(src="images/hardware-1.png", alt="manager").hardware__slide-img
+                            .hardware__slide-title Morelli1
+                            p.hardware__slide-text Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.
+                            a(href="#").hardware__slide-link Посмотреть каталог
+                        .hardware__slide
+                            img(src="images/hardware-1.png", alt="manager").hardware__slide-img
+                            .hardware__slide-title Morellil2
+                            p.hardware__slide-text Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.
+                            a(href="#").hardware__slide-link Посмотреть каталог
+                        .hardware__slide
+                            img(src="images/hardware-1.png", alt="manager").hardware__slide-img
+                            .hardware__slide-title Morellil3
+                            p.hardware__slide-text Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.
+                            a(href="#").hardware__slide-link Посмотреть каталог
+                        .hardware__slide
+                            img(src="images/hardware-1.png", alt="manager").hardware__slide-img
+                            .hardware__slide-title Morellil3
+                            p.hardware__slide-text Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.
+                            a(href="#").hardware__slide-link Посмотреть каталог
+                        .hardware__slide
+                            img(src="images/hardware-1.png", alt="manager").hardware__slide-img
+                            .hardware__slide-title Morellil3
+                            p.hardware__slide-text Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.
+                            a(href="#").hardware__slide-link Посмотреть каталог
+                        .hardware__slide
+                            img(src="images/hardware-1.png", alt="manager").hardware__slide-img
+                            .hardware__slide-title Morellil3
+                            p.hardware__slide-text Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.
+                            a(href="#").hardware__slide-link Посмотреть каталог
+                        .hardware__slide
+                            img(src="images/hardware-1.png", alt="manager").hardware__slide-img
+                            .hardware__slide-title Morellil3
+                            p.hardware__slide-text Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.
+                            a(href="#").hardware__slide-link Посмотреть каталог
+                .scrollbar
+                    .handle
+       section.invisible-door__hidden
+            .wrap
+                .row
+                    .invisible-door__hidden-left
+                    .offset-lg-11.lg-5
+                        .invisible-door__hidden-right
+                            h2.invisible-door__hidden-title Скрытые петли — важная деталь двери-невидимки
+                            p.invisible-door__hidden-text Несущие механизмы невидимы с обеих сторон, что подчёркивает лаконичность решения. Регулируются в трёх плоскостях: по глубине с точностью до 1 мм, вертикали — до 2 мм, горизонтали — до 1,5 мм. В результате полотно плотно прилегает к коробке и не расшатывается.
+                            .invisible-door__hidden-block
+                                img(src="images/invisible-lock.png", alt="")
+                                span Входят в стоимость
+
+       section.invisible-door__system
+        .wrap
+            .row
+                .offset-lg-1.col-lg-6.no-padding-right
+                    .invisible-door__system-block
+                        h2.invisible-door__system-title Система обратного открывания
+                        p.invisible-door__system-text Под заказ изготовим дверь скрытого монтажа
+                            br
+                            | с открыванием от себя. Это позволит учесть дизайнерские решения и при этом
+                            br
+                            | не нарушить правила
+                            br
+                            | пожарной безопасности.
+                .col-lg-8.no-padding-left
+                    .invisible-door__system-img
+
+       section.invisible-door__features
+            .wrap
+                .row
+                    .col-lg-4
+                        h2.invisible-door__features-title Особенности монтажа
+                        p.invisible-door__features-text Дверь-невидимка устанавливается до чистовой отделки стен. Если вы сейчас делаете ремонт, самое время её заказать. Для успешной установки важно, чтобы стены были ровными. Если пол не настелен, нужно точно знать его уровень.
+                    .offset-lg-1.col-lg-4
+                        .invisible-door__features-block
+                            .invisible-door__features-add.invisible-door__features-add--top
+                                .invisible-door__features-circle
+                                .invisible-door__features-plus
+                                    .invisible-door__features-tooltipe Отклонение стены
+                                        br
+                                        | от вертикали — не более
+                                        br
+                                        | 1 мм на метр.
+                            .invisible-door__features-add.invisible-door__features-add--bottom
+                                .invisible-door__features-circle
+                                .invisible-door__features-plus
+                                    .invisible-door__features-tooltipe Оптимальная величина зазора между готовым полом и полотном.
 
 
+
+
+
+
+
+
+    script(src="static/js/jquery-3.3.1.min.js")
+    script(src="static/js/jquery.easing.min.js")
+    script(src="static/js/sly-slider.js")
+    script(src="static/js/jquery-mousewheel.js")
+    script(src="static/js/owl.carousel.min.js")
+    script(src="static/js/libs.min.js")
+    script(src="static/js/main.js")
+    block script

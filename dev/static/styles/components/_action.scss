@@ -5,8 +5,8 @@
   position: relative;
   margin-top: 33px;
   padding-top: 33px;
-  padding-left: 57px;
-  padding-bottom: 47px;
+  padding-left: 62px;
+  padding-bottom: 46px;
   margin-bottom: 216px;
   @include media-breakpoint-between(md, lg) {
     margin-bottom: 100px;
@@ -14,7 +14,7 @@
   
 
   &__left {
-    padding-right: 104px;
+    padding-right: 99px;
   }
 
   &__right {
@@ -25,7 +25,7 @@
     color: $white;
     width: 456px;
     letter-spacing: .6px;
-    padding-bottom: 40px;
+    padding-bottom: 69px;
   }
 
   &__link {
@@ -51,7 +51,7 @@
   }
 
   &__text {
-    width: 260px;
+    width: 242px;
     color: $white;
     letter-spacing: .3px;
     font-size: 19px;

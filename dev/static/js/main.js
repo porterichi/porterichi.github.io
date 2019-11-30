@@ -56,4 +56,57 @@ $(document).ready(function () {
             el.addClass(state.active);
         }
     });
+
+    // Collection Cost Slider
+    let productCostInvisible = $('.product-cost__slider');
+
+    productCostInvisible.owlCarousel({
+        items: 1,
+        loop: false,
+        nav: false,
+        dots: false
+    });
+
+    /*productCostInvisible.on('mousewheel', '.owl-stage', function (e) {
+
+        if (e.deltaY>0) {
+            productCostInvisible.trigger('next.owl');
+        } else {
+            productCostInvisible.trigger('prev.owl');
+        }
+        e.preventDefault();
+    });*/
+
+    // Hardware Sly Slider
+    var $frame = $('.hardware__slider-wrap');
+    var $wrap = $frame.parent();
+
+    $frame.sly({
+        horizontal: 1,
+        itemNav: 'basic',
+        mouseDragging: 1,
+        touchDragging: 1,
+        scrollBar: $wrap.find('.scrollbar'),
+        scrollBy: 1,
+        speed: 300,
+        elasticBounds: 1,
+        easing: 'easeOutExpo',
+        dragHandle: 1,
+        dynamicHandle: false
+    });
+
+
+    // Header Scroll - Catalog Filter
+    var filterItems = $('.main-filter__item');
+    var filterItemsWidth = 0;
+    var rowFullWidth = $('.main-filter').width();
+
+    filterItems.map(function(i, el) {
+        console.dir($(el).width());
+        filterItemsWidth += $(el).width();
+    });
+
+    console.dir(filterItemsWidth);
+
+
 });
