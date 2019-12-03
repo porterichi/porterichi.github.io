@@ -2,8 +2,53 @@
   position: relative;
   margin-bottom: 172px;
 
+  &__defend {
+
+  }
+
+  &__choose {
+    background-color: $grey-12;
+
+    &-title {
+      max-width: 510px;
+      margin-top: 77px;
+      margin-bottom: 391px;
+      &--bottom {
+        width: 439px;
+        margin-bottom: 259px;
+      }
+    }
+    &-img {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 748px;
+      position: absolute;
+
+      &--first {
+        background-image: url('../../images/invisible-choose-1.png');
+        right: 0;
+        width: 55%;
+      }
+      &--second {
+        background-image: url('../../images/invisible-choose-2.png');
+        left: 0;
+        width: 53%;
+      }
+    }
+    &-text {
+      font-style: italic;
+      font-size: 18px;
+      padding-bottom: 92px;
+      &--bottom {
+        max-width: 440px;
+      }
+    }
+  }
+
   &__decoration {
     position: relative;
+    margin-bottom: 176px;
 
     &-left {
       .invisible-door__decoration-comment {
