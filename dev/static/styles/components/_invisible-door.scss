@@ -2,8 +2,15 @@
   position: relative;
   margin-bottom: 172px;
 
+  &__card {
+    padding-top: 54px;
+    background-color: $white-3;
+
+
+  }
+
   &__bonus {
-    margin-bottom: 340px;
+    margin-bottom: 232px;
   }
 
   &__threshold__block {
@@ -20,7 +27,6 @@
       max-width: 318px;
       margin-bottom: 94px;
     }
-
     &-img {
       background-image: url('../../images/invisible-defend-bg.png');
       background-repeat: no-repeat;

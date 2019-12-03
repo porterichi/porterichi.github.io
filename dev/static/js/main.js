@@ -99,14 +99,13 @@ $(document).ready(function () {
     // Header Scroll - Catalog Filter
     var filterItems = $('.main-filter__item');
     var filterItemsWidth = 0;
-    var rowFullWidth = $('.main-filter').width();
+    var rowFullWidth = $('.main-filter__row').width();
 
     filterItems.map(function(i, el) {
-        console.dir($(el).width());
         filterItemsWidth += $(el).width();
     });
 
-    console.dir(filterItemsWidth);
+
 
 
 });

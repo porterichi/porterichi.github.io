@@ -4,7 +4,10 @@
   $context: &;
   &-invisible {
 
+
     margin-bottom: 179px;
+
+
 
     #{$context}__block {
       margin-top: 217px;
@@ -63,7 +66,7 @@
     &:before {
       content: '';
       width: 597px;
-      height: 820px;
+      height: 560px;
       border: 1px solid #CBA576;
       position: absolute;
       top: -36px;
