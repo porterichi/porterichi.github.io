@@ -1,5 +1,15 @@
 .product-variant {
   margin-bottom: 194px;
+
+  &__name {
+    font-size: 18px;
+    font-style: italic;
+    color: $grey-3;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 107px;
+    left: -45px;
+  }
   
   &--vitrage {
     background-image: url('../../images/product-vitrage.svg');
