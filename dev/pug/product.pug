@@ -4,6 +4,44 @@ include components/head
 body
     include components/header
     main.main-container
+        section.product-variant.product-variant__bivalve
+            .container
+                .row
+                    .product-variant__middle
+                        img(src="images/bivalve-1.png", data-door='black', alt="product").product-variant__img.product-variant__img--active
+                        .product-variant__name Шпон Fine-line, Венге
+                    .product-variant__right
+                        .product-variant__card.product-variant__card--new
+                            include components/breadcrumbs
+                            h1.product-variant__title Межкомнатная дверь Б18
+                            span.product-variant__order Под заказ до 45 дней
+                            .product-variant__card-block.product-variant__card-block--first
+                                .product-variant__card-material Строганный шпон
+                                .catalog-item__colors
+                                    .catalog-item__color(data-color='black').catalog-item__color--active.catalog-item__color--black
+                                    .catalog-item__color(data-color='red').catalog-item__color--grey
+                                    .catalog-item__color(data-color='white').catalog-item__color--brown
+                            .product-variant__card-block
+                                .product-variant__card-material Шпон Fine-line
+                                .catalog-item__colors
+                                    .catalog-item__color(data-color='black').catalog-item__color--active.catalog-item__color--black
+                                    .catalog-item__color(data-color='red').catalog-item__color--grey
+                                    .catalog-item__color(data-color='white').catalog-item__color--brown
+                            .product-variant__card-description  Дверь можно посмотреть в салонах на пр-те Дзержинского, 131 и по улице Кальварийская, 7Б, ТЦ «Трюм»
+                            .product-variant__card-price.product-variant__card-price--new
+                                h6 цена комплекта
+                                span 1685 рублей
+                                span.product-variant__card-oldprice.with--line  2456 рублей
+                            .product-variant__card-counter
+                                .product-variant__card-left количество
+                                .product-variant__card-right
+                                    .product-variant__card-minus
+                                    .product-variant__card-number 1
+                                    .product-variant__card-plus
+                            .product-variant__card-cost
+                                span что входит в стоимость
+                            button.product-variant__card-add  добавить к заказу
+
         section.product-variant.product-variant--vitrage
             .container
                 .row
