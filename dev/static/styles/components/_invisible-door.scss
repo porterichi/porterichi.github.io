@@ -5,8 +5,41 @@
   &__card {
     padding-top: 54px;
     background-color: $white-3;
+    padding-bottom: 52px;
 
+    &-img {
+      background-image: url('../../images/invisible-card-bg.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      height: 945px;
+      width: 49%;
+      margin-top: 56px;
+    }
 
+    .product-variant__block--entrance {
+      background-color: $white;
+      margin-top: 103px;
+      padding: 48px 41px 54px 36px;
+    }
+
+    .breadcrumbs {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .product-variant__order {
+      margin-bottom: 11px;
+    }
+    .product-variant__description--entrance {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 10px;
+    }
+    .product-variant__card-price h6 {
+      margin-top: 26px;
+    }
   }
 
   &__bonus {
