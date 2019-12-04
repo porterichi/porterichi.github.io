@@ -123,13 +123,16 @@ $(document).ready(function () {
     });
 
     // Scroll
+    $(window).scroll(function(){
+        var offset = $('.white').offset(),
+            offsetwb = $('.white + .black').offset();
+        if ($(this).scrollTop() > offset.top && $(this).scrollTop() < offsetwb.top) {
 
-    $(document).scroll(function () {
-        s_top = $("body").scrollTop();
-        yes = $(".product-cost").offset().top;
-        if(s_top > yes){
-            console.log("Yes");
+        }
+        else {
+
         }
     });
+
 
 });
