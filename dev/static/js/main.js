@@ -122,4 +122,14 @@ $(document).ready(function () {
         ]
     });
 
+    // Scroll
+
+    $(document).scroll(function () {
+        s_top = $("body").scrollTop();
+        yes = $(".product-cost").offset().top;
+        if(s_top > yes){
+            console.log("Yes");
+        }
+    });
+
 });
