@@ -4,6 +4,9 @@
   $context: &;
 
   &__bivalve {
+    #{$context}__name {
+      transform-origin: 96px 26px;
+    }
 
     #{$context}__card-add {
       margin-top: 29px;
