@@ -4,16 +4,18 @@ $(function() {
     //  Choose Box Tabs
     const items = $('.choose-box .choose-box__item');
     const tabs = $('.choose-box .choose-box__slide');
+    const textBlock = $('.choose-box .choose-box__text-block');
     const section = $('.choose-box');
 
     items.on('click', function() {
         const itemDataNumber = $(this).data('choose-item');
         const slide = section.find(`[data-choose-slide=${itemDataNumber}]`);
 
-        if(!$(this).hasClass('choose-box__item--active')){
+        if(!$(this).hasClass('choose-box__item--active')) {
             items.removeClass('choose-box__item--active');
             $(this).addClass('choose-box__item--active');
 
+            textBlock.fadeOut(0);
             tabs.fadeOut(0);
             slide.fadeIn(300);
         }
@@ -64,6 +66,17 @@ $(function() {
         ]
     });
 
+    // Scroll Cost Block
+
+    $(window).scroll(function() {
+        var offset = $('.product-cost').offset();
+
+        if ($(this).scrollTop() > offset.top) {
+            productCostInvisible.trigger('to.owl.carousel', 2);
+        }
+        else {
+        }
+    });
 
 
 

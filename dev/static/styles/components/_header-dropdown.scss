@@ -63,6 +63,7 @@
     margin-bottom: 22px;
     &:hover .header-dropdown__name {
       color: $gold;
+      text-decoration: none;
     }
   }
   &__input {
@@ -138,6 +139,8 @@
     color: $black-2;
     margin-left: 9px;
     transition: .25s;
+    text-decoration: none;
+    font-weight: 300;
   }
   &__block {
     &:not(:first-child) {

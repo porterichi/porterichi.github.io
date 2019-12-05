@@ -4,6 +4,9 @@
   &__slide:not([data-choose-slide='1']) {
     display: none;
   }
+  &__text-block:not([data-choose-slide='1']) {
+    display: none;
+  }
 
   &__list {
     margin-top: 27px;
