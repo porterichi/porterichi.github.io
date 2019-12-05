@@ -173,20 +173,47 @@ body
                             br
                             |  к вашему дизайну
                         ul.choose-box__list
-                            li.choose-box__item Телескопическая
-                            li.choose-box__item Скрытого монтажа
-                            li.choose-box__item Гвоздевая
-                            li.choose-box__item.choose-box__item--active Компланарная
+                            li.choose-box__item.choose-box__item--active(data-choose-item='1') Телескопическая
+                            li.choose-box__item(data-choose-item='2') Скрытого монтажа
+                            li.choose-box__item(data-choose-item='3') Гвоздевая
+                            li.choose-box__item(data-choose-item='4') Компланарная
                         p.choose-box__text.choose-box__text--first Образует единую плоскость для дверного полотна и наличника. Скрытые петли в закрытом состоянии «прячутся» внутри коробки.
                         p.choose-box__text.choose-box__text--background Допустимое отклонение стен от вертикали — 2 мм на метр. Ширина коробки — 89 мм.
-                    .offset-lg-2.col-lg-4
+                    .offset-lg-2.col-lg-4.choose-box__slide(data-choose-slide='1')
                         .choose-box__block.choose-box__block--small
                             img(src="images/choose-1.png", alt="door").choose-box__block-img.choose-box__block-img--small
                             .choose-box__block-text Скрывает эффект ступенчатости при закрытии дверей.
-                    .offset-lg-1.col-lg-5.no-padding-right
+                    .offset-lg-1.col-lg-5.no-padding-right.choose-box__slide(data-choose-slide='1')
                         .choose-box__block.choose-box__block--big
                             img(src="images/choose-2.png", alt="door").choose-box__block-img.choose-box__block-img--big
                             .choose-box__block-text Подходит для минималистичного дизайна.
+                    .offset-lg-2.col-lg-4.choose-box__slide(data-choose-slide='2')
+                        .choose-box__block.choose-box__block--small
+                            img(src="images/choose-3.png", alt="door").choose-box__block-img.choose-box__block-img--small
+                            .choose-box__block-text Скрывает эффект ступенчатости при закрытии дверей.
+                    .offset-lg-1.col-lg-5.no-padding-right.choose-box__slide(data-choose-slide='2')
+                        .choose-box__block.choose-box__block--big
+                            img(src="images/choose-4.png", alt="door").choose-box__block-img.choose-box__block-img--big
+                            .choose-box__block-text Подходит для минималистичного дизайна.
+                    .offset-lg-2.col-lg-4.choose-box__slide(data-choose-slide='3')
+                        .choose-box__block.choose-box__block--small
+                            img(src="images/choose-5.png", alt="door").choose-box__block-img.choose-box__block-img--small
+                            .choose-box__block-text Скрывает эффект ступенчатости при закрытии дверей.
+                    .offset-lg-1.col-lg-5.no-padding-right.choose-box__slide(data-choose-slide='3')
+                        .choose-box__block.choose-box__block--big
+                            img(src="images/choose-6.png", alt="door").choose-box__block-img.choose-box__block-img--big
+                            .choose-box__block-text Подходит для минималистичного дизайна.
+                    .offset-lg-2.col-lg-4.choose-box__slide(data-choose-slide='4')
+                        .choose-box__block.choose-box__block--small
+                            img(src="images/choose-7.png", alt="door").choose-box__block-img.choose-box__block-img--small
+                            .choose-box__block-text Скрывает эффект ступенчатости при закрытии дверей.
+                    .offset-lg-1.col-lg-5.no-padding-right.choose-box__slide(data-choose-slide='4')
+                        .choose-box__block.choose-box__block--big
+                            img(src="images/choose-8.png", alt="door").choose-box__block-img.choose-box__block-img--big
+                            .choose-box__block-text Подходит для минималистичного дизайна.
+
+
+
         section.extras
             .container
                 .row.extras__background

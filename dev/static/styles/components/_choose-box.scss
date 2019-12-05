@@ -1,6 +1,10 @@
 .choose-box {
   margin-bottom: 161px;
 
+  &__slide:not([data-choose-slide='1']) {
+    display: none;
+  }
+
   &__list {
     margin-top: 27px;
     margin-bottom: 9px;
