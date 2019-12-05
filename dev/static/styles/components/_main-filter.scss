@@ -63,6 +63,23 @@
     height: 100%;
     cursor: pointer;
     position: relative;
+    transition: .25s;
+    &:hover {
+      &:before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        width: calc(100% + 2px );
+        height: 2px;
+        background-color: $gold;
+        transition: .25s;
+      }
+      background: linear-gradient(134.72deg, #F8F8F8 13.54%, #EDEDED 86.46%);
+      .icon-sort-filter-arrow {
+        transform: rotate(-180deg);
+      }
+    }
     &:hover .header-dropdown {
       opacity: 1;
       visibility: visible;
@@ -89,6 +106,7 @@
       height: 7px;
       fill: transparent;
       stroke: $black;
+      transition: .25s;
     }
   }
 

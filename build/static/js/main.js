@@ -44,12 +44,93 @@ $(document).ready(function () {
     // Catalog UI
 
     // Change Product Color
+// Change Product Color
     $('.catalog-item__color').on('click', function(e) {
         e.preventDefault();
 
         const el = $(this);
         const parent = el.parent();
         const collection = parent.find(state.items);
+        let flagPage = el.parents('.catalog-item').length ? true : false;
+        let data = false;
+        let picture;
+
+        if(jsonDataOffers) {
+            data = jsonDataOffers[el.data('id')];
+        }
+
+        console.log(data);
+        if(flagPage) {
+            // SECTION
+            let material = el.parents('.catalog-item').find('.catalog-item__material');
+            picture = el.parents('.catalog-item').find('.catalog-item__img img');
+
+            material.text(data.COLOR_DOOR.UNDERCOVER);
+            picture.attr('src', data.PREVIEW_PICTURE);
+        } else {
+            // ELEMENT
+            let parentEl = el.parents('.product-variant');
+            let parentCoast = $('.product-cost');
+            let price = parentEl.find('.product-variant__card-price span:not(.product-variant__card-oldprice)');
+            let priceCoast = parentCoast.find('.product-cost__price-number');
+            let priceOld = parentEl.find('.product-variant__card-price span.product-variant__card-oldprice');
+            let material = parentEl.find('.product-variant__name');
+            let zakaz = parentEl.find('.product-variant__order');
+            let shop = parentEl.find('.product-variant__card-description');
+            let polotno = parentCoast.find('.product-cost__table-row.polotno');
+            let korobka = parentCoast.find('.product-cost__table-row.korobka');
+            let nalichniki = parentCoast.find('.product-cost__table-row.nalichniki');
+            let furniture = parentCoast.find('.product-cost__table-row.furniture');
+            let vrezka = parentCoast.find('.product-cost__table-row.vrezka');
+            let dekor = parentCoast.find('.product-cost__table-row.dekor');
+            picture = parentEl.find('img.product-variant__img');
+
+            price.text(data.PRICE + ' рублей');
+            priceCoast.text(data.PRICE + ' рублей');
+            if(data.PRICE_OLD) {
+                priceOld.text(data.PRICE_OLD + ' рублей');
+                priceOld.removeClass('d-none');
+            } else {
+                priceOld.text('');
+                priceOld.addClass('d-none');
+            }
+
+            material.text(data.COLOR_DOOR.UNDERCOVER + ', ' + data.COLOR_DOOR.COLOR);
+
+            zakaz.text('Под заказ до ' + data.COUNT_DAYS + ' дней');
+
+            if(data.SHOPS) {
+                shop.find('span').text(data.SHOPS);
+                shop.removeClass('d-none');
+            } else {
+                shop.find('span').text('');
+                shop.addClass('d-none');
+            }
+
+            polotno.find('.number').text(data.PRICES.POLOTNO);
+            korobka.find('.number').text(data.PRICES.KOROBKA);
+
+            if(data.PRICES.NALICHNIKI) {
+                nalichniki.find('.number').text(data.PRICES.NALICHNIKI);
+                nalichniki.removeClass('d-none');
+            } else {
+                nalichniki.find('.number').text('');
+                nalichniki.addClass('d-none');
+            }
+
+            furniture.find('.number').text(data.PRICES.FURNITURE);
+            vrezka.find('.number').text(data.PRICES.VREZKA);
+
+            if(data.PRICES.DEKOR) {
+                dekor.find('.number').text(data.PRICES.DEKOR);
+                dekor.removeClass('d-none');
+            } else {
+                dekor.find('.number').text('');
+                dekor.addClass('d-none');
+            }
+
+            picture.attr('src', data.PREVIEW_PICTURE);
+        }
 
         if(!el.hasClass(state.active)) {
             collection.removeClass(state.active);
