@@ -122,18 +122,7 @@ $(document).ready(function () {
         ]
     });
 
-    // Scroll
 
-    $(window).scroll(function() {
-        /*var offset = $('.product-cost').offset();
-
-        if ($(this).scrollTop() > offset.top) {
-            console.dir()
-            productCostInvisible.trigger('to.owl.carousel', 2);
-        }
-        else {
-        }*/
-    });
 
     $('.product-cost').mousewheel(function(event) {
         if(event.offsetY > 600){
