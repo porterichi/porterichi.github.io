@@ -70,6 +70,7 @@ transform: rotate(-90deg);
 position: absolute;
 bottom: 107px;
 left: -45px;
+  transform-origin: 65px 8px;
 }
 
 &--vitrage {
@@ -83,7 +84,7 @@ background-size: contain;
 margin-bottom: 27px;
 padding-left: 3px;
   flex-wrap: wrap;
-}
+}cxzcx
 .catalog-item__color {
 cursor: pointer;
   margin-bottom: 12px;

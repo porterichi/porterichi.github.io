@@ -5,12 +5,7 @@
   position: relative;
   transition: .3s;
   $context: &;
-  &:hover #{$context}__dropdown {
-    height: 100px;
-    padding: 27px 18px;
-    overflow: visible;
-    opacity: 1;
-  }
+
 
   &__name {
     font-family: $rft-font;
@@ -41,11 +36,9 @@
     right: 0;
     z-index: 100;
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.25);
-    height: 0;
-    padding: 0;
-    overflow: hidden;
+    padding: 27px 18px;
     transition: .3s;
-    opacity: 0;
+    display: none;
 
     &:before {
       content: '';
