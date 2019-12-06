@@ -210,4 +210,13 @@ $(document).ready(function () {
 
         }
     });
+
+    $(document).scroll(function () {
+        var s_top = $("body").scrollTop();
+        var yes = $(".product-cost").offset().top;
+        console.log(s_top);
+        if(s_top > yes){
+            console.log("Yes");
+        }
+    });
 });

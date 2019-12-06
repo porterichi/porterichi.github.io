@@ -2,6 +2,13 @@
   position: relative;
   margin-bottom: 180px;
 
+  &--invisible {
+    .similar-style__title {
+      margin-top: 77px;
+      margin-bottom: 27px;
+    }
+  }
+
   & .catalog-item {
     margin-bottom: 0;
   }
@@ -12,7 +19,7 @@
     left: 15px;
     font-family: $rft-font;
     font-weight: $bold;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
     display: inline-flex;

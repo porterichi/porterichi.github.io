@@ -5,6 +5,10 @@
   padding-top: 88px;
   padding-bottom: 74px;
 
+  &--invisible {
+    margin-bottom: 215px;
+  }
+
   .owl-next {
     transform: rotate(180deg);
     margin-left: 50px;

@@ -124,10 +124,24 @@
     height: 100%;
     cursor: pointer;
     border: 1px solid $grey;
+    transition: .25s;
+    &:hover {
+      background: linear-gradient(110.79deg, #F8F8F8 13.54%, #EDEDED 86.46%);
+      svg {
+        fill: $gold;
+      }
+    }
+
+    & > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
   .svg-sprite-icon {
     width: 24px;
     height: 24px;
+    transition: .25s;
   }
   }
 }

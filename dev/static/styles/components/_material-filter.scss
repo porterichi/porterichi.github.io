@@ -28,8 +28,14 @@
       color: $gold;
     }
 
-    &:not(:last-child) {
-      margin-right: 63px;
+    &:not(:first-child) {
+      margin-left: 63px;
+    }
+
+    &:hover {
+      &:before {
+        background-color: $gold;
+      }
     }
     
 
@@ -42,6 +48,7 @@
       width: 19px;
       height: 1px;
       background-color: $black;
+      transition: .3s;
     }
 
     &--active {
