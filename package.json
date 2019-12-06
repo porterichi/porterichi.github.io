@@ -31,6 +31,7 @@
     "gulp-rename": "1.4.0",
     "gulp-replace": "1.0.0",
     "gulp-sass": "^4.0.1",
+    "gulp-sassbeautify": "^0.1.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svg-sprite": "^1.4.0",
     "gulp-svgmin": "^2.1.0",

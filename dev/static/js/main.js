@@ -203,20 +203,11 @@ $(document).ready(function () {
         ]
     });
 
+    // Header Filter Menu
+    const list = $('.main-filter__list');
+    const listWidth = list.width();
+    const widthRow = $('.main-filter__row').width();
+    console.dir(listWidth);
+    console.dir(widthRow);
 
-
-    $('.product-cost').mousewheel(function(event) {
-        if(event.offsetY > 600){
-
-        }
-    });
-
-    $(document).scroll(function () {
-        var s_top = $("body").scrollTop();
-        var yes = $(".product-cost").offset().top;
-        console.log(s_top);
-        if(s_top > yes){
-            console.log("Yes");
-        }
-    });
 });

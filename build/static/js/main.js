@@ -182,17 +182,11 @@ $(document).ready(function () {
     margin: 173,
     nav: true,
     navText: [reviewArrow, reviewArrow]
-  });
-  $('.product-cost').mousewheel(function (event) {
-    if (event.offsetY > 600) {}
-  });
-  $(document).scroll(function () {
-    var s_top = $("body").scrollTop();
-    var yes = $(".product-cost").offset().top;
-    console.log(s_top);
+  }); // Header Filter Menu
 
-    if (s_top > yes) {
-      console.log("Yes");
-    }
-  });
+  var list = $('.main-filter__list');
+  var listWidth = list.width();
+  var widthRow = $('.main-filter__row').width();
+  console.dir(listWidth);
+  console.dir(widthRow);
 });

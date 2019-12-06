@@ -5,7 +5,8 @@ let plumber = require('gulp-plumber'),
     csscomb = require('gulp-csscomb'),
     sourcemaps = require('gulp-sourcemaps'),
     rename = require('gulp-rename'),
-    cssbeautify = require('gulp-cssbeautify');
+    cssbeautify = require('gulp-cssbeautify'),
+    sassbeautify = require('gulp-sassbeautify');
     stylesPATH = {
         "input": "./dev/static/styles/",
         "output": "./build/static/css/"
@@ -13,7 +14,9 @@ let plumber = require('gulp-plumber'),
 
 
 module.exports = function () {
+
     $.gulp.task('styles:dev', () => {
+
         return $.gulp.src(stylesPATH.input + 'styles.scss')
             .pipe(plumber())
             .pipe(sourcemaps.init())
