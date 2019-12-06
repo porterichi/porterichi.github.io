@@ -1,712 +1,719 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title></title><!--[if IE]>
+    <title></title>
+    <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="./static/css/styles.min.css"><!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="./static/css/styles.min.css">
+    <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
-  </head>
-</html>
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="header__top">
-          <div class="header__cart"><svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 2.42969C16.4529 2.42969 18.8495 4.82654 18.8495 7.77667L19.9171 7.77919C21.1002 7.77919 22.119 8.73624 22.1925 9.91264L22.9958 22.7642C23.0694 23.9424 22.1741 24.8976 20.9946 24.8976H6.00543C4.82655 24.8976 3.9307 23.9406 4.00422 22.7642L4.80744 9.91264C4.88108 8.73437 5.89782 7.77919 7.08286 7.77919H8.15049C8.15049 4.82494 10.549 2.42969 13.5 2.42969ZM16.7101 7.77919C16.7101 6.00825 15.2715 4.56948 13.5004 4.56948C11.7305 4.56948 10.2907 6.00737 10.2907 7.77666L16.7101 7.77919ZM8.15039 9.91898H7.08277C7.02774 9.91898 6.94615 9.99553 6.94299 10.0461L6.15648 22.7578L20.8511 22.755L20.0568 10.0461C20.0538 9.99746 19.9701 9.91898 19.917 9.91898H18.8494V12.0588C18.8494 12.6497 18.3704 13.1287 17.7795 13.1287C17.1886 13.1287 16.7096 12.6497 16.7096 12.0588V9.91898H10.2902V12.0588C10.2902 12.6497 9.81119 13.1287 9.2203 13.1287C8.62941 13.1287 8.15039 12.6497 8.15039 12.0588V9.91898ZM8.1505 19.5481C8.1505 18.9572 8.631 18.4782 9.21548 18.4782H17.7845C18.3727 18.4782 18.8495 18.9531 18.8495 19.5481C18.8495 20.139 18.369 20.618 17.7845 20.618H9.21548C8.62731 20.618 8.1505 20.1431 8.1505 19.5481Z" />
-</svg>
+</head>
 
-          </div><a class="header__logo" href="#"><svg viewBox="0 0 151 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M46.7116 18.9874C48.7179 18.9874 49.5913 17.846 49.5913 16.1138C49.5913 14.7352 48.698 13.7117 46.8704 13.7117H45.7192V18.9874H46.7116ZM42.9792 13.9086C42.9792 12.9049 42.8594 11.9004 42.8594 11.9004H47.1483C50.5838 11.9004 52.371 13.8889 52.371 16.0157C52.371 18.6338 50.3456 20.8185 47.0299 20.8185H45.7184V23.8503C45.7184 24.7559 45.8177 25.6813 45.8177 25.6813H42.9792V13.9086ZM62.6772 20.3067C62.6772 17.4522 61.8428 15.4644 59.3212 15.4644C57.4546 15.4644 56.521 17.1373 56.521 19.3227C56.521 22.1766 57.4142 24.0867 59.8572 24.0867C61.6649 24.0867 62.6772 22.4914 62.6772 20.3067ZM53.8207 19.874C53.8207 16.8423 55.4491 13.6722 59.7976 13.6722C63.372 13.6722 65.3974 16.2119 65.3974 19.7554C65.3974 22.7872 63.769 25.8783 59.3999 25.8783C55.8461 25.8783 53.8207 23.4176 53.8207 19.874ZM71.6323 19.7357C73.2409 19.7357 74.0745 19.0072 74.0745 17.6293C74.0745 16.5663 73.5783 15.7199 71.7514 15.7199H70.5994V19.7364H71.6323V19.7357ZM72.2874 21.5477C72.2874 21.5477 72.0293 21.6063 71.4537 21.6063H70.5994V23.851C70.5994 24.7559 70.6987 25.6813 70.6987 25.6813H67.9587V15.8766C67.9587 14.8736 67.8396 13.8493 67.8396 13.8493H72.0293C75.0082 13.8493 76.7557 15.3063 76.7557 17.6293C76.7557 19.1456 75.9808 20.2672 74.6112 20.8185L76.7557 24.1856C77.073 24.702 77.4175 25.2012 77.7879 25.6813L74.77 25.7802L72.2874 21.5477ZM81.7195 15.6804L79.6148 15.7199C78.9597 15.7397 78.0863 15.8385 78.0863 15.8385L78.1856 13.85H88.153L88.0537 15.8385C88.0537 15.8385 87.1208 15.7397 86.6643 15.7199L84.3603 15.6804V23.8503C84.3603 24.7559 84.4595 25.6813 84.4595 25.6813H81.7195V15.6804ZM90.0196 15.8773C90.0196 14.8736 89.9005 13.85 89.9005 13.85H98.2005L98.1013 15.7397C98.1013 15.7397 97.4661 15.6409 96.2751 15.6211L92.661 15.5823V18.9091L96.9103 18.8498L96.811 20.7204L92.661 20.6413V23.9682L96.2155 23.9293C96.9897 23.9096 98.2998 23.791 98.2998 23.791L98.2005 25.6813H90.0196V15.8773ZM108.527 19.0277C110.85 19.0277 111.842 17.846 111.842 16.1724C111.842 14.6569 110.83 13.7117 108.923 13.7117H107.772V19.027H108.527V19.0277ZM109.42 20.8185H107.772V23.8503C107.772 24.7559 107.871 25.6813 107.871 25.6813H105.031V13.9086C105.031 12.9049 104.913 11.9004 104.913 11.9004H109.202C112.636 11.9004 114.622 13.574 114.622 16.2712C114.622 18.0232 113.332 19.3418 111.763 19.874L114.344 24.1849C114.661 24.7014 115.006 25.2009 115.376 25.6813L112.319 25.7802L109.419 20.8185H109.42ZM117.402 15.8773C117.402 14.8736 117.283 13.7117 117.283 13.7117L120.043 13.7512V23.8503C120.043 24.7559 120.142 25.6813 120.142 25.6813H117.402V15.8773ZM122.604 19.9531C122.604 16.7837 124.371 13.6729 128.224 13.6729C130.01 13.6729 131.024 14.2439 132.017 14.5192L131.44 16.4484C130.408 16.1731 129.673 15.6218 128.125 15.6218C126.298 15.6218 125.384 17.0583 125.384 19.7159C125.384 22.5507 126.457 23.9293 128.72 23.9293C130.407 23.9293 131.659 23.3583 131.659 23.3583L131.917 25.0707C131.917 25.0707 130.666 25.8783 128.482 25.8783C125.126 25.8783 122.605 23.9096 122.605 19.9524L122.604 19.9531ZM134.26 15.8773C134.26 14.8736 134.141 13.85 134.141 13.85L136.901 13.7512V18.8498H142.342V15.8773C142.342 14.8736 142.223 13.85 142.223 13.85L144.983 13.7512V23.8503C144.983 24.7559 145.082 25.6813 145.082 25.6813H142.342V20.7006H136.901V23.8496C136.901 24.7552 137 25.6806 137 25.6806H134.26V15.8773ZM148.24 15.8773C148.24 14.8736 148.121 13.6722 148.121 13.6722L150.881 13.7512V23.8503C150.881 24.7559 150.98 25.6813 150.98 25.6813H148.24V15.8773Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9578 36.6725L8.97852 29.7528L17.7783 21.0273L27.7812 30.945L26.021 32.6899L17.7783 24.5179L12.499 29.7521L15.9585 33.1819L19.7711 29.4019L21.5314 31.1476L15.9578 36.6725Z" fill="#F5A83A"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M29.9658 28.7789L19.9629 18.8613L28.762 10.1387L35.7413 17.0584L30.1692 22.5834L28.409 20.8384L32.2208 17.0584L28.7613 13.6286L23.4827 18.8627L31.7253 27.034L29.9658 28.7789Z" fill="#527EBF"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.13432 27.5674L0.154297 20.6477L5.72641 15.1227L7.48666 16.8677L3.67479 20.6477L7.13432 24.0775L12.4129 18.8434L4.17033 10.6707L5.93058 8.92578L15.9334 18.8434L7.13432 27.5674Z" fill="#6AC184"/>
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="1" width="19" height="16">
-<path d="M8.11328 1.03516H26.916V16.6789H8.11328V1.03516Z" fill="white"/>
-</mask>
-<g mask="url(#mask0)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M18.1156 16.6789L8.11133 6.76127L9.87158 5.01633L18.1149 13.189L23.3942 7.95492L19.9347 4.52504L16.1228 8.30504L14.3619 6.5601L19.9347 1.03516L26.9147 7.95492L18.1156 16.6789Z" fill="#EE4941"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="151" height="36" fill="white" transform="translate(0 0.837891)"/>
-</clipPath>
-</defs>
-</svg>
-</a><a class="header__phone" href="tel:+375291613033">+375 29 161 30 33</a>
-        </div>
-        <div class="header__bottom">
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#">входные двери</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">межкомнатные</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">комплексные решения</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">замер</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">оплата</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">доставка и установка</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main class="main-container">
-    <section class="product-variant product-variant__bivalve">
-      <div class="container">
-        <div class="row">
-          <div class="product-variant__middle"><img class="product-variant__img product-variant__img--active" src="images/bivalve-1.png" data-door="black" alt="product">
-            <div class="product-variant__name">Шпон Fine-line, Венге</div>
-          </div>
-          <div class="product-variant__right">
-            <div class="product-variant__card product-variant__card--new">
-              <div class="breadcrumbs">
-                <div class="container">
-                  <div class="row">
-                    <ul class="breadcrumbs__list">
-                      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Главная</a></li>
-                      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Каталог</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <h1 class="product-variant__title">Межкомнатная дверь Б18</h1><span class="product-variant__order">Под заказ до 45 дней</span>
-              <div class="product-variant__card-block product-variant__card-block--first">
-                <div class="product-variant__card-material">Строганный шпон</div>
-                <div class="catalog-item__colors">
-                  <div class="catalog-item__color catalog-item__color--active catalog-item__color--black" data-color="black"></div>
-                  <div class="catalog-item__color catalog-item__color--grey" data-color="red"></div>
-                  <div class="catalog-item__color catalog-item__color--brown" data-color="white"></div>
-                </div>
-              </div>
-              <div class="product-variant__card-block">
-                <div class="product-variant__card-material">Шпон Fine-line</div>
-                <div class="catalog-item__colors">
-                  <div class="catalog-item__color catalog-item__color--active catalog-item__color--black" data-color="black"></div>
-                  <div class="catalog-item__color catalog-item__color--grey" data-color="red"></div>
-                  <div class="catalog-item__color catalog-item__color--brown" data-color="white"></div>
-                </div>
-              </div>
-              <div class="product-variant__card-description"> Дверь можно посмотреть в салонах на пр-те Дзержинского, 131 и по улице Кальварийская, 7Б, ТЦ «Трюм»</div>
-              <div class="product-variant__card-price product-variant__card-price--new">
-                <h6>цена комплекта</h6><span>1685 рублей</span><span class="product-variant__card-oldprice with--line"> 2456 рублей</span>
-              </div>
-              <div class="product-variant__card-counter">
-                <div class="product-variant__card-left">количество</div>
-                <div class="product-variant__card-right">
-                  <div class="product-variant__card-minus"></div>
-                  <div class="product-variant__card-number">1</div>
-                  <div class="product-variant__card-plus"></div>
-                </div>
-              </div>
-              <div class="product-variant__card-cost"><span>что входит в стоимость</span></div>
-              <button class="product-variant__card-add"> добавить к заказу</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="product-variant product-variant--vitrage">
-      <div class="container">
-        <div class="row">
-          <div class="product-variant__left">
-            <div class="breadcrumbs">
-              <div class="container">
-                <div class="row">
-                  <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item"><a class="breadcrumbs__link">Главная</a></li>
-                    <li class="breadcrumbs__item"><a class="breadcrumbs__link">Каталог</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <h1 class="product-variant__title">Межкомнатная дверь Б18</h1><span class="product-variant__order">Под заказ до 45 дней</span>
-            <p class="product-variant__description">Классическая модель двери с изящным резным наличником, капителем и строгими опорами. Неповторимый шарм придаёт пескоструйный витраж с витиеватым рисунком. Бронзовая фурнитура подчёркивает благородство модели.</p>
-          </div>
-          <div class="product-variant__middle">
-            <div class="product-variant__name">Эмаль, RAL, 9010</div><img class="product-variant__img product-variant__img--active" src="images/product-variant-vitrage.png" data-door="black" alt="product"><img class="product-variant__img" src="images/product-1.png" data-door="red" alt="product">
-          </div>
-          <div class="product-variant__right">
-            <div class="product-variant__card product-variant__card--new">
-              <h4 class="product-variant__card-title">Варианты исполнения</h4>
-              <div class="product-variant__card-material">Эмаль</div>
-              <div class="catalog-item__colors">
-                <div class="catalog-item__color catalog-item__color--active catalog-item__color--black" data-color="black"></div>
-                <div class="catalog-item__color catalog-item__color--grey" data-color="red"></div>
-                <div class="catalog-item__color catalog-item__color--brown" data-color="white"></div>
-              </div>
-              <div class="product-variant__card-description"> Дверь в таком варианте исполнения установлена в фирменных салонах на пр-те Дзержинского, 122 и Кальварийской, 7Б, ТЦ «Трюм»</div>
-              <div class="product-variant__card-price product-variant__card-price--new">
-                <h6>цена комплекта</h6><span>1685 рублей</span><span class="product-variant__card-oldprice with--line"> 2456 рублей</span>
-              </div>
-              <div class="product-variant__card-counter">
-                <div class="product-variant__card-left">количество</div>
-                <div class="product-variant__card-right">
-                  <div class="product-variant__card-minus"></div>
-                  <div class="product-variant__card-number">1</div>
-                  <div class="product-variant__card-plus"></div>
-                </div>
-              </div>
-              <div class="product-variant__card-cost"><span>что входит в стоимость</span></div>
-              <button class="product-variant__card-add"> добавить к заказу</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="action-block">
-      <div class="container">
-        <div class="row">
-          <div class="action">
-            <div class="action__left">
-              <h2 class="action__title">Купите дверь и выиграйте путешествие в Италию</h2><a class="action__link" href="#">узнать условия</a>
-            </div>
-            <div class="action__right">
-              <p class="action__text">Акция действует с 13 мая<br>по 14 июня включительно. Выбрать можно любую дверь из каталога на сайте. Розыгрыш призов состоится 19 июня в 15:00 с помощью закрытого лототрона.</p>
-            </div>
-            <div class="action__img"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="collection-block">
-      <div class="container">
-        <div class="collection">
-          <div class="row">
-            <div class="offset-lg-1 col-lg-9">
-              <div class="collection__img"><img src="images/collection.png" alt="collection"></div>
-            </div>
-            <div class="offset-lg-1 col-lg-5">
-              <div class="collection__block">
-                <div class="collection__about">Коллекция дверей</div>
-                <h2 class="collection__title"> Классицизм</h2>
-                <p class="collection__descr">Двери в сдержанном классическом<br>дизайне. Модели украшены патиной,<br>дополнены стеклянными вставками<br>и рисунками. Отделаны эмалью от<br>итальянского производителя.</p><a class="collection__link" href="#">все двери коллекции</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="product-cost">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 no-padding-left">
-            <h2 class="product-cost__title">Что входит<br>в стоимость</h2>
-            <p class="product-cost__text product-cost__text--left">Мы предлагаем готовый вариант двери. Весь необходимый погонаж и фурнитура уже включены в стоимость.</p>
-            <div class="product-cost__table product-cost__table--left">
-              <div class="product-cost__table-head">
-                <div class="product-cost__table-title">элемент</div>
-                <div class="product-cost__table-title">цена, руб</div>
-              </div>
-              <div class="product-cost__table-body">
-                <div class="product-cost__table-row">
-                  <div class="product-cost__table-text">дверное полотно</div>
-                  <div class="product-cost__table-text">600</div>
-                </div>
-                <div class="product-cost__table-row">
-                  <div class="product-cost__table-text">коробка</div>
-                  <div class="product-cost__table-text">200</div>
-                </div>
-                <div class="product-cost__table-row">
-                  <div class="product-cost__table-text">наличники</div>
-                  <div class="product-cost__table-text">200</div>
-                </div>
-                <div class="product-cost__table-row">
-                  <div class="product-cost__table-text">фурнитура</div>
-                  <div class="product-cost__table-text">655</div>
-                </div>
-                <div class="product-cost__table-row">
-                  <div class="product-cost__table-text">врезка под фурнитуру</div>
-                  <div class="product-cost__table-text">50</div>
-                </div>
-              </div>
-            </div>
-            <div class="product-cost__price">
-              <div class="product-cost__price-text">цена комплекта</div>
-              <div class="product-cost__price-number">1685 рублей</div>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="product-cost__img-wrap">
-              <div class="product-cost__img"><img class="product-cost__img-door" src="images/cost-1.png" alt="door">
-                <div class="product-cost__img-material">Строганный шпон, Американский орех</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 no-padding-right">
-            <div class="product-cost__title">Дверное полотно</div>
-            <p class="product-cost__text product-cost__table--right">Выполнено из клеенного бруса хвойных пород дерева. Подложка под отделку — ДВП или ХДФ .</p>
-            <div class="product-cost__table product-cost__table--right product-cost__table--line">
-              <div class="product-cost__table-head">
-                <div class="product-cost__table-title">Параметры</div>
-                <div class="product-cost__table-title">мм</div>
-              </div>
-              <div class="product-cost__table-body">
-                <div class="product-cost__table-row">
-                  <div class="product-cost__table-text">высота</div>
-                  <div class="product-cost__table-text">2000</div>
-                </div>
-                <div class="product-cost__table-row">
-                  <div class="product-cost__table-text">ширина</div>
-                  <div class="product-cost__table-text">600, 700, 800, 900</div>
-                </div>
-                <div class="product-cost__table-row">
-                  <div class="product-cost__table-text">толщина</div>
-                  <div class="product-cost__table-text">40</div>
-                </div>
-              </div>
-            </div>
-            <div class="product-cost__title">Телескопическая коробка</div>
-            <p class="product-cost__text product-cost__text--bottom">В конструкции не используют гвозди. Наличники крепятся в специальные пазы. Коробка легко снимается и устанавливается, перекрывает зазоры между стеной и дверью.</p>
-            <div class="product-cost__table-body">
-              <div class="product-cost__table-row">
-                <div class="product-cost__table-text">Ширина</div>
-                <div class="product-cost__table-text">74 мм</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="stained-glass">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <h2 class="stained-glass__title">Витраж дополняет<br>дизайн двери</h2>
-            <p class="stained-glass__text stained-glass__text--first">Белое или бронзовое матовое стекло с плоским рисунком. Изображение наносится методом пескоструйной обработки. Витражи удачно смотрятся на классических моделях дверей. Освежают дизайн полотна и делают его более оригинальным.</p>
-            <p class="stained-glass__text stained-glass__text--second"> Доступна технология нанесения объёмного рисунка. На заводе выполняется глубокое матирование стекла. Рифлёное изображение придаёт изделию более богатый вид.</p>
-          </div>
-          <div class="offset-lg-2 col-lg-3">
-            <div class="stained-glass__block stained-glass__block--small">
-              <div class="stained-glass__block-name">PVC</div><img class="stained-glass__block-img stained-glass__block-img--small" src="images/glass-1.png" alt="door">
-              <div class="stained-glass__block-descr">Входит в стоимость</div>
-            </div>
-          </div>
-          <div class="offset-lg-1 col-lg-5">
-            <div class="stained-glass__block stained-glass__block--big">
-              <div class="stained-glass__block-name">PVC</div><img class="stained-glass__block-img stained-glass__block-img--big" src="images/glass-2.png" alt="door">
-              <div class="stained-glass__block-descr">+ 35 рублей</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="choose-box">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 no-padding-left">
-            <h2 class="choose-box__title">Выбирайте коробку,<br>которая подходит<br> к вашему дизайну</h2>
-            <ul class="choose-box__list">
-              <li class="choose-box__item choose-box__item--active" data-choose-item="1">Телескопическая</li>
-              <li class="choose-box__item" data-choose-item="2">Скрытого монтажа</li>
-              <li class="choose-box__item" data-choose-item="3">Гвоздевая</li>
-              <li class="choose-box__item" data-choose-item="4">Компланарная</li>
-            </ul>
-            <div class="choose-box__text-block" data-choose-slide="1">
-              <p class="choose-box__text choose-box__text--first">Образует единую плоскость для дверного полотна и наличника. Скрытые петли в закрытом состоянии «прячутся» внутри коробки.</p>
-              <p class="choose-box__text choose-box__text--background">Допустимое отклонение стен от вертикали — 2 мм на метр. Ширина коробки — 89 мм.</p>
-            </div>
-            <div class="choose-box__text-block" data-choose-slide="2">
-              <p class="choose-box__text choose-box__text--first">Образует единую плоскость для дверного полотна и наличника. Скрытые петли в закрытом состоянии «прячутся» внутри коробки.</p>
-              <p class="choose-box__text choose-box__text--background">Допустимое отклонение стен от вертикали — 2 мм на метр. Ширина коробки — 89 мм.</p>
-            </div>
-            <div class="choose-box__text-block" data-choose-slide="3">
-              <p class="choose-box__text choose-box__text--first">Образует единую плоскость для дверного полотна и наличника. Скрытые петли в закрытом состоянии «прячутся» внутри коробки.</p>
-              <p class="choose-box__text choose-box__text--background">Допустимое отклонение стен от вертикали — 2 мм на метр. Ширина коробки — 89 мм.</p>
-            </div>
-            <div class="choose-box__text-block" data-choose-slide="4">
-              <p class="choose-box__text choose-box__text--first">Наличник крепится при помощи гвоздей. Доборные элементы одним краем примыкают к коробке, а другим закрывают наличник.</p>
-              <p class="choose-box__text choose-box__text--background">Подходит для дверей в шпоне. Используется в старых домах с заметно кривыми проёмами.</p>
-            </div>
-          </div>
-          <div class="offset-lg-2 col-lg-4 choose-box__slide" data-choose-slide="1">
-            <div class="choose-box__block choose-box__block--small"><img class="choose-box__block-img choose-box__block-img--small" src="images/choose-1.png" alt="door">
-              <div class="choose-box__block-text">Скрывает эффект ступенчатости при закрытии дверей.</div>
-            </div>
-          </div>
-          <div class="offset-lg-1 col-lg-5 no-padding-right choose-box__slide" data-choose-slide="1">
-            <div class="choose-box__block choose-box__block--big"><img class="choose-box__block-img choose-box__block-img--big" src="images/choose-2.png" alt="door">
-              <div class="choose-box__block-text">Подходит для минималистичного дизайна.</div>
-            </div>
-          </div>
-          <div class="offset-lg-2 col-lg-4 choose-box__slide" data-choose-slide="2">
-            <div class="choose-box__block choose-box__block--small"><img class="choose-box__block-img choose-box__block-img--small" src="images/choose-3.png" alt="door">
-              <div class="choose-box__block-text">Скрывает эффект ступенчатости при закрытии дверей.</div>
-            </div>
-          </div>
-          <div class="offset-lg-1 col-lg-5 no-padding-right choose-box__slide" data-choose-slide="2">
-            <div class="choose-box__block choose-box__block--big"><img class="choose-box__block-img choose-box__block-img--big" src="images/choose-4.png" alt="door">
-              <div class="choose-box__block-text">Подходит для минималистичного дизайна.</div>
-            </div>
-          </div>
-          <div class="offset-lg-2 col-lg-4 choose-box__slide" data-choose-slide="3">
-            <div class="choose-box__block choose-box__block--small"><img class="choose-box__block-img choose-box__block-img--small" src="images/choose-5.png" alt="door">
-              <div class="choose-box__block-text">Скрывает эффект ступенчатости при закрытии дверей.</div>
-            </div>
-          </div>
-          <div class="offset-lg-1 col-lg-5 no-padding-right choose-box__slide" data-choose-slide="3">
-            <div class="choose-box__block choose-box__block--big"><img class="choose-box__block-img choose-box__block-img--big" src="images/choose-6.png" alt="door">
-              <div class="choose-box__block-text">Подходит для минималистичного дизайна.</div>
-            </div>
-          </div>
-          <div class="offset-lg-2 col-lg-4 choose-box__slide" data-choose-slide="4">
-            <div class="choose-box__block choose-box__block--small"><img class="choose-box__block-img choose-box__block-img--small" src="images/choose-7.png" alt="door">
-              <div class="choose-box__block-text">Скрывает эффект ступенчатости при закрытии дверей.</div>
-            </div>
-          </div>
-          <div class="offset-lg-1 col-lg-5 no-padding-right choose-box__slide" data-choose-slide="4">
-            <div class="choose-box__block choose-box__block--big"><img class="choose-box__block-img choose-box__block-img--big" src="images/choose-8.png" alt="door">
-              <div class="choose-box__block-text">Подходит для минималистичного дизайна.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="extras">
-      <div class="container">
-        <div class="row extras__background">
-          <div class="offset-lg-1 col-lg-4 no-padding-left">
-            <h2 class="extras__title">Дополняйте образ двери доборами</h2>
-            <p class="extras__text">Доборы закрывают торцевые стенки, укрепляют короб и не дают ему расшататься. Служат для стыковки дверной коробки и наличника, когда толщина стены больше 9 см. Необходимость заказа доборов определяет мастер на этапе замера проёма.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="extras__link">Примеры дверей с доборами</div>
-          </div>
-          <div class="col-lg-4">
-            <p class="extras__descr"><strong>Доборы</strong>сочетаются со стилем и цветом двери. Их помогает подобрать менеджер, устанавливает мастер на этапе монтажа</p>
-          </div>
-          <div class="offset-lg-1 col-lg-4">
-            <p class="extras__descr"><strong>Без доборов</strong>откосы выглядят неэстетично. Потребуется самостоятельно отделать их штукатуркой или другим материалом.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="solutions">
-      <h2 class="solutions__title">Предлагаем решения<br>для нестандартных проёмов</h2>
-      <div class="container">
-        <div class="row solutions__grid">
-          <div class="solutions__block solutions__block--one">
-            <div class="solutions__number">01</div>
-            <div class="solutions__name">Размер под заказ</div><img class="solutions__img" src="images/solution-1.svg" alt="door">
-            <p class="solutions__text">Максимальная высота дверного полотна под заказ — 2700 мм, ширина — 1030 мм.</p>
-          </div>
-          <div class="solutions__block solutions__block--two">
-            <div class="solutions__number">02</div>
-            <div class="solutions__name">Двустворчатая дверь</div><img class="solutions__img" src="images/solutions-2.svg" alt="door">
-            <p class="solutions__text">Оптимальное решение для проёмов шириной более 1200 мм. Двустворчатая дверь состоит из двух полотен.</p>
-          </div>
-          <div class="solutions__block solutions__block--three">
-            <div class="solutions__number">03</div>
-            <div class="solutions__name">Фрамуги</div><img class="solutions__img" src="images/solution-3.svg" alt="door">
-            <p class="solutions__text">Декоративные элементы устанавливают сбоку или над дверным полотном. Дизайнер подберёт материал и вид для фрамуги.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="measurement">
-      <div class="container measurement__background">
-        <div class="row">
-          <div class="col-lg-5">
-            <h2 class="measurement__title">Бесплатный замер дверного проёма</h2>
-          </div>
-          <div class="col-lg-5 no-padding">
-            <p class="measurement__descr">Замер от нашего специалиста — гарантия того, что дверь подойдёт идеально. Замерщик учтёт все нюансы, важные для дальнейших этапов.</p>
-            <div class="measurement__input">
-              <input type="tel" placeholder="+ 375 29 161 30 33">
-              <button class="measurement__submit" type="submit"></button>
-            </div>
-          </div>
-          <div class="offset-lg-1 col-lg-3">
-            <div class="measurement__block"><img class="measurement__img" src="images/measurement-1.png" alt="manager"></div>
-          </div>
-          <div class="col-lg-2">
-            <div class="measurement__right">
-              <div class="measurement__name">Анастасия,</div>
-              <div class="measurement__position">менеджер<br>по продажам</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="coating">
-      <div class="coating__left"></div>
-      <div class="coating__right">
-        <div class="coating__description">
-          <h2 class="coating__title">Декоративное<br>покрытие дверей<br>патиной</h2>
-          <p class="coating__text">Патинирование — декоративное<br>окрашивание дверей. Патина<br>наносится мастером вручную. Придаёт<br>дверному полотну презентабельный<br>вид. Используется для декорирования<br>классических моделей дверей.</p>
-        </div>
-        <div class="coating__img"></div>
-      </div>
-    </section>
-    <section class="colors">
-      <div class="container">
-        <div class="row">
-          <div class="colors__wrap">
-            <h2 class="colors__title">211 цветов эмали под заказ</h2>
-            <p class="colors__text">Классические и современные двери в эмали можно окрасить в любой цвет палитры RAL Classic за дополнительную плату. Благодаря богатому ряду оттенков легко воплотить даже самые смелые интерьерные задумки в жизнь.</p>
-            <div class="colors__made">
-              <div class="colors__flag"></div>
-              <div class="colors__country"> made in Italy</div>
-            </div><a class="colors__link" href="#">открыть каталог</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="hardware">
-      <div class="hardware__left">
-        <h2 class="hardware__title">Подбирайте фурнитуру к интерьеру</h2>
-        <p class="hardware__text">Предлагаем дверные ручки, механизмы закрывания и петли от 10 производителей фурнитуры из Италии, Турции и Греции.</p>
-        <p class="hardware__bottom">Сделаем врезку под ручки, замки и петли на заводе. Избавим вас от лишнего шума и мусора во время монтажа. Заводская врезка точная и аккуратная. Петли не просядут со временем, ручки не расшатаются</p>
-      </div>
-      <div class="hardware__right">
-        <div class="hardware__slider owl-carousel">
-          <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-            <div class="hardware__slide-title">Morelli1</div>
-            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-          </div>
-          <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-            <div class="hardware__slide-title">Morellil2</div>
-            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-          </div>
-          <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-            <div class="hardware__slide-title">Morellil3</div>
-            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-          </div>
-          <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-            <div class="hardware__slide-title">Morellil3</div>
-            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-          </div>
-          <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-            <div class="hardware__slide-title">Morellil3</div>
-            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-          </div>
-          <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-            <div class="hardware__slide-title">Morellil3</div>
-            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-          </div>
-          <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-            <div class="hardware__slide-title">Morellil3</div>
-            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-          </div>
-        </div>
-        <div class="hardware__range"></div>
-      </div>
-    </section>
-    <section class="hidden-loops">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 no-padding-left">
-            <h2 class="hidden-loops__title">Скрытые петли улучшат<br>эстетику дверного проёма</h2>
-            <p class="hidden-loops__text">Несущие механизмы невидимы с обеих сторон, что улучшает внешний вид двери. Регулируются в трёх плоскостях: по глубине с точностью до 1 мм, вертикали — до 2 мм, горизонтали — до 1,5 мм. В результате полотно плотно прилегает к коробке и не расшатывается.</p>
-            <figure class="hidden-loops__block"><img class="hidden-loops__img hidden-loops__img--small" src="images/hidden-1.png" alt="hidden">
-              <figcapture class="hidden-loops__descr">Устройство скрытой петли надёжно фиксирует<br>конструкцию, дверное полотно не просядет со временем.</figcapture>
-            </figure>
-          </div>
-          <div class="offset-lg-1 col-lg-7 no-padding-right">
-            <figure class="hidden-loops__block"><img class="hidden-loops__img hidden-loops__img--big" src="images/hidden-2.png" alt="hidden">
-              <figcapture class="hidden-loops__descr">Наличник и полотно визуально сливаются в одну плоскость,<br>и зазор между ними становится незаметным.</figcapture>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="threshold">
-      <div class="threshold__background">
+</html>
+
+<body>
+    <header class="header">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-4 no-padding-left">
-              <h2 class="threshold__title">Выпадающий порог защитит от шума и сквозняков</h2>
-              <div class="threshold__block"><img class="threshold__block-img" src="images/threshold-1.png" alt="threshold">
-                <div class="threshold__block-text">от 53 руб.</div>
-              </div>
-              <p class="threshold__descr">Во время закрывания двери, уплотнитель перекрывает щель между дверью и полом.  Так система защищает помещение  от лишних звуков за дверью и сохраняет тепло.</p>
+            <div class="row">
+                <div class="header__top">
+                    <div class="header__cart"><svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 2.42969C16.4529 2.42969 18.8495 4.82654 18.8495 7.77667L19.9171 7.77919C21.1002 7.77919 22.119 8.73624 22.1925 9.91264L22.9958 22.7642C23.0694 23.9424 22.1741 24.8976 20.9946 24.8976H6.00543C4.82655 24.8976 3.9307 23.9406 4.00422 22.7642L4.80744 9.91264C4.88108 8.73437 5.89782 7.77919 7.08286 7.77919H8.15049C8.15049 4.82494 10.549 2.42969 13.5 2.42969ZM16.7101 7.77919C16.7101 6.00825 15.2715 4.56948 13.5004 4.56948C11.7305 4.56948 10.2907 6.00737 10.2907 7.77666L16.7101 7.77919ZM8.15039 9.91898H7.08277C7.02774 9.91898 6.94615 9.99553 6.94299 10.0461L6.15648 22.7578L20.8511 22.755L20.0568 10.0461C20.0538 9.99746 19.9701 9.91898 19.917 9.91898H18.8494V12.0588C18.8494 12.6497 18.3704 13.1287 17.7795 13.1287C17.1886 13.1287 16.7096 12.6497 16.7096 12.0588V9.91898H10.2902V12.0588C10.2902 12.6497 9.81119 13.1287 9.2203 13.1287C8.62941 13.1287 8.15039 12.6497 8.15039 12.0588V9.91898ZM8.1505 19.5481C8.1505 18.9572 8.631 18.4782 9.21548 18.4782H17.7845C18.3727 18.4782 18.8495 18.9531 18.8495 19.5481C18.8495 20.139 18.369 20.618 17.7845 20.618H9.21548C8.62731 20.618 8.1505 20.1431 8.1505 19.5481Z" />
+                        </svg>
+
+                    </div><a class="header__logo" href="#"><svg viewBox="0 0 151 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M46.7116 18.9874C48.7179 18.9874 49.5913 17.846 49.5913 16.1138C49.5913 14.7352 48.698 13.7117 46.8704 13.7117H45.7192V18.9874H46.7116ZM42.9792 13.9086C42.9792 12.9049 42.8594 11.9004 42.8594 11.9004H47.1483C50.5838 11.9004 52.371 13.8889 52.371 16.0157C52.371 18.6338 50.3456 20.8185 47.0299 20.8185H45.7184V23.8503C45.7184 24.7559 45.8177 25.6813 45.8177 25.6813H42.9792V13.9086ZM62.6772 20.3067C62.6772 17.4522 61.8428 15.4644 59.3212 15.4644C57.4546 15.4644 56.521 17.1373 56.521 19.3227C56.521 22.1766 57.4142 24.0867 59.8572 24.0867C61.6649 24.0867 62.6772 22.4914 62.6772 20.3067ZM53.8207 19.874C53.8207 16.8423 55.4491 13.6722 59.7976 13.6722C63.372 13.6722 65.3974 16.2119 65.3974 19.7554C65.3974 22.7872 63.769 25.8783 59.3999 25.8783C55.8461 25.8783 53.8207 23.4176 53.8207 19.874ZM71.6323 19.7357C73.2409 19.7357 74.0745 19.0072 74.0745 17.6293C74.0745 16.5663 73.5783 15.7199 71.7514 15.7199H70.5994V19.7364H71.6323V19.7357ZM72.2874 21.5477C72.2874 21.5477 72.0293 21.6063 71.4537 21.6063H70.5994V23.851C70.5994 24.7559 70.6987 25.6813 70.6987 25.6813H67.9587V15.8766C67.9587 14.8736 67.8396 13.8493 67.8396 13.8493H72.0293C75.0082 13.8493 76.7557 15.3063 76.7557 17.6293C76.7557 19.1456 75.9808 20.2672 74.6112 20.8185L76.7557 24.1856C77.073 24.702 77.4175 25.2012 77.7879 25.6813L74.77 25.7802L72.2874 21.5477ZM81.7195 15.6804L79.6148 15.7199C78.9597 15.7397 78.0863 15.8385 78.0863 15.8385L78.1856 13.85H88.153L88.0537 15.8385C88.0537 15.8385 87.1208 15.7397 86.6643 15.7199L84.3603 15.6804V23.8503C84.3603 24.7559 84.4595 25.6813 84.4595 25.6813H81.7195V15.6804ZM90.0196 15.8773C90.0196 14.8736 89.9005 13.85 89.9005 13.85H98.2005L98.1013 15.7397C98.1013 15.7397 97.4661 15.6409 96.2751 15.6211L92.661 15.5823V18.9091L96.9103 18.8498L96.811 20.7204L92.661 20.6413V23.9682L96.2155 23.9293C96.9897 23.9096 98.2998 23.791 98.2998 23.791L98.2005 25.6813H90.0196V15.8773ZM108.527 19.0277C110.85 19.0277 111.842 17.846 111.842 16.1724C111.842 14.6569 110.83 13.7117 108.923 13.7117H107.772V19.027H108.527V19.0277ZM109.42 20.8185H107.772V23.8503C107.772 24.7559 107.871 25.6813 107.871 25.6813H105.031V13.9086C105.031 12.9049 104.913 11.9004 104.913 11.9004H109.202C112.636 11.9004 114.622 13.574 114.622 16.2712C114.622 18.0232 113.332 19.3418 111.763 19.874L114.344 24.1849C114.661 24.7014 115.006 25.2009 115.376 25.6813L112.319 25.7802L109.419 20.8185H109.42ZM117.402 15.8773C117.402 14.8736 117.283 13.7117 117.283 13.7117L120.043 13.7512V23.8503C120.043 24.7559 120.142 25.6813 120.142 25.6813H117.402V15.8773ZM122.604 19.9531C122.604 16.7837 124.371 13.6729 128.224 13.6729C130.01 13.6729 131.024 14.2439 132.017 14.5192L131.44 16.4484C130.408 16.1731 129.673 15.6218 128.125 15.6218C126.298 15.6218 125.384 17.0583 125.384 19.7159C125.384 22.5507 126.457 23.9293 128.72 23.9293C130.407 23.9293 131.659 23.3583 131.659 23.3583L131.917 25.0707C131.917 25.0707 130.666 25.8783 128.482 25.8783C125.126 25.8783 122.605 23.9096 122.605 19.9524L122.604 19.9531ZM134.26 15.8773C134.26 14.8736 134.141 13.85 134.141 13.85L136.901 13.7512V18.8498H142.342V15.8773C142.342 14.8736 142.223 13.85 142.223 13.85L144.983 13.7512V23.8503C144.983 24.7559 145.082 25.6813 145.082 25.6813H142.342V20.7006H136.901V23.8496C136.901 24.7552 137 25.6806 137 25.6806H134.26V15.8773ZM148.24 15.8773C148.24 14.8736 148.121 13.6722 148.121 13.6722L150.881 13.7512V23.8503C150.881 24.7559 150.98 25.6813 150.98 25.6813H148.24V15.8773Z" fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9578 36.6725L8.97852 29.7528L17.7783 21.0273L27.7812 30.945L26.021 32.6899L17.7783 24.5179L12.499 29.7521L15.9585 33.1819L19.7711 29.4019L21.5314 31.1476L15.9578 36.6725Z" fill="#F5A83A" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.9658 28.7789L19.9629 18.8613L28.762 10.1387L35.7413 17.0584L30.1692 22.5834L28.409 20.8384L32.2208 17.0584L28.7613 13.6286L23.4827 18.8627L31.7253 27.034L29.9658 28.7789Z" fill="#527EBF" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13432 27.5674L0.154297 20.6477L5.72641 15.1227L7.48666 16.8677L3.67479 20.6477L7.13432 24.0775L12.4129 18.8434L4.17033 10.6707L5.93058 8.92578L15.9334 18.8434L7.13432 27.5674Z" fill="#6AC184" />
+                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="1" width="19" height="16">
+                                    <path d="M8.11328 1.03516H26.916V16.6789H8.11328V1.03516Z" fill="white" />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1156 16.6789L8.11133 6.76127L9.87158 5.01633L18.1149 13.189L23.3942 7.95492L19.9347 4.52504L16.1228 8.30504L14.3619 6.5601L19.9347 1.03516L26.9147 7.95492L18.1156 16.6789Z" fill="#EE4941" />
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="151" height="36" fill="white" transform="translate(0 0.837891)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a><a class="header__phone" href="tel:+375291613033">+375 29 161 30 33</a>
+                </div>
+                <div class="header__bottom">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link" href="#">входные двери</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">межкомнатные</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">комплексные решения</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">замер</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">оплата</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">доставка и установка</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="offset-lg-5 col-lg-3 no-padding-left">
-              <div class="threshold__block--right">
-                <p class="threshold__descr threshold__descr--right">Когда дверь открыта, порог невидим. Он не создаёт преград на полу, не мешает движению между комнатами.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="helper">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 no-padding">
-            <figure class="helper__figure"><img class="helper__figure-img" src="images/helper-1.png" alt="helper">
-              <figcapture>
-                <div class="helper__figure-title">Двери-купе</div>
-                <div class="helper__figure-text"> Перемещаются по направляющей конструкции, которую крепят вверху проёма. Можно выбрать правое или левое направление открывания.</div>
-              </figcapture>
-            </figure>
-            <figure class="helper__figure helper__figure--left"><img class="helper__figure-img" src="images/helper-2.png" alt="helper">
-              <figcapture>
-                <div class="helper__figure-title">Двери-пенал</div>
-                <div class="helper__figure-text">При открывании полотна сдвигаются в специальные ниши в стене. Двери перемещаются по горизонтали в одной плоскости с коробом.</div>
-              </figcapture>
-            </figure>
-            <div class="helper__miniature">
-              <div class="helper__miniature-title">Выбирайте любую систему</div>
-              <div class="helper__miniature-text">Все двери из каталога можно заказать в виде раздвижной системы. Погонаж и фурнитуру к цвету отделки поможет подобрать менеджер.</div>
-            </div>
-          </div>
-          <div class="offset-lg-2 col-lg-7 no-padding">
-            <h2 class="helper__title">Раздвижные системы помогут сэкономить пространство</h2>
-            <p class="helper__descr">Нестандартные способы открывания двери позволяют сэкономить полезную площадь квартиры или дома. Раздвижные системы освобождают территорию около проёма и вдоль стены.</p>
-            <figure class="helper__figure"><img class="helper__figure-img" src="images/helper-3.png" alt="helper">
-              <figcapture>
-                <div class="helper__figure-title">Внутрипроёмные</div>
-                <div class="helper__figure-text">Два полотна движутся в одной плоскости со стеной навстречу друг другу, оставляя свободным только половину проёма.</div>
-              </figcapture>
-            </figure>
-            <figure class="helper__figure"><img class="helper__figure-img" src="images/helper-4.png" alt="helper">
-              <figcapture>
-                <div class="helper__figure-title">Каскадные</div>
-                <div class="helper__figure-text">Конструкция состоит из нескольких полотен, которые двигаются по отдельным направляющим и собираются в одной стороне проёма.</div>
-              </figcapture>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="bonus">
-      <div class="container">
-        <div class="row">
-          <div class="bonus__wrap">
-            <div class="bonus__block"><img class="bonus__img" src="images/bonus-1.svg" alt="bonus">
-              <div class="bonus__title"><span>Бесплатный замер</span></div>
-              <div class="bonus__text"> Специалист измерит высоту и ширину проёма, определит его особенности и помогает выбрать правильную сторону открывания двери.</div>
-            </div>
-            <div class="bonus__block"><img class="bonus__img" src="images/bonus-2.svg" alt="bonus">
-              <div class="bonus__title"><span>Оплата</span></div>
-              <div class="bonus__text"> При заключении договора понадобится предпоплата — 30% от стоимости двери. Остаток вносится до доставки и установки</div>
-            </div>
-            <div class="bonus__block"><img class="bonus__img" src="images/bonus-3.svg" alt="bonus">
-              <div class="bonus__title"><span>Доставка и установка</span></div>
-              <div class="bonus__text"> Доставляем двери в Минске и за МКАД. Для дверей в дом используем «тёплый монтаж» — утепляем порог и стены вокруг проёма.</div>
-            </div>
-            <div class="bonus__block"><img class="bonus__img" src="images/bonus-4.svg" alt="bonus">
-              <div class="bonus__title"><span>Гарантия</span></div>
-              <div class="bonus__text"> Действует 2 года на дверь с повреждениями из-за процесса производства, фурнитуру и монтаж наших мастеров.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="reviews">
-      <h2 class="reviews__title">Отзывы о дверях и сервисе</h2>
-      <div class="reviews__container owl-carousel">
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-      </div>
-    </section>
-    <section class="one-style">
-      <div class="container">
-        <div class="row">
-          <div class="one-style__background">
-            <div class="one-style__left">
-              <h2 class="one-style__title">Входная и межкомнатные двери в одном стиле</h2>
-            </div>
-            <div class="one-style__right">
-              <p class="one-style__text">При выборе межкомнатных дверей можно сразу заказать и входную с похожей или такой же отделкой.</p><a class="one-style__button" href="#"><span>посмотреть презентацию</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="similar-style">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2 class="similar-style__title">Модели дверей в похожем стиле</h2>
-            <p class="similar-style__text">Мы подобрали другие двери, которые по стилю похожи на дверь РД83. Они подойдут интерьеру в стиле модерн, хай-тек и функционализм.</p><a class="similar-style__link" href="#">перейти в каталог</a>
-          </div>
-          <div class="col-lg-4">
-            <div class="catalog-item catalog-item--interior"><a class="catalog-item__link" href="#">
-                <div class="catalog-item__mask"></div>
-                <div class="catalog-item__img"><img src="images/catalog-item-16.png" alt="catalog item"></div>
-                <div class="catalog-item__footer">
-                  <div class="catalog-item__row"><span class="catalog-item__name">MK01K</span><span class="catalog-item__price">от 4 323 руб.</span></div>
-                  <div class="catalog-item__row">
-                    <div class="catalog-item__material-container"><span class="catalog-item__material">Шпон и эмаль</span></div>
-                    <div class="catalog-item__colors">
-                      <div class="catalog-item__color catalog-item__color--active catalog-item__color--black"></div>
-                      <div class="catalog-item__color catalog-item__color--grey"></div>
-                      <div class="catalog-item__color catalog-item__color--brown"></div>
-                      <div class="catalog-item__color catalog-item__color--grey-light"></div>
-                      <div class="catalog-item__color catalog-item__color--multicolor"></div>
+    </header>
+    <main class="main-container">
+        <section class="product-variant product-variant__bivalve">
+            <div class="container">
+                <div class="row">
+                    <div class="product-variant__middle"><img class="product-variant__img product-variant__img--active" src="images/bivalve-1.png" data-door="black" alt="product">
+                        <div class="product-variant__name">Шпон Fine-line, Венге</div>
                     </div>
-                  </div>
-                </div></a></div>
-          </div>
-          <div class="offset-lg-2 col-lg-4">
-            <div class="catalog-item catalog-item--interior"><a class="catalog-item__link" href="#">
-                <div class="catalog-item__mask"></div>
-                <div class="catalog-item__img"><img src="images/catalog-item-16.png" alt="catalog item"></div>
-                <div class="catalog-item__footer">
-                  <div class="catalog-item__row"><span class="catalog-item__name">MK01K</span><span class="catalog-item__price">от 4 323 руб.</span></div>
-                  <div class="catalog-item__row">
-                    <div class="catalog-item__material-container"><span class="catalog-item__material">Шпон и эмаль</span></div>
-                    <div class="catalog-item__colors">
-                      <div class="catalog-item__color catalog-item__color--active catalog-item__color--black"></div>
-                      <div class="catalog-item__color catalog-item__color--grey"></div>
-                      <div class="catalog-item__color catalog-item__color--brown"></div>
-                      <div class="catalog-item__color catalog-item__color--grey-light"></div>
-                      <div class="catalog-item__color catalog-item__color--multicolor"></div>
+                    <div class="product-variant__right">
+                        <div class="product-variant__card product-variant__card--new">
+                            <div class="breadcrumbs">
+                                <div class="container">
+                                    <div class="row">
+                                        <ul class="breadcrumbs__list">
+                                            <li class="breadcrumbs__item"><a class="breadcrumbs__link">Главная</a></li>
+                                            <li class="breadcrumbs__item"><a class="breadcrumbs__link">Каталог</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="product-variant__title">Межкомнатная дверь Б18</h1><span class="product-variant__order">Под заказ до 45 дней</span>
+                            <div class="product-variant__card-block product-variant__card-block--first">
+                                <div class="product-variant__card-material">Строганный шпон</div>
+                                <div class="catalog-item__colors">
+                                    <div class="catalog-item__color catalog-item__color--active catalog-item__color--black" data-color="black"></div>
+                                    <div class="catalog-item__color catalog-item__color--grey" data-color="red"></div>
+                                    <div class="catalog-item__color catalog-item__color--brown" data-color="white"></div>
+                                </div>
+                            </div>
+                            <div class="product-variant__card-block">
+                                <div class="product-variant__card-material">Шпон Fine-line</div>
+                                <div class="catalog-item__colors">
+                                    <div class="catalog-item__color catalog-item__color--active catalog-item__color--black" data-color="black"></div>
+                                    <div class="catalog-item__color catalog-item__color--grey" data-color="red"></div>
+                                    <div class="catalog-item__color catalog-item__color--brown" data-color="white"></div>
+                                </div>
+                            </div>
+                            <div class="product-variant__card-description"> Дверь можно посмотреть в салонах на пр-те Дзержинского, 131 и по улице Кальварийская, 7Б, ТЦ «Трюм»</div>
+                            <div class="product-variant__card-price product-variant__card-price--new">
+                                <h6>цена комплекта</h6><span>1685 рублей</span><span class="product-variant__card-oldprice with--line"> 2456 рублей</span>
+                            </div>
+                            <div class="product-variant__card-counter">
+                                <div class="product-variant__card-left">количество</div>
+                                <div class="product-variant__card-right">
+                                    <div class="product-variant__card-minus"></div>
+                                    <div class="product-variant__card-number">1</div>
+                                    <div class="product-variant__card-plus"></div>
+                                </div>
+                            </div>
+                            <div class="product-variant__card-cost"><span>что входит в стоимость</span></div>
+                            <button class="product-variant__card-add"> добавить к заказу</button>
+                        </div>
                     </div>
-                  </div>
-                </div></a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+                </div>
+            </div>
+        </section>
+        <section class="product-variant product-variant--vitrage">
+            <div class="container">
+                <div class="row">
+                    <div class="product-variant__left">
+                        <div class="breadcrumbs">
+                            <div class="container">
+                                <div class="row">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item"><a class="breadcrumbs__link">Главная</a></li>
+                                        <li class="breadcrumbs__item"><a class="breadcrumbs__link">Каталог</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="product-variant__title">Межкомнатная дверь Б18</h1><span class="product-variant__order">Под заказ до 45 дней</span>
+                        <p class="product-variant__description">Классическая модель двери с изящным резным наличником, капителем и строгими опорами. Неповторимый шарм придаёт пескоструйный витраж с витиеватым рисунком. Бронзовая фурнитура подчёркивает благородство модели.</p>
+                    </div>
+                    <div class="product-variant__middle">
+                        <div class="product-variant__name">Эмаль, RAL, 9010</div><img class="product-variant__img product-variant__img--active" src="images/product-variant-vitrage.png" data-door="black" alt="product"><img class="product-variant__img" src="images/product-1.png" data-door="red" alt="product">
+                    </div>
+                    <div class="product-variant__right">
+                        <div class="product-variant__card product-variant__card--new">
+                            <h4 class="product-variant__card-title">Варианты исполнения</h4>
+                            <div class="product-variant__card-material">Эмаль</div>
+                            <div class="catalog-item__colors">
+                                <div class="catalog-item__color catalog-item__color--active catalog-item__color--black" data-color="black"></div>
+                                <div class="catalog-item__color catalog-item__color--grey" data-color="red"></div>
+                                <div class="catalog-item__color catalog-item__color--brown" data-color="white"></div>
+                            </div>
+                            <div class="product-variant__card-description"> Дверь в таком варианте исполнения установлена в фирменных салонах на пр-те Дзержинского, 122 и Кальварийской, 7Б, ТЦ «Трюм»</div>
+                            <div class="product-variant__card-price product-variant__card-price--new">
+                                <h6>цена комплекта</h6><span>1685 рублей</span><span class="product-variant__card-oldprice with--line"> 2456 рублей</span>
+                            </div>
+                            <div class="product-variant__card-counter">
+                                <div class="product-variant__card-left">количество</div>
+                                <div class="product-variant__card-right">
+                                    <div class="product-variant__card-minus"></div>
+                                    <div class="product-variant__card-number">1</div>
+                                    <div class="product-variant__card-plus"></div>
+                                </div>
+                            </div>
+                            <div class="product-variant__card-cost"><span>что входит в стоимость</span></div>
+                            <button class="product-variant__card-add"> добавить к заказу</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="action-block">
+            <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="action__left">
+                            <h2 class="action__title">Купите дверь и выиграйте путешествие в Италию</h2><a class="action__link" href="#">узнать условия</a>
+                        </div>
+                        <div class="action__right">
+                            <p class="action__text">Акция действует с 13 мая<br>по 14 июня включительно. Выбрать можно любую дверь из каталога на сайте. Розыгрыш призов состоится 19 июня в 15:00 с помощью закрытого лототрона.</p>
+                        </div>
+                        <div class="action__img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="collection-block">
+            <div class="container">
+                <div class="collection">
+                    <div class="row">
+                        <div class="offset-lg-1 col-lg-9">
+                            <div class="collection__img"><img src="images/collection.png" alt="collection"></div>
+                        </div>
+                        <div class="offset-lg-1 col-lg-5">
+                            <div class="collection__block">
+                                <div class="collection__about">Коллекция дверей</div>
+                                <h2 class="collection__title"> Классицизм</h2>
+                                <p class="collection__descr">Двери в сдержанном классическом<br>дизайне. Модели украшены патиной,<br>дополнены стеклянными вставками<br>и рисунками. Отделаны эмалью от<br>итальянского производителя.</p><a class="collection__link" href="#">все двери коллекции</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-cost">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 no-padding-left">
+                        <h2 class="product-cost__title">Что входит<br>в стоимость</h2>
+                            <p class="product-cost__text product-cost__text--left">Мы предлагаем готовый вариант двери. Весь необходимый погонаж и фурнитура уже включены в стоимость.</p>
+                            <div class="product-cost__table product-cost__table--left">
+                                <div class="product-cost__table-head">
+                                    <div class="product-cost__table-title">элемент</div>
+                                    <div class="product-cost__table-title">цена, руб</div>
+                                </div>
+                                <div class="product-cost__table-body">
+                                    <div class="product-cost__table-row">
+                                        <div class="product-cost__table-text">дверное полотно</div>
+                                        <div class="product-cost__table-text">600</div>
+                                    </div>
+                                    <div class="product-cost__table-row">
+                                        <div class="product-cost__table-text">коробка</div>
+                                        <div class="product-cost__table-text">200</div>
+                                    </div>
+                                    <div class="product-cost__table-row">
+                                        <div class="product-cost__table-text">наличники</div>
+                                        <div class="product-cost__table-text">200</div>
+                                    </div>
+                                    <div class="product-cost__table-row">
+                                        <div class="product-cost__table-text">фурнитура</div>
+                                        <div class="product-cost__table-text">655</div>
+                                    </div>
+                                    <div class="product-cost__table-row">
+                                        <div class="product-cost__table-text">врезка под фурнитуру</div>
+                                        <div class="product-cost__table-text">50</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-cost__price">
+                                <div class="product-cost__price-text">цена комплекта</div>
+                                <div class="product-cost__price-number">1685 рублей</div>
+                            </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="product-cost__img-wrap">
+                            <div class="product-cost__img"><img class="product-cost__img-door" src="images/cost-1.png" alt="door">
+                                <div class="product-cost__img-material">Строганный шпон, Американский орех</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 no-padding-right">
+                        <div class="product-cost__title">Дверное полотно</div>
+                        <p class="product-cost__text product-cost__table--right">Выполнено из клеенного бруса хвойных пород дерева. Подложка под отделку — ДВП или ХДФ .</p>
+                        <div class="product-cost__table product-cost__table--right product-cost__table--line">
+                            <div class="product-cost__table-head">
+                                <div class="product-cost__table-title">Параметры</div>
+                                <div class="product-cost__table-title">мм</div>
+                            </div>
+                            <div class="product-cost__table-body">
+                                <div class="product-cost__table-row">
+                                    <div class="product-cost__table-text">высота</div>
+                                    <div class="product-cost__table-text">2000</div>
+                                </div>
+                                <div class="product-cost__table-row">
+                                    <div class="product-cost__table-text">ширина</div>
+                                    <div class="product-cost__table-text">600, 700, 800, 900</div>
+                                </div>
+                                <div class="product-cost__table-row">
+                                    <div class="product-cost__table-text">толщина</div>
+                                    <div class="product-cost__table-text">40</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-cost__title">Телескопическая коробка</div>
+                        <p class="product-cost__text product-cost__text--bottom">В конструкции не используют гвозди. Наличники крепятся в специальные пазы. Коробка легко снимается и устанавливается, перекрывает зазоры между стеной и дверью.</p>
+                        <div class="product-cost__table-body">
+                            <div class="product-cost__table-row">
+                                <div class="product-cost__table-text">Ширина</div>
+                                <div class="product-cost__table-text">74 мм</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stained-glass">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2 class="stained-glass__title">Витраж дополняет<br>дизайн двери</h2>
+                            <p class="stained-glass__text stained-glass__text--first">Белое или бронзовое матовое стекло с плоским рисунком. Изображение наносится методом пескоструйной обработки. Витражи удачно смотрятся на классических моделях дверей. Освежают дизайн полотна и делают его более оригинальным.</p>
+                            <p class="stained-glass__text stained-glass__text--second"> Доступна технология нанесения объёмного рисунка. На заводе выполняется глубокое матирование стекла. Рифлёное изображение придаёт изделию более богатый вид.</p>
+                    </div>
+                    <div class="offset-lg-2 col-lg-3">
+                        <div class="stained-glass__block stained-glass__block--small">
+                            <div class="stained-glass__block-name">PVC</div><img class="stained-glass__block-img stained-glass__block-img--small" src="images/glass-1.png" alt="door">
+                            <div class="stained-glass__block-descr">Входит в стоимость</div>
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5">
+                        <div class="stained-glass__block stained-glass__block--big">
+                            <div class="stained-glass__block-name">PVC</div><img class="stained-glass__block-img stained-glass__block-img--big" src="images/glass-2.png" alt="door">
+                            <div class="stained-glass__block-descr">+ 35 рублей</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="choose-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 no-padding-left">
+                        <h2 class="choose-box__title">Выбирайте коробку,<br>которая подходит<br> к вашему дизайну</h2>
+                            <ul class="choose-box__list">
+                                <li class="choose-box__item choose-box__item--active" data-choose-item="1">Телескопическая</li>
+                                <li class="choose-box__item" data-choose-item="2">Скрытого монтажа</li>
+                                <li class="choose-box__item" data-choose-item="3">Гвоздевая</li>
+                                <li class="choose-box__item" data-choose-item="4">Компланарная</li>
+                            </ul>
+                            <div class="choose-box__text-block" data-choose-slide="1">
+                                <p class="choose-box__text choose-box__text--first">Образует единую плоскость для дверного полотна и наличника. Скрытые петли в закрытом состоянии «прячутся» внутри коробки.</p>
+                                <p class="choose-box__text choose-box__text--background">Допустимое отклонение стен от вертикали — 2 мм на метр. Ширина коробки — 89 мм.</p>
+                            </div>
+                            <div class="choose-box__text-block" data-choose-slide="2">
+                                <p class="choose-box__text choose-box__text--first">Образует единую плоскость для дверного полотна и наличника. Скрытые петли в закрытом состоянии «прячутся» внутри коробки.</p>
+                                <p class="choose-box__text choose-box__text--background">Допустимое отклонение стен от вертикали — 2 мм на метр. Ширина коробки — 89 мм.</p>
+                            </div>
+                            <div class="choose-box__text-block" data-choose-slide="3">
+                                <p class="choose-box__text choose-box__text--first">Образует единую плоскость для дверного полотна и наличника. Скрытые петли в закрытом состоянии «прячутся» внутри коробки.</p>
+                                <p class="choose-box__text choose-box__text--background">Допустимое отклонение стен от вертикали — 2 мм на метр. Ширина коробки — 89 мм.</p>
+                            </div>
+                            <div class="choose-box__text-block" data-choose-slide="4">
+                                <p class="choose-box__text choose-box__text--first">Наличник крепится при помощи гвоздей. Доборные элементы одним краем примыкают к коробке, а другим закрывают наличник.</p>
+                                <p class="choose-box__text choose-box__text--background">Подходит для дверей в шпоне. Используется в старых домах с заметно кривыми проёмами.</p>
+                            </div>
+                    </div>
+                    <div class="offset-lg-2 col-lg-4 choose-box__slide" data-choose-slide="1">
+                        <div class="choose-box__block choose-box__block--small"><img class="choose-box__block-img choose-box__block-img--small" src="images/choose-1.png" alt="door">
+                            <div class="choose-box__block-text">Скрывает эффект ступенчатости при закрытии дверей.</div>
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5 no-padding-right choose-box__slide" data-choose-slide="1">
+                        <div class="choose-box__block choose-box__block--big"><img class="choose-box__block-img choose-box__block-img--big" src="images/choose-2.png" alt="door">
+                            <div class="choose-box__block-text">Подходит для минималистичного дизайна.</div>
+                        </div>
+                    </div>
+                    <div class="offset-lg-2 col-lg-4 choose-box__slide" data-choose-slide="2">
+                        <div class="choose-box__block choose-box__block--small"><img class="choose-box__block-img choose-box__block-img--small" src="images/choose-3.png" alt="door">
+                            <div class="choose-box__block-text">Скрывает эффект ступенчатости при закрытии дверей.</div>
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5 no-padding-right choose-box__slide" data-choose-slide="2">
+                        <div class="choose-box__block choose-box__block--big"><img class="choose-box__block-img choose-box__block-img--big" src="images/choose-4.png" alt="door">
+                            <div class="choose-box__block-text">Подходит для минималистичного дизайна.</div>
+                        </div>
+                    </div>
+                    <div class="offset-lg-2 col-lg-4 choose-box__slide" data-choose-slide="3">
+                        <div class="choose-box__block choose-box__block--small"><img class="choose-box__block-img choose-box__block-img--small" src="images/choose-5.png" alt="door">
+                            <div class="choose-box__block-text">Скрывает эффект ступенчатости при закрытии дверей.</div>
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5 no-padding-right choose-box__slide" data-choose-slide="3">
+                        <div class="choose-box__block choose-box__block--big"><img class="choose-box__block-img choose-box__block-img--big" src="images/choose-6.png" alt="door">
+                            <div class="choose-box__block-text">Подходит для минималистичного дизайна.</div>
+                        </div>
+                    </div>
+                    <div class="offset-lg-2 col-lg-4 choose-box__slide" data-choose-slide="4">
+                        <div class="choose-box__block choose-box__block--small"><img class="choose-box__block-img choose-box__block-img--small" src="images/choose-7.png" alt="door">
+                            <div class="choose-box__block-text">Скрывает эффект ступенчатости при закрытии дверей.</div>
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5 no-padding-right choose-box__slide" data-choose-slide="4">
+                        <div class="choose-box__block choose-box__block--big"><img class="choose-box__block-img choose-box__block-img--big" src="images/choose-8.png" alt="door">
+                            <div class="choose-box__block-text">Подходит для минималистичного дизайна.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="extras">
+            <div class="container">
+                <div class="row extras__background">
+                    <div class="offset-lg-1 col-lg-4 no-padding-left">
+                        <h2 class="extras__title">Дополняйте образ двери доборами</h2>
+                        <p class="extras__text">Доборы закрывают торцевые стенки, укрепляют короб и не дают ему расшататься. Служат для стыковки дверной коробки и наличника, когда толщина стены больше 9 см. Необходимость заказа доборов определяет мастер на этапе замера проёма.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="extras__link">Примеры дверей с доборами</div>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="extras__descr"><strong>Доборы</strong>сочетаются со стилем и цветом двери. Их помогает подобрать менеджер, устанавливает мастер на этапе монтажа</p>
+                    </div>
+                    <div class="offset-lg-1 col-lg-4">
+                        <p class="extras__descr"><strong>Без доборов</strong>откосы выглядят неэстетично. Потребуется самостоятельно отделать их штукатуркой или другим материалом.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="solutions">
+            <h2 class="solutions__title">Предлагаем решения<br>для нестандартных проёмов</h2>
+                <div class="container">
+                    <div class="row solutions__grid">
+                        <div class="solutions__block solutions__block--one">
+                            <div class="solutions__number">01</div>
+                            <div class="solutions__name">Размер под заказ</div><img class="solutions__img" src="images/solution-1.svg" alt="door">
+                            <p class="solutions__text">Максимальная высота дверного полотна под заказ — 2700 мм, ширина — 1030 мм.</p>
+                        </div>
+                        <div class="solutions__block solutions__block--two">
+                            <div class="solutions__number">02</div>
+                            <div class="solutions__name">Двустворчатая дверь</div><img class="solutions__img" src="images/solutions-2.svg" alt="door">
+                            <p class="solutions__text">Оптимальное решение для проёмов шириной более 1200 мм. Двустворчатая дверь состоит из двух полотен.</p>
+                        </div>
+                        <div class="solutions__block solutions__block--three">
+                            <div class="solutions__number">03</div>
+                            <div class="solutions__name">Фрамуги</div><img class="solutions__img" src="images/solution-3.svg" alt="door">
+                            <p class="solutions__text">Декоративные элементы устанавливают сбоку или над дверным полотном. Дизайнер подберёт материал и вид для фрамуги.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="measurement">
+            <div class="container measurement__background">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h2 class="measurement__title">Бесплатный замер дверного проёма</h2>
+                    </div>
+                    <div class="col-lg-5 no-padding">
+                        <p class="measurement__descr">Замер от нашего специалиста — гарантия того, что дверь подойдёт идеально. Замерщик учтёт все нюансы, важные для дальнейших этапов.</p>
+                        <div class="measurement__input">
+                            <input type="tel" placeholder="+ 375 29 161 30 33">
+                            <button class="measurement__submit" type="submit"></button>
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-3">
+                        <div class="measurement__block"><img class="measurement__img" src="images/measurement-1.png" alt="manager"></div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="measurement__right">
+                            <div class="measurement__name">Анастасия,</div>
+                            <div class="measurement__position">менеджер<br>по продажам</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="coating">
+            <div class="coating__left"></div>
+            <div class="coating__right">
+                <div class="coating__description">
+                    <h2 class="coating__title">Декоративное<br>покрытие дверей<br>патиной</h2>
+                        <p class="coating__text">Патинирование — декоративное<br>окрашивание дверей. Патина<br>наносится мастером вручную. Придаёт<br>дверному полотну презентабельный<br>вид. Используется для декорирования<br>классических моделей дверей.</p>
+                </div>
+                <div class="coating__img"></div>
+            </div>
+        </section>
+        <section class="colors">
+            <div class="container">
+                <div class="row">
+                    <div class="colors__wrap">
+                        <h2 class="colors__title">211 цветов эмали под заказ</h2>
+                        <p class="colors__text">Классические и современные двери в эмали можно окрасить в любой цвет палитры RAL Classic за дополнительную плату. Благодаря богатому ряду оттенков легко воплотить даже самые смелые интерьерные задумки в жизнь.</p>
+                        <div class="colors__made">
+                            <div class="colors__flag"></div>
+                            <div class="colors__country"> made in Italy</div>
+                        </div><a class="colors__link" href="#">открыть каталог</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hardware">
+            <div class="hardware__left">
+                <h2 class="hardware__title">Подбирайте фурнитуру к интерьеру</h2>
+                <p class="hardware__text">Предлагаем дверные ручки, механизмы закрывания и петли от 10 производителей фурнитуры из Италии, Турции и Греции.</p>
+                <p class="hardware__bottom">Сделаем врезку под ручки, замки и петли на заводе. Избавим вас от лишнего шума и мусора во время монтажа. Заводская врезка точная и аккуратная. Петли не просядут со временем, ручки не расшатаются</p>
+            </div>
+            <div class="hardware__right">
+                <div class="hardware__slider owl-carousel">
+                    <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                        <div class="hardware__slide-title">Morelli1</div>
+                        <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                    </div>
+                    <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                        <div class="hardware__slide-title">Morellil2</div>
+                        <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                    </div>
+                    <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                        <div class="hardware__slide-title">Morellil3</div>
+                        <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                    </div>
+                    <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                        <div class="hardware__slide-title">Morellil3</div>
+                        <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                    </div>
+                    <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                        <div class="hardware__slide-title">Morellil3</div>
+                        <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                    </div>
+                    <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                        <div class="hardware__slide-title">Morellil3</div>
+                        <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                    </div>
+                    <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                        <div class="hardware__slide-title">Morellil3</div>
+                        <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                    </div>
+                </div>
+                <div class="hardware__range"></div>
+            </div>
+        </section>
+        <section class="hidden-loops">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 no-padding-left">
+                        <h2 class="hidden-loops__title">Скрытые петли улучшат<br>эстетику дверного проёма</h2>
+                            <p class="hidden-loops__text">Несущие механизмы невидимы с обеих сторон, что улучшает внешний вид двери. Регулируются в трёх плоскостях: по глубине с точностью до 1 мм, вертикали — до 2 мм, горизонтали — до 1,5 мм. В результате полотно плотно прилегает к коробке и не расшатывается.</p>
+                            <figure class="hidden-loops__block"><img class="hidden-loops__img hidden-loops__img--small" src="images/hidden-1.png" alt="hidden">
+                                <figcapture class="hidden-loops__descr">Устройство скрытой петли надёжно фиксирует<br>конструкцию, дверное полотно не просядет со временем.</figcapture>
+                            </figure>
+                    </div>
+                    <div class="offset-lg-1 col-lg-7 no-padding-right">
+                        <figure class="hidden-loops__block"><img class="hidden-loops__img hidden-loops__img--big" src="images/hidden-2.png" alt="hidden">
+                            <figcapture class="hidden-loops__descr">Наличник и полотно визуально сливаются в одну плоскость,<br>и зазор между ними становится незаметным.</figcapture>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="threshold">
+            <div class="threshold__background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 no-padding-left">
+                            <h2 class="threshold__title">Выпадающий порог защитит от шума и сквозняков</h2>
+                            <div class="threshold__block"><img class="threshold__block-img" src="images/threshold-1.png" alt="threshold">
+                                <div class="threshold__block-text">от 53 руб.</div>
+                            </div>
+                            <p class="threshold__descr">Во время закрывания двери, уплотнитель перекрывает щель между дверью и полом. Так система защищает помещение от лишних звуков за дверью и сохраняет тепло.</p>
+                        </div>
+                        <div class="offset-lg-5 col-lg-3 no-padding-left">
+                            <div class="threshold__block--right">
+                                <p class="threshold__descr threshold__descr--right">Когда дверь открыта, порог невидим. Он не создаёт преград на полу, не мешает движению между комнатами.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="helper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 no-padding">
+                        <figure class="helper__figure"><img class="helper__figure-img" src="images/helper-1.png" alt="helper">
+                            <figcapture>
+                                <div class="helper__figure-title">Двери-купе</div>
+                                <div class="helper__figure-text"> Перемещаются по направляющей конструкции, которую крепят вверху проёма. Можно выбрать правое или левое направление открывания.</div>
+                            </figcapture>
+                        </figure>
+                        <figure class="helper__figure helper__figure--left"><img class="helper__figure-img" src="images/helper-2.png" alt="helper">
+                            <figcapture>
+                                <div class="helper__figure-title">Двери-пенал</div>
+                                <div class="helper__figure-text">При открывании полотна сдвигаются в специальные ниши в стене. Двери перемещаются по горизонтали в одной плоскости с коробом.</div>
+                            </figcapture>
+                        </figure>
+                        <div class="helper__miniature">
+                            <div class="helper__miniature-title">Выбирайте любую систему</div>
+                            <div class="helper__miniature-text">Все двери из каталога можно заказать в виде раздвижной системы. Погонаж и фурнитуру к цвету отделки поможет подобрать менеджер.</div>
+                        </div>
+                    </div>
+                    <div class="offset-lg-2 col-lg-7 no-padding">
+                        <h2 class="helper__title">Раздвижные системы помогут сэкономить пространство</h2>
+                        <p class="helper__descr">Нестандартные способы открывания двери позволяют сэкономить полезную площадь квартиры или дома. Раздвижные системы освобождают территорию около проёма и вдоль стены.</p>
+                        <figure class="helper__figure"><img class="helper__figure-img" src="images/helper-3.png" alt="helper">
+                            <figcapture>
+                                <div class="helper__figure-title">Внутрипроёмные</div>
+                                <div class="helper__figure-text">Два полотна движутся в одной плоскости со стеной навстречу друг другу, оставляя свободным только половину проёма.</div>
+                            </figcapture>
+                        </figure>
+                        <figure class="helper__figure"><img class="helper__figure-img" src="images/helper-4.png" alt="helper">
+                            <figcapture>
+                                <div class="helper__figure-title">Каскадные</div>
+                                <div class="helper__figure-text">Конструкция состоит из нескольких полотен, которые двигаются по отдельным направляющим и собираются в одной стороне проёма.</div>
+                            </figcapture>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bonus">
+            <div class="container">
+                <div class="row">
+                    <div class="bonus__wrap">
+                        <div class="bonus__block"><img class="bonus__img" src="images/bonus-1.svg" alt="bonus">
+                            <div class="bonus__title"><span>Бесплатный замер</span></div>
+                            <div class="bonus__text"> Специалист измерит высоту и ширину проёма, определит его особенности и помогает выбрать правильную сторону открывания двери.</div>
+                        </div>
+                        <div class="bonus__block"><img class="bonus__img" src="images/bonus-2.svg" alt="bonus">
+                            <div class="bonus__title"><span>Оплата</span></div>
+                            <div class="bonus__text"> При заключении договора понадобится предпоплата — 30% от стоимости двери. Остаток вносится до доставки и установки</div>
+                        </div>
+                        <div class="bonus__block"><img class="bonus__img" src="images/bonus-3.svg" alt="bonus">
+                            <div class="bonus__title"><span>Доставка и установка</span></div>
+                            <div class="bonus__text"> Доставляем двери в Минске и за МКАД. Для дверей в дом используем «тёплый монтаж» — утепляем порог и стены вокруг проёма.</div>
+                        </div>
+                        <div class="bonus__block"><img class="bonus__img" src="images/bonus-4.svg" alt="bonus">
+                            <div class="bonus__title"><span>Гарантия</span></div>
+                            <div class="bonus__text"> Действует 2 года на дверь с повреждениями из-за процесса производства, фурнитуру и монтаж наших мастеров.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <h2 class="reviews__title">Отзывы о дверях и сервисе</h2>
+            <div class="reviews__container owl-carousel">
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+            </div>
+        </section>
+        <section class="one-style">
+            <div class="container">
+                <div class="row">
+                    <div class="one-style__background">
+                        <div class="one-style__left">
+                            <h2 class="one-style__title">Входная и межкомнатные двери в одном стиле</h2>
+                        </div>
+                        <div class="one-style__right">
+                            <p class="one-style__text">При выборе межкомнатных дверей можно сразу заказать и входную с похожей или такой же отделкой.</p><a class="one-style__button" href="#"><span>посмотреть презентацию</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="similar-style">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="similar-style__title">Модели дверей в похожем стиле</h2>
+                        <p class="similar-style__text">Мы подобрали другие двери, которые по стилю похожи на дверь РД83. Они подойдут интерьеру в стиле модерн, хай-тек и функционализм.</p><a class="similar-style__link" href="#">перейти в каталог</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="catalog-item catalog-item--interior"><a class="catalog-item__link" href="#">
+                                <div class="catalog-item__mask"></div>
+                                <div class="catalog-item__img"><img src="images/catalog-item-16.png" alt="catalog item"></div>
+                                <div class="catalog-item__footer">
+                                    <div class="catalog-item__row"><span class="catalog-item__name">MK01K</span><span class="catalog-item__price">от 4 323 руб.</span></div>
+                                    <div class="catalog-item__row">
+                                        <div class="catalog-item__material-container"><span class="catalog-item__material">Шпон и эмаль</span></div>
+                                        <div class="catalog-item__colors">
+                                            <div class="catalog-item__color catalog-item__color--active catalog-item__color--black"></div>
+                                            <div class="catalog-item__color catalog-item__color--grey"></div>
+                                            <div class="catalog-item__color catalog-item__color--brown"></div>
+                                            <div class="catalog-item__color catalog-item__color--grey-light"></div>
+                                            <div class="catalog-item__color catalog-item__color--multicolor"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="offset-lg-2 col-lg-4">
+                        <div class="catalog-item catalog-item--interior"><a class="catalog-item__link" href="#">
+                                <div class="catalog-item__mask"></div>
+                                <div class="catalog-item__img"><img src="images/catalog-item-16.png" alt="catalog item"></div>
+                                <div class="catalog-item__footer">
+                                    <div class="catalog-item__row"><span class="catalog-item__name">MK01K</span><span class="catalog-item__price">от 4 323 руб.</span></div>
+                                    <div class="catalog-item__row">
+                                        <div class="catalog-item__material-container"><span class="catalog-item__material">Шпон и эмаль</span></div>
+                                        <div class="catalog-item__colors">
+                                            <div class="catalog-item__color catalog-item__color--active catalog-item__color--black"></div>
+                                            <div class="catalog-item__color catalog-item__color--grey"></div>
+                                            <div class="catalog-item__color catalog-item__color--brown"></div>
+                                            <div class="catalog-item__color catalog-item__color--grey-light"></div>
+                                            <div class="catalog-item__color catalog-item__color--multicolor"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 <script src="static/js/jquery-3.3.1.min.js" defer></script>
 <script src="static/js/owl.carousel.min.js" defer></script>

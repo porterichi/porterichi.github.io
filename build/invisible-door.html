@@ -1,575 +1,582 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title></title><!--[if IE]>
+    <title></title>
+    <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="./static/css/styles.min.css"><!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="./static/css/styles.min.css">
+    <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
-  </head>
-</html>
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="header__top">
-          <div class="header__cart"><svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 2.42969C16.4529 2.42969 18.8495 4.82654 18.8495 7.77667L19.9171 7.77919C21.1002 7.77919 22.119 8.73624 22.1925 9.91264L22.9958 22.7642C23.0694 23.9424 22.1741 24.8976 20.9946 24.8976H6.00543C4.82655 24.8976 3.9307 23.9406 4.00422 22.7642L4.80744 9.91264C4.88108 8.73437 5.89782 7.77919 7.08286 7.77919H8.15049C8.15049 4.82494 10.549 2.42969 13.5 2.42969ZM16.7101 7.77919C16.7101 6.00825 15.2715 4.56948 13.5004 4.56948C11.7305 4.56948 10.2907 6.00737 10.2907 7.77666L16.7101 7.77919ZM8.15039 9.91898H7.08277C7.02774 9.91898 6.94615 9.99553 6.94299 10.0461L6.15648 22.7578L20.8511 22.755L20.0568 10.0461C20.0538 9.99746 19.9701 9.91898 19.917 9.91898H18.8494V12.0588C18.8494 12.6497 18.3704 13.1287 17.7795 13.1287C17.1886 13.1287 16.7096 12.6497 16.7096 12.0588V9.91898H10.2902V12.0588C10.2902 12.6497 9.81119 13.1287 9.2203 13.1287C8.62941 13.1287 8.15039 12.6497 8.15039 12.0588V9.91898ZM8.1505 19.5481C8.1505 18.9572 8.631 18.4782 9.21548 18.4782H17.7845C18.3727 18.4782 18.8495 18.9531 18.8495 19.5481C18.8495 20.139 18.369 20.618 17.7845 20.618H9.21548C8.62731 20.618 8.1505 20.1431 8.1505 19.5481Z" />
-</svg>
+</head>
 
-          </div><a class="header__logo" href="#"><svg viewBox="0 0 151 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M46.7116 18.9874C48.7179 18.9874 49.5913 17.846 49.5913 16.1138C49.5913 14.7352 48.698 13.7117 46.8704 13.7117H45.7192V18.9874H46.7116ZM42.9792 13.9086C42.9792 12.9049 42.8594 11.9004 42.8594 11.9004H47.1483C50.5838 11.9004 52.371 13.8889 52.371 16.0157C52.371 18.6338 50.3456 20.8185 47.0299 20.8185H45.7184V23.8503C45.7184 24.7559 45.8177 25.6813 45.8177 25.6813H42.9792V13.9086ZM62.6772 20.3067C62.6772 17.4522 61.8428 15.4644 59.3212 15.4644C57.4546 15.4644 56.521 17.1373 56.521 19.3227C56.521 22.1766 57.4142 24.0867 59.8572 24.0867C61.6649 24.0867 62.6772 22.4914 62.6772 20.3067ZM53.8207 19.874C53.8207 16.8423 55.4491 13.6722 59.7976 13.6722C63.372 13.6722 65.3974 16.2119 65.3974 19.7554C65.3974 22.7872 63.769 25.8783 59.3999 25.8783C55.8461 25.8783 53.8207 23.4176 53.8207 19.874ZM71.6323 19.7357C73.2409 19.7357 74.0745 19.0072 74.0745 17.6293C74.0745 16.5663 73.5783 15.7199 71.7514 15.7199H70.5994V19.7364H71.6323V19.7357ZM72.2874 21.5477C72.2874 21.5477 72.0293 21.6063 71.4537 21.6063H70.5994V23.851C70.5994 24.7559 70.6987 25.6813 70.6987 25.6813H67.9587V15.8766C67.9587 14.8736 67.8396 13.8493 67.8396 13.8493H72.0293C75.0082 13.8493 76.7557 15.3063 76.7557 17.6293C76.7557 19.1456 75.9808 20.2672 74.6112 20.8185L76.7557 24.1856C77.073 24.702 77.4175 25.2012 77.7879 25.6813L74.77 25.7802L72.2874 21.5477ZM81.7195 15.6804L79.6148 15.7199C78.9597 15.7397 78.0863 15.8385 78.0863 15.8385L78.1856 13.85H88.153L88.0537 15.8385C88.0537 15.8385 87.1208 15.7397 86.6643 15.7199L84.3603 15.6804V23.8503C84.3603 24.7559 84.4595 25.6813 84.4595 25.6813H81.7195V15.6804ZM90.0196 15.8773C90.0196 14.8736 89.9005 13.85 89.9005 13.85H98.2005L98.1013 15.7397C98.1013 15.7397 97.4661 15.6409 96.2751 15.6211L92.661 15.5823V18.9091L96.9103 18.8498L96.811 20.7204L92.661 20.6413V23.9682L96.2155 23.9293C96.9897 23.9096 98.2998 23.791 98.2998 23.791L98.2005 25.6813H90.0196V15.8773ZM108.527 19.0277C110.85 19.0277 111.842 17.846 111.842 16.1724C111.842 14.6569 110.83 13.7117 108.923 13.7117H107.772V19.027H108.527V19.0277ZM109.42 20.8185H107.772V23.8503C107.772 24.7559 107.871 25.6813 107.871 25.6813H105.031V13.9086C105.031 12.9049 104.913 11.9004 104.913 11.9004H109.202C112.636 11.9004 114.622 13.574 114.622 16.2712C114.622 18.0232 113.332 19.3418 111.763 19.874L114.344 24.1849C114.661 24.7014 115.006 25.2009 115.376 25.6813L112.319 25.7802L109.419 20.8185H109.42ZM117.402 15.8773C117.402 14.8736 117.283 13.7117 117.283 13.7117L120.043 13.7512V23.8503C120.043 24.7559 120.142 25.6813 120.142 25.6813H117.402V15.8773ZM122.604 19.9531C122.604 16.7837 124.371 13.6729 128.224 13.6729C130.01 13.6729 131.024 14.2439 132.017 14.5192L131.44 16.4484C130.408 16.1731 129.673 15.6218 128.125 15.6218C126.298 15.6218 125.384 17.0583 125.384 19.7159C125.384 22.5507 126.457 23.9293 128.72 23.9293C130.407 23.9293 131.659 23.3583 131.659 23.3583L131.917 25.0707C131.917 25.0707 130.666 25.8783 128.482 25.8783C125.126 25.8783 122.605 23.9096 122.605 19.9524L122.604 19.9531ZM134.26 15.8773C134.26 14.8736 134.141 13.85 134.141 13.85L136.901 13.7512V18.8498H142.342V15.8773C142.342 14.8736 142.223 13.85 142.223 13.85L144.983 13.7512V23.8503C144.983 24.7559 145.082 25.6813 145.082 25.6813H142.342V20.7006H136.901V23.8496C136.901 24.7552 137 25.6806 137 25.6806H134.26V15.8773ZM148.24 15.8773C148.24 14.8736 148.121 13.6722 148.121 13.6722L150.881 13.7512V23.8503C150.881 24.7559 150.98 25.6813 150.98 25.6813H148.24V15.8773Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9578 36.6725L8.97852 29.7528L17.7783 21.0273L27.7812 30.945L26.021 32.6899L17.7783 24.5179L12.499 29.7521L15.9585 33.1819L19.7711 29.4019L21.5314 31.1476L15.9578 36.6725Z" fill="#F5A83A"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M29.9658 28.7789L19.9629 18.8613L28.762 10.1387L35.7413 17.0584L30.1692 22.5834L28.409 20.8384L32.2208 17.0584L28.7613 13.6286L23.4827 18.8627L31.7253 27.034L29.9658 28.7789Z" fill="#527EBF"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.13432 27.5674L0.154297 20.6477L5.72641 15.1227L7.48666 16.8677L3.67479 20.6477L7.13432 24.0775L12.4129 18.8434L4.17033 10.6707L5.93058 8.92578L15.9334 18.8434L7.13432 27.5674Z" fill="#6AC184"/>
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="1" width="19" height="16">
-<path d="M8.11328 1.03516H26.916V16.6789H8.11328V1.03516Z" fill="white"/>
-</mask>
-<g mask="url(#mask0)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M18.1156 16.6789L8.11133 6.76127L9.87158 5.01633L18.1149 13.189L23.3942 7.95492L19.9347 4.52504L16.1228 8.30504L14.3619 6.5601L19.9347 1.03516L26.9147 7.95492L18.1156 16.6789Z" fill="#EE4941"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="151" height="36" fill="white" transform="translate(0 0.837891)"/>
-</clipPath>
-</defs>
-</svg>
-</a><a class="header__phone" href="tel:+375291613033">+375 29 161 30 33</a>
-        </div>
-        <div class="header__bottom">
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#">входные двери</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">межкомнатные</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">комплексные решения</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">замер</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">оплата</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">доставка и установка</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main class="main-container">
-    <section class="big-screen big-screen--invisible">
-      <div class="container">
-        <div class="row">
-          <div class="offset-lg-8 col-lg-6 no-padding">
-            <div class="product-variant__card">
-              <div class="breadcrumbs">
-                <div class="container">
-                  <div class="row">
-                    <ul class="breadcrumbs__list">
-                      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Главная</a></li>
-                      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Каталог</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <h1 class="product-variant__title">Дверь-невидимка РДА10</h1><span class="product-variant__order"><span>Под заказ до 45 дней</span></span>
-              <p class="product-variant__description">Дверь устанавливается вровень со стеной. Поверхность полотна покрыта грунт-плёнкой. Отделывается в цвет стены краской, обоями<br>или другим материалом.</p>
-              <div class="product-variant__card-description">Примеры дверей-невидимок установлены в фирменных салонах на пр-те Дзержинского, 122<br>и Кальварийской, 7Б, ТЦ «Трюм»</div>
-              <div class="product-variant__card-price product-variant__card-price--new">
-                <h6>цена комплекта</h6><span>1685 рублей</span><span class="product-variant__card-oldprice with--line"> 2456 рублей</span>
-              </div>
-              <div class="product-variant__card-counter">
-                <div class="product-variant__card-left">количество</div>
-                <div class="product-variant__card-right">
-                  <div class="product-variant__card-minus"></div>
-                  <div class="product-variant__card-number">99</div>
-                  <div class="product-variant__card-plus"></div>
-                </div>
-              </div>
-              <div class="product-variant__card-cost"><span>что входит в стоимость</span></div>
-              <button class="product-variant__card-add"> добавить к заказу</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="action__block">
-      <div class="container">
-        <div class="row">
-          <div class="action">
-            <div class="action__left">
-              <h2 class="action__title">Купите дверь и выиграйте путешествие в Италию</h2><a class="action__link" href="#">узнать условия</a>
-            </div>
-            <div class="action__right">
-              <p class="action__text">Акция действует с 13 мая<br>по 14 июня включительно. Выбрать можно любую дверь из каталога на сайте. Розыгрыш призов состоится 19 июня в 15:00 с помощью закрытого лототрона.</p>
-            </div>
-            <div class="action__img"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="collection collection-invisible">
-      <div class="wrap">
-        <div class="row">
-          <div class="offset-lg-1 col-lg-7">
-            <div class="collection__img collection-invisible__img"><img src="images/invisible-collection.png" alt="collection"></div>
-          </div>
-          <div class="offset-lg-1 col-lg-6 no-padding-left">
-            <div class="collection__block">
-              <h2 class="collection__title collection-invisible__title"><strong>Д</strong><span>верь-невидимка — продолжение интерьера</span></h2>
-              <p class="collection__descr">У скрытой двери нет наличников<br>и традиционной коробки. Такая конструкция не занимает место на стенах и визуально расширяет пространство помещения.<br>Дверь-невидимка сливается с обстановкой<br>и становится незаметной, но при этом функциональной частью интерьера.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="product-cost product-cost__invisible">
-      <div class="product-cost__slider owl-carousel">
-        <div class="product-cost__slide">
-          <div class="container">
+</html>
+
+<body>
+    <header class="header">
+        <div class="container">
             <div class="row">
-              <div class="col-lg-4 no-padding-left">
-                <h2 class="product-cost__title product-cost__title-main">Что входит<br>в стоимость</h2>
-                <p class="product-cost__text product-cost__text--left"> Мы предлагаем готовый вариант двери с открыванием на себя. Все необходимые элементы и фурнитура уже включены в стоимость.</p>
-                <div class="product-cost__table product-cost__table--left">
-                  <div class="product-cost__table-head">
-                    <div class="product-cost__table-title">элемент</div>
-                    <div class="product-cost__table-title">цена, руб</div>
-                  </div>
-                  <div class="product-cost__table-body">
-                    <div class="product-cost__table-row">
-                      <div class="product-cost__table-text">дверное полотно</div>
-                      <div class="product-cost__table-text">600</div>
-                    </div>
-                    <div class="product-cost__table-row">
-                      <div class="product-cost__table-text">коробка</div>
-                      <div class="product-cost__table-text">200</div>
-                    </div>
-                    <div class="product-cost__table-row">
-                      <div class="product-cost__table-text">фурнитура</div>
-                      <div class="product-cost__table-text">655</div>
-                    </div>
-                  </div>
+                <div class="header__top">
+                    <div class="header__cart"><svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 2.42969C16.4529 2.42969 18.8495 4.82654 18.8495 7.77667L19.9171 7.77919C21.1002 7.77919 22.119 8.73624 22.1925 9.91264L22.9958 22.7642C23.0694 23.9424 22.1741 24.8976 20.9946 24.8976H6.00543C4.82655 24.8976 3.9307 23.9406 4.00422 22.7642L4.80744 9.91264C4.88108 8.73437 5.89782 7.77919 7.08286 7.77919H8.15049C8.15049 4.82494 10.549 2.42969 13.5 2.42969ZM16.7101 7.77919C16.7101 6.00825 15.2715 4.56948 13.5004 4.56948C11.7305 4.56948 10.2907 6.00737 10.2907 7.77666L16.7101 7.77919ZM8.15039 9.91898H7.08277C7.02774 9.91898 6.94615 9.99553 6.94299 10.0461L6.15648 22.7578L20.8511 22.755L20.0568 10.0461C20.0538 9.99746 19.9701 9.91898 19.917 9.91898H18.8494V12.0588C18.8494 12.6497 18.3704 13.1287 17.7795 13.1287C17.1886 13.1287 16.7096 12.6497 16.7096 12.0588V9.91898H10.2902V12.0588C10.2902 12.6497 9.81119 13.1287 9.2203 13.1287C8.62941 13.1287 8.15039 12.6497 8.15039 12.0588V9.91898ZM8.1505 19.5481C8.1505 18.9572 8.631 18.4782 9.21548 18.4782H17.7845C18.3727 18.4782 18.8495 18.9531 18.8495 19.5481C18.8495 20.139 18.369 20.618 17.7845 20.618H9.21548C8.62731 20.618 8.1505 20.1431 8.1505 19.5481Z" />
+                        </svg>
+
+                    </div><a class="header__logo" href="#"><svg viewBox="0 0 151 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M46.7116 18.9874C48.7179 18.9874 49.5913 17.846 49.5913 16.1138C49.5913 14.7352 48.698 13.7117 46.8704 13.7117H45.7192V18.9874H46.7116ZM42.9792 13.9086C42.9792 12.9049 42.8594 11.9004 42.8594 11.9004H47.1483C50.5838 11.9004 52.371 13.8889 52.371 16.0157C52.371 18.6338 50.3456 20.8185 47.0299 20.8185H45.7184V23.8503C45.7184 24.7559 45.8177 25.6813 45.8177 25.6813H42.9792V13.9086ZM62.6772 20.3067C62.6772 17.4522 61.8428 15.4644 59.3212 15.4644C57.4546 15.4644 56.521 17.1373 56.521 19.3227C56.521 22.1766 57.4142 24.0867 59.8572 24.0867C61.6649 24.0867 62.6772 22.4914 62.6772 20.3067ZM53.8207 19.874C53.8207 16.8423 55.4491 13.6722 59.7976 13.6722C63.372 13.6722 65.3974 16.2119 65.3974 19.7554C65.3974 22.7872 63.769 25.8783 59.3999 25.8783C55.8461 25.8783 53.8207 23.4176 53.8207 19.874ZM71.6323 19.7357C73.2409 19.7357 74.0745 19.0072 74.0745 17.6293C74.0745 16.5663 73.5783 15.7199 71.7514 15.7199H70.5994V19.7364H71.6323V19.7357ZM72.2874 21.5477C72.2874 21.5477 72.0293 21.6063 71.4537 21.6063H70.5994V23.851C70.5994 24.7559 70.6987 25.6813 70.6987 25.6813H67.9587V15.8766C67.9587 14.8736 67.8396 13.8493 67.8396 13.8493H72.0293C75.0082 13.8493 76.7557 15.3063 76.7557 17.6293C76.7557 19.1456 75.9808 20.2672 74.6112 20.8185L76.7557 24.1856C77.073 24.702 77.4175 25.2012 77.7879 25.6813L74.77 25.7802L72.2874 21.5477ZM81.7195 15.6804L79.6148 15.7199C78.9597 15.7397 78.0863 15.8385 78.0863 15.8385L78.1856 13.85H88.153L88.0537 15.8385C88.0537 15.8385 87.1208 15.7397 86.6643 15.7199L84.3603 15.6804V23.8503C84.3603 24.7559 84.4595 25.6813 84.4595 25.6813H81.7195V15.6804ZM90.0196 15.8773C90.0196 14.8736 89.9005 13.85 89.9005 13.85H98.2005L98.1013 15.7397C98.1013 15.7397 97.4661 15.6409 96.2751 15.6211L92.661 15.5823V18.9091L96.9103 18.8498L96.811 20.7204L92.661 20.6413V23.9682L96.2155 23.9293C96.9897 23.9096 98.2998 23.791 98.2998 23.791L98.2005 25.6813H90.0196V15.8773ZM108.527 19.0277C110.85 19.0277 111.842 17.846 111.842 16.1724C111.842 14.6569 110.83 13.7117 108.923 13.7117H107.772V19.027H108.527V19.0277ZM109.42 20.8185H107.772V23.8503C107.772 24.7559 107.871 25.6813 107.871 25.6813H105.031V13.9086C105.031 12.9049 104.913 11.9004 104.913 11.9004H109.202C112.636 11.9004 114.622 13.574 114.622 16.2712C114.622 18.0232 113.332 19.3418 111.763 19.874L114.344 24.1849C114.661 24.7014 115.006 25.2009 115.376 25.6813L112.319 25.7802L109.419 20.8185H109.42ZM117.402 15.8773C117.402 14.8736 117.283 13.7117 117.283 13.7117L120.043 13.7512V23.8503C120.043 24.7559 120.142 25.6813 120.142 25.6813H117.402V15.8773ZM122.604 19.9531C122.604 16.7837 124.371 13.6729 128.224 13.6729C130.01 13.6729 131.024 14.2439 132.017 14.5192L131.44 16.4484C130.408 16.1731 129.673 15.6218 128.125 15.6218C126.298 15.6218 125.384 17.0583 125.384 19.7159C125.384 22.5507 126.457 23.9293 128.72 23.9293C130.407 23.9293 131.659 23.3583 131.659 23.3583L131.917 25.0707C131.917 25.0707 130.666 25.8783 128.482 25.8783C125.126 25.8783 122.605 23.9096 122.605 19.9524L122.604 19.9531ZM134.26 15.8773C134.26 14.8736 134.141 13.85 134.141 13.85L136.901 13.7512V18.8498H142.342V15.8773C142.342 14.8736 142.223 13.85 142.223 13.85L144.983 13.7512V23.8503C144.983 24.7559 145.082 25.6813 145.082 25.6813H142.342V20.7006H136.901V23.8496C136.901 24.7552 137 25.6806 137 25.6806H134.26V15.8773ZM148.24 15.8773C148.24 14.8736 148.121 13.6722 148.121 13.6722L150.881 13.7512V23.8503C150.881 24.7559 150.98 25.6813 150.98 25.6813H148.24V15.8773Z" fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9578 36.6725L8.97852 29.7528L17.7783 21.0273L27.7812 30.945L26.021 32.6899L17.7783 24.5179L12.499 29.7521L15.9585 33.1819L19.7711 29.4019L21.5314 31.1476L15.9578 36.6725Z" fill="#F5A83A" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.9658 28.7789L19.9629 18.8613L28.762 10.1387L35.7413 17.0584L30.1692 22.5834L28.409 20.8384L32.2208 17.0584L28.7613 13.6286L23.4827 18.8627L31.7253 27.034L29.9658 28.7789Z" fill="#527EBF" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13432 27.5674L0.154297 20.6477L5.72641 15.1227L7.48666 16.8677L3.67479 20.6477L7.13432 24.0775L12.4129 18.8434L4.17033 10.6707L5.93058 8.92578L15.9334 18.8434L7.13432 27.5674Z" fill="#6AC184" />
+                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="1" width="19" height="16">
+                                    <path d="M8.11328 1.03516H26.916V16.6789H8.11328V1.03516Z" fill="white" />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1156 16.6789L8.11133 6.76127L9.87158 5.01633L18.1149 13.189L23.3942 7.95492L19.9347 4.52504L16.1228 8.30504L14.3619 6.5601L19.9347 1.03516L26.9147 7.95492L18.1156 16.6789Z" fill="#EE4941" />
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="151" height="36" fill="white" transform="translate(0 0.837891)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a><a class="header__phone" href="tel:+375291613033">+375 29 161 30 33</a>
                 </div>
-                <div class="product-cost__price">
-                  <div class="product-cost__price-text">цена комплекта</div>
-                  <div class="product-cost__price-number">1685 рублей</div>
+                <div class="header__bottom">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link" href="#">входные двери</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">межкомнатные</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">комплексные решения</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">замер</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">оплата</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">доставка и установка</a></li>
+                            <li class="nav__item"><a class="nav__link" href="#">контакты</a></li>
+                        </ul>
+                    </nav>
                 </div>
-              </div>
-              <div class="col-lg-8"></div>
-              <div class="col-lg-4 no-padding-right">
-                <div class="product-cost__title">Дверное полотно</div>
-                <p class="product-cost__text product-cost__table--right">Выполнено из переклеенного масива хвойных пород дерева. Алюминиевая кромка защищает края створки от повреждений, подчёркивает геометрию двери.</p>
-                <div class="product-cost__table product-cost__table--right product-cost__table--line">
-                  <div class="product-cost__table-head">
-                    <div class="product-cost__table-title">Параметры</div>
-                    <div class="product-cost__table-title">мм</div>
-                  </div>
-                  <div class="product-cost__table-body">
-                    <div class="product-cost__table-row">
-                      <div class="product-cost__table-text">высота</div>
-                      <div class="product-cost__table-text">2000</div>
+            </div>
+        </div>
+    </header>
+    <main class="main-container">
+        <section class="big-screen big-screen--invisible">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-lg-8 col-lg-6 no-padding">
+                        <div class="product-variant__card">
+                            <div class="breadcrumbs">
+                                <div class="container">
+                                    <div class="row">
+                                        <ul class="breadcrumbs__list">
+                                            <li class="breadcrumbs__item"><a class="breadcrumbs__link">Главная</a></li>
+                                            <li class="breadcrumbs__item"><a class="breadcrumbs__link">Каталог</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="product-variant__title">Дверь-невидимка РДА10</h1><span class="product-variant__order"><span>Под заказ до 45 дней</span></span>
+                            <p class="product-variant__description">Дверь устанавливается вровень со стеной. Поверхность полотна покрыта грунт-плёнкой. Отделывается в цвет стены краской, обоями<br>или другим материалом.</p>
+                                <div class="product-variant__card-description">Примеры дверей-невидимок установлены в фирменных салонах на пр-те Дзержинского, 122<br>и Кальварийской, 7Б, ТЦ «Трюм»</div>
+                                    <div class="product-variant__card-price product-variant__card-price--new">
+                                        <h6>цена комплекта</h6><span>1685 рублей</span><span class="product-variant__card-oldprice with--line"> 2456 рублей</span>
+                                    </div>
+                                    <div class="product-variant__card-counter">
+                                        <div class="product-variant__card-left">количество</div>
+                                        <div class="product-variant__card-right">
+                                            <div class="product-variant__card-minus"></div>
+                                            <div class="product-variant__card-number">99</div>
+                                            <div class="product-variant__card-plus"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-variant__card-cost"><span>что входит в стоимость</span></div>
+                                    <button class="product-variant__card-add"> добавить к заказу</button>
+                                </div>
+                        </div>
                     </div>
-                    <div class="product-cost__table-row">
-                      <div class="product-cost__table-text">ширина</div>
-                      <div class="product-cost__table-text">600, 700, 800, 900</div>
-                    </div>
-                    <div class="product-cost__table-row">
-                      <div class="product-cost__table-text">толщина</div>
-                      <div class="product-cost__table-text">40</div>
-                    </div>
-                  </div>
                 </div>
-                <div class="product-cost__title">Коробка скрытого монтажа</div>
-                <p class="product-cost__text product-cost__text--bottom">Аллюминиевая конструкция устанавливается в одной плоскости со стеной без наличника и зашивается листом гипсокартона.</p>
-                <div class="product-cost__table-body">
-                  <div class="product-cost__table-row">
-                    <div class="product-cost__table-text">Ширина</div>
-                    <div class="product-cost__table-text">74 мм</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product-cost__slide">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 no-padding-left">
-                <h2 class="product-cost__title product-cost__title-main">Что входит<br>в стоимость</h2>
-                <p class="product-cost__text product-cost__text--left"> Мы предлагаем готовый вариант двери с открыванием на себя. Все необходимые элементы и фурнитура уже включены в стоимость.</p>
-                <div class="product-cost__table product-cost__table--left">
-                  <div class="product-cost__table-head">
-                    <div class="product-cost__table-title">элемент</div>
-                    <div class="product-cost__table-title">цена, руб</div>
-                  </div>
-                  <div class="product-cost__table-body">
-                    <div class="product-cost__table-row">
-                      <div class="product-cost__table-text">дверное полотно</div>
-                      <div class="product-cost__table-text">600</div>
+        </section>
+        <section class="action__block">
+            <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="action__left">
+                            <h2 class="action__title">Купите дверь и выиграйте путешествие в Италию</h2><a class="action__link" href="#">узнать условия</a>
+                        </div>
+                        <div class="action__right">
+                            <p class="action__text">Акция действует с 13 мая<br>по 14 июня включительно. Выбрать можно любую дверь из каталога на сайте. Розыгрыш призов состоится 19 июня в 15:00 с помощью закрытого лототрона.</p>
+                        </div>
+                        <div class="action__img"></div>
                     </div>
-                    <div class="product-cost__table-row">
-                      <div class="product-cost__table-text">коробка</div>
-                      <div class="product-cost__table-text">200</div>
+                </div>
+            </div>
+        </section>
+        <div class="collection collection-invisible">
+            <div class="wrap">
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-7">
+                        <div class="collection__img collection-invisible__img"><img src="images/invisible-collection.png" alt="collection"></div>
                     </div>
-                    <div class="product-cost__table-row">
-                      <div class="product-cost__table-text">фурнитура</div>
-                      <div class="product-cost__table-text">655</div>
+                    <div class="offset-lg-1 col-lg-6 no-padding-left">
+                        <div class="collection__block">
+                            <h2 class="collection__title collection-invisible__title"><strong>Д</strong><span>верь-невидимка — продолжение интерьера</span></h2>
+                            <p class="collection__descr">У скрытой двери нет наличников<br>и традиционной коробки. Такая конструкция не занимает место на стенах и визуально расширяет пространство помещения.<br>Дверь-невидимка сливается с обстановкой<br>и становится незаметной, но при этом функциональной частью интерьера.</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="product-cost__price">
-                  <div class="product-cost__price-text">цена комплекта</div>
-                  <div class="product-cost__price-number">1685 рублей</div>
-                </div>
-              </div>
-              <div class="col-lg-8"></div>
-              <div class="col-lg-4 no-padding-right">
-                <div class="product-cost__title">Дверное полотно</div>
-                <p class="product-cost__text product-cost__table--right">Выполнено из переклеенного масива хвойных пород дерева. Алюминиевая кромка защищает края створки от повреждений, подчёркивает геометрию двери.</p>
-                <div class="product-cost__table product-cost__table--right product-cost__table--line">
-                  <div class="product-cost__table-head">
-                    <div class="product-cost__table-title">Параметры</div>
-                    <div class="product-cost__table-title">мм</div>
-                  </div>
-                  <div class="product-cost__table-body">
-                    <div class="product-cost__table-row">
-                      <div class="product-cost__table-text">высота</div>
-                      <div class="product-cost__table-text">2000</div>
+            </div>
+        </div>
+        <section class="product-cost product-cost__invisible">
+            <div class="product-cost__slider owl-carousel">
+                <div class="product-cost__slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 no-padding-left">
+                                <h2 class="product-cost__title product-cost__title-main">Что входит<br>в стоимость</h2>
+                                    <p class="product-cost__text product-cost__text--left"> Мы предлагаем готовый вариант двери с открыванием на себя. Все необходимые элементы и фурнитура уже включены в стоимость.</p>
+                                    <div class="product-cost__table product-cost__table--left">
+                                        <div class="product-cost__table-head">
+                                            <div class="product-cost__table-title">элемент</div>
+                                            <div class="product-cost__table-title">цена, руб</div>
+                                        </div>
+                                        <div class="product-cost__table-body">
+                                            <div class="product-cost__table-row">
+                                                <div class="product-cost__table-text">дверное полотно</div>
+                                                <div class="product-cost__table-text">600</div>
+                                            </div>
+                                            <div class="product-cost__table-row">
+                                                <div class="product-cost__table-text">коробка</div>
+                                                <div class="product-cost__table-text">200</div>
+                                            </div>
+                                            <div class="product-cost__table-row">
+                                                <div class="product-cost__table-text">фурнитура</div>
+                                                <div class="product-cost__table-text">655</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-cost__price">
+                                        <div class="product-cost__price-text">цена комплекта</div>
+                                        <div class="product-cost__price-number">1685 рублей</div>
+                                    </div>
+                            </div>
+                            <div class="col-lg-8"></div>
+                            <div class="col-lg-4 no-padding-right">
+                                <div class="product-cost__title">Дверное полотно</div>
+                                <p class="product-cost__text product-cost__table--right">Выполнено из переклеенного масива хвойных пород дерева. Алюминиевая кромка защищает края створки от повреждений, подчёркивает геометрию двери.</p>
+                                <div class="product-cost__table product-cost__table--right product-cost__table--line">
+                                    <div class="product-cost__table-head">
+                                        <div class="product-cost__table-title">Параметры</div>
+                                        <div class="product-cost__table-title">мм</div>
+                                    </div>
+                                    <div class="product-cost__table-body">
+                                        <div class="product-cost__table-row">
+                                            <div class="product-cost__table-text">высота</div>
+                                            <div class="product-cost__table-text">2000</div>
+                                        </div>
+                                        <div class="product-cost__table-row">
+                                            <div class="product-cost__table-text">ширина</div>
+                                            <div class="product-cost__table-text">600, 700, 800, 900</div>
+                                        </div>
+                                        <div class="product-cost__table-row">
+                                            <div class="product-cost__table-text">толщина</div>
+                                            <div class="product-cost__table-text">40</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-cost__title">Коробка скрытого монтажа</div>
+                                <p class="product-cost__text product-cost__text--bottom">Аллюминиевая конструкция устанавливается в одной плоскости со стеной без наличника и зашивается листом гипсокартона.</p>
+                                <div class="product-cost__table-body">
+                                    <div class="product-cost__table-row">
+                                        <div class="product-cost__table-text">Ширина</div>
+                                        <div class="product-cost__table-text">74 мм</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-cost__table-row">
-                      <div class="product-cost__table-text">ширина</div>
-                      <div class="product-cost__table-text">600, 700, 800, 900</div>
+                </div>
+                <div class="product-cost__slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 no-padding-left">
+                                <h2 class="product-cost__title product-cost__title-main">Что входит<br>в стоимость</h2>
+                                    <p class="product-cost__text product-cost__text--left"> Мы предлагаем готовый вариант двери с открыванием на себя. Все необходимые элементы и фурнитура уже включены в стоимость.</p>
+                                    <div class="product-cost__table product-cost__table--left">
+                                        <div class="product-cost__table-head">
+                                            <div class="product-cost__table-title">элемент</div>
+                                            <div class="product-cost__table-title">цена, руб</div>
+                                        </div>
+                                        <div class="product-cost__table-body">
+                                            <div class="product-cost__table-row">
+                                                <div class="product-cost__table-text">дверное полотно</div>
+                                                <div class="product-cost__table-text">600</div>
+                                            </div>
+                                            <div class="product-cost__table-row">
+                                                <div class="product-cost__table-text">коробка</div>
+                                                <div class="product-cost__table-text">200</div>
+                                            </div>
+                                            <div class="product-cost__table-row">
+                                                <div class="product-cost__table-text">фурнитура</div>
+                                                <div class="product-cost__table-text">655</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-cost__price">
+                                        <div class="product-cost__price-text">цена комплекта</div>
+                                        <div class="product-cost__price-number">1685 рублей</div>
+                                    </div>
+                            </div>
+                            <div class="col-lg-8"></div>
+                            <div class="col-lg-4 no-padding-right">
+                                <div class="product-cost__title">Дверное полотно</div>
+                                <p class="product-cost__text product-cost__table--right">Выполнено из переклеенного масива хвойных пород дерева. Алюминиевая кромка защищает края створки от повреждений, подчёркивает геометрию двери.</p>
+                                <div class="product-cost__table product-cost__table--right product-cost__table--line">
+                                    <div class="product-cost__table-head">
+                                        <div class="product-cost__table-title">Параметры</div>
+                                        <div class="product-cost__table-title">мм</div>
+                                    </div>
+                                    <div class="product-cost__table-body">
+                                        <div class="product-cost__table-row">
+                                            <div class="product-cost__table-text">высота</div>
+                                            <div class="product-cost__table-text">2000</div>
+                                        </div>
+                                        <div class="product-cost__table-row">
+                                            <div class="product-cost__table-text">ширина</div>
+                                            <div class="product-cost__table-text">600, 700, 800, 900</div>
+                                        </div>
+                                        <div class="product-cost__table-row">
+                                            <div class="product-cost__table-text">толщина</div>
+                                            <div class="product-cost__table-text">40</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-cost__title">Коробка скрытого монтажа</div>
+                                <p class="product-cost__text product-cost__text--bottom">Аллюминиевая конструкция устанавливается в одной плоскости со стеной без наличника и зашивается листом гипсокартона.</p>
+                                <div class="product-cost__table-body">
+                                    <div class="product-cost__table-row">
+                                        <div class="product-cost__table-text">Ширина</div>
+                                        <div class="product-cost__table-text">74 мм</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-cost__table-row">
-                      <div class="product-cost__table-text">толщина</div>
-                      <div class="product-cost__table-text">40</div>
+                </div>
+            </div>
+        </section>
+        <section class="hardware hardware-invisible">
+            <div class="hardware__left">
+                <h2 class="hardware__title">Подбирайте фурнитуру к интерьеру</h2>
+                <p class="hardware__text">Предлагаем дверные ручки, механизмы закрывания и петли от 10 производителей фурнитуры из Италии, Турции и Греции.</p>
+                <p class="hardware__bottom">Сделаем врезку под ручки, замки и петли на заводе. Избавим вас от лишнего шума и мусора во время монтажа. Заводская врезка точная и аккуратная. Петли не просядут со временем, ручки не расшатаются</p>
+            </div>
+            <div class="hardware__right">
+                <div class="hardware__slider-wrap">
+                    <div class="hardware__slider">
+                        <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                            <div class="hardware__slide-title">Morelli1</div>
+                            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                        </div>
+                        <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                            <div class="hardware__slide-title">Morellil2</div>
+                            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                        </div>
+                        <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                            <div class="hardware__slide-title">Morellil3</div>
+                            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                        </div>
+                        <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                            <div class="hardware__slide-title">Morellil3</div>
+                            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                        </div>
+                        <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                            <div class="hardware__slide-title">Morellil3</div>
+                            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                        </div>
+                        <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                            <div class="hardware__slide-title">Morellil3</div>
+                            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                        </div>
+                        <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
+                            <div class="hardware__slide-title">Morellil3</div>
+                            <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="product-cost__title">Коробка скрытого монтажа</div>
-                <p class="product-cost__text product-cost__text--bottom">Аллюминиевая конструкция устанавливается в одной плоскости со стеной без наличника и зашивается листом гипсокартона.</p>
-                <div class="product-cost__table-body">
-                  <div class="product-cost__table-row">
-                    <div class="product-cost__table-text">Ширина</div>
-                    <div class="product-cost__table-text">74 мм</div>
-                  </div>
+                <div class="scrollbar">
+                    <div class="handle"></div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="hardware hardware-invisible">
-      <div class="hardware__left">
-        <h2 class="hardware__title">Подбирайте фурнитуру к интерьеру</h2>
-        <p class="hardware__text">Предлагаем дверные ручки, механизмы закрывания и петли от 10 производителей фурнитуры из Италии, Турции и Греции.</p>
-        <p class="hardware__bottom">Сделаем врезку под ручки, замки и петли на заводе. Избавим вас от лишнего шума и мусора во время монтажа. Заводская врезка точная и аккуратная. Петли не просядут со временем, ручки не расшатаются</p>
-      </div>
-      <div class="hardware__right">
-        <div class="hardware__slider-wrap">
-          <div class="hardware__slider">
-            <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-              <div class="hardware__slide-title">Morelli1</div>
-              <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-            </div>
-            <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-              <div class="hardware__slide-title">Morellil2</div>
-              <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-            </div>
-            <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-              <div class="hardware__slide-title">Morellil3</div>
-              <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-            </div>
-            <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-              <div class="hardware__slide-title">Morellil3</div>
-              <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-            </div>
-            <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-              <div class="hardware__slide-title">Morellil3</div>
-              <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-            </div>
-            <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-              <div class="hardware__slide-title">Morellil3</div>
-              <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-            </div>
-            <div class="hardware__slide"><img class="hardware__slide-img" src="images/hardware-1.png" alt="manager">
-              <div class="hardware__slide-title">Morellil3</div>
-              <p class="hardware__slide-text">Более 400 наименований фурнитуры от итальянского производителя. Изделия защищены от истирания многослойным покрытием. Срок службы фурнитуры составляет не менее 8 лет.</p><a class="hardware__slide-link" href="#">Посмотреть каталог</a>
-            </div>
-          </div>
-        </div>
-        <div class="scrollbar">
-          <div class="handle"></div>
-        </div>
-      </div>
-    </section>
-    <section class="invisible-door__hidden">
-      <div class="wrap">
-        <div class="row">
-          <div class="invisible-door__hidden-left"></div>
-          <div class="offset-lg-11 lg-5">
-            <div class="invisible-door__hidden-right">
-              <h2 class="invisible-door__hidden-title">Скрытые петли — важная деталь двери-невидимки</h2>
-              <p class="invisible-door__hidden-text">Несущие механизмы невидимы с обеих сторон, что подчёркивает лаконичность решения. Регулируются в трёх плоскостях: по глубине с точностью до 1 мм, вертикали — до 2 мм, горизонтали — до 1,5 мм. В результате полотно плотно прилегает к коробке и не расшатывается.</p>
-              <div class="invisible-door__hidden-block"><img src="images/invisible-lock.png" alt=""><span>Входят в стоимость</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="invisible-door__system">
-      <div class="wrap">
-        <div class="row">
-          <div class="offset-lg-1 col-lg-6 no-padding-right">
-            <div class="invisible-door__system-block">
-              <h2 class="invisible-door__system-title">Система обратного открывания</h2>
-              <p class="invisible-door__system-text">Под заказ изготовим дверь скрытого монтажа<br>с открыванием от себя. Это позволит учесть дизайнерские решения и при этом<br>не нарушить правила<br>пожарной безопасности.</p>
-            </div>
-          </div>
-          <div class="col-lg-8 no-padding-left">
-            <div class="invisible-door__system-img"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="invisible-door__features">
-      <div class="wrap">
-        <div class="row">
-          <div class="col-lg-4">
-            <h2 class="invisible-door__features-title">Особенности монтажа</h2>
-            <p class="invisible-door__features-text">Дверь-невидимка устанавливается до чистовой отделки стен. Если вы сейчас делаете ремонт, самое время её заказать. Для успешной установки важно, чтобы стены были ровными. Если пол не настелен, нужно точно знать его уровень.</p>
-          </div>
-          <div class="offset-lg-1 col-lg-4">
-            <div class="invisible-door__features-block">
-              <div class="invisible-door__features-add invisible-door__features-add--top">
-                <div class="invisible-door__features-circle"></div>
-                <div class="invisible-door__features-plus">
-                  <div class="invisible-door__features-tooltipe">Отклонение стены<br>от вертикали — не более<br>1 мм на метр.</div>
-                </div>
-              </div>
-              <div class="invisible-door__features-add invisible-door__features-add--bottom">
-                <div class="invisible-door__features-circle"></div>
-                <div class="invisible-door__features-plus">
-                  <div class="invisible-door__features-tooltipe">Оптимальная величина зазора между готовым полом и полотном.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="invisible-door__comment">
-      <div class="invisible-door__comment-top">мнение дизайнера</div>
-      <h2 class="invisible-door__comment-title">«Дверь-невидимка может выполнять нестандартные функции. В детской комнате превратите её в доску для рисования мелом, а в гостиной — в зеркало во весь рост. Всё зависит от типа отделки, который вы выберите».</h2><img class="invisible-door__comment-img" src="images/invisible-door-comment.png" alt="">
-      <div class="invisible-door__comment-name">Анастасия,</div><span class="invisible-door__comment-work">дизайнер интерьеров в «Домани»</span>
-    </section>
-    <section class="invisible-door__decoration">
-      <div class="wrap">
-        <div class="row">
-          <div class="invisible-door__decoration-left">
-            <h2 class="invisible-door__decoration-title">Декорируйте проём на своё усмотрение</h2>
-            <p class="invisible-door__decoration-text">Дверь-невидимка сливается со стеной с одной стороны. Если толщина стены больше 9 см, откосы с обратной стороны двери потребуется закрыть. Можно заказать доборы и наличники или выполнить работы самостоятельно.</p><img src="images/invisible-decoration-door-1.png" alt="">
-            <div class="invisible-door__decoration-comment">Снаружи дверь-невидимка полностью сливается со стеной. Констурукция не предусматривает наличников.</div>
-          </div>
-          <div class="invisible-door__decoration-right"><img src="images/invisible-decoration-door-2.png" alt="">
-            <div class="invisible-door__decoration-comment">Внутри дверь скрытого монтажа утопает в проёме. Отделайте его штукатуркой, краской, гипсокартоном, панелями или закажите доборы и наличники.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="invisible-door__choose">
-      <div class="wrap">
-        <div class="row">
-          <div class="col-lg-7">
-            <h2 class="invisible-door__choose-title">Выбирайте высокие скрытые двери, если хотите визуально расширить пространство.</h2>
-            <p class="invisible-door__choose-text">Максимальная высота полотна — 2700 мм, ширина — 1030 мм.</p>
-          </div>
-          <div class="invisible-door__choose-img invisible-door__choose-img--first"></div>
-        </div>
-        <div class="row">
-          <div class="invisible-door__choose-img invisible-door__choose-img--second"></div>
-          <div class="offset-lg-10 col-lg-6">
-            <h2 class="invisible-door__choose-title invisible-door__choose-title--bottom">Используйте нестандартно маленькие конструкции, чтобы замаскировать вход в гардеробную комнату или кладовку.</h2>
-            <p class="invisible-door__choose-text invisible-door__choose-text--bottom">Дверь становится незаметной для посторонних глаз и не выбивается из дизайна интерьера.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="invisible-door__defend">
-      <div class="wrap">
-        <div class="row">
-          <div class="col-lg-5">
-            <h2 class="invisible-door__defend-title">Выпадающий порог защитит от шума<br>и сквозняков</h2>
-            <p class="invisible-door__defend-text">Когда дверь закрыта, уплотнитель перекрывает щель между дверью<br>и полом. Так система защищает помещение от лишних звуков за дверью и сохраняет тепло. Когда дверь открыта, порог невидим. Он не создаёт преград на полу, не мешает передвижению между комнатами.</p>
-            <div class="threshold__block invisible-door__threshold__block"><img class="threshold__block-img" src="images/threshold-2.png" alt="threshold">
-              <div class="threshold__block-text">от 53 руб.</div>
-            </div>
-          </div>
-          <div class="invisible-door__defend-img"></div>
-        </div>
-      </div>
-    </section>
-    <section class="bonus invisible-door__bonus">
-      <div class="container">
-        <div class="row">
-          <div class="bonus__wrap">
-            <div class="bonus__block"><img class="bonus__img" src="images/bonus-1.svg" alt="bonus">
-              <div class="bonus__title"><span>Бесплатный замер</span></div>
-              <div class="bonus__text"> Специалист измерит высоту и ширину проёма, определит его особенности и помогает выбрать правильную сторону открывания двери.</div>
-            </div>
-            <div class="bonus__block"><img class="bonus__img" src="images/bonus-2.svg" alt="bonus">
-              <div class="bonus__title"><span>Оплата</span></div>
-              <div class="bonus__text"> При заключении договора понадобится предпоплата — 30% от стоимости двери. Остаток вносится до доставки и установки</div>
-            </div>
-            <div class="bonus__block"><img class="bonus__img" src="images/bonus-3.svg" alt="bonus">
-              <div class="bonus__title"><span>Доставка и установка</span></div>
-              <div class="bonus__text"> Доставляем двери в Минске и за МКАД. Для дверей в дом используем «тёплый монтаж» — утепляем порог и стены вокруг проёма.</div>
-            </div>
-            <div class="bonus__block"><img class="bonus__img" src="images/bonus-4.svg" alt="bonus">
-              <div class="bonus__title"><span>Гарантия</span></div>
-              <div class="bonus__text"> Действует 2 года на дверь с повреждениями из-за процесса производства, фурнитуру и монтаж наших мастеров.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="invisible-door__card">
-      <div class="wrap">
-        <div class="row">
-          <div class="invisible-door__card-img"></div>
-          <div class="offset-lg-10 col-lg-6 no-padding-left">
-            <div class="product-variant__block--entrance">
-              <div class="breadcrumbs">
-                <div class="container">
-                  <div class="row">
-                    <ul class="breadcrumbs__list">
-                      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Главная</a></li>
-                      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Каталог</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <h1 class="product-variant__title">Дверь-невидимка РДА10</h1><span class="product-variant__order"><span>Для дома</span><span>Под заказ до 45 рабочих  дней</span><span>Хит</span></span>
-              <p class="product-variant__description product-variant__description--entrance">Дверь с основанием из оцинкованной стали и атмосферостойким покрытием. Полотно устойчиво к коррозии, а покрытие — к влаге, перепадам температур и солнечным лучам</p>
-              <div class="product-variant__card-description">Примеры дверей-невидимок установлены в фирменных салонах на пр-те Дзержинского, 122 и Кальварийской, 7Б, ТЦ «Трюм»</div>
-              <div class="product-variant__card-price">
-                <h6>цена комплекта</h6><span>1685 рублей</span>
-              </div>
-              <div class="product-variant__card-counter">
-                <div class="product-variant__card-left">количество</div>
-                <div class="product-variant__card-right">
-                  <div class="product-variant__card-minus"></div>
-                  <div class="product-variant__card-number">1</div>
-                  <div class="product-variant__card-plus"></div>
-                </div>
-              </div>
-              <div class="product-variant__card-cost"><span>что входит в стоимость</span></div>
-              <button class="product-variant__card-add"> добавить к заказу</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="reviews reviews--invisible">
-      <h2 class="reviews__title">Отзывы о дверях и сервисе</h2>
-      <div class="reviews__container owl-carousel">
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-        <div class="reviews__block">
-          <div class="reviews__block-title">минская область, юлия</div>
-          <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
-          <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
-        </div>
-      </div>
-    </section>
-    <section class="similar-style similar-style--invisible">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2 class="similar-style__title">Модели дверей в похожем стиле</h2>
-            <p class="similar-style__text">Мы подобрали другие двери, которые по стилю похожи на дверь РД83. Они подойдут интерьеру в стиле модерн, хай-тек и функционализм.</p><a class="similar-style__link" href="#">перейти в каталог</a>
-          </div>
-          <div class="col-lg-4">
-            <div class="catalog-item catalog-item--interior"><a class="catalog-item__link" href="#">
-                <div class="catalog-item__mask"></div>
-                <div class="catalog-item__img"><img src="images/catalog-item-16.png" alt="catalog item"></div>
-                <div class="catalog-item__footer">
-                  <div class="catalog-item__row"><span class="catalog-item__name">MK01K</span><span class="catalog-item__price">от 4 323 руб.</span></div>
-                  <div class="catalog-item__row">
-                    <div class="catalog-item__material-container"><span class="catalog-item__material">Шпон и эмаль</span></div>
-                    <div class="catalog-item__colors">
-                      <div class="catalog-item__color catalog-item__color--active catalog-item__color--black"></div>
-                      <div class="catalog-item__color catalog-item__color--grey"></div>
-                      <div class="catalog-item__color catalog-item__color--brown"></div>
-                      <div class="catalog-item__color catalog-item__color--grey-light"></div>
-                      <div class="catalog-item__color catalog-item__color--multicolor"></div>
+        </section>
+        <section class="invisible-door__hidden">
+            <div class="wrap">
+                <div class="row">
+                    <div class="invisible-door__hidden-left"></div>
+                    <div class="offset-lg-11 lg-5">
+                        <div class="invisible-door__hidden-right">
+                            <h2 class="invisible-door__hidden-title">Скрытые петли — важная деталь двери-невидимки</h2>
+                            <p class="invisible-door__hidden-text">Несущие механизмы невидимы с обеих сторон, что подчёркивает лаконичность решения. Регулируются в трёх плоскостях: по глубине с точностью до 1 мм, вертикали — до 2 мм, горизонтали — до 1,5 мм. В результате полотно плотно прилегает к коробке и не расшатывается.</p>
+                            <div class="invisible-door__hidden-block"><img src="images/invisible-lock.png" alt=""><span>Входят в стоимость</span></div>
+                        </div>
                     </div>
-                  </div>
-                </div></a></div>
-          </div>
-          <div class="offset-lg-2 col-lg-4">
-            <div class="catalog-item catalog-item--interior"><a class="catalog-item__link" href="#">
-                <div class="catalog-item__mask"></div>
-                <div class="catalog-item__img"><img src="images/catalog-item-16.png" alt="catalog item"></div>
-                <div class="catalog-item__footer">
-                  <div class="catalog-item__row"><span class="catalog-item__name">MK01K</span><span class="catalog-item__price">от 4 323 руб.</span></div>
-                  <div class="catalog-item__row">
-                    <div class="catalog-item__material-container"><span class="catalog-item__material">Шпон и эмаль</span></div>
-                    <div class="catalog-item__colors">
-                      <div class="catalog-item__color catalog-item__color--active catalog-item__color--black"></div>
-                      <div class="catalog-item__color catalog-item__color--grey"></div>
-                      <div class="catalog-item__color catalog-item__color--brown"></div>
-                      <div class="catalog-item__color catalog-item__color--grey-light"></div>
-                      <div class="catalog-item__color catalog-item__color--multicolor"></div>
+                </div>
+            </div>
+        </section>
+        <section class="invisible-door__system">
+            <div class="wrap">
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-6 no-padding-right">
+                        <div class="invisible-door__system-block">
+                            <h2 class="invisible-door__system-title">Система обратного открывания</h2>
+                            <p class="invisible-door__system-text">Под заказ изготовим дверь скрытого монтажа<br>с открыванием от себя. Это позволит учесть дизайнерские решения и при этом<br>не нарушить правила<br>пожарной безопасности.</p>
+                        </div>
                     </div>
-                  </div>
-                </div></a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <script src="static/js/jquery-3.3.1.min.js"></script>
-  <script src="static/js/jquery.easing.min.js"></script>
-  <script src="static/js/mousewheel.js"></script>
-  <script src="static/js/sly-slider.js"></script>
-  <script src="static/js/jquery-mousewheel.js"></script>
-  <script src="static/js/owl.carousel.min.js"></script>
-  <script src="static/js/libs.min.js"></script>
-  <script src="static/js/main.js"></script>
+                    <div class="col-lg-8 no-padding-left">
+                        <div class="invisible-door__system-img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="invisible-door__features">
+            <div class="wrap">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2 class="invisible-door__features-title">Особенности монтажа</h2>
+                        <p class="invisible-door__features-text">Дверь-невидимка устанавливается до чистовой отделки стен. Если вы сейчас делаете ремонт, самое время её заказать. Для успешной установки важно, чтобы стены были ровными. Если пол не настелен, нужно точно знать его уровень.</p>
+                    </div>
+                    <div class="offset-lg-1 col-lg-4">
+                        <div class="invisible-door__features-block">
+                            <div class="invisible-door__features-add invisible-door__features-add--top">
+                                <div class="invisible-door__features-circle"></div>
+                                <div class="invisible-door__features-plus">
+                                    <div class="invisible-door__features-tooltipe">Отклонение стены<br>от вертикали — не более<br>1 мм на метр.</div>
+                                    </div>
+                                </div>
+                                <div class="invisible-door__features-add invisible-door__features-add--bottom">
+                                    <div class="invisible-door__features-circle"></div>
+                                    <div class="invisible-door__features-plus">
+                                        <div class="invisible-door__features-tooltipe">Оптимальная величина зазора между готовым полом и полотном.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="invisible-door__comment">
+            <div class="invisible-door__comment-top">мнение дизайнера</div>
+            <h2 class="invisible-door__comment-title">«Дверь-невидимка может выполнять нестандартные функции. В детской комнате превратите её в доску для рисования мелом, а в гостиной — в зеркало во весь рост. Всё зависит от типа отделки, который вы выберите».</h2><img class="invisible-door__comment-img" src="images/invisible-door-comment.png" alt="">
+            <div class="invisible-door__comment-name">Анастасия,</div><span class="invisible-door__comment-work">дизайнер интерьеров в «Домани»</span>
+        </section>
+        <section class="invisible-door__decoration">
+            <div class="wrap">
+                <div class="row">
+                    <div class="invisible-door__decoration-left">
+                        <h2 class="invisible-door__decoration-title">Декорируйте проём на своё усмотрение</h2>
+                        <p class="invisible-door__decoration-text">Дверь-невидимка сливается со стеной с одной стороны. Если толщина стены больше 9 см, откосы с обратной стороны двери потребуется закрыть. Можно заказать доборы и наличники или выполнить работы самостоятельно.</p><img src="images/invisible-decoration-door-1.png" alt="">
+                        <div class="invisible-door__decoration-comment">Снаружи дверь-невидимка полностью сливается со стеной. Констурукция не предусматривает наличников.</div>
+                    </div>
+                    <div class="invisible-door__decoration-right"><img src="images/invisible-decoration-door-2.png" alt="">
+                        <div class="invisible-door__decoration-comment">Внутри дверь скрытого монтажа утопает в проёме. Отделайте его штукатуркой, краской, гипсокартоном, панелями или закажите доборы и наличники.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="invisible-door__choose">
+            <div class="wrap">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h2 class="invisible-door__choose-title">Выбирайте высокие скрытые двери, если хотите визуально расширить пространство.</h2>
+                        <p class="invisible-door__choose-text">Максимальная высота полотна — 2700 мм, ширина — 1030 мм.</p>
+                    </div>
+                    <div class="invisible-door__choose-img invisible-door__choose-img--first"></div>
+                </div>
+                <div class="row">
+                    <div class="invisible-door__choose-img invisible-door__choose-img--second"></div>
+                    <div class="offset-lg-10 col-lg-6">
+                        <h2 class="invisible-door__choose-title invisible-door__choose-title--bottom">Используйте нестандартно маленькие конструкции, чтобы замаскировать вход в гардеробную комнату или кладовку.</h2>
+                        <p class="invisible-door__choose-text invisible-door__choose-text--bottom">Дверь становится незаметной для посторонних глаз и не выбивается из дизайна интерьера.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="invisible-door__defend">
+            <div class="wrap">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h2 class="invisible-door__defend-title">Выпадающий порог защитит от шума<br>и сквозняков</h2>
+                            <p class="invisible-door__defend-text">Когда дверь закрыта, уплотнитель перекрывает щель между дверью<br>и полом. Так система защищает помещение от лишних звуков за дверью и сохраняет тепло. Когда дверь открыта, порог невидим. Он не создаёт преград на полу, не мешает передвижению между комнатами.</p>
+                                <div class="threshold__block invisible-door__threshold__block"><img class="threshold__block-img" src="images/threshold-2.png" alt="threshold">
+                                    <div class="threshold__block-text">от 53 руб.</div>
+                                </div>
+                    </div>
+                    <div class="invisible-door__defend-img"></div>
+                </div>
+            </div>
+        </section>
+        <section class="bonus invisible-door__bonus">
+            <div class="container">
+                <div class="row">
+                    <div class="bonus__wrap">
+                        <div class="bonus__block"><img class="bonus__img" src="images/bonus-1.svg" alt="bonus">
+                            <div class="bonus__title"><span>Бесплатный замер</span></div>
+                            <div class="bonus__text"> Специалист измерит высоту и ширину проёма, определит его особенности и помогает выбрать правильную сторону открывания двери.</div>
+                        </div>
+                        <div class="bonus__block"><img class="bonus__img" src="images/bonus-2.svg" alt="bonus">
+                            <div class="bonus__title"><span>Оплата</span></div>
+                            <div class="bonus__text"> При заключении договора понадобится предпоплата — 30% от стоимости двери. Остаток вносится до доставки и установки</div>
+                        </div>
+                        <div class="bonus__block"><img class="bonus__img" src="images/bonus-3.svg" alt="bonus">
+                            <div class="bonus__title"><span>Доставка и установка</span></div>
+                            <div class="bonus__text"> Доставляем двери в Минске и за МКАД. Для дверей в дом используем «тёплый монтаж» — утепляем порог и стены вокруг проёма.</div>
+                        </div>
+                        <div class="bonus__block"><img class="bonus__img" src="images/bonus-4.svg" alt="bonus">
+                            <div class="bonus__title"><span>Гарантия</span></div>
+                            <div class="bonus__text"> Действует 2 года на дверь с повреждениями из-за процесса производства, фурнитуру и монтаж наших мастеров.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="invisible-door__card">
+            <div class="wrap">
+                <div class="row">
+                    <div class="invisible-door__card-img"></div>
+                    <div class="offset-lg-10 col-lg-6 no-padding-left">
+                        <div class="product-variant__block--entrance">
+                            <div class="breadcrumbs">
+                                <div class="container">
+                                    <div class="row">
+                                        <ul class="breadcrumbs__list">
+                                            <li class="breadcrumbs__item"><a class="breadcrumbs__link">Главная</a></li>
+                                            <li class="breadcrumbs__item"><a class="breadcrumbs__link">Каталог</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="product-variant__title">Дверь-невидимка РДА10</h1><span class="product-variant__order"><span>Для дома</span><span>Под заказ до 45 рабочих  дней</span><span>Хит</span></span>
+                            <p class="product-variant__description product-variant__description--entrance">Дверь с основанием из оцинкованной стали и атмосферостойким покрытием. Полотно устойчиво к коррозии, а покрытие — к влаге, перепадам температур и солнечным лучам</p>
+                            <div class="product-variant__card-description">Примеры дверей-невидимок установлены в фирменных салонах на пр-те Дзержинского, 122 и Кальварийской, 7Б, ТЦ «Трюм»</div>
+                            <div class="product-variant__card-price">
+                                <h6>цена комплекта</h6><span>1685 рублей</span>
+                            </div>
+                            <div class="product-variant__card-counter">
+                                <div class="product-variant__card-left">количество</div>
+                                <div class="product-variant__card-right">
+                                    <div class="product-variant__card-minus"></div>
+                                    <div class="product-variant__card-number">1</div>
+                                    <div class="product-variant__card-plus"></div>
+                                </div>
+                            </div>
+                            <div class="product-variant__card-cost"><span>что входит в стоимость</span></div>
+                            <button class="product-variant__card-add"> добавить к заказу</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews reviews--invisible">
+            <h2 class="reviews__title">Отзывы о дверях и сервисе</h2>
+            <div class="reviews__container owl-carousel">
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+                <div class="reviews__block">
+                    <div class="reviews__block-title">минская область, юлия</div>
+                    <p class="reviews__block-text">Покупали входную дверь год назад. Заказ оформили быстро, всё очень грамотно, менеджеры в ТЦ «Трюм» просто умницы. Уточнили и про наличники и про доборы, посоветовали, что делать с дверью во время строительства. Прошел год, на двери ни царапинки. Делали теплый монтаж и поэтому зимой не было промерзания или конденсата.</p>
+                    <p class="reviews__block-text">Очень довольны дверью и всем знакомым теперь советуем!</p>
+                </div>
+            </div>
+        </section>
+        <section class="similar-style similar-style--invisible">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="similar-style__title">Модели дверей в похожем стиле</h2>
+                        <p class="similar-style__text">Мы подобрали другие двери, которые по стилю похожи на дверь РД83. Они подойдут интерьеру в стиле модерн, хай-тек и функционализм.</p><a class="similar-style__link" href="#">перейти в каталог</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="catalog-item catalog-item--interior"><a class="catalog-item__link" href="#">
+                                <div class="catalog-item__mask"></div>
+                                <div class="catalog-item__img"><img src="images/catalog-item-16.png" alt="catalog item"></div>
+                                <div class="catalog-item__footer">
+                                    <div class="catalog-item__row"><span class="catalog-item__name">MK01K</span><span class="catalog-item__price">от 4 323 руб.</span></div>
+                                    <div class="catalog-item__row">
+                                        <div class="catalog-item__material-container"><span class="catalog-item__material">Шпон и эмаль</span></div>
+                                        <div class="catalog-item__colors">
+                                            <div class="catalog-item__color catalog-item__color--active catalog-item__color--black"></div>
+                                            <div class="catalog-item__color catalog-item__color--grey"></div>
+                                            <div class="catalog-item__color catalog-item__color--brown"></div>
+                                            <div class="catalog-item__color catalog-item__color--grey-light"></div>
+                                            <div class="catalog-item__color catalog-item__color--multicolor"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div class="offset-lg-2 col-lg-4">
+                        <div class="catalog-item catalog-item--interior"><a class="catalog-item__link" href="#">
+                                <div class="catalog-item__mask"></div>
+                                <div class="catalog-item__img"><img src="images/catalog-item-16.png" alt="catalog item"></div>
+                                <div class="catalog-item__footer">
+                                    <div class="catalog-item__row"><span class="catalog-item__name">MK01K</span><span class="catalog-item__price">от 4 323 руб.</span></div>
+                                    <div class="catalog-item__row">
+                                        <div class="catalog-item__material-container"><span class="catalog-item__material">Шпон и эмаль</span></div>
+                                        <div class="catalog-item__colors">
+                                            <div class="catalog-item__color catalog-item__color--active catalog-item__color--black"></div>
+                                            <div class="catalog-item__color catalog-item__color--grey"></div>
+                                            <div class="catalog-item__color catalog-item__color--brown"></div>
+                                            <div class="catalog-item__color catalog-item__color--grey-light"></div>
+                                            <div class="catalog-item__color catalog-item__color--multicolor"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/jquery.easing.min.js"></script>
+    <script src="static/js/mousewheel.js"></script>
+    <script src="static/js/sly-slider.js"></script>
+    <script src="static/js/jquery-mousewheel.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
 </body>

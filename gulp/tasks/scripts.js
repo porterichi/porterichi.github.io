@@ -1,5 +1,6 @@
 let uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
+    babel = require("gulp-babel"),
     scriptsPATH = {
         "input": "./dev/static/js/",
         "output": "./build/static/js/"
@@ -8,6 +9,7 @@ let uglify = require('gulp-uglify'),
 module.exports = function () {
     $.gulp.task('libsJS:dev', () => {
         return $.gulp.src(['node_modules/svg4everybody/dist/svg4everybody.min.js'])
+            .pipe(babel())
             .pipe(concat('libs.min.js'))
             .pipe($.gulp.dest(scriptsPATH.output));
     });
@@ -22,6 +24,7 @@ module.exports = function () {
     $.gulp.task('js:dev', () => {
         return $.gulp.src([scriptsPATH.input + '*.js',
             '!' + scriptsPATH.input + 'libs.min.js'])
+            .pipe(babel())
             .pipe($.gulp.dest(scriptsPATH.output))
             .pipe($.browserSync.reload({
                 stream: true
@@ -31,12 +34,14 @@ module.exports = function () {
     $.gulp.task('js:build', () => {
         return $.gulp.src([scriptsPATH.input + '*.js',
             '!' + scriptsPATH.input + 'libs.min.js'])
+            .pipe(babel())
             .pipe($.gulp.dest(scriptsPATH.output))
     });
 
     $.gulp.task('js:build-min', () => {
         return $.gulp.src([scriptsPATH.input + '*.js',
             '!' + scriptsPATH.input + 'libs.min.js'])
+            .pipe(babel())
             .pipe(concat('main.min.js'))
             .pipe(uglify())
             .pipe($.gulp.dest(scriptsPATH.output))

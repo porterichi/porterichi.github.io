@@ -1,32 +1,28 @@
-$(function() {
+"use strict";
 
-    const body = $('body');
-    const sortFilterActive = 'sort-filter__dropdown--active';
-    const sortFilter = $('.sort-filter');
+$(function () {
+  var body = $('body');
+  var sortFilterActive = 'sort-filter__dropdown--active';
+  var sortFilter = $('.sort-filter'); // Global Page UI Controller
 
-    // Global Page UI Controller
-    $(document).on('click', function (e) {
-        const target = $(e.target).offsetParent();
+  $(document).on('click', function (e) {
+    var target = $(e.target).offsetParent(); // Sort Filter
 
-        // Sort Filter
-        if (!sortFilter.is(target)
-            && sortFilter.has(target).length === 0) {
-            body.removeClass(sortFilterActive);
-        }
-    });
+    if (!sortFilter.is(target) && sortFilter.has(target).length === 0) {
+      body.removeClass(sortFilterActive);
+    }
+  }); // Open Sort Filter Dropdown
 
-    // Open Sort Filter Dropdown
-    sortFilter.on('click', function() {
-        const dropdown = $(this).find('.sort-filter__dropdown');
+  sortFilter.on('click', function () {
+    var dropdown = $(this).find('.sort-filter__dropdown');
 
-        if (body.hasClass(sortFilterActive)) {
-            dropdown.fadeOut(0);
-            body.removeClass(sortFilterActive);
-            return true;
-        }
-        body.addClass(sortFilterActive);
-        dropdown.fadeIn(0);
-    });
+    if (body.hasClass(sortFilterActive)) {
+      dropdown.fadeOut(0);
+      body.removeClass(sortFilterActive);
+      return true;
+    }
 
-
+    body.addClass(sortFilterActive);
+    dropdown.fadeIn(0);
+  });
 });

@@ -5,10 +5,12 @@ let plumber = require('gulp-plumber'),
     csscomb = require('gulp-csscomb'),
     sourcemaps = require('gulp-sourcemaps'),
     rename = require('gulp-rename'),
+    cssbeautify = require('gulp-cssbeautify');
     stylesPATH = {
         "input": "./dev/static/styles/",
         "output": "./build/static/css/"
     };
+
 
 module.exports = function () {
     $.gulp.task('styles:dev', () => {
@@ -20,6 +22,7 @@ module.exports = function () {
                  overrideBrowserslist:  ['last 3 versions']
             }))
             .pipe(sourcemaps.write())
+            .pipe(cssbeautify())
             .pipe(rename('styles.min.css'))
             .pipe($.gulp.dest(stylesPATH.output))
             .on('end', $.browserSync.reload);

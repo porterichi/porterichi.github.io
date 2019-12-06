@@ -4,7 +4,8 @@ let plumber = require('gulp-plumber'),
     changed = require('gulp-changed'),
     cached = require('gulp-cached'),
     gulpif = require('gulp-if'),
-    filter = require('gulp-filter');
+    filter = require('gulp-filter'),
+    prettyHtml = require('gulp-pretty-html');
 
 module.exports = function () {
     $.gulp.task('pug', () => {
@@ -19,6 +20,7 @@ module.exports = function () {
             .pipe(pug({
                 pretty: true
             }))
+            .pipe(prettyHtml())
             .pipe(plumber.stop())
             .pipe($.gulp.dest('./build/'))
             .on('end', $.browserSync.reload);
