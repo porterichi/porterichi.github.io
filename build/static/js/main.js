@@ -221,4 +221,11 @@ $(document).ready(function () {
       dynamicHandle: false
     });
   }
+
+  if (document.documentElement.clientWidth < 1300) {
+    console.dir('yes');
+    document.querySelector("meta[name=viewport]").setAttribute('content', 'width=1500');
+  }
+
+  ;
 });

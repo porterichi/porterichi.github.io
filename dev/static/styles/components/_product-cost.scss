@@ -4,12 +4,20 @@
   margin-bottom: 176px;
   $context: &;
 
-  &__invisible {
+  &__slide {
+    height: 100vh;
+    width: 100%;
     background-image: url('../../images/product-cost-invisible.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 1089px;
+    background-attachment: fixed;
+  }
+
+  &__invisible {
+
+    height: 200vh;
+    width: 100%;
     color: $white-4;
     padding-top: 98px;
     margin-bottom: 228px;
