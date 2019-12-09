@@ -249,7 +249,7 @@ $(document).ready(function () {
     if (document.documentElement.clientWidth < 1300) {
         document.querySelector("meta[name=viewport]").setAttribute(
             'content',
-            'width=1920');
+            'width=1600');
     };
 
     });
