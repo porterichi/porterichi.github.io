@@ -49,7 +49,7 @@ $(document).ready(function () {
         e.preventDefault();
 
         const el = $(this);
-        const parent = el.parent();
+        const parent = el.parent().parent();
         const collection = parent.find(state.items);
         let flagPage = el.parents('.catalog-item').length ? true : false;
         let data = false;
@@ -154,9 +154,10 @@ $(document).ready(function () {
         var offset = $('.product-cost').offset();
         var isLastSlideActive = $('.product-cost .product-cost-right__slider .owl-item:last-child ')
             .hasClass('active');
+        console.dir($(this).scrollTop() );
+        console.dir(offset );
+        if ($(this).scrollTop() > offset.top) {
 
-        if ($(this).scrollTop() > offset.top && !isLastSlideActive) {
-            productCostInvisible.trigger('next.owl.carousel');
         }
         else {
         }
@@ -246,10 +247,9 @@ $(document).ready(function () {
     }
 
     if (document.documentElement.clientWidth < 1300) {
-        console.dir('yes');
         document.querySelector("meta[name=viewport]").setAttribute(
             'content',
-            'width=1500');
+            'width=1920');
     };
 
     });

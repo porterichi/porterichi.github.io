@@ -4,6 +4,12 @@
   margin-bottom: 176px;
   $context: &;
 
+  &__slider {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
   &__slide {
     height: 100vh;
     width: 100%;
@@ -11,7 +17,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
+
   }
 
   &__invisible {
