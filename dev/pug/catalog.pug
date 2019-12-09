@@ -81,182 +81,191 @@ html(lang="ru-RU")
                                 .sort-filter__dropdown
                                     a(href="#").sort-filter__dropdown-link по убыванию цены
                                     a(href="#").sort-filter__dropdown-link по популярности
-                    .row
+                    .row.overflow-hidden
                         .main-filter
                             .main-filter__row
-                                ul.main-filter__list
-                                    li.main-filter__item.main-filter__item--arrow
-                                        span.main-filter__counter
-                                        span.main-filter__name Стиль
-                                        +icon('sort-filter-arrow')
-                                        .header-dropdown
-                                            form
-                                                label.header-dropdown__label
-                                                    a(href='#').header-dropdown__link
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Авангард
-                                                label.header-dropdown__label
-                                                    a(href='#').header-dropdown__link
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Авангард
-                                                label.header-dropdown__label
-                                                    a(href='#').header-dropdown__link
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Авангард
-                                                label.header-dropdown__label
-                                                    a(href='#').header-dropdown__link
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Авангард
-                                                label.header-dropdown__label
-                                                    a(href='#').header-dropdown__link
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Авангард
+                                .scrollbar
+                                    .handle
+                                .main-filter__list-wrap
+                                    ul.main-filter__list
+                                        li.main-filter__item.main-filter__item--arrow
+                                            span.main-filter__counter
+                                            span.main-filter__name Стиль
+                                            +icon('sort-filter-arrow')
+                                            .header-dropdown
+                                                form
+                                                    label.header-dropdown__label
+                                                        a(href='#').header-dropdown__link
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Авангард
+                                                    label.header-dropdown__label
+                                                        a(href='#').header-dropdown__link
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Авангард
+                                                    label.header-dropdown__label
+                                                        a(href='#').header-dropdown__link
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Авангард
+                                                    label.header-dropdown__label
+                                                        a(href='#').header-dropdown__link
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Авангард
+                                                    label.header-dropdown__label
+                                                        a(href='#').header-dropdown__link
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Авангард
 
-                                    li.main-filter__item.main-filter__item--arrow
-                                        span.main-filter__counter
-                                        span.main-filter__name Коллекция
-                                        +icon('sort-filter-arrow')
-                                        .header-dropdown.header-dropdown--filter
-                                            form.header-dropdown--long
-                                                .header-dropdown__block
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox" disabled).header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Авангард
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Ампир
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Барокко
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Баухауз
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Венеция
+                                        li.main-filter__item.main-filter__item--arrow
+                                            span.main-filter__counter
+                                            span.main-filter__name Коллекция
+                                            +icon('sort-filter-arrow')
+                                            .header-dropdown.header-dropdown--filter
+                                                form.header-dropdown--long
+                                                    .header-dropdown__block
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox" disabled).header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Авангард
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Ампир
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Барокко
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Баухауз
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Венеция
 
-                                                .header-dropdown__block
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Авангард
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Ампир
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Барокко
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Баухауз
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Венеция
+                                                    .header-dropdown__block
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Авангард
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Ампир
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Барокко
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Баухауз
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Венеция
 
-                                                .header-dropdown__block
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Авангард
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Ампир
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Барокко
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Баухауз
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Венеция
+                                                    .header-dropdown__block
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Авангард
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Ампир
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Барокко
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Баухауз
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Венеция
 
-                                                .header-dropdown__block
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Авангард
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Ампир
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Барокко
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Баухауз
-                                                    label.header-dropdown__label
-                                                        input(type="checkbox").header-dropdown__input
-                                                        .header-dropdown__checkbox
-                                                        .header-dropdown__name Венеция
+                                                    .header-dropdown__block
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Авангард
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Ампир
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Барокко
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Баухауз
+                                                        label.header-dropdown__label
+                                                            input(type="checkbox").header-dropdown__input
+                                                            .header-dropdown__checkbox
+                                                            .header-dropdown__name Венеция
 
-                                                .header-dropdown__img
-                                                    img(src="images/dropdown-door.png", alt="doors")
-                                                    img(src="images/dropdown-door.png", alt="doors")
-                                                    img(src="images/dropdown-door.png", alt="doors")
+                                                    .header-dropdown__img
+                                                        img(src="images/dropdown-door.png", alt="doors")
+                                                        img(src="images/dropdown-door.png", alt="doors")
+                                                        img(src="images/dropdown-door.png", alt="doors")
 
 
-                                    li.main-filter__item.main-filter__item--arrow
-                                        span.main-filter__counter
-                                        span.main-filter__name Цвет
-                                        +icon('sort-filter-arrow')
-                                    li.main-filter__item.main-filter__item--arrow.main-filter__item--active
-                                        span.main-filter__counter 1
-                                        span.main-filter__name Тип
-                                        +icon('sort-filter-arrow')
-                                    li.main-filter__item.main-filter__item--arrow.main-filter__item--active
-                                        span.main-filter__counter 3
-                                        span.main-filter__name Система
-                                        +icon('sort-filter-arrow')
-                                        .header-dropdown
-                                            form
-                                                label.header-dropdown__label
-                                                    input(type="radio", name="radio").header-dropdown__input
-                                                    .header-dropdown__radio
-                                                    .header-dropdown__name двери-купе
-                                                label.header-dropdown__label
-                                                    input(type="radio", name="radio").header-dropdown__input
-                                                    .header-dropdown__radio
-                                                    .header-dropdown__name внутрипроёмные
-                                                label.header-dropdown__label
-                                                    input(type="radio", name="radio").header-dropdown__input
-                                                    .header-dropdown__radio
-                                                    .header-dropdown__name двери-пеналы
-                                                label.header-dropdown__label
-                                                    input(type="radio", name="radio").header-dropdown__input
-                                                    .header-dropdown__radio
-                                                    .header-dropdown__name каскадные
-                                    li.main-filter__item
-                                        span.main__filter__counter
-                                        span.main-filter__name Скрытый монтаж
+                                        li.main-filter__item.main-filter__item--arrow
+                                            span.main-filter__counter
+                                            span.main-filter__name Цвет
+                                            +icon('sort-filter-arrow')
+                                        li.main-filter__item.main-filter__item--arrow.main-filter__item--active
+                                            span.main-filter__counter 1
+                                            span.main-filter__name Тип
+                                            +icon('sort-filter-arrow')
+                                        li.main-filter__item.main-filter__item--arrow.main-filter__item--active
+                                            span.main-filter__counter 3
+                                            span.main-filter__name Система
+                                            +icon('sort-filter-arrow')
+                                            .header-dropdown
+                                                form
+                                                    label.header-dropdown__label
+                                                        input(type="radio", name="radio").header-dropdown__input
+                                                        .header-dropdown__radio
+                                                        .header-dropdown__name двери-купе
+                                                    label.header-dropdown__label
+                                                        input(type="radio", name="radio").header-dropdown__input
+                                                        .header-dropdown__radio
+                                                        .header-dropdown__name внутрипроёмные
+                                                    label.header-dropdown__label
+                                                        input(type="radio", name="radio").header-dropdown__input
+                                                        .header-dropdown__radio
+                                                        .header-dropdown__name двери-пеналы
+                                                    label.header-dropdown__label
+                                                        input(type="radio", name="radio").header-dropdown__input
+                                                        .header-dropdown__radio
+                                                        .header-dropdown__name каскадные
+                                        li.main-filter__item
+                                            span.main-filter__name Скрытый монтаж
+                                        li.main-filter__item
+                                            span.main-filter__name Скрытый монтажjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+                                        li.main-filter__item
+                                            span.main-filter__name Скрытый монтажjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+                                        li.main-filter__item
+                                            span.main-filter__name Скрытый монтажjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+
+
 
                             .main-filter__delete
                                 a(href="#")
                                     +icon('trash')
 
 
-                    .row
                         .catalog__snippet-container
                             .catalog-item.catalog-item--interior
                                 a(href="#").catalog-item__link

@@ -135,22 +135,34 @@ $(document).ready(function () {
     }
   }); // Collection Cost Slider
 
-  var productCostInvisible = $('.product-cost__slider');
+  var productCostInvisible = $('.product-cost-right__slider');
   productCostInvisible.owlCarousel({
     items: 1,
     loop: false,
     nav: false,
     dots: false
+  }); // Scroll Cost Block
+
+  $(window).scroll(function () {
+    var offset = $('.product-cost').offset();
+    var isLastSlideActive = $('.product-cost .product-cost-right__slider .owl-item:last-child ').hasClass('active');
+
+    if ($(this).scrollTop() > offset.top && !isLastSlideActive) {
+      productCostInvisible.trigger('next.owl.carousel');
+    } else {}
   });
-  /*productCostInvisible.on('mousewheel', '.owl-stage', function (e) {
-       if (e.deltaY>0) {
-          productCostInvisible.trigger('next.owl');
-      } else {
-          productCostInvisible.trigger('prev.owl');
-      }
-      e.preventDefault();
-  });*/
-  // Hardware Sly Slider
+  productCostInvisible.on('mousewheel', '.owl-stage', function (e) {
+    var lastSlideActive = false;
+    var offset = $('.product-cost').offset();
+    var win = $(window);
+    console.dir(offset);
+
+    if (win.scrollTop() > offset.top) {
+      console.dir(1234);
+    } else {}
+
+    e.preventDefault();
+  }); // Hardware Sly Slider
 
   var $frame = $('.hardware__slider-wrap');
   var $wrap = $frame.parent();
@@ -166,13 +178,6 @@ $(document).ready(function () {
     easing: 'easeOutExpo',
     dragHandle: 1,
     dynamicHandle: false
-  }); // Header Scroll - Catalog Filter
-
-  var filterItems = $('.main-filter__item');
-  var filterItemsWidth = 0;
-  var rowFullWidth = $('.main-filter__row').width();
-  filterItems.map(function (i, el) {
-    filterItemsWidth += $(el).width();
   }); // Review Container
 
   var reviewArrow = "<svg width=\"11\" height=\"8\" viewBox=\"0 0 11 8\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.97631 4.7308 0.659728 4.53553 0.464466C4.34027 0.269203 4.02369 0.269203 3.82843 0.464465L0.646446 3.64645ZM11 3.5L1 3.5L1 4.5L11 4.5L11 3.5Z\"/>\n</svg>";
@@ -186,7 +191,34 @@ $(document).ready(function () {
 
   var list = $('.main-filter__list');
   var listWidth = list.width();
-  var widthRow = $('.main-filter__row').width();
-  console.dir(listWidth);
-  console.dir(widthRow);
+  var row = $('.main-filter__row');
+  var widthRow = row.width();
+  var balance = widthRow - listWidth;
+  var filterSection = $('.main-filter');
+
+  if (balance <= 30 && balance >= 10) {
+    filterSection.addClass('main-filter--last-child-width ');
+  }
+
+  if (balance < 10) {
+    filterSection.addClass('main-filter--slider-active');
+
+    var _$frame = $('.main-filter__list-wrap');
+
+    var _$wrap = _$frame.parent();
+
+    _$frame.sly({
+      horizontal: 1,
+      itemNav: 'basic',
+      mouseDragging: 1,
+      touchDragging: 1,
+      scrollBar: _$wrap.find('.scrollbar'),
+      scrollBy: 1,
+      speed: 300,
+      elasticBounds: 1,
+      easing: 'easeOutExpo',
+      dragHandle: 1,
+      dynamicHandle: false
+    });
+  }
 });

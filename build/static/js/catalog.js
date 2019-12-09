@@ -9,6 +9,8 @@ $(function () {
     var target = $(e.target).offsetParent(); // Sort Filter
 
     if (!sortFilter.is(target) && sortFilter.has(target).length === 0) {
+      var dropdown = $('.sort-filter__dropdown');
+      dropdown.fadeOut(0);
       body.removeClass(sortFilterActive);
     }
   }); // Open Sort Filter Dropdown

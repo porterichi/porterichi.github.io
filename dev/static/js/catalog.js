@@ -11,6 +11,8 @@ $(function() {
         // Sort Filter
         if (!sortFilter.is(target)
             && sortFilter.has(target).length === 0) {
+            const dropdown = $('.sort-filter__dropdown');
+            dropdown.fadeOut(0);
             body.removeClass(sortFilterActive);
         }
     });

@@ -79,7 +79,7 @@
       margin-bottom: 18px;
       position: relative;
 
-      &:before {
+/*      &:before {
         content: '';
         position: absolute;
         left: -237px;
@@ -89,7 +89,7 @@
         background-position: center;
         width: 128px;
         height: 15px;
-      }
+      }*/
     }
   }
 
@@ -110,7 +110,7 @@
     &--line {
       position: relative;
 
-      &:before {
+/*      &:before {
         content: '';
         background-image: url('../../images/icons/big-line-descr.svg');
         background-repeat: no-repeat;
@@ -120,7 +120,7 @@
         top: 13px;
         width: 261px;
         height: 15px;
-      }
+      }*/
     }
 
     &--right {

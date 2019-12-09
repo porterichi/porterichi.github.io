@@ -66,17 +66,7 @@ $(function() {
         ]
     });
 
-    // Scroll Cost Block
 
-    $(window).scroll(function() {
-        var offset = $('.product-cost').offset();
-
-        if ($(this).scrollTop() > offset.top) {
-            productCostInvisible.trigger('to.owl.carousel', 2);
-        }
-        else {
-        }
-    });
 
 
 
@@ -129,5 +119,7 @@ $(function() {
             800 //speed
         );
     });
+
+
 });
 

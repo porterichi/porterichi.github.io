@@ -53,14 +53,6 @@ $(function () {
     margin: 173,
     nav: true,
     navText: [reviewArrow, reviewArrow]
-  }); // Scroll Cost Block
-
-  $(window).scroll(function () {
-    var offset = $('.product-cost').offset();
-
-    if ($(this).scrollTop() > offset.top) {
-      productCostInvisible.trigger('to.owl.carousel', 2);
-    } else {}
   }); // Change door and color
 
   var colors = $('.catalog-item__color');

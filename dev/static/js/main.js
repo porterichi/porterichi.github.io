@@ -139,7 +139,7 @@ $(document).ready(function () {
     });
 
     // Collection Cost Slider
-    let productCostInvisible = $('.product-cost__slider');
+    let productCostInvisible = $('.product-cost-right__slider');
 
     productCostInvisible.owlCarousel({
         items: 1,
@@ -148,15 +148,32 @@ $(document).ready(function () {
         dots: false
     });
 
-    /*productCostInvisible.on('mousewheel', '.owl-stage', function (e) {
+    // Scroll Cost Block
 
-        if (e.deltaY>0) {
-            productCostInvisible.trigger('next.owl');
-        } else {
-            productCostInvisible.trigger('prev.owl');
+    $(window).scroll(function() {
+        var offset = $('.product-cost').offset();
+        var isLastSlideActive = $('.product-cost .product-cost-right__slider .owl-item:last-child ')
+            .hasClass('active');
+
+        if ($(this).scrollTop() > offset.top && !isLastSlideActive) {
+            productCostInvisible.trigger('next.owl.carousel');
+        }
+        else {
+        }
+    });
+
+    productCostInvisible.on('mousewheel', '.owl-stage', function (e) {
+        let lastSlideActive = false;
+        var offset = $('.product-cost').offset();
+        var win = $(window);
+        console.dir(offset);
+        if (win.scrollTop() > offset.top) {
+            console.dir(1234);
+        }
+        else {
         }
         e.preventDefault();
-    });*/
+    });
 
     // Hardware Sly Slider
     var $frame = $('.hardware__slider-wrap');
@@ -177,14 +194,6 @@ $(document).ready(function () {
     });
 
 
-    // Header Scroll - Catalog Filter
-    var filterItems = $('.main-filter__item');
-    var filterItemsWidth = 0;
-    var rowFullWidth = $('.main-filter__row').width();
-
-    filterItems.map(function(i, el) {
-        filterItemsWidth += $(el).width();
-    });
 
     // Review Container
 
@@ -206,8 +215,34 @@ $(document).ready(function () {
     // Header Filter Menu
     const list = $('.main-filter__list');
     const listWidth = list.width();
-    const widthRow = $('.main-filter__row').width();
-    console.dir(listWidth);
-    console.dir(widthRow);
+    const row = $('.main-filter__row');
+    const widthRow = row.width();
+    const balance = widthRow - listWidth;
+    const filterSection = $('.main-filter');
+
+    if (balance <= 30 && balance >= 10) {
+        filterSection.addClass('main-filter--last-child-width ');
+    }
+
+    if( balance < 10){
+        filterSection.addClass('main-filter--slider-active');
+
+        let $frame = $('.main-filter__list-wrap');
+        let $wrap = $frame.parent();
+
+        $frame.sly({
+            horizontal: 1,
+            itemNav: 'basic',
+            mouseDragging: 1,
+            touchDragging: 1,
+            scrollBar: $wrap.find('.scrollbar'),
+            scrollBy: 1,
+            speed: 300,
+            elasticBounds: 1,
+            easing: 'easeOutExpo',
+            dragHandle: 1,
+            dynamicHandle: false
+        });
+    }
 
 });
