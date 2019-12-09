@@ -145,36 +145,24 @@ $(document).ready(function () {
         items: 1,
         loop: false,
         nav: false,
-        dots: false
+        dots: false,
+        margin: 10,
+        animateOut: 'slideOutUp',
+        animateIn: 'slideInUp'
     });
 
     // Scroll Cost Block
 
     $(window).scroll(function() {
-        var offset = $('.product-cost').offset();
-        var isLastSlideActive = $('.product-cost .product-cost-right__slider .owl-item:last-child ')
-            .hasClass('active');
-        console.dir($(this).scrollTop() );
-        console.dir(offset );
-        if ($(this).scrollTop() > offset.top) {
-
+        var middle = $('.product-cost__slide--middle').offset();
+        if ($(this).scrollTop() > middle.top) {
+            productCostInvisible.trigger('next.owl.carousel');
         }
         else {
+            productCostInvisible.trigger('prev.owl.carousel');
         }
     });
 
-    productCostInvisible.on('mousewheel', '.owl-stage', function (e) {
-        let lastSlideActive = false;
-        var offset = $('.product-cost').offset();
-        var win = $(window);
-        console.dir(offset);
-        if (win.scrollTop() > offset.top) {
-            console.dir(1234);
-        }
-        else {
-        }
-        e.preventDefault();
-    });
 
     // Hardware Sly Slider
     var $frame = $('.hardware__slider-wrap');

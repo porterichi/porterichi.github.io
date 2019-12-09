@@ -8,12 +8,18 @@
     position: sticky;
     top: 0;
     left: 0;
+    &-bg {
+      width: 100%;
+      height: 100vh;
+      object-fit: fill;
+      position: absolute;
+    }
   }
 
   &__slide {
     height: 100vh;
     width: 100%;
-    background-image: url('../../images/product-cost-invisible.png');
+    /*background-image: url('../../images/product-cost-invisible.png');*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -21,15 +27,28 @@
     top: 0;
     left: 0;
 
+    &--middle {
+      height: 150vh;
+      width: 100%;
+    }
+
   }
 
   &__invisible {
 
-    height: 200vh;
+    height: 250vh;
     width: 100%;
     color: $white-4;
-    padding-top: 98px;
+    padding-top: 0;
     margin-bottom: 228px;
+
+    .product-cost-right__slider {
+      margin-top: 99px;
+    }
+
+    .product-cost__slide h2.product-cost__title {
+      margin-top: 97px;
+    }
 
     #{$context}__title {
       color: $white-4;

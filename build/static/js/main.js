@@ -140,28 +140,20 @@ $(document).ready(function () {
     items: 1,
     loop: false,
     nav: false,
-    dots: false
+    dots: false,
+    margin: 10,
+    animateOut: 'slideOutUp',
+    animateIn: 'slideInUp'
   }); // Scroll Cost Block
 
   $(window).scroll(function () {
-    var offset = $('.product-cost').offset();
-    var isLastSlideActive = $('.product-cost .product-cost-right__slider .owl-item:last-child ').hasClass('active');
-    console.dir($(this).scrollTop());
-    console.dir(offset);
+    var middle = $('.product-cost__slide--middle').offset();
 
-    if ($(this).scrollTop() > offset.top) {} else {}
-  });
-  productCostInvisible.on('mousewheel', '.owl-stage', function (e) {
-    var lastSlideActive = false;
-    var offset = $('.product-cost').offset();
-    var win = $(window);
-    console.dir(offset);
-
-    if (win.scrollTop() > offset.top) {
-      console.dir(1234);
-    } else {}
-
-    e.preventDefault();
+    if ($(this).scrollTop() > middle.top) {
+      productCostInvisible.trigger('next.owl.carousel');
+    } else {
+      productCostInvisible.trigger('prev.owl.carousel');
+    }
   }); // Hardware Sly Slider
 
   var $frame = $('.hardware__slider-wrap');
@@ -223,7 +215,7 @@ $(document).ready(function () {
   }
 
   if (document.documentElement.clientWidth < 1300) {
-    document.querySelector("meta[name=viewport]").setAttribute('content', 'width=1920');
+    document.querySelector("meta[name=viewport]").setAttribute('content', 'width=1600');
   }
 
   ;
