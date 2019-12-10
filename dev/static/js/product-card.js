@@ -120,12 +120,12 @@ $(function() {
         );
     });
 
-    // Hot Fix for Desct on mobile
+/*    // Hot Fix for Desct on mobile
     if (document.documentElement.clientWidth < 1300) {
         document.querySelector("meta[name=viewport]").setAttribute(
             'content',
             'width=1450');
-    };
+    };*/
 
     // Cost Slider
     let productCostInvisible = $('.product-cost-right__slider');

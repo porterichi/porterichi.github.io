@@ -1,3 +1,17 @@
+
+$screen-size: (
+        laptop: 992px,
+        laptop-lg: 1169px,
+        notebook: 1389px
+);
+
 @mixin notebook {
   @media (min-width: 1170px) { @content; }
+}
+
+@mixin desktop-to-laptop {
+  @media screen and (min-width: map-get($screen-size, laptop-lg)) and (max-width: map-get($screen-size, notebook))
+    {
+      @content;
+    }
 }
