@@ -151,8 +151,14 @@ $(document).ready(function () {
 
     if ($(this).scrollTop() > middle.top) {
       productCostInvisible.trigger('next.owl.carousel');
+      $('.product-cost__invisible--big').fadeOut(300);
+      $('.product-cost__invisible--small').fadeOut(300);
+      $('.product-cost__invisible--middle').fadeIn(300);
     } else {
       productCostInvisible.trigger('prev.owl.carousel');
+      $('.product-cost__invisible--big').fadeIn(300);
+      $('.product-cost__invisible--small').fadeIn(300);
+      $('.product-cost__invisible--middle').fadeOut(300);
     }
   }); // Hardware Sly Slider
 
@@ -215,7 +221,7 @@ $(document).ready(function () {
   }
 
   if (document.documentElement.clientWidth < 1300) {
-    document.querySelector("meta[name=viewport]").setAttribute('content', 'width=1600');
+    document.querySelector("meta[name=viewport]").setAttribute('content', 'width=1450');
   }
 
   ;

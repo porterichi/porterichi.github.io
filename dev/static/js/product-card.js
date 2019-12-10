@@ -123,7 +123,7 @@ $(function() {
     if (document.documentElement.clientWidth < 1300) {
         document.querySelector("meta[name=viewport]").setAttribute(
             'content',
-            'width=1600');
+            'width=1450');
     };
 
 
