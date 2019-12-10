@@ -4,6 +4,15 @@
   margin-bottom: 176px;
   $context: &;
 
+  &-right--product {
+    #{$context}__title--bottom {
+      margin-top: 54px;
+    }
+    #{$context}__table-img {
+      margin-top: 37px;
+    }
+  }
+
   &__slider {
     position: sticky;
     top: 0;
@@ -26,6 +35,11 @@
     position: sticky;
     top: 0;
     left: 0;
+
+    &--product-center {
+      display: flex;
+      align-items: center;
+    }
 
     &--middle {
       height: 120vh;
@@ -123,6 +137,7 @@
     font-weight: 300;
     text-transform: inherit;
     letter-spacing: 0;
+    color: $black;
   }
   &__text {
     font-size: 20px;
@@ -165,7 +180,6 @@
     margin-bottom: 9px;
     font-weight: $bold;
     font-family: $rft-font;
-    color: $black;
 
   }
 
@@ -263,6 +277,7 @@
     position: relative;
     height: 100%;
 
+
     &-wrap {
       display: flex;
       justify-content: center;
@@ -271,6 +286,31 @@
     &-door {
       width: 340px;
       height: 100%;
+
+      &--first-line, &--second-line, &--third-line, &--fourth-line {
+        position: absolute;
+      }
+      &--first-line {
+        top: 147px;
+        right: -86px;
+      }
+      &--second-line {
+        bottom: 32vh;
+        right: -84px;
+      }
+      &--third-line {
+        top: 44px;
+        right: -90px;
+        display: none;
+      }
+      &--fourth-line {
+        right: -89px;
+        top: calc(50% - -13px);
+        display: none;
+      }
+
+
+
     }
 
     &-material {

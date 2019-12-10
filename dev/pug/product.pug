@@ -84,65 +84,94 @@ body
             .container
                 include components/collection
         section.product-cost
-            .container
-                .row
-                    .col-lg-4.no-padding-left
-                        h2.product-cost__title
-                            | Что входит
-                            br
-                            | в стоимость
-                        p.product-cost__text.product-cost__text--left Мы предлагаем готовый вариант двери. Весь необходимый погонаж и фурнитура уже включены в стоимость.
-                        .product-cost__table.product-cost__table--left
-                            .product-cost__table-head
-                                .product-cost__table-title элемент
-                                .product-cost__table-title цена, руб
-                            .product-cost__table-body
-                                .product-cost__table-row
-                                    .product-cost__table-text дверное полотно
-                                    .product-cost__table-text 600
-                                .product-cost__table-row
-                                    .product-cost__table-text коробка
-                                    .product-cost__table-text 200
-                                .product-cost__table-row
-                                    .product-cost__table-text наличники
-                                    .product-cost__table-text 200
-                                .product-cost__table-row
-                                    .product-cost__table-text фурнитура
-                                    .product-cost__table-text 655
-                                .product-cost__table-row
-                                    .product-cost__table-text врезка под фурнитуру
-                                    .product-cost__table-text 50
-                        .product-cost__price
-                            .product-cost__price-text цена комплекта
-                            .product-cost__price-number 1685 рублей
-                    .col-lg-8
-                        .product-cost__img-wrap
-                            .product-cost__img
-                                img(src="images/cost-1.png", alt="door", class="product-cost__img-door")
-                                .product-cost__img-material Строганный шпон, Американский орех
-                    .col-lg-4.no-padding-right
-                        .product-cost__title Дверное полотно
-                        p.product-cost__text.product-cost__table--right Выполнено из клеенного бруса хвойных пород дерева. Подложка под отделку — ДВП или ХДФ .
-                        .product-cost__table.product-cost__table--right.product-cost__table--line
-                            .product-cost__table-head
-                                .product-cost__table-title Параметры
-                                .product-cost__table-title мм
-                            .product-cost__table-body
-                                .product-cost__table-row
-                                    .product-cost__table-text высота
-                                    .product-cost__table-text 2000
-                                .product-cost__table-row
-                                    .product-cost__table-text ширина
-                                    .product-cost__table-text 600, 700, 800, 900
-                                .product-cost__table-row
-                                    .product-cost__table-text толщина
-                                    .product-cost__table-text 40
-                        .product-cost__title Телескопическая коробка
-                        p.product-cost__text.product-cost__text--bottom В конструкции не используют гвозди. Наличники крепятся в специальные пазы. Коробка легко снимается и устанавливается, перекрывает зазоры между стеной и дверью.
-                        .product-cost__table-body
-                            .product-cost__table-row
-                                .product-cost__table-text Ширина
-                                .product-cost__table-text 74 мм
+            .product-cost__slider
+                .product-cost__slide.product-cost__slide--product-center
+                    .container
+                        .row
+                            .col-lg-4.no-padding-left
+                                h2.product-cost__title
+                                    | Что входит
+                                    br
+                                    | в стоимость
+                                p.product-cost__text.product-cost__text--left Мы предлагаем готовый вариант двери. Весь необходимый погонаж и фурнитура уже включены в стоимость.
+                                .product-cost__table.product-cost__table--left
+                                    .product-cost__table-head
+                                        .product-cost__table-title элемент
+                                        .product-cost__table-title цена, руб
+                                    .product-cost__table-body
+                                        .product-cost__table-row
+                                            .product-cost__table-text дверное полотно
+                                            .product-cost__table-text 600
+                                        .product-cost__table-row
+                                            .product-cost__table-text коробка
+                                            .product-cost__table-text 200
+                                        .product-cost__table-row
+                                            .product-cost__table-text наличники
+                                            .product-cost__table-text 200
+                                        .product-cost__table-row
+                                            .product-cost__table-text фурнитура
+                                            .product-cost__table-text 655
+                                        .product-cost__table-row
+                                            .product-cost__table-text врезка под фурнитуру
+                                            .product-cost__table-text 50
+                                .product-cost__price
+                                    .product-cost__price-text цена комплекта
+                                    .product-cost__price-number 1685 рублей
+                            .col-lg-8
+                                .product-cost__img-wrap
+                                    .product-cost__img
+                                        img(src="images/cost-1.png", alt="door", class="product-cost__img-door")
+                                        img(src="images/invisible-line-1.svg", alt="door", class="product-cost__img-door--first-line")
+                                        img(src="images/invisible-line-2.svg", alt="door", class="product-cost__img-door--second-line")
+                                        img(src="images/invisible-line-3.svg", alt="door", class="product-cost__img-door--third-line")
+                                        img(src="images/invisible-line-4.svg", alt="door", class="product-cost__img-door--fourth-line")
+                                        .product-cost__img-material Строганный шпон, Американский орех
+                            .col-lg-4.no-padding-right.product-cost-right__slider.owl-carousel.product-cost-right--product
+                                .product-cost-right__slide
+                                    .product-cost__title Дверное полотно
+                                    p.product-cost__text.product-cost__table--right Выполнено из клеенного бруса хвойных пород дерева. Подложка под отделку — ДВП или ХДФ .
+                                    .product-cost__table.product-cost__table--right.product-cost__table--line
+                                        .product-cost__table-head
+                                            .product-cost__table-title Параметры
+                                            .product-cost__table-title мм
+                                        .product-cost__table-body
+                                            .product-cost__table-row
+                                                .product-cost__table-text высота
+                                                .product-cost__table-text 2000
+                                            .product-cost__table-row
+                                                .product-cost__table-text ширина
+                                                .product-cost__table-text 600, 700, 800, 900
+                                            .product-cost__table-row
+                                                .product-cost__table-text толщина
+                                                .product-cost__table-text 40
+                                    .product-cost__title.product-cost__title--bottom Телескопическая коробка
+                                    p.product-cost__text.product-cost__text--bottom В конструкции не используют гвозди. Наличники крепятся в специальные пазы. Коробка легко снимается и устанавливается, перекрывает зазоры между стеной и дверью.
+                                    .product-cost__table-body
+                                        .product-cost__table-row
+                                            .product-cost__table-text Ширина
+                                            .product-cost__table-text 74 мм
+
+                                .product-cost-right__slide
+                                    .product-cost__title Наличники
+                                    p.product-cost__text.product-cost__table--right Декоративные планки. Крепятся вдоль дверного проёма и закрывают щель между полотном и коробкой.
+                                    .product-cost__table.product-cost__table--right.product-cost__table--line
+                                        .product-cost__table-body
+                                            .product-cost__table-row
+                                                .product-cost__table-text форма
+                                                .product-cost__table-text сферические
+                                    .product-cost__title.product-cost__title--bottom  базовая фурнитура
+                                    p.product-cost__text.product-cost__text--bottom Ручка Armadillo Pava выполнена из высокопрочного сплава Zamak. Устойчива к ржавчине, истиранию, царапинам.
+                                    .product-cost__table-body
+                                        .product-cost__table-row
+                                            .product-cost__table-text петли
+                                            .product-cost__table-text скрытые
+                                        .product-cost__table-row
+                                            .product-cost__table-text механизм закрывания
+                                            .product-cost__table-text магнитный
+                                    img(src="images/invisible-table-img.png" alt='collection').product-cost__table-img
+                .product-cost__slide--middle
+
+
         section.stained-glass
           .container
               .row
@@ -565,4 +594,5 @@ script(src="static/js/owl.carousel.min.js", defer)
 script(src="static/js/Scrollbar.js", defer)
 script(src="static/js/jquery-ui.min.js", defer)
 script(src="static/js/libs.min.js", defer)
+script(src='static/js/main.js', defer)
 script(src='static/js/product-card.js', defer)

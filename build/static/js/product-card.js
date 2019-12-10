@@ -92,11 +92,37 @@ $(function () {
       scrollTop: $(".product-cost").offset().top
     }, 800 //speed
     );
-  });
+  }); // Hot Fix for Desct on mobile
 
   if (document.documentElement.clientWidth < 1300) {
     document.querySelector("meta[name=viewport]").setAttribute('content', 'width=1450');
   }
 
-  ;
+  ; // Cost Slider
+
+  var productCostInvisible = $('.product-cost-right__slider');
+  productCostInvisible.owlCarousel({
+    items: 1,
+    loop: false,
+    nav: false,
+    dots: false,
+    margin: 10,
+    animateOut: 'slideOutUp',
+    animateIn: 'slideInUp'
+  });
+  $(window).scroll(function () {
+    var middle = $('.product-cost__slide--middle').offset();
+
+    if ($(this).scrollTop() > middle.top) {
+      productCostInvisible.trigger('next.owl.carousel');
+      $('.product-cost__invisible--big').fadeOut(300);
+      $('.product-cost__invisible--small').fadeOut(300);
+      $('.product-cost__invisible--middle').fadeIn(300);
+    } else {
+      productCostInvisible.trigger('prev.owl.carousel');
+      $('.product-cost__invisible--big').fadeIn(300);
+      $('.product-cost__invisible--small').fadeIn(300);
+      $('.product-cost__invisible--middle').fadeOut(300);
+    }
+  });
 });
