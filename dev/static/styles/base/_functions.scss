@@ -1,4 +1,4 @@
-@function vw($target) {
-  $vw-context: (1000*.01) * 1px;
+@function vw($target, $viewport) {
+  $vw-context: ($viewport*.01) * 1px;
   @return ($target/$vw-context) * 1vw;
 }

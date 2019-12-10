@@ -28,7 +28,10 @@
   &--interior {
     width: 372px;
     padding-top: 85px;
-
+    @include desktop-to-laptop {
+      width: 340px;
+      padding-top: 40px;
+    }
 
   }
 
@@ -90,6 +93,11 @@
       padding-right: 0;
       height: 800px;
       width: 598px;
+
+      @include desktop-to-laptop {
+        width: 100%;
+      }
+
       & > img {
         width: 100%;
         height: 100%;
@@ -104,6 +112,10 @@
     background: #E1D7DA;
     right: 0;
     top: 0;
+    @include desktop-to-laptop {
+      height: 709px;
+      right: 8px;
+    }
   }
 
   &__img {
@@ -146,6 +158,9 @@
     justify-content: space-between;
     &:not(:last-child) {
       margin-bottom: 16px;
+      @include desktop-to-laptop {
+        margin-bottom: 11px;
+      }
     }
   }
 

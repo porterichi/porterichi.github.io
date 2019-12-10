@@ -15,6 +15,9 @@
 
   &__left {
     padding-right: 99px;
+    @include desktop-to-laptop {
+      padding-right: 40px;
+    }
   }
 
   &__right {

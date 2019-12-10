@@ -9,6 +9,10 @@
 
   $context: &;
 
+  @include desktop-to-laptop {
+    height: 817px;
+  }
+
   &--woman {
     padding-right: 20px;
   }
@@ -91,6 +95,16 @@
 
     &--woman {
       bottom: 88px;
+      @include desktop-to-laptop {
+        left: 47px;
+        bottom: 0;
+        height: 500px;
+      }
+      img {
+        @include desktop-to-laptop {
+          height: 100%;
+        }
+      }
     }
 
     &--sofa {

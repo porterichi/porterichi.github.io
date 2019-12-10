@@ -9,6 +9,12 @@
     margin-top: 90px;
     justify-content: space-between;
     width: 100%;
+
+    @include desktop-to-laptop {
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+
     &--bivalve {
       width: 100%;
     }

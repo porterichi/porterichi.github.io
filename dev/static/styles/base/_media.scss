@@ -15,3 +15,7 @@ $screen-size: (
       @content;
     }
 }
+
+@include desktop-to-laptop {
+
+ }

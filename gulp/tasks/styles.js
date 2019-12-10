@@ -25,11 +25,11 @@ module.exports = function () {
                  overrideBrowserslist:  ['last 3 versions']
             }))
             .pipe(sourcemaps.write())
-            .pipe(cssbeautify())
             .pipe(rename('styles.min.css'))
             .pipe($.gulp.dest(stylesPATH.output))
             .on('end', $.browserSync.reload);
     });
+
     $.gulp.task('styles:build', () => {
         return $.gulp.src(stylesPATH.input + 'styles.scss')
             .pipe(scss())
@@ -39,6 +39,7 @@ module.exports = function () {
             .pipe(csscomb())
             .pipe($.gulp.dest(stylesPATH.output))
     });
+
     $.gulp.task('styles:build-min', () => {
         return $.gulp.src(stylesPATH.input + 'styles.scss')
             .pipe(scss())
