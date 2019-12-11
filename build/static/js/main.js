@@ -146,33 +146,38 @@ $(document).ready(function () {
     animateIn: 'slideInUp'
   }); // Scroll Cost Block
 
-  $(window).scroll(function () {
-    var middle = $('.product-cost__slide--middle').offset();
-
-    if ($(this).scrollTop() > middle.top) {
-      productCostInvisible.trigger('next.owl.carousel'); // Invisible Door
-
-      $('.product-cost__invisible--big').fadeOut(300);
-      $('.product-cost__invisible--small').fadeOut(300);
-      $('.product-cost__invisible--middle').fadeIn(300); // Product Card
-
-      $('.product-cost__img-door--first-line').fadeOut(300);
-      $('.product-cost__img-door--second-line').fadeOut(300);
-      $('.product-cost__img-door--third-line').fadeIn(300);
-      $('.product-cost__img-door--fourth-line').fadeIn(300);
-    } else {
-      productCostInvisible.trigger('prev.owl.carousel'); // Invisible Door
-
-      $('.product-cost__invisible--big').fadeIn(300);
-      $('.product-cost__invisible--small').fadeIn(300);
-      $('.product-cost__invisible--middle').fadeOut(300); // Product Card
-
-      $('.product-cost__img-door--first-line').fadeIn(300);
-      $('.product-cost__img-door--second-line').fadeIn(300);
-      $('.product-cost__img-door--third-line').fadeOut(300);
-      $('.product-cost__img-door--fourth-line').fadeOut(300);
-    }
-  }); // Hardware Sly Slider
+  /*    $(window).scroll(function() {
+          var middle = $('.product-cost__slide--middle').offset();
+          if ($(this).scrollTop() > middle.top) {
+              productCostInvisible.trigger('next.owl.carousel');
+  
+              // Invisible Door
+              $('.product-cost__invisible--big').fadeOut(300);
+              $('.product-cost__invisible--small').fadeOut(300);
+              $('.product-cost__invisible--middle').fadeIn(300);
+  
+              // Product Card
+              $('.product-cost__img-door--first-line').fadeOut(300);
+              $('.product-cost__img-door--second-line').fadeOut(300);
+              $('.product-cost__img-door--third-line').fadeIn(300);
+              $('.product-cost__img-door--fourth-line').fadeIn(300);
+          }
+          else {
+              productCostInvisible.trigger('prev.owl.carousel');
+  
+              // Invisible Door
+              $('.product-cost__invisible--big').fadeIn(300);
+              $('.product-cost__invisible--small').fadeIn(300);
+              $('.product-cost__invisible--middle').fadeOut(300);
+  
+              // Product Card
+              $('.product-cost__img-door--first-line').fadeIn(300);
+              $('.product-cost__img-door--second-line').fadeIn(300);
+              $('.product-cost__img-door--third-line').fadeOut(300);
+              $('.product-cost__img-door--fourth-line').fadeOut(300);
+          }
+      });*/
+  // Hardware Sly Slider
 
   var $frame = $('.hardware__slider-wrap');
   var $wrap = $frame.parent();

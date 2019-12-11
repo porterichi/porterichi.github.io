@@ -153,7 +153,7 @@ $(document).ready(function () {
 
     // Scroll Cost Block
 
-    $(window).scroll(function() {
+/*    $(window).scroll(function() {
         var middle = $('.product-cost__slide--middle').offset();
         if ($(this).scrollTop() > middle.top) {
             productCostInvisible.trigger('next.owl.carousel');
@@ -183,7 +183,7 @@ $(document).ready(function () {
             $('.product-cost__img-door--third-line').fadeOut(300);
             $('.product-cost__img-door--fourth-line').fadeOut(300);
         }
-    });
+    });*/
 
 
     // Hardware Sly Slider
