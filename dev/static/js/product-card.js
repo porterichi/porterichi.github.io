@@ -213,7 +213,7 @@ $(function() {
             ]
         });
     });
-    $('.extras__popup-close').on('click', (e)=> {
+    $('.extras__popup-close').on('click', (e) => {
         $('.extras__popup').fadeOut(200);
     });
 
