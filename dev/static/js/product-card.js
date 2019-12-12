@@ -140,6 +140,16 @@ $(function() {
         animateIn: 'slideInUp'
     });
 
+    $('.stained-glass__slider').owlCarousel({
+        items: 1,
+        loop: false,
+        nav: false,
+        dots: false,
+        margin: 10,
+        animateOut: 'slideOutUp',
+        animateIn: 'slideInUp'
+    });
+
     $(window).scroll(function() {
         var top = $('.product-cost__slider').offset().top + 500;
         var middle = $('.product-cost__slide--middle').offset().top;
@@ -153,10 +163,10 @@ $(function() {
             $('.product-cost__invisible--middle').fadeIn(300);
 
             // Product Card
-            $('.product-cost__img-door--first-line').fadeOut(300);
-            $('.product-cost__img-door--second-line').fadeOut(300);
-            $('.product-cost__img-door--third-line').fadeIn(300);
-            $('.product-cost__img-door--fourth-line').fadeIn(300);
+            $('.product-cost__img-door--first-line').fadeIn(300);
+            $('.product-cost__img-door--second-line').fadeIn(300);
+            $('.product-cost__img-door--third-line').fadeOut(300);
+            $('.product-cost__img-door--fourth-line').fadeOut(300);
         }
 
         else if ($(this).scrollTop() <  middle) {
@@ -167,10 +177,10 @@ $(function() {
             $('.product-cost__invisible--middle').fadeOut(300);
 
             // Product Card
-            $('.product-cost__img-door--first-line').fadeIn(300);
-            $('.product-cost__img-door--second-line').fadeIn(300);
-            $('.product-cost__img-door--third-line').fadeOut(300);
-            $('.product-cost__img-door--fourth-line').fadeOut(300);
+            $('.product-cost__img-door--first-line').fadeOut(300);
+            $('.product-cost__img-door--second-line').fadeOut(300);
+            $('.product-cost__img-door--third-line').fadeIn(300);
+            $('.product-cost__img-door--fourth-line').fadeIn(300);
         }
         else if ($(this).scrollTop() < bottom ) {
             productCostInvisible.trigger('to.owl.carousel', 2);
@@ -181,6 +191,32 @@ $(function() {
             $('.product-cost__img-door--fourth-line').fadeOut(300);
         }
     });
+
+    const extrasArrow = `<svg width="38" height="74" viewBox="0 0 38 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 73L37 37L1 1" stroke="#868686" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
+    // Extras Pop-up gallery
+
+    $('.extras__link').on('click', (e) => {
+        e.preventDefault();
+        $('.extras__popup').fadeIn(200);
+        $('.extras__popup').css('display','flex');
+        $('.extras__popup-container').owlCarousel({
+            items: 1,
+            loop: false,
+            nav: true,
+            dots: true,
+            margin: 10,
+            navText: [
+                extrasArrow,
+                extrasArrow
+            ]
+        });
+    });
+    $('.extras__popup-close').on('click', (e)=> {
+        $('.extras__popup').fadeOut(200);
+    });
+
 
 });
 

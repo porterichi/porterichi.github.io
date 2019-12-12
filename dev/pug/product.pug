@@ -120,11 +120,13 @@ body
                             .col-lg-8
                                 .product-cost__img-wrap
                                     .product-cost__img
-                                        img(src="images/cost-1.png", alt="door", class="product-cost__img-door")
+                                        img(src="images/cost-2.png", alt="door", class="product-cost__img-door--bivalve")
                                         img(src="images/invisible-line-1.svg", alt="door", class="product-cost__img-door--first-line")
                                         img(src="images/invisible-line-2.svg", alt="door", class="product-cost__img-door--second-line")
                                         img(src="images/invisible-line-3.svg", alt="door", class="product-cost__img-door--third-line")
                                         img(src="images/invisible-line-4.svg", alt="door", class="product-cost__img-door--fourth-line")
+
+
                                         .product-cost__img-material Строганный шпон, Американский орех
                             .col-lg-4.no-padding-right.product-cost-right__slider.owl-carousel.product-cost-right--product
                                 .product-cost-right__slide
@@ -198,7 +200,7 @@ body
 
         section.stained-glass
           .container
-              .row
+              .row.stained-glass__screen
                   .col-lg-4
                     h2.stained-glass__title
                         | Витраж дополняет
@@ -206,16 +208,34 @@ body
                         | дизайн двери
                     p.stained-glass__text.stained-glass__text--first Белое или бронзовое матовое стекло с плоским рисунком. Изображение наносится методом пескоструйной обработки. Витражи удачно смотрятся на классических моделях дверей. Освежают дизайн полотна и делают его более оригинальным.
                     p.stained-glass__text.stained-glass__text--second  Доступна технология нанесения объёмного рисунка. На заводе выполняется глубокое матирование стекла. Рифлёное изображение придаёт изделию более богатый вид.
-                  .offset-lg-2.col-lg-3
-                      .stained-glass__block.stained-glass__block--small
-                          .stained-glass__block-name PVC
-                          img(src="images/glass-1.png", alt="door").stained-glass__block-img.stained-glass__block-img--small
-                          .stained-glass__block-descr Входит в стоимость
-                  .offset-lg-1.col-lg-5
-                    .stained-glass__block.stained-glass__block--big
-                        .stained-glass__block-name PVC
-                        img(src="images/glass-2.png", alt="door").stained-glass__block-img.stained-glass__block-img--big
-                        .stained-glass__block-descr + 35 рублей
+                  .offset-lg-2.col-lg-10
+                      .stained-glass__slider.owl-carousel
+                          .stained-glass__slide
+                              .stained-glass__block.stained-glass__block--small
+                                  .stained-glass__block-name PVC
+                                  img(src="images/glass-1.png", alt="door").stained-glass__block-img.stained-glass__block-img--small
+                                  .stained-glass__block-descr Входит в стоимость
+
+                              .stained-glass__block.stained-glass__block--big
+                                    .stained-glass__block-name PVC
+                                    img(src="images/glass-2.png", alt="door").stained-glass__block-img.stained-glass__block-img--big
+                                    .stained-glass__block-descr + 35 рублей
+                          .stained-glass__slide
+                              .stained-glass__block.stained-glass__block--small
+                                  .stained-glass__block-name PVC
+                                  img(src="images/glass-1.png", alt="door").stained-glass__block-img.stained-glass__block-img--small
+                                  .stained-glass__block-descr Входит в стоимость
+
+                              .stained-glass__block.stained-glass__block--big
+                                  .stained-glass__block-name PVC
+                                  img(src="images/glass-2.png", alt="door").stained-glass__block-img.stained-glass__block-img--big
+                                  .stained-glass__block-descr + 35 рублей
+
+
+
+              .stained-glass--top
+              .stained-glass--middle
+              .stained-glass--bottom
         section.choose-box
             .container
                 .row
@@ -285,7 +305,7 @@ body
                        p.extras__text Доборы закрывают торцевые стенки, укрепляют короб и не дают ему расшататься. Служат для стыковки дверной коробки и наличника, когда толщина стены больше 9 см. Необходимость заказа доборов определяет мастер на этапе замера проёма.
                 .row
                     .col-lg-6
-                        .extras__link Примеры дверей с доборами
+                        a(href="#").extras__link Примеры дверей с доборами
                     .col-lg-4
                         p.extras__descr
                             strong Доборы
@@ -605,6 +625,20 @@ body
                                             .catalog-item__color.catalog-item__color--brown
                                             .catalog-item__color.catalog-item__color--grey-light
                                             .catalog-item__color.catalog-item__color--multicolor
+.extras__popup
+    .extras__popup-close
+        include ../static/images/extras-close.svg
+    .extras__popup-container.owl-carousel
+        .extras__popup-item
+            img(src="images/extras-1.png", alt="product").extras__popup-item__img
+            p.extras__popup-item__text Скрывает эффект ступенчатости при закрытии дверей.
+        .extras__popup-item
+            img(src="images/extras-1.png", alt="product").extras__popup-item__img
+            p.extras__popup-item__text Скрывает эффект ступенчатости при закрытии дверей.
+        .extras__popup-item
+            img(src="images/extras-1.png", alt="product").extras__popup-item__img
+            p.extras__popup-item__text Скрывает эффект ступенчатости при закрытии дверей.
+
 
 
 

@@ -297,9 +297,25 @@
     &-door {
       width: 340px;
       height: 100%;
+      &--bivalve {
+        width: 592px;
+        & ~ .product-cost__img-material {
+          right: -175px;
+          left: auto;
+        }
+        & ~ img {
+          display: none!important;
+        }
+      }
 
       &--first-line, &--second-line, &--third-line, &--fourth-line {
         position: absolute;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: 0 0;
+        }
       }
       &--first-line {
         top: 147px;

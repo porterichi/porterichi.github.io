@@ -2,6 +2,85 @@
   padding-top: 81px;
   background-color: $white-2;
 
+  &__popup {
+    width: 100%;
+    height: 100vh;
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    &.open {
+      display: flex;
+    }
+    &-close {
+      position: absolute;
+      right: 27px;
+      top: 36px;
+      cursor: pointer;
+      &:hover svg path {
+        stroke: $gold;
+      }
+      svg path {
+        transition: .25s;
+      }
+    }
+    .owl-nav button {
+      outline: none;
+      position: absolute;
+      line-height: 0!important;
+    }
+    .owl-nav button svg {
+      path {
+        transition: .25s;
+      }
+      &:hover path {
+        stroke: $gold;
+      }
+    }
+    .owl-prev {
+      transform: rotate(180deg);
+      top: calc(50% - 78px);
+      left: -340px;
+    }
+    .owl-next {
+      top: calc(50% - 78px);
+      right: -340px;
+    }
+    .owl-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 27px;
+      .owl-dot {
+        width: 9px;
+        height: 9px;
+        border: 1px solid $gold;
+        border-radius: 50%;
+        margin-left: 20px;
+        outline: none;
+        transition: .5s;
+        &.active {
+          background-color: $gold;
+        }
+      }
+    }
+    &-container {
+      width: 703px;
+      overflow: hidden;
+    }
+    &-item {
+      &__text {
+        font-style: italic;
+        margin-top: 18px;
+      }
+    }
+
+  }
+
   &__background {
     background-image: url('../../images/extras-bg.svg');
     background-repeat: no-repeat;
@@ -44,5 +123,7 @@
     display: inline-block;
     line-height: 18px;
     cursor: pointer;
+    text-decoration: none;
+    color: $black;
   }
 }

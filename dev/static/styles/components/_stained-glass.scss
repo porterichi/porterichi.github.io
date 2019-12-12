@@ -1,6 +1,24 @@
 .stained-glass {
   padding-top: 18px;
   margin-bottom: 189px;
+  position: relative;
+
+  &__screen {
+    position: sticky;
+    left: 0;
+    top: 0;
+  }
+  &--top,
+  &--middle,
+  &--bottom {
+    width: 100%;
+    height: 100vh;
+  }
+
+  &__slide {
+    display: flex;
+    height: 600px;
+  }
 
   &__title {
     margin-bottom: 27px;
@@ -32,14 +50,17 @@
 
     &--small {
       height: 306px;
+      width: 246px;
       position: relative;
       margin-top: 129px;
     }
 
     &--big {
       height: 531px;
+      width: 422px;
       position: relative;
       margin-top: 17px;
+      margin-left: 110px
     }
 
     &-name {
@@ -52,11 +73,11 @@
 
     &-img {
       &--small {
-        width: 116px;
+        width: 116px!important;
         height: 253px;
       }
       &--big {
-        width: 214px;
+        width: 214px!important;
         height: 463px;
       }
     }
