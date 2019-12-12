@@ -199,8 +199,9 @@ $(function() {
 
     $('.extras__link').on('click', (e) => {
         e.preventDefault();
-        $('.extras__popup').fadeIn(200);
-        $('.extras__popup').css('display','flex');
+        const popup = $('.extras__popup');
+        popup.fadeIn(200);
+        popup.css('display','flex');
         $('.extras__popup-container').owlCarousel({
             items: 1,
             loop: false,
