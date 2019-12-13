@@ -170,7 +170,7 @@ $(function() {
         }
 
         else if ($(this).scrollTop() <  middle) {
-            productCostInvisible.trigger('to.owl.carousel', 1);
+            productCostInvisiblec
             // Invisible Door
             $('.product-cost__invisible--big').fadeIn(300);
             $('.product-cost__invisible--small').fadeIn(300);
@@ -217,6 +217,21 @@ $(function() {
     $('.extras__popup-close').on('click', (e) => {
         $('.extras__popup').fadeOut(200);
     });
+
+    // Vitrage Scroll
+    const stainedSliders = $('.stained-glass__slide').length;
+    for (let i = 0; i < stainedSliders; i++) {
+       $(`<div class="stained-glass__slide--item" id=stained-glass-slide-${i}>`).appendTo('.stained-glass .container');
+        new Waypoint({
+            element: document.getElementById(`stained-glass-slide-${i}`),
+            handler: function() {
+                $('.stained-glass__slider').trigger('to.owl.carousel', i);
+            }
+        });
+       const slide = $(`[data-stained=${i}]`);
+    }
+
+
 
 
 });
