@@ -227,7 +227,7 @@ $(function() {
             handler: function() {
                 $('.stained-glass__slider').trigger('to.owl.carousel', i);
             }
-        });
+        });m ,bmb
        const slide = $(`[data-stained=${i}]`);
     }
 

@@ -9,15 +9,16 @@
 
   $context: &;
 
+
+  @include desktop-to-laptop {
+    height: 817px;
+  }
   & > a {
     text-decoration: none;
     color: $black;
     cursor: pointer;
   }
 
-  @include desktop-to-laptop {
-    height: 817px;
-  }
 
   &--woman {
     padding-right: 20px;
@@ -55,6 +56,16 @@
 
     & #{$context}__link {
       margin-bottom: 65px;
+      transition: .25s;
+      &:after {
+        transition: .25s;
+      }
+      &:hover {
+        color: $gold;
+      }
+      &:hover:after {
+        background-color: $gold;
+      }
     }
 
     & #{$context}__link {

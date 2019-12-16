@@ -10,6 +10,10 @@
     background-color: $black;
     padding-top: 26px;
     padding-bottom: 39px;
+    & > a {
+      text-decoration: none;
+      cursor: pointer;
+    }
   }
 
   &__right {

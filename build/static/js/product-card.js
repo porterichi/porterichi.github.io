@@ -185,6 +185,7 @@ $(function () {
         $('.stained-glass__slider').trigger('to.owl.carousel', i);
       }
     });
+    m, bmb;
     var slide = $("[data-stained=".concat(i, "]"));
   };
 
