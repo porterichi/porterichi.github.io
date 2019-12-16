@@ -155,7 +155,7 @@ border: 1px solid #9D9DA1;
 &__title {
 font-size: 61px;
 line-height: 63px;
-font-family: $minion-font;
+font-family: $minion-display;
 font-weight: $regular;
 margin: 0;
 padding: 0;
@@ -453,6 +453,7 @@ position: relative;
 
 &-price {
   padding-bottom: 9px;
+  font-family: $minion-display;
   border-bottom: 1px solid $grey-2;
 
 

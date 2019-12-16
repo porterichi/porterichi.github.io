@@ -38,19 +38,19 @@
 
     &--product-center {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
     }
 
     &--middle {
-      height: 120vh;
+      height: 60vh;
       width: 100%;
     }
     &--bottom {
-      height: 120vh;
+      height: 60vh;
       width: 100%;
     }
     &--top {
-      height: 100vh;
+      height: 60vh;
       width: 100%;
       position: absolute;
       top: 0;
@@ -269,7 +269,7 @@
   }
 
   &__price {
-    padding-bottom: 90px;
+    padding-bottom: 63px;
     &-text {
       font-size: 13px;
       letter-spacing: 2.3px;
