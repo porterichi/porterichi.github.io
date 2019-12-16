@@ -7,7 +7,7 @@
     background-image: url(../../images/threshold-bg.svg);
     background-repeat: repeat-x;
     background-size: contain;
-    background-position: 104px 20px;
+    background-position: 104px 0;
     height: 855px;
     position: relative;
   }
@@ -29,7 +29,7 @@
 
   &__block {
     position: relative;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
     &--right {
       align-items: flex-end;
       display: flex;

@@ -1,6 +1,9 @@
 .extras {
   padding-top: 81px;
-  background-color: $white-2;
+
+  & .row {
+    background-color: $white-2;
+  }
 
   &__popup {
     width: 100%;
@@ -84,6 +87,16 @@
     background-image: url('../../images/extras-bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: -84px;
+      left: 0;
+      height: 84px;
+      width: 100%;
+      background-color: $white-2;
+    }
   }
   &__title {
     margin-bottom: 18px;

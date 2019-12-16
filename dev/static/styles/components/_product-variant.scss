@@ -326,12 +326,21 @@ position: relative;
   padding: 18px 0 9px 0;
   cursor: pointer;
   border-bottom: 1px solid $grey-2;
+  transition: .25s;
+  &:hover {
+    span {
+      color: $gold;
+      border-color: $gold;
+    }
+  }
   & span {
     display: inline-block;
     border-bottom: 1px solid $black;
     margin-bottom: 9px;
     letter-spacing: 2.2px;
+    transition: .25s;
   }
+
 
   &:after {
     content: '';
