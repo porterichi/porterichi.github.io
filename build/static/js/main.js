@@ -236,10 +236,10 @@ $(document).ready(function () {
       dynamicHandle: false
     });
   }
-  /*    if (document.documentElement.clientWidth < 1300) {
-          document.querySelector("meta[name=viewport]").setAttribute(
-              'content',
-              'width=1450');
-      };*/
 
+  if (document.documentElement.clientWidth < 1367) {
+    document.querySelector("meta[name=viewport]").setAttribute('content', 'width=1400');
+  }
+
+  ;
 });
