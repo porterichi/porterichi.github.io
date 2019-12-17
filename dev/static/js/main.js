@@ -256,10 +256,10 @@ $(document).ready(function () {
         });
     }
 
- if (document.documentElement.clientWidth < 1389) {
+ /*if (document.documentElement.clientWidth < 1389) {
         document.querySelector("meta[name=viewport]").setAttribute(
             'content',
             'width=1390');
- };
+ };*/
 
     });
