@@ -41,6 +41,7 @@ h3 {
   margin: 0;
 }
 
+
 .wrap {
   width: 100%;
   padding-right: 18px;
@@ -53,13 +54,11 @@ h3 {
     max-width: 1426px;
   }
 }
-@media screen and (max-width: 1389px) {
-  .container {
 
-    width: 1390px!important;
+.container {
     max-width: none!important;
-  }
 }
+
 
 .stop-scrolling {
   height: 100%;
