@@ -239,10 +239,31 @@ $(function() {
         new Waypoint({
             element: document.getElementById(`invisible-slide-${i}`),
             handler: function() {
-                console.dir(i);
+                setArrow(i);
                 productCostInvisible.trigger('to.owl.carousel', i);
             }
         });
+    }
+
+    // Set Arrow
+    function setArrow(name) {
+        let arrows = {
+            '0': {
+                'top': $('.product-cost__img-door--first-line'),
+                'bottom': $('.product-cost__img-door--second-line')
+            },
+            '1': {
+                'top': $('.product-cost__img-door--third-line'),
+                'bottom': $('.product-cost__img-door--fourth-line')
+            }
+        };
+        let allImages = $('.product-cost__img img:not(".product-cost__img-door")');
+        // Clear Arrows
+        allImages.fadeOut(0);
+        let result = arrows[name];
+        for(let i in result) {
+            result[i].fadeIn(200);
+        }
     }
 
     // Phone Mask

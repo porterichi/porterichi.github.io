@@ -439,7 +439,7 @@ $(function () {
     new Waypoint({
       element: document.getElementById("invisible-slide-".concat(_i)),
       handler: function handler() {
-        console.dir(_i);
+        setArrow(_i);
         productCostInvisible.trigger('to.owl.carousel', _i);
       }
     });
@@ -447,6 +447,28 @@ $(function () {
 
   for (var _i = 0; _i < invisibleSliders; _i++) {
     _loop2(_i);
+  } // Set Arrow
+
+
+  function setArrow(name) {
+    var arrows = {
+      '0': {
+        'top': $('.product-cost__img-door--first-line'),
+        'bottom': $('.product-cost__img-door--second-line')
+      },
+      '1': {
+        'top': $('.product-cost__img-door--third-line'),
+        'bottom': $('.product-cost__img-door--fourth-line')
+      }
+    };
+    var allImages = $('.product-cost__img img:not(".product-cost__img-door")'); // Clear Arrows
+
+    allImages.fadeOut(0);
+    var result = arrows[name];
+
+    for (var _i2 in result) {
+      result[_i2].fadeIn(200);
+    }
   } // Phone Mask
 
 
