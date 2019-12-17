@@ -44,6 +44,9 @@
     &--middle {
       height: 60vh;
       width: 100%;
+      &:last-child {
+        height: 100vh;
+      }
     }
     &--bottom {
       height: 60vh;
@@ -61,7 +64,6 @@
 
   &__invisible {
 
-    height: 220vh;
     width: 100%;
     color: $white-4;
     padding-top: 0;

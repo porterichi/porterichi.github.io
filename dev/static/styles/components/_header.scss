@@ -1,5 +1,8 @@
 .header {
   padding-top: 8px;
+  &.transparent:before {
+    background: #f7f7f7;
+  }
 
   &:before {
     content: '';
@@ -19,7 +22,7 @@
     width: 100%;
     padding: 13px 32px 13px;
     position: relative;
-    margin-bottom: 1px;
+    border-bottom: 1px solid $grey-2;
     background-color: $white;
     @include media-breakpoint-down(lg) {
       padding: 13px 8px 13px;

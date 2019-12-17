@@ -3,442 +3,240 @@
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 $(function () {
-  // jQuery Mask Plugin v1.14.16
-  // github.com/igorescobar/jQuery-Mask-Plugin
-  var $jscomp = $jscomp || {};
-  $jscomp.scope = {};
+  !function (a) {
+    "function" == typeof define && define.amd ? define(["jquery"], a) : a("object" == (typeof exports === "undefined" ? "undefined" : _typeof(exports)) ? require("jquery") : jQuery);
+  }(function (a) {
+    var b,
+        c = navigator.userAgent,
+        d = /iphone/i.test(c),
+        e = /chrome/i.test(c),
+        f = /android/i.test(c);
+    a.mask = {
+      definitions: {
+        9: "[0-9]",
+        a: "[A-Za-z]",
+        "*": "[A-Za-z0-9]"
+      },
+      autoclear: !0,
+      dataName: "rawMaskFn",
+      placeholder: "_"
+    }, a.fn.extend({
+      caret: function caret(a, b) {
+        var c;
+        if (0 !== this.length && !this.is(":hidden")) return "number" == typeof a ? (b = "number" == typeof b ? b : a, this.each(function () {
+          this.setSelectionRange ? this.setSelectionRange(a, b) : this.createTextRange && (c = this.createTextRange(), c.collapse(!0), c.moveEnd("character", b), c.moveStart("character", a), c.select());
+        })) : (this[0].setSelectionRange ? (a = this[0].selectionStart, b = this[0].selectionEnd) : document.selection && document.selection.createRange && (c = document.selection.createRange(), a = 0 - c.duplicate().moveStart("character", -1e5), b = a + c.text.length), {
+          begin: a,
+          end: b
+        });
+      },
+      unmask: function unmask() {
+        return this.trigger("unmask");
+      },
+      mask: function mask(c, g) {
+        var h, i, j, k, l, m, n, o;
 
-  $jscomp.findInternal = function (a, n, f) {
-    a instanceof String && (a = String(a));
+        if (!c && this.length > 0) {
+          h = a(this[0]);
+          var p = h.data(a.mask.dataName);
+          return p ? p() : void 0;
+        }
 
-    for (var p = a.length, k = 0; k < p; k++) {
-      var b = a[k];
-      if (n.call(f, b, k, a)) return {
-        i: k,
-        v: b
-      };
-    }
+        return g = a.extend({
+          autoclear: a.mask.autoclear,
+          placeholder: a.mask.placeholder,
+          completed: null
+        }, g), i = a.mask.definitions, j = [], k = n = c.length, l = null, a.each(c.split(""), function (a, b) {
+          "?" == b ? (n--, k = a) : i[b] ? (j.push(new RegExp(i[b])), null === l && (l = j.length - 1), k > a && (m = j.length - 1)) : j.push(null);
+        }), this.trigger("unmask").each(function () {
+          function h() {
+            if (g.completed) {
+              for (var a = l; m >= a; a++) {
+                if (j[a] && C[a] === p(a)) return;
+              }
 
-    return {
-      i: -1,
-      v: void 0
-    };
-  };
+              g.completed.call(B);
+            }
+          }
 
-  $jscomp.ASSUME_ES5 = !1;
-  $jscomp.ASSUME_NO_NATIVE_MAP = !1;
-  $jscomp.ASSUME_NO_NATIVE_SET = !1;
-  $jscomp.SIMPLE_FROUND_POLYFILL = !1;
-  $jscomp.defineProperty = $jscomp.ASSUME_ES5 || "function" == typeof Object.defineProperties ? Object.defineProperty : function (a, n, f) {
-    a != Array.prototype && a != Object.prototype && (a[n] = f.value);
-  };
+          function p(a) {
+            return g.placeholder.charAt(a < g.placeholder.length ? a : 0);
+          }
 
-  $jscomp.getGlobal = function (a) {
-    return "undefined" != typeof window && window === a ? a : "undefined" != typeof global && null != global ? global : a;
-  };
-
-  $jscomp.global = $jscomp.getGlobal(this);
-
-  $jscomp.polyfill = function (a, n, f, p) {
-    if (n) {
-      f = $jscomp.global;
-      a = a.split(".");
-
-      for (p = 0; p < a.length - 1; p++) {
-        var k = a[p];
-        k in f || (f[k] = {});
-        f = f[k];
-      }
-
-      a = a[a.length - 1];
-      p = f[a];
-      n = n(p);
-      n != p && null != n && $jscomp.defineProperty(f, a, {
-        configurable: !0,
-        writable: !0,
-        value: n
-      });
-    }
-  };
-
-  $jscomp.polyfill("Array.prototype.find", function (a) {
-    return a ? a : function (a, f) {
-      return $jscomp.findInternal(this, a, f).v;
-    };
-  }, "es6", "es3");
-
-  (function (a, n, f) {
-    "function" === typeof define && define.amd ? define(["jquery"], a) : "object" === (typeof exports === "undefined" ? "undefined" : _typeof(exports)) && "undefined" === typeof Meteor ? module.exports = a(require("jquery")) : a(n || f);
-  })(function (a) {
-    var n = function n(b, d, e) {
-      var c = {
-        invalid: [],
-        getCaret: function getCaret() {
-          try {
-            var a = 0,
-                r = b.get(0),
-                h = document.selection,
-                d = r.selectionStart;
-
-            if (h && -1 === navigator.appVersion.indexOf("MSIE 10")) {
-              var e = h.createRange();
-              e.moveStart("character", -c.val().length);
-              a = e.text.length;
-            } else if (d || "0" === d) a = d;
+          function q(a) {
+            for (; ++a < n && !j[a];) {
+              ;
+            }
 
             return a;
-          } catch (C) {}
-        },
-        setCaret: function setCaret(a) {
-          try {
-            if (b.is(":focus")) {
-              var c = b.get(0);
-              if (c.setSelectionRange) c.setSelectionRange(a, a);else {
-                var g = c.createTextRange();
-                g.collapse(!0);
-                g.moveEnd("character", a);
-                g.moveStart("character", a);
-                g.select();
+          }
+
+          function r(a) {
+            for (; --a >= 0 && !j[a];) {
+              ;
+            }
+
+            return a;
+          }
+
+          function s(a, b) {
+            var c, d;
+
+            if (!(0 > a)) {
+              for (c = a, d = q(b); n > c; c++) {
+                if (j[c]) {
+                  if (!(n > d && j[c].test(C[d]))) break;
+                  C[c] = C[d], C[d] = p(d), d = q(d);
+                }
+              }
+
+              z(), B.caret(Math.max(l, a));
+            }
+          }
+
+          function t(a) {
+            var b, c, d, e;
+
+            for (b = a, c = p(a); n > b; b++) {
+              if (j[b]) {
+                if (d = q(b), e = C[b], C[b] = c, !(n > d && j[d].test(e))) break;
+                c = e;
               }
             }
-          } catch (B) {}
-        },
-        events: function events() {
-          b.on("keydown.mask", function (a) {
-            b.data("mask-keycode", a.keyCode || a.which);
-            b.data("mask-previus-value", b.val());
-            b.data("mask-previus-caret-pos", c.getCaret());
-            c.maskDigitPosMapOld = c.maskDigitPosMap;
-          }).on(a.jMaskGlobals.useInput ? "input.mask" : "keyup.mask", c.behaviour).on("paste.mask drop.mask", function () {
-            setTimeout(function () {
-              b.keydown().keyup();
-            }, 100);
-          }).on("change.mask", function () {
-            b.data("changed", !0);
-          }).on("blur.mask", function () {
-            f === c.val() || b.data("changed") || b.trigger("change");
-            b.data("changed", !1);
-          }).on("blur.mask", function () {
-            f = c.val();
-          }).on("focus.mask", function (b) {
-            !0 === e.selectOnFocus && a(b.target).select();
-          }).on("focusout.mask", function () {
-            e.clearIfNotMatch && !k.test(c.val()) && c.val("");
-          });
-        },
-        getRegexMask: function getRegexMask() {
-          for (var a = [], b, c, e, t, f = 0; f < d.length; f++) {
-            (b = l.translation[d.charAt(f)]) ? (c = b.pattern.toString().replace(/.{1}$|^.{1}/g, ""), e = b.optional, (b = b.recursive) ? (a.push(d.charAt(f)), t = {
-              digit: d.charAt(f),
-              pattern: c
-            }) : a.push(e || b ? c + "?" : c)) : a.push(d.charAt(f).replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&"));
           }
 
-          a = a.join("");
-          t && (a = a.replace(new RegExp("(" + t.digit + "(.*" + t.digit + ")?)"), "($1)?").replace(new RegExp(t.digit, "g"), t.pattern));
-          return new RegExp(a);
-        },
-        destroyEvents: function destroyEvents() {
-          b.off("input keydown keyup paste drop blur focusout ".split(" ").join(".mask "));
-        },
-        val: function val(a) {
-          var c = b.is("input") ? "val" : "text";
+          function u() {
+            var a = B.val(),
+                b = B.caret();
 
-          if (0 < arguments.length) {
-            if (b[c]() !== a) b[c](a);
-            c = b;
-          } else c = b[c]();
+            if (o && o.length && o.length > a.length) {
+              for (A(!0); b.begin > 0 && !j[b.begin - 1];) {
+                b.begin--;
+              }
 
-          return c;
-        },
-        calculateCaretPosition: function calculateCaretPosition(a) {
-          var d = c.getMasked(),
-              h = c.getCaret();
+              if (0 === b.begin) for (; b.begin < l && !j[b.begin];) {
+                b.begin++;
+              }
+              B.caret(b.begin, b.begin);
+            } else {
+              for (A(!0); b.begin < n && !j[b.begin];) {
+                b.begin++;
+              }
 
-          if (a !== d) {
-            var e = b.data("mask-previus-caret-pos") || 0;
-            d = d.length;
-            var g = a.length,
-                f = a = 0,
-                l = 0,
-                k = 0,
-                m;
-
-            for (m = h; m < d && c.maskDigitPosMap[m]; m++) {
-              f++;
+              B.caret(b.begin, b.begin);
             }
 
-            for (m = h - 1; 0 <= m && c.maskDigitPosMap[m]; m--) {
-              a++;
-            }
-
-            for (m = h - 1; 0 <= m; m--) {
-              c.maskDigitPosMap[m] && l++;
-            }
-
-            for (m = e - 1; 0 <= m; m--) {
-              c.maskDigitPosMapOld[m] && k++;
-            }
-
-            h > g ? h = 10 * d : e >= h && e !== g ? c.maskDigitPosMapOld[h] || (e = h, h = h - (k - l) - a, c.maskDigitPosMap[h] && (h = e)) : h > e && (h = h + (l - k) + f);
+            h();
           }
 
-          return h;
-        },
-        behaviour: function behaviour(d) {
-          d = d || window.event;
-          c.invalid = [];
-          var e = b.data("mask-keycode");
-
-          if (-1 === a.inArray(e, l.byPassKeys)) {
-            e = c.getMasked();
-            var h = c.getCaret(),
-                g = b.data("mask-previus-value") || "";
-            setTimeout(function () {
-              c.setCaret(c.calculateCaretPosition(g));
-            }, a.jMaskGlobals.keyStrokeCompensation);
-            c.val(e);
-            c.setCaret(h);
-            return c.callbacks(d);
+          function v() {
+            A(), B.val() != E && B.change();
           }
-        },
-        getMasked: function getMasked(a, b) {
-          var h = [],
-              f = void 0 === b ? c.val() : b + "",
-              g = 0,
-              k = d.length,
-              n = 0,
-              p = f.length,
-              m = 1,
-              r = "push",
-              u = -1,
-              w = 0;
-          b = [];
 
-          if (e.reverse) {
-            r = "unshift";
-            m = -1;
-            var x = 0;
-            g = k - 1;
-            n = p - 1;
-
-            var A = function A() {
-              return -1 < g && -1 < n;
-            };
-          } else x = k - 1, A = function A() {
-            return g < k && n < p;
-          };
-
-          for (var z; A();) {
-            var y = d.charAt(g),
-                v = f.charAt(n),
-                q = l.translation[y];
-            if (q) v.match(q.pattern) ? (h[r](v), q.recursive && (-1 === u ? u = g : g === x && g !== u && (g = u - m), x === u && (g -= m)), g += m) : v === z ? (w--, z = void 0) : q.optional ? (g += m, n -= m) : q.fallback ? (h[r](q.fallback), g += m, n -= m) : c.invalid.push({
-              p: n,
-              v: v,
-              e: q.pattern
-            }), n += m;else {
-              if (!a) h[r](y);
-              v === y ? (b.push(n), n += m) : (z = y, b.push(n + w), w++);
-              g += m;
+          function w(a) {
+            if (!B.prop("readonly")) {
+              var b,
+                  c,
+                  e,
+                  f = a.which || a.keyCode;
+              o = B.val(), 8 === f || 46 === f || d && 127 === f ? (b = B.caret(), c = b.begin, e = b.end, e - c === 0 && (c = 46 !== f ? r(c) : e = q(c - 1), e = 46 === f ? q(e) : e), y(c, e), s(c, e - 1), a.preventDefault()) : 13 === f ? v.call(this, a) : 27 === f && (B.val(E), B.caret(0, A()), a.preventDefault());
             }
           }
 
-          a = d.charAt(x);
-          k !== p + 1 || l.translation[a] || h.push(a);
-          h = h.join("");
-          c.mapMaskdigitPositions(h, b, p);
-          return h;
-        },
-        mapMaskdigitPositions: function mapMaskdigitPositions(a, b, d) {
-          a = e.reverse ? a.length - d : 0;
-          c.maskDigitPosMap = {};
+          function x(b) {
+            if (!B.prop("readonly")) {
+              var c,
+                  d,
+                  e,
+                  g = b.which || b.keyCode,
+                  i = B.caret();
 
-          for (d = 0; d < b.length; d++) {
-            c.maskDigitPosMap[b[d] + a] = 1;
-          }
-        },
-        callbacks: function callbacks(a) {
-          var g = c.val(),
-              h = g !== f,
-              k = [g, a, b, e],
-              l = function l(a, b, c) {
-            "function" === typeof e[a] && b && e[a].apply(this, c);
-          };
+              if (!(b.ctrlKey || b.altKey || b.metaKey || 32 > g) && g && 13 !== g) {
+                if (i.end - i.begin !== 0 && (y(i.begin, i.end), s(i.begin, i.end - 1)), c = q(i.begin - 1), n > c && (d = String.fromCharCode(g), j[c].test(d))) {
+                  if (t(c), C[c] = d, z(), e = q(c), f) {
+                    var k = function k() {
+                      a.proxy(a.fn.caret, B, e)();
+                    };
 
-          l("onChange", !0 === h, k);
-          l("onKeyPress", !0 === h, k);
-          l("onComplete", g.length === d.length, k);
-          l("onInvalid", 0 < c.invalid.length, [g, a, b, c.invalid, e]);
-        }
-      };
-      b = a(b);
-      var l = this,
-          f = c.val(),
-          k;
-      d = "function" === typeof d ? d(c.val(), void 0, b, e) : d;
-      l.mask = d;
-      l.options = e;
+                    setTimeout(k, 0);
+                  } else B.caret(e);
 
-      l.remove = function () {
-        var a = c.getCaret();
-        l.options.placeholder && b.removeAttr("placeholder");
-        b.data("mask-maxlength") && b.removeAttr("maxlength");
-        c.destroyEvents();
-        c.val(l.getCleanVal());
-        c.setCaret(a);
-        return b;
-      };
+                  i.begin <= m && h();
+                }
 
-      l.getCleanVal = function () {
-        return c.getMasked(!0);
-      };
-
-      l.getMaskedVal = function (a) {
-        return c.getMasked(!1, a);
-      };
-
-      l.init = function (g) {
-        g = g || !1;
-        e = e || {};
-        l.clearIfNotMatch = a.jMaskGlobals.clearIfNotMatch;
-        l.byPassKeys = a.jMaskGlobals.byPassKeys;
-        l.translation = a.extend({}, a.jMaskGlobals.translation, e.translation);
-        l = a.extend(!0, {}, l, e);
-        k = c.getRegexMask();
-        if (g) c.events(), c.val(c.getMasked());else {
-          e.placeholder && b.attr("placeholder", e.placeholder);
-          b.data("mask") && b.attr("autocomplete", "off");
-          g = 0;
-
-          for (var f = !0; g < d.length; g++) {
-            var h = l.translation[d.charAt(g)];
-
-            if (h && h.recursive) {
-              f = !1;
-              break;
+                b.preventDefault();
+              }
             }
           }
 
-          f && b.attr("maxlength", d.length).data("mask-maxlength", !0);
-          c.destroyEvents();
-          c.events();
-          g = c.getCaret();
-          c.val(c.getMasked());
-          c.setCaret(g);
-        }
-      };
+          function y(a, b) {
+            var c;
 
-      l.init(!b.is("input"));
-    };
+            for (c = a; b > c && n > c; c++) {
+              j[c] && (C[c] = p(c));
+            }
+          }
 
-    a.maskWatchers = {};
+          function z() {
+            B.val(C.join(""));
+          }
 
-    var f = function f() {
-      var b = a(this),
-          d = {},
-          e = b.attr("data-mask");
-      b.attr("data-mask-reverse") && (d.reverse = !0);
-      b.attr("data-mask-clearifnotmatch") && (d.clearIfNotMatch = !0);
-      "true" === b.attr("data-mask-selectonfocus") && (d.selectOnFocus = !0);
-      if (p(b, e, d)) return b.data("mask", new n(this, e, d));
-    },
-        p = function p(b, d, e) {
-      e = e || {};
-      var c = a(b).data("mask"),
-          f = JSON.stringify;
-      b = a(b).val() || a(b).text();
+          function A(a) {
+            var b,
+                c,
+                d,
+                e = B.val(),
+                f = -1;
 
-      try {
-        return "function" === typeof d && (d = d(b)), "object" !== _typeof(c) || f(c.options) !== f(e) || c.mask !== d;
-      } catch (w) {}
-    },
-        k = function k(a) {
-      var b = document.createElement("div");
-      a = "on" + a;
-      var e = a in b;
-      e || (b.setAttribute(a, "return;"), e = "function" === typeof b[a]);
-      return e;
-    };
+            for (b = 0, d = 0; n > b; b++) {
+              if (j[b]) {
+                for (C[b] = p(b); d++ < e.length;) {
+                  if (c = e.charAt(d - 1), j[b].test(c)) {
+                    C[b] = c, f = b;
+                    break;
+                  }
+                }
 
-    a.fn.mask = function (b, d) {
-      d = d || {};
-      var e = this.selector,
-          c = a.jMaskGlobals,
-          f = c.watchInterval;
-      c = d.watchInputs || c.watchInputs;
+                if (d > e.length) {
+                  y(b + 1, n);
+                  break;
+                }
+              } else C[b] === e.charAt(d) && d++, k > b && (f = b);
+            }
 
-      var k = function k() {
-        if (p(this, b, d)) return a(this).data("mask", new n(this, b, d));
-      };
+            return a ? z() : k > f + 1 ? g.autoclear || C.join("") === D ? (B.val() && B.val(""), y(0, n)) : z() : (z(), B.val(B.val().substring(0, f + 1))), k ? b : l;
+          }
 
-      a(this).each(k);
-      e && "" !== e && c && (clearInterval(a.maskWatchers[e]), a.maskWatchers[e] = setInterval(function () {
-        a(document).find(e).each(k);
-      }, f));
-      return this;
-    };
-
-    a.fn.masked = function (a) {
-      return this.data("mask").getMaskedVal(a);
-    };
-
-    a.fn.unmask = function () {
-      clearInterval(a.maskWatchers[this.selector]);
-      delete a.maskWatchers[this.selector];
-      return this.each(function () {
-        var b = a(this).data("mask");
-        b && b.remove().removeData("mask");
-      });
-    };
-
-    a.fn.cleanVal = function () {
-      return this.data("mask").getCleanVal();
-    };
-
-    a.applyDataMask = function (b) {
-      b = b || a.jMaskGlobals.maskElements;
-      (b instanceof a ? b : a(b)).filter(a.jMaskGlobals.dataMaskAttr).each(f);
-    };
-
-    k = {
-      maskElements: "input,td,span,div",
-      dataMaskAttr: "*[data-mask]",
-      dataMask: !0,
-      watchInterval: 300,
-      watchInputs: !0,
-      keyStrokeCompensation: 10,
-      useInput: !/Chrome\/[2-4][0-9]|SamsungBrowser/.test(window.navigator.userAgent) && k("input"),
-      watchDataMask: !1,
-      byPassKeys: [9, 16, 17, 18, 36, 37, 38, 39, 40, 91],
-      translation: {
-        0: {
-          pattern: /\d/
-        },
-        9: {
-          pattern: /\d/,
-          optional: !0
-        },
-        "#": {
-          pattern: /\d/,
-          recursive: !0
-        },
-        A: {
-          pattern: /[a-zA-Z0-9]/
-        },
-        S: {
-          pattern: /[a-zA-Z]/
-        }
+          var B = a(this),
+              C = a.map(c.split(""), function (a, b) {
+            return "?" != a ? i[a] ? p(b) : a : void 0;
+          }),
+              D = C.join(""),
+              E = B.val();
+          B.data(a.mask.dataName, function () {
+            return a.map(C, function (a, b) {
+              return j[b] && a != p(b) ? a : null;
+            }).join("");
+          }), B.one("unmask", function () {
+            B.off(".mask").removeData(a.mask.dataName);
+          }).on("focus.mask", function () {
+            if (!B.prop("readonly")) {
+              clearTimeout(b);
+              var a;
+              E = B.val(), a = A(), b = setTimeout(function () {
+                B.get(0) === document.activeElement && (z(), a == c.replace("?", "").length ? B.caret(0, a) : B.caret(a));
+              }, 10);
+            }
+          }).on("blur.mask", v).on("keydown.mask", w).on("keypress.mask", x).on("input.mask paste.mask", function () {
+            B.prop("readonly") || setTimeout(function () {
+              var a = A(!0);
+              B.caret(a), h();
+            }, 0);
+          }), e && f && B.off("input.mask").on("input.mask", u), A();
+        });
       }
-    };
-    a.jMaskGlobals = a.jMaskGlobals || {};
-    k = a.jMaskGlobals = a.extend(!0, {}, k, a.jMaskGlobals);
-    k.dataMask && a.applyDataMask();
-    setInterval(function () {
-      a.jMaskGlobals.watchDataMask && a.applyDataMask();
-    }, k.watchInterval);
-  }, window.jQuery, window.Zepto); //  Choose Box Tabs
-
+    });
+  }); //  Choose Box Tabs
 
   var items = $('.choose-box .choose-box__item');
   var tabs = $('.choose-box .choose-box__slide');
@@ -465,14 +263,15 @@ $(function () {
       infinite: false
   });*/
 
-  $('.hardware__slider').owlCarousel({
-    items: 3,
-    loop: false,
-    margin: 15,
-    nav: false,
-    dots: false,
-    scrollbarType: "progress"
-  });
+  /*    $('.hardware__slider').owlCarousel({
+          items: 3,
+          loop: false,
+          margin: 15,
+          nav: false,
+          dots: false,
+          scrollbarType: "progress"
+      });*/
+
   var slideCount = $('.hardware__slide').length;
   /*$( ".hardware__range" ).slider({
       mode: "fast",
@@ -558,41 +357,43 @@ $(function () {
     animateOut: 'slideOutUp',
     animateIn: 'slideInUp'
   });
-  $(window).scroll(function () {
-    var top = $('.product-cost__slider').offset().top + 500;
-    var middle = $('.product-cost__slide--middle').offset().top;
-    var bottom = $('.product-cost__slide--bottom').offset().top;
+  /*$(window).scroll(function() {
+        var top = $('.product-cost__slider').offset().top + 500;
+        var middle = $('.product-cost__slide--middle').offset().top;
+        var bottom = $('.product-cost__slide--bottom').offset().top;
+          if($(this).scrollTop() <  top) {
+            productCostInvisible.trigger('to.owl.carousel', 0);
+            // Invisible Door
+            $('.product-cost__invisible--big').fadeOut(300);
+            $('.product-cost__invisible--small').fadeOut(300);
+            $('.product-cost__invisible--middle').fadeIn(300);
+              // Product Card
+            $('.product-cost__img-door--first-line').fadeIn(300);
+            $('.product-cost__img-door--second-line').fadeIn(300);
+            $('.product-cost__img-door--third-line').fadeOut(300);
+            $('.product-cost__img-door--fourth-line').fadeOut(300);
+        }
+          else if ($(this).scrollTop() <  middle) {
+            productCostInvisiblec
+            // Invisible Door
+            $('.product-cost__invisible--big').fadeIn(300);
+            $('.product-cost__invisible--small').fadeIn(300);
+            $('.product-cost__invisible--middle').fadeOut(300);
+              // Product Card
+            $('.product-cost__img-door--first-line').fadeOut(300);
+            $('.product-cost__img-door--second-line').fadeOut(300);
+            $('.product-cost__img-door--third-line').fadeIn(300);
+            $('.product-cost__img-door--fourth-line').fadeIn(300);
+        }
+        else if ($(this).scrollTop() < bottom ) {
+            productCostInvisible.trigger('to.owl.carousel', 2);
+              $('.product-cost__img-door--first-line').fadeOut(300);
+            $('.product-cost__img-door--second-line').fadeOut(300);
+            $('.product-cost__img-door--third-line').fadeOut(300);
+            $('.product-cost__img-door--fourth-line').fadeOut(300);
+        }
+    });*/
 
-    if ($(this).scrollTop() < top) {
-      productCostInvisible.trigger('to.owl.carousel', 0); // Invisible Door
-
-      $('.product-cost__invisible--big').fadeOut(300);
-      $('.product-cost__invisible--small').fadeOut(300);
-      $('.product-cost__invisible--middle').fadeIn(300); // Product Card
-
-      $('.product-cost__img-door--first-line').fadeIn(300);
-      $('.product-cost__img-door--second-line').fadeIn(300);
-      $('.product-cost__img-door--third-line').fadeOut(300);
-      $('.product-cost__img-door--fourth-line').fadeOut(300);
-    } else if ($(this).scrollTop() < middle) {
-      productCostInvisiblec; // Invisible Door
-
-      $('.product-cost__invisible--big').fadeIn(300);
-      $('.product-cost__invisible--small').fadeIn(300);
-      $('.product-cost__invisible--middle').fadeOut(300); // Product Card
-
-      $('.product-cost__img-door--first-line').fadeOut(300);
-      $('.product-cost__img-door--second-line').fadeOut(300);
-      $('.product-cost__img-door--third-line').fadeIn(300);
-      $('.product-cost__img-door--fourth-line').fadeIn(300);
-    } else if ($(this).scrollTop() < bottom) {
-      productCostInvisible.trigger('to.owl.carousel', 2);
-      $('.product-cost__img-door--first-line').fadeOut(300);
-      $('.product-cost__img-door--second-line').fadeOut(300);
-      $('.product-cost__img-door--third-line').fadeOut(300);
-      $('.product-cost__img-door--fourth-line').fadeOut(300);
-    }
-  });
   var extrasArrow = "<svg width=\"38\" height=\"74\" viewBox=\"0 0 38 74\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M1 73L37 37L1 1\" stroke=\"#868686\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"; // Extras Pop-up gallery
 
   $('.extras__link').on('click', function (e) {
@@ -638,7 +439,7 @@ $(function () {
     new Waypoint({
       element: document.getElementById("invisible-slide-".concat(_i)),
       handler: function handler() {
-        console.dir(321);
+        console.dir(_i);
         productCostInvisible.trigger('to.owl.carousel', _i);
       }
     });
@@ -650,5 +451,5 @@ $(function () {
 
 
   var measurementPhone = $('.measurement__input input');
-  measurementPhone.mask("+375 (00) 000-00-00");
+  measurementPhone.mask("+ 375 99 999-99-99");
 });
