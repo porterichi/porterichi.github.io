@@ -3,6 +3,28 @@
   background-color: $white-2;
   $context: &;
 
+  & .catalog-item__color {
+    &:before {
+      content: attr(data-color);
+      position: absolute;
+      top: -50px;
+      left: 0;
+      background-color: $grey-10;
+      font-family: $minion-display;
+      padding: 9px;
+      color: $white;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-25px);
+      transition: .25s;
+    }
+    &:hover:before {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+
   &__bivalve {
     #{$context}__name {
       transform-origin: 96px 26px;
