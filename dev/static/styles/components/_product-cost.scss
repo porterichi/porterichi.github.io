@@ -4,6 +4,14 @@
   margin-bottom: 176px;
   $context: &;
 
+  &-right__frame {
+    display: inline-flex;
+    width: 100%;
+  }
+  &-right__slide {
+    width: 100%;
+  }
+
   &-right--product {
     #{$context}__title--bottom {
       margin-top: 54px;
@@ -14,9 +22,7 @@
   }
 
   &__slider {
-    position: sticky;
-    top: 0;
-    left: 0;
+
     &-bg {
       width: 100%;
       object-fit: fill;
@@ -31,9 +37,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: sticky;
-    top: 0;
-    left: 0;
 
     &--product-center {
       display: flex;

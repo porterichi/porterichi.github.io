@@ -129,7 +129,7 @@ $(function() {
     };*/
 
     // Cost Slider
-    let productCostInvisible = $('.product-cost-right__slider');
+    /* let productCostInvisible = $('.product-cost-right__slider');
 
     productCostInvisible.owlCarousel({
         items: 1,
@@ -139,7 +139,7 @@ $(function() {
         margin: 10,
         animateOut: 'slideOutUp',
         animateIn: 'slideInUp'
-    });
+   });*/
 
     $('.stained-glass__slider').owlCarousel({
         items: 1,
@@ -233,7 +233,7 @@ $(function() {
     }
 
     // Invisible Scroll
-    const invisibleSliders = $('.product-cost-right__slide').length;
+    /*const invisibleSliders = $('.product-cost-right__slide').length;
     for (let i = 0; i < invisibleSliders; i++) {
         $(`<div class="product-cost__slide--middle" id=invisible-slide-${i}>`).appendTo('.product-cost__slider');
         new Waypoint({
@@ -243,7 +243,7 @@ $(function() {
                 productCostInvisible.trigger('to.owl.carousel', i);
             }
         });
-    }
+    }*/
 
     // Set Arrow
     function setArrow(name) {
@@ -269,6 +269,24 @@ $(function() {
     // Phone Mask
     const measurementPhone = $('.measurement__input input');
     measurementPhone.mask("+ 375 99 999-99-99");
+
+
+    let $frame = $('.product-cost-right__wrap');
+    let $wrap = $frame.parent();
+
+    $frame.sly({
+        horizontal: 1,
+        itemNav: 'basic',
+        mouseDragging: 1,
+        touchDragging: 1,
+        scrollBar: $wrap.find('.scrollbar'),
+        scrollBy: 1,
+        speed: 300,
+        elasticBounds: 1,
+        easing: 'easeOutExpo',
+        dragHandle: 1,
+        dynamicHandle: false
+    });
 
 });
 

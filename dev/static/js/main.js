@@ -139,17 +139,7 @@ $(document).ready(function () {
     });
 
     // Collection Cost Slider
-    let productCostInvisible = $('.product-cost-right__slider');
 
-    productCostInvisible.owlCarousel({
-        items: 1,
-        loop: false,
-        nav: false,
-        dots: false,
-        margin: 10,
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp'
-    });
 
     // Scroll Cost Block
 

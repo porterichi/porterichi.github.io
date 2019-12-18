@@ -134,17 +134,7 @@ $(document).ready(function () {
       el.addClass(state.active);
     }
   }); // Collection Cost Slider
-
-  var productCostInvisible = $('.product-cost-right__slider');
-  productCostInvisible.owlCarousel({
-    items: 1,
-    loop: false,
-    nav: false,
-    dots: false,
-    margin: 10,
-    animateOut: 'slideOutUp',
-    animateIn: 'slideInUp'
-  }); // Scroll Cost Block
+  // Scroll Cost Block
 
   /*    $(window).scroll(function() {
           var middle = $('.product-cost__slide--middle').offset();

@@ -338,16 +338,17 @@ $(function () {
       };*/
   // Cost Slider
 
-  var productCostInvisible = $('.product-cost-right__slider');
-  productCostInvisible.owlCarousel({
-    items: 1,
-    loop: false,
-    nav: false,
-    dots: false,
-    margin: 10,
-    animateOut: 'slideOutUp',
-    animateIn: 'slideInUp'
-  });
+  /* let productCostInvisible = $('.product-cost-right__slider');
+    productCostInvisible.owlCarousel({
+      items: 1,
+      loop: false,
+      nav: false,
+      dots: false,
+      margin: 10,
+      animateOut: 'slideOutUp',
+      animateIn: 'slideInUp'
+  });*/
+
   $('.stained-glass__slider').owlCarousel({
     items: 1,
     loop: false,
@@ -431,23 +432,18 @@ $(function () {
     _loop(i);
   } // Invisible Scroll
 
-
-  var invisibleSliders = $('.product-cost-right__slide').length;
-
-  var _loop2 = function _loop2(_i) {
-    $("<div class=\"product-cost__slide--middle\" id=invisible-slide-".concat(_i, ">")).appendTo('.product-cost__slider');
-    new Waypoint({
-      element: document.getElementById("invisible-slide-".concat(_i)),
-      handler: function handler() {
-        setArrow(_i);
-        productCostInvisible.trigger('to.owl.carousel', _i);
-      }
-    });
-  };
-
-  for (var _i = 0; _i < invisibleSliders; _i++) {
-    _loop2(_i);
-  } // Set Arrow
+  /*const invisibleSliders = $('.product-cost-right__slide').length;
+  for (let i = 0; i < invisibleSliders; i++) {
+      $(`<div class="product-cost__slide--middle" id=invisible-slide-${i}>`).appendTo('.product-cost__slider');
+      new Waypoint({
+          element: document.getElementById(`invisible-slide-${i}`),
+          handler: function() {
+              setArrow(i);
+              productCostInvisible.trigger('to.owl.carousel', i);
+          }
+      });
+  }*/
+  // Set Arrow
 
 
   function setArrow(name) {
@@ -466,12 +462,27 @@ $(function () {
     allImages.fadeOut(0);
     var result = arrows[name];
 
-    for (var _i2 in result) {
-      result[_i2].fadeIn(200);
+    for (var _i in result) {
+      result[_i].fadeIn(200);
     }
   } // Phone Mask
 
 
   var measurementPhone = $('.measurement__input input');
   measurementPhone.mask("+ 375 99 999-99-99");
+  var $frame = $('.product-cost-right__wrap');
+  var $wrap = $frame.parent();
+  $frame.sly({
+    horizontal: 1,
+    itemNav: 'basic',
+    mouseDragging: 1,
+    touchDragging: 1,
+    scrollBar: $wrap.find('.scrollbar'),
+    scrollBy: 1,
+    speed: 300,
+    elasticBounds: 1,
+    easing: 'easeOutExpo',
+    dragHandle: 1,
+    dynamicHandle: false
+  });
 });
