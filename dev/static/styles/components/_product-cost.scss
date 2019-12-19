@@ -4,6 +4,22 @@
   margin-bottom: 176px;
   $context: &;
 
+  .product-cost-right__slider {
+    .owl-nav {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .owl-prev, .owl-next {
+      outline: none;
+    }
+    .owl-prev svg, .owl-next svg {
+      transition: .25s;
+      fill: $grey-3;
+      &:hover {
+        fill: $gold;
+      }
+    }
+  }
   &-right__frame {
     display: inline-flex;
     width: 100%;
