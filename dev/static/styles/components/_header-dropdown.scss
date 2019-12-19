@@ -17,6 +17,8 @@
     align-items: center;
     text-decoration: none;
     color: $black-2;
+    height: 100%;
+    padding: 0 35px;
     &:hover {
       color: $black-2;
       text-decoration: none;
@@ -150,6 +152,7 @@
   &__block {
     &:not(:first-child) {
       margin-left: 58px;
+      padding-bottom: 28px;
     }
   }
 
@@ -159,7 +162,7 @@
     display: flex;
     justify-content: space-between;
     & > img {
-      height: 213px;
+      height: 229px;
     }
   }
 

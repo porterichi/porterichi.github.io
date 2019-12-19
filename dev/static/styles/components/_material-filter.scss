@@ -1,6 +1,6 @@
 .material-filter {
   display: flex;
-  padding-left: 29px;
+  padding-left: 0;
   margin: 0;
 
   &__link {
@@ -29,26 +29,29 @@
     }
 
     &:not(:first-child) {
-      margin-left: 63px;
+      margin-left: 36px;
     }
 
     &:hover {
+      .material-filter__link {
+        color: $gold;
+      }
       &:before {
         background-color: $gold;
       }
     }
-    
-
 
     &:before {
       content: '';
-      position: absolute;
-      left: -28px;
-      top: 50%;
+      position: relative;
+      left: 0;
+      top: -4px;
       width: 19px;
       height: 1px;
       background-color: $black;
       transition: .3s;
+      margin-right: 9px;
+      display: inline-block;
     }
 
     &--active {

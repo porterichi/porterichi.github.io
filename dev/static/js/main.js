@@ -227,9 +227,11 @@ $(document).ready(function () {
 
     if( balance < 10){
         filterSection.addClass('main-filter--slider-active');
-
+        $('.main-filter__row').addClass('with');
         let $frame = $('.main-filter__list-wrap');
         let $wrap = $frame.parent();
+
+
 
         $frame.sly({
             horizontal: 1,
@@ -243,13 +245,28 @@ $(document).ready(function () {
             easing: 'easeOutExpo',
             dragHandle: 1,
             dynamicHandle: false
+        }, {
+            moveEnd: function(){
+                let scrollWidth = $('.scrollbar').width();
+                let handle = $('.handle').css('transform');
+                let transX = handle.match(/matrix\(\d+, ?\d+, ?\d+, ?\d+, ?(\d+)/)[1];
+                const res = scrollWidth - transX;
+
+
+                if(res < 110) {
+                    $('.main-filter__row').removeClass('with');
+                } else {
+                    $('.main-filter__row').addClass('with');
+                }
+            }
         });
+
     }
 
- if (document.documentElement.clientWidth < 1389) {
+/* if (document.documentElement.clientWidth < 1389) {
         document.querySelector("meta[name=viewport]").setAttribute(
             'content',
             'width=1390');
- };
+ };*/
 
     });

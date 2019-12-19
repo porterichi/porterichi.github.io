@@ -415,22 +415,18 @@ $(function () {
     $('.extras__popup').fadeOut(200);
   }); // Vitrage Scroll
 
-  var stainedSliders = $('.stained-glass__slide').length;
-
-  var _loop = function _loop(i) {
-    $("<div class=\"stained-glass__slide--item\" id=stained-glass-slide-".concat(i, ">")).appendTo('.stained-glass .container');
-    new Waypoint({
-      element: document.getElementById("stained-glass-slide-".concat(i)),
-      handler: function handler() {
-        $('.stained-glass__slider').trigger('to.owl.carousel', i);
-      }
-    });
-    var slide = $("[data-stained=".concat(i, "]"));
-  };
-
-  for (var i = 0; i < stainedSliders; i++) {
-    _loop(i);
-  } // Invisible Scroll
+  /*    const stainedSliders = $('.stained-glass__slide').length;
+      for (let i = 0; i < stainedSliders; i++) {
+         $(`<div class="stained-glass__slide--item" id=stained-glass-slide-${i}>`).appendTo('.stained-glass .container');
+          new Waypoint({
+              element: document.getElementById(`stained-glass-slide-${i}`),
+              handler: function() {
+                  $('.stained-glass__slider').trigger('to.owl.carousel', i);
+              }
+          });
+         const slide = $(`[data-stained=${i}]`);
+      }*/
+  // Invisible Scroll
 
   /*const invisibleSliders = $('.product-cost-right__slide').length;
   for (let i = 0; i < invisibleSliders; i++) {
@@ -445,44 +441,43 @@ $(function () {
   }*/
   // Set Arrow
 
-
-  function setArrow(name) {
-    var arrows = {
-      '0': {
-        'top': $('.product-cost__img-door--first-line'),
-        'bottom': $('.product-cost__img-door--second-line')
-      },
-      '1': {
-        'top': $('.product-cost__img-door--third-line'),
-        'bottom': $('.product-cost__img-door--fourth-line')
-      }
-    };
-    var allImages = $('.product-cost__img img:not(".product-cost__img-door")'); // Clear Arrows
-
-    allImages.fadeOut(0);
-    var result = arrows[name];
-
-    for (var _i in result) {
-      result[_i].fadeIn(200);
-    }
-  } // Phone Mask
-
+  /*    function setArrow(name) {
+          let arrows = {
+              '0': {
+                  'top': $('.product-cost__img-door--first-line'),
+                  'bottom': $('.product-cost__img-door--second-line')
+              },
+              '1': {
+                  'top': $('.product-cost__img-door--third-line'),
+                  'bottom': $('.product-cost__img-door--fourth-line')
+              }
+          };
+          let allImages = $('.product-cost__img img:not(".product-cost__img-door")');
+          // Clear Arrows
+          allImages.fadeOut(0);
+          let result = arrows[name];
+          for(let i in result) {
+              result[i].fadeIn(200);
+          }
+      }*/
+  // Phone Mask
 
   var measurementPhone = $('.measurement__input input');
   measurementPhone.mask("+ 375 99 999-99-99");
-  var $frame = $('.product-cost-right__wrap');
-  var $wrap = $frame.parent();
-  $frame.sly({
-    horizontal: 1,
-    itemNav: 'basic',
-    mouseDragging: 1,
-    touchDragging: 1,
-    scrollBar: $wrap.find('.scrollbar'),
-    scrollBy: 1,
-    speed: 300,
-    elasticBounds: 1,
-    easing: 'easeOutExpo',
-    dragHandle: 1,
-    dynamicHandle: false
-  });
+  /*let isFixed = false;
+  new Waypoint({
+      element: document.getElementsByClassName(`product-cost`),
+      handler: function() {
+          if(!isFixed){
+              $('body').addClass('fixed');
+              isFixed = true;
+              $('.product-cost').on('mousewheel', function(event) {
+                  console.log(event.deltaX, event.deltaY, event.deltaFactor);
+              });
+          } else {
+              $('body').removeClass('fixed');
+          }
+        },
+      offset: 'bottom-in-view'
+  });*/
 });

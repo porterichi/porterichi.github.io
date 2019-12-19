@@ -5,6 +5,17 @@
   margin-top: 40px;
   justify-content: space-between;
 
+  & .main-filter__row.with {
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 108px;
+      height: 100%;
+      background: linear-gradient(270deg, #C4C4C4 27.8%, rgba(196, 196, 196, 0) 90.99%);
+    }
+  }
 
 
   &--last-child-width {
@@ -37,15 +48,6 @@
         }
       }
 
-      &:after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 108px;
-        height: 100%;
-        background: linear-gradient(270deg, #C4C4C4 27.8%, rgba(196, 196, 196, 0) 90.99%);
-      }
 
       .scrollbar {
         width: 100%;
@@ -131,6 +133,10 @@
     position: relative;
     transition: .25s;
     white-space: nowrap;
+    &.no-paddings {
+      padding-left: 0;
+      padding-right: 0;
+    }
     &:hover {
       &:before {
         content: '';

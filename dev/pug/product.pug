@@ -18,7 +18,7 @@ body
                             .product-variant__card-block.product-variant__card-block--first
                                 .product-variant__card-material Строганный шпон
                                 .catalog-item__colors
-                                    .catalog-item__color(data-color='black').catalog-item__color--active.catalog-item__color--black
+                                    .catalog-item__color(data-color='Ясень с открытой порой').catalog-item__color--active.catalog-item__color--black
                                     .catalog-item__color(data-color='red').catalog-item__color--grey
                                     .catalog-item__color(data-color='white').catalog-item__color--brown
                             .product-variant__card-block
@@ -71,11 +71,12 @@ body
                                 .product-variant__card-left количество
                                 .product-variant__card-right
                                     .product-variant__card-minus
-                                    .product-variant__card-number 1
+                                    .product-variant__card-number 2
                                     .product-variant__card-plus
                             .product-variant__card-cost
                                 span что входит в стоимость
                             button.product-variant__card-add  добавить к заказу
+
         section.action-block
             .container
                 .row
@@ -83,7 +84,7 @@ body
         section.collection-block
             .container
                 include components/collection
-        section.product-cost
+        section.product-cost(id='product-cost')
             .product-cost__slider
                 .product-cost__slide.product-cost__slide--product-center
                     .container
@@ -129,71 +130,32 @@ body
 
                                         .product-cost__img-material Строганный шпон, Американский орех
                             .col-lg-4.no-padding-right.product-cost-right__slider.product-cost-right--product
-                                .product-cost-right__wrap
-                                    .product-cost-right__frame
-                                        .product-cost-right__slide
-                                            .product-cost__title Дверное полотно1
-                                            p.product-cost__text.product-cost__table--right Выполнено из клеенного бруса хвойных пород дерева. Подложка под отделку — ДВП или ХДФ .
-                                            .product-cost__table.product-cost__table--right.product-cost__table--line
-                                                .product-cost__table-head
-                                                    .product-cost__table-title Параметры
-                                                    .product-cost__table-title мм
-                                                .product-cost__table-body
-                                                    .product-cost__table-row
-                                                        .product-cost__table-text высота
-                                                        .product-cost__table-text 2000
-                                                    .product-cost__table-row
-                                                        .product-cost__table-text ширина
-                                                        .product-cost__table-text 600, 700, 800, 900
-                                                    .product-cost__table-row
-                                                        .product-cost__table-text толщина
-                                                        .product-cost__table-text 40
-                                            .product-cost__title.product-cost__title--bottom Телескопическая коробка
-                                            p.product-cost__text.product-cost__text--bottom В конструкции не используют гвозди. Наличники крепятся в специальные пазы. Коробка легко снимается и устанавливается, перекрывает зазоры между стеной и дверью.
+                                .product-cost-frame
+                                    section.horizontal-scrolling.product-cost-right__slide
+                                        .product-cost__title Дверное полотно1
+                                        p.product-cost__text.product-cost__table--right Выполнено из клеенного бруса хвойных пород дерева. Подложка под отделку — ДВП или ХДФ .
+                                        .product-cost__table.product-cost__table--right.product-cost__table--line
+                                            .product-cost__table-head
+                                                .product-cost__table-title Параметры
+                                                .product-cost__table-title мм
                                             .product-cost__table-body
                                                 .product-cost__table-row
-                                                    .product-cost__table-text Ширина
-                                                    .product-cost__table-text 74 мм
-
-                                        .product-cost-right__slide
-                                            .product-cost__title Наличники1
-                                            p.product-cost__text.product-cost__table--right Декоративные планки. Крепятся вдоль дверного проёма и закрывают щель между полотном и коробкой.
-                                            .product-cost__table.product-cost__table--right.product-cost__table--line
-                                                .product-cost__table-body
-                                                    .product-cost__table-row
-                                                        .product-cost__table-text форма
-                                                        .product-cost__table-text сферические
-                                            .product-cost__title.product-cost__title--bottom  базовая фурнитура
-                                            p.product-cost__text.product-cost__text--bottom Ручка Armadillo Pava выполнена из высокопрочного сплава Zamak. Устойчива к ржавчине, истиранию, царапинам.
-                                            .product-cost__table-body
+                                                    .product-cost__table-text высота
+                                                    .product-cost__table-text 2000
                                                 .product-cost__table-row
-                                                    .product-cost__table-text петли
-                                                    .product-cost__table-text скрытые
+                                                    .product-cost__table-text ширина
+                                                    .product-cost__table-text 600, 700, 800, 900
                                                 .product-cost__table-row
-                                                    .product-cost__table-text механизм закрывания
-                                                    .product-cost__table-text магнитный
-                                            img(src="images/invisible-table-img.png" alt='collection').product-cost__table-img
+                                                    .product-cost__table-text толщина
+                                                    .product-cost__table-text 40
+                                        .product-cost__title.product-cost__title--bottom Телескопическая коробка
+                                        p.product-cost__text.product-cost__text--bottom В конструкции не используют гвозди. Наличники крепятся в специальные пазы. Коробка легко снимается и устанавливается, перекрывает зазоры между стеной и дверью.
+                                        .product-cost__table-body
+                                            .product-cost__table-row
+                                                .product-cost__table-text Ширина
+                                                .product-cost__table-text 74 мм
 
-                                        .product-cost-right__slide
-                                            .product-cost__title декоративные элементы
-                                            p.product-cost__text.product-cost__table--right Дополняют дизайн классических дверей. Подчёркивают стиль и уникальность модели.
-                                            .product-cost__table.product-cost__table--right.product-cost__table--line
-                                                .product-cost__table-body
-                                                    .product-cost__table-row
-                                                        .product-cost__table-text Капитель
-                                                        .product-cost__table-text 2
-                                                    .product-cost__table-row
-                                                        .product-cost__table-text Опора наличника
-                                                        .product-cost__table-text 4
-                                                    .product-cost__table-row
-                                                        .product-cost__table-text Консоль
-                                                        .product-cost__table-text 4
-                                                    .product-cost__table-row
-                                                        .product-cost__table-text Розетка
-                                                        .product-cost__table-text 4
-                                                    .product-cost__table-row
-                                                        .product-cost__table-text корона
-                                                        .product-cost__table-text 1
+
 
 
 
@@ -650,6 +612,7 @@ body
 script(src="static/js/jquery-3.3.1.min.js", defer)
 script(src="static/js/owl.carousel.min.js", defer)
 script(src="static/js/waypoints.js", defer)
+script(src="static/js/mousewheel.js", defer)
 script(src="static/js/sly-slider.js", defer)
 script(src="static/js/Scrollbar.js", defer)
 script(src="static/js/jquery-ui.min.js", defer)

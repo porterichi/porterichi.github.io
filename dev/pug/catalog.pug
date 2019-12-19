@@ -251,7 +251,8 @@ html(lang="ru-RU")
                                                         .header-dropdown__radio
                                                         .header-dropdown__name каскадные
                                         li.main-filter__item
-                                            span.main-filter__name Скрытый монтаж
+                                            a(href="#").header-dropdown__link
+                                                span.main-filter__name Скрытый монтаж
                                         li.main-filter__item
                                             span.main-filter__name Скрытый монтажjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
                                         li.main-filter__item
@@ -270,8 +271,8 @@ html(lang="ru-RU")
                             .catalog-item.catalog-item--interior
                                 a(href="#").catalog-item__link
                                     .catalog-item__mask(data-mask='nova')
-                                    .catalog-item__img
-                                        img(src="images/catalog-item-1.png", alt="catalog item")
+                                    .catalog-item__img.catalog-item__img--discount
+                                        img(class="catalog-item__img--discount" src="images/catalog-item-1.png", alt="catalog item")
                                     .catalog-item__footer
                                         .catalog-item__row
                                             span.catalog-item__name MK01K

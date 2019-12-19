@@ -28,6 +28,9 @@
   &--interior {
     width: 372px;
     padding-top: 85px;
+    & #{$context}__img--discount {
+      width: 285px;
+    }
     @include desktop-to-laptop {
       width: 340px;
       padding-top: 40px;

@@ -207,6 +207,7 @@ $(document).ready(function () {
 
   if (balance < 10) {
     filterSection.addClass('main-filter--slider-active');
+    $('.main-filter__row').addClass('with');
 
     var _$frame = $('.main-filter__list-wrap');
 
@@ -224,12 +225,25 @@ $(document).ready(function () {
       easing: 'easeOutExpo',
       dragHandle: 1,
       dynamicHandle: false
+    }, {
+      moveEnd: function moveEnd() {
+        var scrollWidth = $('.scrollbar').width();
+        var handle = $('.handle').css('transform');
+        var transX = handle.match(/matrix\(\d+, ?\d+, ?\d+, ?\d+, ?(\d+)/)[1];
+        var res = scrollWidth - transX;
+
+        if (res < 110) {
+          $('.main-filter__row').removeClass('with');
+        } else {
+          $('.main-filter__row').addClass('with');
+        }
+      }
     });
   }
+  /* if (document.documentElement.clientWidth < 1389) {
+          document.querySelector("meta[name=viewport]").setAttribute(
+              'content',
+              'width=1390');
+   };*/
 
-  if (document.documentElement.clientWidth < 1389) {
-    document.querySelector("meta[name=viewport]").setAttribute('content', 'width=1390');
-  }
-
-  ;
 });
