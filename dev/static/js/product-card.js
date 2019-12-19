@@ -148,7 +148,7 @@ $(function() {
         nav: false,
         dots: false,
         margin: 10,
-        touchDrag  : true,
+        bgfh  : true,
         mouseDrag  : true,
         animateOut: 'slideOutUp',
         animateIn: 'slideInUp'

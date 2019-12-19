@@ -2,6 +2,12 @@
   position: relative;
   margin-bottom: 169px;
 
+  &__oldprice {
+    color: $grey-6;
+    font-size: 21px;
+    text-decoration: line-through;
+    margin-left: 18px;
+  }
 
 
   &--new {
