@@ -44,6 +44,14 @@
     padding-left: 36px;
     position: relative;
     overflow: hidden;
+    &:hover {
+      .catalog-factoid__link {
+        color: $gold;
+        &:after {
+          background-color: $gold;
+        }
+      }
+    }
 
     & #{$context}__title {
       margin-bottom: 23px;
