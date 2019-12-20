@@ -43,6 +43,7 @@
       width: 100%;
       object-fit: fill;
       position: absolute;
+      height: 100vh;
     }
   }
 
@@ -112,7 +113,7 @@
     }
 
     div.product-cost__table--left {
-      margin-bottom: 270px;
+      margin-bottom: 180px;
     }
 
     #{$context}-right__slider {

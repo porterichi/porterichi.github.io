@@ -137,5 +137,8 @@
     cursor: pointer;
     text-decoration: none;
     color: $black;
+    &:hover {
+      border-color: $gold;
+    }
   }
 }
