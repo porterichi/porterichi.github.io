@@ -4,6 +4,7 @@
   &__container {
     display: flex;
     width: 100%;
+    justify-content: space-between;
   }
 
   &__title {
@@ -12,7 +13,7 @@
   }
 
   &__item {
-    margin-right: 106px;
+
 
     & .catalog-item__img {
       height: 433px;

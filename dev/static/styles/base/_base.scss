@@ -51,6 +51,9 @@ a {
   &:hover {
     color: $gold;
     text-decoration: none;
+    &:after {
+      border-color: $gold;
+    }
   }
   &:focus {
     color: inherit;
