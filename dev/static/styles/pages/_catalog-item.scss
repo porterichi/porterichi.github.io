@@ -1,6 +1,11 @@
 .catalog-item {
   position: relative;
   margin-bottom: 169px;
+  &:hover {
+    .catalog-item__name {
+      color: $gold;
+    }
+  }
 
   &__oldprice {
     color: $grey-6;
@@ -181,6 +186,7 @@
     font-size: 27px;
     font-family: $minion-font;
     color: $black;
+    transition: .25s;
 
   }
   &__price {
