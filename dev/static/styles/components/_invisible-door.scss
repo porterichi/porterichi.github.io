@@ -473,6 +473,9 @@
       color: $white;
       font-size: 27px;
       margin-right: 11px;
+      &.with-old {
+        color: $red;
+      }
     }
 
     &--old {

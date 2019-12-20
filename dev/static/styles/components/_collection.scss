@@ -2,6 +2,8 @@
   width: 100%;
   margin-bottom: 194px;
   $context: &;
+
+
   &-invisible {
 
 
@@ -77,6 +79,15 @@
 
   &__block {
     margin-top: 126px;
+    cursor: pointer;
+    &:hover {
+      .collection__link {
+        color: $gold;
+        &:after {
+          background-color: $gold;
+        }
+      }
+    }
   }
 
   &__about {
@@ -100,6 +111,10 @@
 
   &__link {
     @include link-with-border( $black, $black );
+    transition: .25s;
+    &:after {
+      transition: .25s;
+    }
   }
 
 }
