@@ -2,6 +2,10 @@
   position: relative;
   margin-bottom: 172px;
 
+  &__decoration-right {
+    margin-left: 65px;
+  }
+
   &__card {
     padding-top: 54px;
     background-color: $white-3;
@@ -122,11 +126,12 @@
     &-left {
       .invisible-door__decoration-comment {
         margin-top: 1165px;
+        margin-left: -66px;
       }
       img {
         position: absolute;
         left: 0;
-        width: 44%;
+        width: 40%;
         height: 992px;
       }
     }
@@ -135,13 +140,13 @@
 
       .invisible-door__decoration-comment {
         margin-top: 1068px;
-        margin-left: 32%;
+        margin-left: 51%;
       }
       img {
         position: absolute;
         top: 52px;
         right: 0;
-        width: 46%;
+        width: 40%;
         height: 998px;
       }
     }
