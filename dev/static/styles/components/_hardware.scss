@@ -85,6 +85,20 @@
     width: 500px;
     margin-right: 90px;
     outline: none;
+    &:hover {
+      .hardware__slide-title {
+        color: $black;
+      }
+      .hardware__slide-text {
+        color: $black;
+      }
+      .hardware__slide-link {
+        color: $gold;
+        &:before {
+          background-color: $gold;
+        }
+      }
+    }
 
     &-img {
       margin-bottom: 51px;

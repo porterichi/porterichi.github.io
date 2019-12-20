@@ -10,6 +10,15 @@
     display: flex;
     flex-direction: column;
     width: 269px;
+    &:hover {
+      .bonus__title {
+        color: $gold;
+        span {
+          border-color: $gold;
+        }
+
+      }
+    }
     & > a {
       color: inherit;
       text-decoration: none;

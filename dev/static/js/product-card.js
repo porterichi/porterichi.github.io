@@ -155,9 +155,9 @@ $(function() {
     });
     $('.stained-glass__slider').on('mousewheel', '.owl-stage', function (e) {
         if (e.deltaY>0) {
-            $('.stained-glass__slider').trigger('next.owl');
-        } else {
             $('.stained-glass__slider').trigger('prev.owl');
+        } else {
+            $('.stained-glass__slider').trigger('next.owl');
         }
         e.preventDefault();
     });
