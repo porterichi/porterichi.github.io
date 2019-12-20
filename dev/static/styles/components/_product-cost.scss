@@ -5,6 +5,59 @@
   position: relative;
   $context: &;
 
+  &__invisible {
+    &--1 {
+      position: absolute;
+      top: 170px;
+      right: 10px;
+    }
+    &--2 {
+      position: absolute;
+      right: 12px;
+      top: calc(71%);
+    }
+    &--3 {
+      position: absolute;
+      right: 46px;
+      top: calc(68% - 1px);
+    }
+  }
+
+  &__img-door-inner {
+    display: none;
+  }
+  &__img-door {
+
+    &--1 {
+      position: absolute;
+      display: none;
+      top: 155px;
+      right: -77px;
+    }
+
+    &--2 {
+      position: absolute;
+      display: none;
+      top: calc(50% + 95px);
+      right: -84px;
+    }
+
+    &--3 {
+      position: absolute;
+      display: none;
+      right: -90px;
+      top: 49px;
+    }
+
+    &--4 {
+      position: absolute;
+      display: none;
+      top: calc(50% + 12px);
+      left: 99px;
+    }
+
+  }
+
   &__block-counter {
     position: absolute;
     bottom: 0;
@@ -64,7 +117,7 @@
       width: 100%;
       object-fit: fill;
       position: absolute;
-      height: 100vh;
+      height: 1083px;
     }
   }
 
@@ -108,6 +161,11 @@
     color: $white-4;
     padding-top: 0;
     margin-bottom: 228px;
+
+    .product-cost__block-counter {
+      margin-bottom: 0;
+      bottom: -35px;
+    }
 
     #{$context}__table-img {
       margin-top: 30px;

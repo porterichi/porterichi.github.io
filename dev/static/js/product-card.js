@@ -240,6 +240,12 @@ $(function() {
 </svg>
 `;
 
+    function setArrows(num) {
+        $('[data-product-slide]').hide(200);
+        $(`[data-product-slide=${num}]`).show(200);
+    }
+
+
     $('.product-cost-right__slider')
         .on('initialized.owl.carousel changed.owl.carousel', function(e) {
 
@@ -248,6 +254,7 @@ $(function() {
             }
             var carousel = e.relatedTarget;
             $('.product-cost__block-counter').text(carousel.relative(carousel.current()) + 1 + '/' + carousel.items().length);
+            setArrows(carousel.relative(carousel.current()) + 1);
 
         }).owlCarousel({
         items: 1,
