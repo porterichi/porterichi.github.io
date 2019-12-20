@@ -2,12 +2,33 @@
   background-color: $white-2;
   padding-top: 74px;
   margin-bottom: 176px;
+  position: relative;
   $context: &;
 
+  &__block-counter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    font-family: $rft-font;
+    font-weight: 600;
+    color: $grey-6;
+    margin-bottom: 70px;
+    margin-right: 57px;
+  }
+
   .product-cost-right__slider {
+    .owl-nav button.disabled svg {
+      fill: $grey-2;
+    }
     .owl-nav {
-      margin-top: 20px;
-      text-align: center;
+      width: 85px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 70px;
+      margin-right: 8px;
+      position: absolute;
+      right: 0;
     }
     .owl-prev, .owl-next {
       outline: none;
