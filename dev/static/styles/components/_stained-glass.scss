@@ -3,6 +3,37 @@
   margin-bottom: 189px;
   position: relative;
 
+  &__with-title {
+    .stained-glass__text.stained-glass__text--first {
+      margin-bottom: 41px;
+      padding-top: 25px;
+    }
+    .stained-glass__block-img--small {
+      width: 176.13px;
+      height: 120px;
+    }
+    .stained-glass__block-img--big {
+      width: 293.87px;
+      height: 200px;
+    }
+    .stained-glass__block {
+      align-items: center;
+    }
+    .stained-glass__block-name-bottom {
+      font-size: 17px;
+      font-style: italic;
+      position: absolute;
+      bottom: 18px;
+      left: 18px;
+    }
+  }
+
+  &__main-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 54px;
+  }
+
   &__slide--item {
     width: 100%;
     height: 60vh;
