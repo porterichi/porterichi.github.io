@@ -214,6 +214,7 @@ $(function() {
         const popup = $('.extras__popup');
         popup.fadeIn(200);
         popup.css('display','flex');
+        $('body').css('overflow','hidden');
         $('.extras__popup-container').owlCarousel({
             items: 1,
             loop: false,
@@ -228,6 +229,7 @@ $(function() {
     });
     $('.extras__popup-close').on('click', (e) => {
         $('.extras__popup').fadeOut(200);
+        $('body').css('overflow','visible');
     });
 
     // Product Cost Slider
@@ -262,6 +264,7 @@ $(function() {
         nav: true,
         dots: true,
         margin: 10,
+        navContainer: '.product-cost__slide .product-cost-right-section',
         navText: [
             leftProductArrow,
             rightProductArrow

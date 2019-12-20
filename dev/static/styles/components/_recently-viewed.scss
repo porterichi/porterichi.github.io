@@ -1,5 +1,8 @@
 .recently-viewed {
   width: 100%;
+  .catalog-item--interior .catalog-item__img--discount {
+    width: 182px;
+  }
 
   &__container {
     display: flex;
