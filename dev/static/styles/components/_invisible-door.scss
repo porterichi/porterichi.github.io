@@ -511,6 +511,14 @@
 
   & .catalog-factoid {
     margin-top: 39px;
+    &:hover {
+      .catalog-factoid__title {
+        color: $black;
+      }
+      .catalog-factoid__text {
+        color: $black;
+      }
+    }
   }
 
   &__hidden {
