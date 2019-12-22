@@ -21,6 +21,9 @@
       right: 46px;
       top: calc(68% - 1px);
     }
+    .product-cost__slide {
+      height: 915px;
+    }
   }
 
   &__img-door-inner {
@@ -122,7 +125,7 @@
   }
 
   &__slide {
-    height: 100vh;
+    height: 798px;
     width: 100%;
     /*background-image: url('../../images/product-cost-invisible.png');*/
     background-repeat: no-repeat;
