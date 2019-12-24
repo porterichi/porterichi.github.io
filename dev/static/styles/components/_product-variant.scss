@@ -3,6 +3,12 @@
   background-color: $white-2;
   $context: &;
 
+  &__bivalve {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+
   .product-variant__card-description {
     & > a {
       padding-left: 3px;
@@ -54,7 +60,7 @@
 
   &__bivalve {
     #{$context}__name {
-      transform-origin: 96px 26px;
+      transform-origin: 153px -50px;
     }
 
     #{$context}__card-add {
@@ -394,6 +400,16 @@ position: relative;
   }
   &.rotate:after {
     transform: rotate(180deg);
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: 5px;
+    background-image: url('../../images/icons/catalog-arrow.svg');
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .25s;
   }
 
   &:after {

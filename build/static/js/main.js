@@ -245,5 +245,10 @@ $(document).ready(function () {
               'content',
               'width=1390');
    };*/
+  // Disable Colors Link
 
+
+  $('.catalog-item__colors').on('click', function (e) {
+    e.preventDefault();
+  });
 });

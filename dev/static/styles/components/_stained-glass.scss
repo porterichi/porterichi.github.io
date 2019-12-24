@@ -6,15 +6,15 @@
   &__with-title {
     .stained-glass__text.stained-glass__text--first {
       margin-bottom: 41px;
-      padding-top: 25px;
+      padding-top: 0;
     }
     .stained-glass__block-img--small {
       width: 176.13px;
-      height: 120px;
+      height: auto!important;
     }
     .stained-glass__block-img--big {
       width: 293.87px;
-      height: 200px;
+      height: auto!important;
     }
     .stained-glass__block {
       align-items: center;

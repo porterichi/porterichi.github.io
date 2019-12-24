@@ -13,6 +13,14 @@
   @include desktop-to-laptop {
     height: 817px;
   }
+  &:hover {
+    .catalog-factoid__title {
+      color: $black;
+    }
+    .catalog-factoid__text {
+      color: $black;
+    }
+  }
   & > a {
     text-decoration: none;
     color: $black;
