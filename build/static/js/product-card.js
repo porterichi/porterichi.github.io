@@ -450,7 +450,7 @@ $(function () {
     nav: true,
     dots: true,
     margin: 10,
-    navContainer: '.product-cost__slide .product-cost-right-section',
+    navContainer: '.product-cost__slide .product-cost__block-counter-wrap',
     navText: [leftProductArrow, rightProductArrow]
   }); // Vitrage Scroll
 
