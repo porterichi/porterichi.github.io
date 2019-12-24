@@ -2,7 +2,11 @@
   position: relative;
   margin-bottom: 172px;
 
-
+  &:hover {
+    .invisible-door__title {
+      color: $gold;
+    }
+  }
 
   &__decoration-right {
     margin-left: 65px;
@@ -156,6 +160,7 @@
     &-title {
       width: 355px;
       margin-bottom: 21px;
+
     }
 
     &-text {
@@ -469,6 +474,7 @@
   &__title {
     color: $white;
     margin-bottom: 4px;
+    transition: .25s;
   }
 
   &__price {

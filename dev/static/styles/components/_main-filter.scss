@@ -138,6 +138,7 @@
       padding-right: 0;
     }
     &:hover {
+      color: $gold;
       &:before {
         content: '';
         position: absolute;
@@ -151,6 +152,7 @@
       background: linear-gradient(134.72deg, #F8F8F8 13.54%, #EDEDED 86.46%);
       .icon-sort-filter-arrow {
         transform: rotate(-180deg);
+        stroke: #CBA576;
       }
     }
     &:hover .header-dropdown {
