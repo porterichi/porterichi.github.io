@@ -1,5 +1,12 @@
 .header {
   padding-top: 8px;
+  &.invisible--door {
+    z-index: 10;
+    position: relative;
+    &:before {
+      background: none;
+    }
+  }
   &.transparent:before {
     background: #f7f7f7;
   }
@@ -24,18 +31,12 @@
     position: relative;
     border-bottom: 1px solid $grey-2;
     background-color: $white;
-    @include media-breakpoint-down(lg) {
-      padding: 13px 8px 13px;
-    }
   }
   &__bottom {
     font-size: 20px;
     width: 100%;
      background-color: $white;
     padding: 0 32px 0 36px;
-    @include media-breakpoint-down(lg) {
-      padding: 9px 8px;
-    }
   }
   &__cart {
     cursor: pointer;

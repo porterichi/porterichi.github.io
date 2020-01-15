@@ -2,6 +2,11 @@
   margin-bottom: 180px;
   background-color: $white-3;
 
+  & + .product-variant {
+    background-image: none!important;
+    background-color: $white-3!important;
+  }
+
   &__background {
     width: 100%;
     background-image: url('../../images/one-style.png');

@@ -40,7 +40,7 @@
       position: absolute;
       top: -50px;
       left: 0;
-      background-color: $grey-10;
+      background-color: $grey-5;
       font-family: $minion-display;
       padding: 9px;
       color: $white;
@@ -145,8 +145,8 @@ padding-left: 3px;
 }
 
 .catalog-item__color {
-cursor: pointer;
-  margin-bottom: 12px;
+  cursor: pointer;
+  margin-bottom: 18px;
 }
 
 &__see {
@@ -521,7 +521,8 @@ position: relative;
   font-size: 13px;
   font-family: $rft-font;
   font-weight: $bold;
-  margin: 0 8px;
+  width: 27px;
+  text-align: center;
 }
 
 &-price {

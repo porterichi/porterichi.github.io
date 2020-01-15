@@ -26,7 +26,7 @@
       margin-top: 115px;
     }
     &-text {
-      margin-top: 3px;
+      margin-top: 11px;
       font-size: 18px;
       font-style: italic;
       line-height: 27px;
@@ -71,6 +71,7 @@
       color: $grey-6;
       order: 1;
       margin-top: 27px;
+      margin-bottom: 0;
     }
 
     &:last-child {

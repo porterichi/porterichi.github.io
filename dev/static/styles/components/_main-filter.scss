@@ -4,6 +4,11 @@
   width: 100%;
   margin-top: 40px;
   justify-content: space-between;
+  padding-bottom: 90px;
+  &:hover .main-filter__row .scrollbar {
+    opacity: 1;
+    visibility: visible;
+  }
 
   & .main-filter__row.with {
     &:after {
@@ -35,6 +40,7 @@
       position: relative;
       width: calc(100% - 42px);
 
+
       .main-filter__list-wrap {
         overflow: visible!important;
         position: relative;
@@ -57,6 +63,9 @@
         bottom: 0;
         z-index: 100;
         left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: .25s;
       }
       .scrollbar .handle {
         width: 25px !important;

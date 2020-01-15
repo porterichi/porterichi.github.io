@@ -356,7 +356,7 @@ $(function () {
     dots: false,
     margin: 10,
     bgfh: true,
-    mouseDrag: true,
+    mouseDrag: false,
     animateOut: 'slideOutUp',
     animateIn: 'slideInUp'
   });
