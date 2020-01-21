@@ -86,6 +86,9 @@
     margin-right: 90px;
     outline: none;
     &:hover {
+      & > a {
+        color: inherit;
+      }
       .hardware__slide-title {
         color: $black;
       }
