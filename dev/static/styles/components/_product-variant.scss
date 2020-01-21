@@ -3,11 +3,6 @@
   background-color: $white-2;
   $context: &;
 
-  &__bivalve .product-variant__name {
-    bottom: 107px!important;
-    right: -105px!important;
-    transform-origin: 65px 8px!important;
-  }
 
   &__bivalve {
     background-repeat: no-repeat;
@@ -273,7 +268,7 @@ margin-bottom: 8px;
 
 &__left, &__right {
 flex: 0 0 31.25%;
-max-width: 31.25%;
+width: 31.25%;
 }
 
 &__right {
