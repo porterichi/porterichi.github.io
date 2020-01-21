@@ -23,6 +23,7 @@
     padding-top: 9px;
     display: block;
     padding-bottom: 12px;
+    line-height: 1!important;
     @include media-breakpoint-down(lg) {
       font-size: 11px;
     }

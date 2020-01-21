@@ -119,6 +119,7 @@
 
       .breadcrumbs {
         margin-top: 0;
+        overflow: hidden;
       }
 
     }
@@ -267,6 +268,7 @@ font-family: $minion-font;
 & .breadcrumbs {
 margin-top: 84px;
 margin-bottom: 8px;
+  overflow: hidden;
 }
 
 &__left, &__right {
