@@ -3,6 +3,12 @@
   background-color: $white-2;
   $context: &;
 
+  &__bivalve .product-variant__name {
+    bottom: 107px!important;
+    right: -105px!important;
+    transform-origin: 65px 8px!important;
+  }
+
   &__bivalve {
     background-repeat: no-repeat;
     background-position: bottom;
@@ -157,8 +163,6 @@ width: 422px;
 height: 180px;
 padding-right: 37px;
 justify-content: flex-end;
-position: absolute;
-right: 0;
 
 &-title {
   width: 206px;
@@ -180,6 +184,7 @@ right: 0;
   margin-bottom: 117px;
   & .breadcrumbs {
     margin-top: 0;
+    overflow: hidden;
   }
 }
 }
@@ -397,6 +402,9 @@ position: relative;
     margin-bottom: 9px;
     letter-spacing: 2.2px;
     transition: .25s;
+  }
+  &.rotate:hover:after {
+    background-image: url('../../images/icons/catalog-arrow-hover.svg');
   }
   &.rotate:after {
     transform: rotate(180deg);

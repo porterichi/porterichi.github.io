@@ -13,6 +13,13 @@
     transform: rotate(180deg);
     margin-left: 50px;
     outline: none;
+    &.disabled {
+      &:hover {
+        svg {
+          fill: $grey-6;
+        }
+      }
+    }
     svg {
       transition: .25s;
       fill: $grey-6;
@@ -23,6 +30,13 @@
   }
   .owl-prev {
     outline: none;
+    &.disabled {
+      &:hover {
+        svg {
+          fill: $grey-6;
+        }
+      }
+    }
     svg {
       transition: .25s;
       fill: $grey-6;

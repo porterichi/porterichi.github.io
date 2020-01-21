@@ -7,7 +7,31 @@
       color: $gold;
     }
   }
-
+  
+  &__second-row {
+    background-color: $green-2;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      right: 100%;
+      top: 0;
+      z-index: 0;
+      background-color: $green-2;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 100%;
+      top: 0;
+      z-index: 0;
+      background-color: $green-2;
+    }
+  }
+  
   &__decoration-right {
     margin-left: 65px;
   }
@@ -87,7 +111,7 @@
   &__choose {
     background-color: $grey-12;
     margin-bottom: 168px;
-
+    overflow: hidden;
     &-title {
       max-width: 510px;
       margin-top: 77px;
@@ -101,18 +125,21 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      height: 748px;
+      height: 749px;
       position: absolute;
 
       &--first {
         background-image: url('../../images/invisible-choose-1.png');
         right: 0;
         width: 55%;
+
       }
       &--second {
         background-image: url('../../images/invisible-choose-2.png');
         left: 0;
         width: 53%;
+        height: 752px;
+        z-index: 2;
       }
     }
     &-text {
@@ -266,7 +293,6 @@
       padding-left: 15px;
       padding-top: 11px;
       padding-right: 10px;
-      opacity: 0;
       visibility: hidden;
       transition: .25s;
       &:after {

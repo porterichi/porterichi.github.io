@@ -213,6 +213,17 @@ $(document).ready(function () {
         ]
     });
 
+    // Review
+    $('.recently-viewed__container').owlCarousel({
+        items: 3,
+        loop: false,
+        autoWidth:true,
+        navText: [
+            reviewArrow,
+            reviewArrow
+        ]
+    });
+
     // Header Filter Menu
     const list = $('.main-filter__list');
     const listWidth = list.width();

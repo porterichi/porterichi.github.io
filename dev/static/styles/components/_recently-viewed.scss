@@ -6,8 +6,8 @@
 
   &__container {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
   }
 
   &__title {
@@ -16,7 +16,71 @@
   }
 
   &__item {
+    margin-right: 106px;
 
+
+      .catalog-item__name, .catalog-item__price, .catalog-item__material {
+        color: $white;
+      }
+
+
+
+    &.catalog-item--double.catalog-item--bivalve {
+      width: 567.28px;
+      margin-top: 45px;
+
+      .catalog-item__img {
+        width: 567.28px;
+        height: 432px;
+      }
+    }
+
+    &.catalog-item--bivalve {
+      width: 316px;
+      margin-top: 45px;
+
+      .catalog-item__img {
+        width: 316px;
+        height: 432px;
+      }
+    }
+
+    &.catalog-item--invisible {
+      margin-top: 45px;
+      &:hover {
+        .invisible-door__title {
+          color: $gold;
+        }
+      }
+      & img {
+        width: 437px;
+        height: 528px;
+      }
+    }
+
+    &.catalog-item--entrance {
+      width: 426.28px;
+      margin-top: 45px;
+
+      .catalog-item__img.catalog-item__img--entrance {
+        width: 243px;
+        height: 433px;
+      }
+
+      .catalog-item__mask.catalog-item__mask--big {
+        width: 476px;
+        height: 405px;
+        left: -30px;
+
+      }
+
+      .catalog-item__footer {
+        border-bottom: none;
+      }
+
+
+
+    }
 
     & .catalog-item__img {
       height: 433px;

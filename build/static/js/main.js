@@ -192,6 +192,13 @@ $(document).ready(function () {
     margin: 173,
     nav: true,
     navText: [reviewArrow, reviewArrow]
+  }); // Review
+
+  $('.recently-viewed__container').owlCarousel({
+    items: 3,
+    loop: false,
+    autoWidth: true,
+    navText: [reviewArrow, reviewArrow]
   }); // Header Filter Menu
 
   var list = $('.main-filter__list');

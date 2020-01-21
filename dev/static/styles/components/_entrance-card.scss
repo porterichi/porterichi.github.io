@@ -1,0 +1,17 @@
+.entrance-card {
+  & .product-variant__block--entrance {
+    margin-top: 71px;
+  }
+
+  & .product-variant {
+    margin-bottom: 225px;
+  }
+
+  & .miniature__left img {
+    width: 100%;
+  }
+
+  & .miniature span {
+    text-align: left;
+  }
+}
