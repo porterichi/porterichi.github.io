@@ -8,19 +8,15 @@
   &__invisible {
     &--1 {
       position: absolute;
-      top: 170px;
-      right: 10px;
-    }
+      top: 296px;
+      right: 13px;
+    }c  b
     &--2 {
       position: absolute;
-      right: 12px;
-      top: calc(71%);
+      right: 18px;
+      top: calc(77%);
     }
-    &--3 {
-      position: absolute;
-      right: 46px;
-      top: calc(68% - 1px);
-    }
+
     .product-cost__slide {
       height: 915px;
     }
@@ -190,6 +186,10 @@
     padding-top: 0;
     margin-bottom: 228px;
 
+    .product-cost__slider-bg {
+      height: 972px;
+    }
+
     .product-cost__block-counter {
       margin-bottom: 0;
       bottom: -35px;
@@ -220,7 +220,7 @@
     }
 
     div.product-cost__table--left {
-      margin-bottom: 180px;
+      margin-bottom: 218px;
     }
 
     #{$context}-right__slider {
@@ -239,7 +239,7 @@
     #{$context}__text--left {
       margin-top: 19px;
       color: $white-4;
-      margin-bottom: 87px;
+      margin-bottom: 39px;
     }
 
     #{$context}__table--left {
@@ -247,7 +247,7 @@
     }
 
     #{$context}__title {
-      margin-top: 19px;
+      margin-top: 8px;
       margin-bottom: 20px;
       color: $grey-10;
       &-main {
@@ -257,12 +257,12 @@
 
     #{$context}__table--right {
       width: 280px;
-      margin-bottom: 52px;
+      margin-bottom: 36px;
     }
 
     #{$context}__table--line {
       width: 100%;
-      margin-bottom: 121px;
+      margin-bottom: 55px;
     }
 
 
@@ -346,7 +346,7 @@
     }
 
     &--left {
-      margin-bottom: 101px;
+      margin-bottom: 172px;
     }
 
     &-body {
