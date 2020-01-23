@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 13px 32px 13px;
+    height: 55px;
     position: relative;
     border-bottom: 1px solid $grey-2;
     background-color: $white;
@@ -46,6 +46,8 @@
     position: relative;
     z-index: 3;
     text-decoration: none;
+    box-sizing: content-box;
+    padding: 13px 32px;
     &-counter {
       width: 19px;
       height: 19px;
@@ -57,8 +59,8 @@
       align-items: center;
       border-radius: 50%;
       position: absolute;
-      top: 0;
-      right: -4px;
+      top: 13px;
+      right: 29px;
     }
     & > svg {
       transition: .25s;
@@ -95,6 +97,7 @@
     position: relative;
     z-index: 3;
     transition: .25s;
+    padding: 13px 32px;
     &:hover {
       color: $gold;
     }

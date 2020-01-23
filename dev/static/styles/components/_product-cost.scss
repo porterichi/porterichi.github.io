@@ -325,6 +325,14 @@
 
   &__table {
 
+    &--params.product-cost__table--right {
+      margin-bottom: 20px;
+    }
+
+    &--margin.product-cost__table--right {
+      margin-bottom: 45px;
+    }
+
     &--line {
       position: relative;
 

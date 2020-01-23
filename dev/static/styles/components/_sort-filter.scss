@@ -61,7 +61,9 @@
       display: block;
       text-decoration: none;
       transition: .25s;
-      &:not(:last-child){
+      width: auto;
+      white-space: nowrap;
+      &:first-child {
         margin-bottom: 20px;
       }
       &:hover {

@@ -20,6 +20,9 @@
     background-position: center;
     height: 855px;
     position: relative;
+    @media (min-width: 999px) and (max-width: 1399px)  {
+      background-size: cover;
+    }
   }
 
   &__title {

@@ -206,6 +206,17 @@
     border-radius: 50%;
     position: relative;
     transition: .25s;
+    &:hover:after {
+      transition: .25s;
+      content: '';
+      position: absolute;
+      width: 29px;
+      height: 29px;
+      left: -5px;
+      top: -5px;
+      border-radius: 50%;
+      border: 1px solid $grey-3;
+    }
     &:not(.catalog-item__color--multicolor) div {
       overflow: hidden;
       border-radius: 50%;

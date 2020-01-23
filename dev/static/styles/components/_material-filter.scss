@@ -54,8 +54,17 @@
       display: inline-block;
     }
 
-    &--active {
+    &--active.material-filter__item {
       color: #868686;
+      cursor: default;
+      &:hover {
+        a {
+          color: #868686;
+          pointer-events: none;
+          cursor: default;
+        }
+
+      }
       & > a {
         color: #868686;
       }

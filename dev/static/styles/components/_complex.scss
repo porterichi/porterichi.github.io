@@ -1,23 +1,66 @@
 .complex {
-  padding: 62px 75px 0 63px;
-  background-color: $white-3;
-  margin-bottom: 180px;
+  margin-bottom: 200px;
+
+  .complex__wrap {
+    display: flex;
+    padding-left: 64px;
+    padding-top: 72px;
+    padding-right: 66px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .container {
+    background-color: $white-3;
+  }
+
+  &__left {
+    width: 357px;
+  }
+
+  &__middle {
+    width: 368px;
+  }
+
+  &__right {
+    width: 353px;
+
+    .complex__text {
+      margin-bottom: 15px;
+    }
+
+    &-title {
+      margin-top: 36px;
+    }
+
+  }
 
   h3 {
-    margin-bottom: 27px;
+    margin-bottom: 11px;
   }
 
   &__text {
     margin-bottom: 27px;
+    &-description {
+      color: $grey-6;
+      letter-spacing: 0.05em;
+      font-size: 16px;
+      font-family: $rft-font;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 22px;
+    }
   }
 
   &__title {
-    margin-bottom: 27px;
+    margin-bottom: 20px;
+
   }
 
   &__middle {
     img {
       width: auto;
+      height: 660px;
     }
   }
 

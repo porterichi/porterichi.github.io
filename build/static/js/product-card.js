@@ -348,7 +348,16 @@ $(function () {
       animateOut: 'slideOutUp',
       animateIn: 'slideInUp'
   });*/
+  // Add link to card
 
+  $('.product-variant__card-add').on('click', function () {
+    // Change text to link
+    var context = $(this);
+    var link = $('.product-variant__card-add--link');
+    context.hide();
+    link.fadeIn(300);
+    link.css('display', 'flex');
+  });
   $('.stained-glass__slider').owlCarousel({
     items: 1,
     loop: false,
@@ -357,6 +366,7 @@ $(function () {
     margin: 10,
     bgfh: true,
     mouseDrag: false,
+    touchDrag: false,
     animateOut: 'slideOutUp',
     animateIn: 'slideInUp'
   });
@@ -502,7 +512,9 @@ $(function () {
   // Phone Mask
 
   var measurementPhone = $('.measurement__input input');
-  measurementPhone.mask("+ 375 99 999-99-99");
+  measurementPhone.mask("+ 375 99 999-99-99", {
+    autoclear: false
+  });
   /*let isFixed = false;
   new Waypoint({
       element: document.getElementsByClassName(`product-cost`),
