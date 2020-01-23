@@ -180,6 +180,7 @@
     font-size: 27px;
     font-family: $minion-font;
     color: $black;
+    cursor: default;
     &.with-old {
       & > span:not(.catalog-item__oldprice){
         color: $red;
@@ -192,6 +193,8 @@
     font-family: $minion-font;
     font-style: italic;
     color: #868686;
+    cursor: default;
+
   }
 
   &__colors {
