@@ -371,14 +371,14 @@ position: relative;
     color: $white;
   }
 
-  &--link {
+  &--link.product-variant__card-add {
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 81px;
     outline: none;
-    background-color: $white;
-    border: 1px solid #9D9DA1;
+    background-color: $white-2;
+    border:none;
     transition: .3s;
     color: $black;
     letter-spacing: 3.7px;
@@ -391,7 +391,7 @@ position: relative;
     font-weight: $bold;
     display: none;
     &:hover {
-      background-color: $white;
+      background-color: $white-2;
       color: $gold;
     }
   }

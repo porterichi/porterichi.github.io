@@ -3,6 +3,17 @@
 
   &__img {
 
+    &-descr {
+      font-style: italic;
+      font-size: 18px;
+      line-height: 27px;
+      width: 337px;
+      strong {
+        display: inline-block;
+
+      }
+    }
+
     &--big {
       margin: 0;
     }
@@ -14,6 +25,8 @@
   }
   &__title {
     line-height: 1;
+    margin-top: -14px;
+    margin-bottom: 28px;
   }
 
   &__text {
