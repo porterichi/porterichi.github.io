@@ -110,7 +110,7 @@
   }
 
   &__link {
-    @include link-with-border( $black, $black );
+    @include link-with-border;
     transition: .25s;
     &:after {
       transition: .25s;

@@ -1,0 +1,25 @@
+.bivalve-size {
+  margin-bottom: 185px;
+
+  &__title {
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 43px;
+  }
+
+  &__figure {
+    margin: 0;
+    &-img {
+      margin-bottom: 17px;
+    }
+    &-descr {
+      font-style: italic;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+}

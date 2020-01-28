@@ -135,8 +135,115 @@ body
                                     | классический дизайн входной двери
 
         section.install
-            h5.install__title Куда устанавливать дверь
+            p.install__title Куда устанавливать дверь
             .install__wrap
-                .install__block
+                .install__block(data-install='1')
+                    .install__block-number 01
+                    .install__block-descr Оптимально: из неотапливаемого тамбура в дом
+                .install__block(data-install='2')
+                    .install__block-number 02
+                    .install__block-descr Оптимально: из неотапливаемого тамбура в дом
+                .install__block(data-install='3')
+                    .install__block-number 03
+                    .install__block-descr Оптимально: из неотапливаемого тамбура в дом
+
+        section.measurement
+            .container.measurement__background
+                .row
+                    .col-lg-5
+                        h2.measurement__title Бесплатный замер дверного проёма
+                    .col-lg-5.no-padding
+                        p.measurement__descr Замер от нашего специалиста — гарантия того, что дверь подойдёт идеально. Замерщик учтёт все нюансы, важные для дальнейших этапов.
+                        .measurement__input
+                            input(type="tel", placeholder="+ 375 29 161 30 33")
+                            button(type="submit").measurement__submit
+                    .offset-lg-1.col-lg-3
+                        .measurement__block
+                            img(src="images/measurement-1.png", alt="manager").measurement__img
+                    .col-lg-2
+                        .measurement__right
+                            .measurement__name Анастасия,
+                            .measurement__position менеджер
+                                br
+                                | по продажам
+
+        section.entrance-variant
+            .wrap
+                .row
+                    .col-lg-5
+                        h2.entrance-variant__title Варианты <br /> комплектации <br /> выбранной двери
+                        p.entrance-variant__text Комплектация двери влияет <br /> на технические характеристики: <br /> толщину металла, утепление полотна, <br /> уровень защиты от шума, холодного <br /> воздуха и посторонних запахов.
+                        ul.entrance-variant__tabs
+                            li.entrance-variant__tabs-item.active(data-variant-entrance="1") Базовая — от 500 руб.
+                            li.entrance-variant__tabs-item(data-variant-entrance="2") Оптимальная — от 800 руб.
+                            li.entrance-variant__tabs-item(data-variant-entrance="3") Максимальная — от 2 300 руб.
+                        a(href="#").entrance-variant__link отличия комплектаций
+                    .col-lg-6
+                        img(src='images/entrance-door-1.png', alt='').entrance-variant__img
+                    .offset-lg-1.col-3
+                        .entrance-variant__blocks(data-variant-entrance-block="1")
+                            .entrance-variant__block.entrance-variant__block--top 6 слоёв многослойного утепления исключают <br /> в двери «мостики холода». Контрукция не промерзает при низкой температуре, <br /> не пропускает шум с улицы.
+                            .entrance-variant__block.entrance-variant__block--middle Комбинацию стёкол, кромки и цвет витража можно менять, чтобы создать индивидуальный рисунок.
+                            .entrance-variant__block.entrance-variant__block--bottom В уязвимые места двери: пороге, стыках и углах — наносят дополнительные слои антикоррозийной обработки стали.
+                        .entrance-variant__blocks(data-variant-entrance-block="2")
+                            .entrance-variant__block.entrance-variant__block--top 8 слоёв многослойного утепления исключают <br /> в двери «мостики холода». Контрукция не промерзает при низкой температуре, <br /> не пропускает шум с улицы.
+                            .entrance-variant__block.entrance-variant__block--middle Комбинацию стёкол, кромки и цвет витража можно менять, чтобы создать индивидуальный рисунок.
+                            .entrance-variant__block.entrance-variant__block--bottom В уязвимые места двери: пороге, стыках и углах — наносят дополнительные слои антикоррозийной обработки стали.
+                        .entrance-variant__blocks(data-variant-entrance-block="3")
+                            .entrance-variant__block.entrance-variant__block--top 10 слоёв многослойного утепления исключают <br /> в двери «мостики холода». Контрукция не промерзает при низкой температуре, <br /> не пропускает шум с улицы.
+                            .entrance-variant__block.entrance-variant__block--middle Комбинацию стёкол, кромки и цвет витража можно менять, чтобы создать индивидуальный рисунок.
+                            .entrance-variant__block.entrance-variant__block--bottom В уязвимые места двери: пороге, стыках и углах — наносят дополнительные слои антикоррозийной обработки стали.
 
 
+        section.bivalve-size
+            .wrap
+                .row
+                    .col-lg-10
+                        img(src="images/bivalve-size-bg.png", alt="door").bivalve-size__img
+                    .offset-lg-1.col-lg-5
+                        h2.bivalve-size__title Двупольные двери  по индивидуальным размерам
+                        p.bivalve-size__text Нестандартный размер проёма — возможность подчеркнуть статусность дома и найти интересное решение среди моделей  с боковыми доборами и фрамугами.
+                        figure.bivalve-size__figure
+                            img(src="images/bivalve-size-img.svg", alt="door").bivalve-size__figure-img
+                            figcaption.bivalve-size__figure-descr Формы, размеры доборов и фрамуг меняются  в зависимости от параметров проёма.
+
+        section.entrance-choose
+            .wrap
+                .row
+                    .col-lg-5
+                        h2.entrance-choose__title Выбирайте цвет <br /> и материал, который <br /> вам нравится
+                        ul.entrance-choose__tabs
+                            li.entrance-choose__tabs-item.active
+                                .entrance-choose__tabs-name SteelLak
+                                p.entrance-choose__tabs-descr Покрытие сохраняет первоначальный внешний вид десятки лет. При уходе не требует специальных чистящих средств
+                            li.entrance-choose__tabs-item
+                                .entrance-choose__tabs-name OAK-панели
+                                p.entrance-choose__tabs-descr Покрытие сохраняет первоначальный внешний вид десятки лет. При уходе не требует специальных чистящих средств
+                    .offset-lg-1.col-lg-10
+                        .entrance-choose__material.entrance-choose__material--top
+                            .entrance-choose__material-item.entrance-choose__material-item--small
+
+                                .entrance-choose__material-name PVC
+                                img(src='images/entrance-choose-1.png', alt='').entrance-choose__material-img
+                                .entrance-choose__material-model «Дуб грей»
+
+                            .entrance-choose__material-item.entrance-choose__material-item--medium
+                                .entrance-choose__material-name PVC
+                                img(src='images/entrance-choose-2.png', alt='').entrance-choose__material-img
+                                .entrance-choose__material-model «Дуб миндальный»
+
+                        .entrance-choose__material.entrance-choose__material--bottom
+
+                            .entrance-choose__material-item.entrance-choose__material-item--medium
+                                .entrance-choose__material-name PVC
+                                img(src='images/entrance-choose-2.png', alt='').entrance-choose__material-img
+                                .entrance-choose__material-model «Дуб миндальный»
+
+                            .entrance-choose__block
+                                h3.entrance-choose__block-title
+                                p.entrance-choose__block-text
+
+
+
+    script(src="static/js/jquery-3.3.1.min.js", defer)
+    script(src="static/js/product-entrance.js", defer)

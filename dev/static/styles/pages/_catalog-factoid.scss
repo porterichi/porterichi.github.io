@@ -85,7 +85,7 @@
     }
 
     & #{$context}__link {
-      @include link-with-border($black, $black);
+      @include link-with-border;
       position: absolute;
       bottom: 0;
       left: 35px;
