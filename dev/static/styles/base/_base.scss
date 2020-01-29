@@ -25,6 +25,16 @@ body.fixed {
   overflow: hidden;
 }
 
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
 p {
   font-size: 20px;
   line-height: 27px;

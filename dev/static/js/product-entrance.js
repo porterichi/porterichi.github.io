@@ -11,9 +11,27 @@ $(function() {
         $('.entrance-variant__tabs-item').removeClass('active');
         $(this).addClass('active');
     });
+    // End of entrance-variant, Tabs
 
+    // strengthen-protection, Tabs
+    $('.strengthen-protection__list-item').on('click', function() {
+        const self = $(this);
+        const tabs = $('[data-strengthen-tabs]');
+        const activeTabNumber = self.data('strengthen-tabs');
+        const blockCollection = $(`[data-strengthen-protection]`);
+        const activeBlock = $(`[data-strengthen-protection=${activeTabNumber}]`);
 
-    //End of entrance-variant, Tabs
+        if( !self.hasClass('active') ) {
 
+            tabs.removeClass('active');
+            self.addClass('active');
 
+            blockCollection.hide();
+            activeBlock.fadeIn(300);
+            activeBlock.css('display', 'flex');
+        }
+
+    });
+
+    // End of strengthen-protection, Tabs
 });
