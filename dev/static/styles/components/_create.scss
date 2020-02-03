@@ -1,0 +1,111 @@
+.create {
+
+  &-modal {
+    width: 100%;
+    height: 100vh;
+    background-color: $white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    &__close {
+      position: absolute;
+      right: 27px;
+      top: 36px;
+      cursor: pointer;
+      svg {
+        path {
+          transition: .25s;
+          &:hover {
+            stroke: $gold;
+          }
+        }
+      }
+    }
+    &__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 70vw;
+      }
+    }
+  }
+
+  &__left {
+    position: relative;
+
+    &-gallery {
+      position: absolute;
+      right: -102px;
+      top: -27px;
+      width: 233px;
+      height: 233px;
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.07);
+      border-radius: 50%;
+      cursor: pointer;
+      object-fit: cover;
+    }
+
+    &-img {
+      height: 996px;
+      width: 100%;
+    }
+
+
+    &-descr {
+      font-style: italic;
+      font-size: 18px;
+      line-height: 27px;
+      margin-top: -11px;
+      strong {
+        padding-right: 4px;
+      }
+    }
+
+  }
+
+  &__right {
+    font-size: 20px;
+    line-height: 27px;
+    padding-top: 20px;
+    position: relative;
+
+    &-img {
+      position: relative;
+    }
+
+
+    &-gallery {
+      position: absolute;
+      left: -97px;
+      top: -33px;
+      width: 233px;
+      height: 233px;
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.07);
+      border-radius: 50%;
+      cursor: pointer;
+      object-fit: cover;
+    }
+
+    &-title {
+      margin-bottom: 29px;
+    }
+
+    &-text {
+      width: 328px;
+      margin-bottom: 28px;
+      &--last {
+        margin-bottom: 71px;
+      }
+    }
+
+  }
+
+
+
+}

@@ -4,7 +4,7 @@ include components/head
 body
     include components/header
     main.main-container.entrance-card
-        section.product-variant
+        section.product-variant.product-variant--bg
             .container
                 .row
                     .offset-lg-1.col-lg-7
@@ -57,7 +57,7 @@ body
                 .row
                     .miniature__left
                         img(src="images/miniature-for-home-1.png", alt="door")
-                        span Дверь полностью соответствует представлению о класицизме в дизайне. Подтверждает
+                        span.miniature__left-text.miniature__left-text--right Дверь полностью соответствует представлению о класицизме в дизайне. Подтверждает
                             br
                             | это традиционная фрезеровка и фурнитура, декоративный портал и кованная решётка
                     .miniature__right.offset-lg-10.col-lg-6
@@ -138,14 +138,30 @@ body
             p.install__title Куда устанавливать дверь
             .install__wrap
                 .install__block(data-install='1')
-                    .install__block-number 01
-                    .install__block-descr Оптимально: из неотапливаемого тамбура в дом
+                    .install__block-wrap
+                        .install__block-number 01
+                        .install__block-descr Оптимально: <br/> из неотапливаемого тамбура в дом
+                    .install__block-hidden(style='background-image: url("images/install-1.jpg")')
+                        .install__block-hidden__number 01
+                        .install__block-hidden__title Лучше место для установки — <br/> из вентилируемого тамбура в дом
+                        .install__block-hidden__descr Так входная дверь будет защищена <br/> от агрессивных атмосферных <br/> факторов: дождя, снега, ветра, <br/> прямых солнечных лучей.
+
                 .install__block(data-install='2')
-                    .install__block-number 02
-                    .install__block-descr Оптимально: из неотапливаемого тамбура в дом
+                    .install__block-wrap
+                        .install__block-number 02
+                        .install__block-descr Допустимо: <br/>  с улицы на вход в тамбур
+                    .install__block-hidden(style='background-image: url("images/install-2.jpg")')
+                        .install__block-hidden__number 02
+                        .install__block-hidden__title Лучше место для установки — <br/> из вентилируемого тамбура в дом
+                        .install__block-hidden__descr
                 .install__block(data-install='3')
-                    .install__block-number 03
-                    .install__block-descr Оптимально: из неотапливаемого тамбура в дом
+                    .install__block-wrap
+                        .install__block-number 03
+                        .install__block-descr Возможно: <br/> монтаж на вход с улицы в дом
+                    .install__block-hidden(style='background-image: url("images/install-3.jpg")')
+                        .install__block-hidden__number 03
+                        .install__block-hidden__title Лучше место для установки — <br/> из вентилируемого тамбура в дом
+                        .install__block-hidden__descr
 
         section.measurement
             .container.measurement__background
@@ -275,84 +291,143 @@ body
                                     li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
 
         section.strengthen-protection
-            .strengthen-protection__left
-                .container
-                    .row
-                        .strengthen-protection__wrap
-                            h2.strengthen-protection__title Усиливайте защиту двери с помощью замков
-                            .strengthen-protection__left-wrap
-                                ul.strengthen-protection__list
-                                    li.strengthen-protection__list-item.active(data-strengthen-tabs='1') Optima
-                                    li.strengthen-protection__list-item(data-strengthen-tabs='2') Optima Plus
-                                    li.strengthen-protection__list-item Profi 1
-                                    li.strengthen-protection__list-item Profi 2
-                                    li.strengthen-protection__list-item Profi 2D
-                                    li.strengthen-protection__list-item Premium
-                                    li.strengthen-protection__list-item Premium Plus
-                                    li.strengthen-protection__list-item Brilliant Plus
-                                .strengthen-protection__info.active(data-strengthen-protection='1')
-                                    .strengthen-protection__info-img
-                                        img(src='images/protect-1.png', alt='')
-                                    .strengthen-protection__info-descr
-                                        .strengthen-protection__info-wrap
-                                            .strengthen-protection__info-left
-                                                .strengthen-protection__block
-                                                    .strengthen-protection__block-title Верхний замок
-                                                    .strengthen-protection__block-name Kale 257L
-                                                .strengthen-protection__block
-                                                    .strengthen-protection__block-title нижний замок
-                                                    .strengthen-protection__block-name Kale 252R
-                                                .strengthen-protection__block
-                                                    .strengthen-protection__block-title цилиндр
-                                                    .strengthen-protection__block-name Kale
-                                                .strengthen-protection__block
-                                                    .strengthen-protection__block-title Производство
-                                                    .strengthen-protection__block-name Турция
+            .strengthen-protection__slider-wrap
+                .strengthen-protection__slider
+                    .strengthen-protection__left
+                        .container
+                            .row
+                                .strengthen-protection__wrap
+                                    h2.strengthen-protection__title Усиливайте защиту двери с помощью замков
+                                    .strengthen-protection__left-wrap
+                                        ul.strengthen-protection__list
+                                            li.strengthen-protection__list-item.active(data-strengthen-tabs='1') Optima
+                                            li.strengthen-protection__list-item(data-strengthen-tabs='2') Optima Plus
+                                            li.strengthen-protection__list-item Profi 1
+                                            li.strengthen-protection__list-item Profi 2
+                                            li.strengthen-protection__list-item Profi 2D
+                                            li.strengthen-protection__list-item Premium
+                                            li.strengthen-protection__list-item Premium Plus
+                                            li.strengthen-protection__list-item Brilliant Plus
+                                        .strengthen-protection__info.active(data-strengthen-protection='1')
+                                            .strengthen-protection__info-img
+                                                img(src='images/protect-1.png', alt='')
+                                            .strengthen-protection__info-descr
+                                                .strengthen-protection__info-wrap
+                                                    .strengthen-protection__info-left
+                                                        .strengthen-protection__block
+                                                            .strengthen-protection__block-title Верхний замок
+                                                            .strengthen-protection__block-name Kale 257L
+                                                        .strengthen-protection__block
+                                                            .strengthen-protection__block-title нижний замок
+                                                            .strengthen-protection__block-name Kale 252R
+                                                        .strengthen-protection__block
+                                                            .strengthen-protection__block-title цилиндр
+                                                            .strengthen-protection__block-name Kale
+                                                        .strengthen-protection__block
+                                                            .strengthen-protection__block-title Производство
+                                                            .strengthen-protection__block-name Турция
 
-                                            .strengthen-protection__info-right
-                                                .strengthen-protection__info-complect Комплект из сувальдного и цилиндрового замков. Соответствуют 3-му и 4-му, высшему, классу безопасности. Защищены <br /> от высверливания, фрезерования и вбивания ригелей внутрь. Благодаря приводу ручки <br /> с подшипником, замки работают плавно и мягко.
+                                                    .strengthen-protection__info-right
+                                                        .strengthen-protection__info-complect Комплект из сувальдного и цилиндрового замков. Соответствуют 3-му и 4-му, высшему, классу безопасности. Защищены <br /> от высверливания, фрезерования и вбивания ригелей внутрь. Благодаря приводу ручки <br /> с подшипником, замки работают плавно и мягко.
 
-                                        .strengthen-protection__info-tips Устанавливаем в двери оптимальной, усиленной и максимальной комплектации.
-                                        ul.strengthen-protection__deal
-                                            li.strengthen-protection__deal-item + 55 рублей к оптимальной и усиленной комплектации
-                                            li.strengthen-protection__deal-item + 35 рублей к стоимости максимальной комплектации
+                                                .strengthen-protection__info-tips Устанавливаем в двери оптимальной, усиленной и максимальной комплектации.
+                                                ul.strengthen-protection__deal
+                                                    li.strengthen-protection__deal-item + 55 рублей к оптимальной и усиленной комплектации
+                                                    li.strengthen-protection__deal-item + 35 рублей к стоимости максимальной комплектации
 
-                                .strengthen-protection__info(data-strengthen-protection='2')
-                                    .strengthen-protection__info-img
-                                        img(src='images/protect-1.png', alt='')
-                                    .strengthen-protection__info-descr
-                                        .strengthen-protection__info-wrap
-                                            .strengthen-protection__info-left
-                                                .strengthen-protection__block
-                                                    .strengthen-protection__block-title Верхний замок2
-                                                    .strengthen-protection__block-name Kale 257L
-                                                .strengthen-protection__block
-                                                    .strengthen-protection__block-title нижний замок
-                                                    .strengthen-protection__block-name Kale 252R
-                                                .strengthen-protection__block
-                                                    .strengthen-protection__block-title цилиндр
-                                                    .strengthen-protection__block-name Kale
-                                                .strengthen-protection__block
-                                                    .strengthen-protection__block-title Производство
-                                                    .strengthen-protection__block-name Турция
+                                        .strengthen-protection__info(data-strengthen-protection='2')
+                                            .strengthen-protection__info-img
+                                                img(src='images/protect-1.png', alt='')
+                                            .strengthen-protection__info-descr
+                                                .strengthen-protection__info-wrap
+                                                    .strengthen-protection__info-left
+                                                        .strengthen-protection__block
+                                                            .strengthen-protection__block-title Верхний замок2
+                                                            .strengthen-protection__block-name Kale 257L
+                                                        .strengthen-protection__block
+                                                            .strengthen-protection__block-title нижний замок
+                                                            .strengthen-protection__block-name Kale 252R
+                                                        .strengthen-protection__block
+                                                            .strengthen-protection__block-title цилиндр
+                                                            .strengthen-protection__block-name Kale
+                                                        .strengthen-protection__block
+                                                            .strengthen-protection__block-title Производство
+                                                            .strengthen-protection__block-name Турция
 
-                                            .strengthen-protection__info-right
-                                                .strengthen-protection__info-complect Комплект из сувальдного и цилиндрового замков. Соответствуют 3-му и 4-му, высшему, классу безопасности. Защищены <br /> от высверливания, фрезерования и вбивания ригелей внутрь. Благодаря приводу ручки <br /> с подшипником, замки работают плавно и мягко.
+                                                    .strengthen-protection__info-right
+                                                        .strengthen-protection__info-complect Комплект из сувальдного и цилиндрового замков. Соответствуют 3-му и 4-му, высшему, классу безопасности. Защищены <br /> от высверливания, фрезерования и вбивания ригелей внутрь. Благодаря приводу ручки <br /> с подшипником, замки работают плавно и мягко.
 
-                                        .strengthen-protection__info-tips Устанавливаем в двери оптимальной, усиленной и максимальной комплектации.
-                                        ul.strengthen-protection__deal
-                                            li.strengthen-protection__deal-item + 55 рублей к оптимальной и усиленной комплектации
-                                            li.strengthen-protection__deal-item + 35 рублей к стоимости максимальной комплектации
-
-
-            .strengthen-protection__right
-
+                                                .strengthen-protection__info-tips Устанавливаем в двери оптимальной, усиленной и максимальной комплектации.
+                                                ul.strengthen-protection__deal
+                                                    li.strengthen-protection__deal-item + 55 рублей к оптимальной и усиленной комплектации
+                                                    li.strengthen-protection__deal-item + 35 рублей к стоимости максимальной комплектации
 
 
+                    .strengthen-protection__right
+
+        section.bonus
+            .container
+                .row
+                    .bonus__wrap
+                        .bonus__block
+                            a(href="#")
+                                img( src="images/bonus-1.svg", alt="bonus" ).bonus__img
+                                .bonus__title
+                                    span Бесплатный замер
+                                .bonus__text  Специалист измерит высоту и ширину проёма, определит его особенности и помогает выбрать правильную сторону открывания двери.
+                        .bonus__block
+                            a(href="#")
+                                img( src="images/bonus-2.svg", alt="bonus" ).bonus__img
+                                .bonus__title
+                                    span Оплата
+                                .bonus__text  При заключении договора понадобится предпоплата — 30% от стоимости двери. Остаток вносится до доставки и установки
+                        .bonus__block
+                            a(href="#")
+                                img( src="images/bonus-3.svg", alt="bonus" ).bonus__img
+                                .bonus__title
+                                    span Доставка и установка
+                                .bonus__text  Доставляем двери в Минске и за МКАД. Для дверей в дом используем «тёплый монтаж» — утепляем порог и стены вокруг проёма.
+                        .bonus__block
+                            a(href="#")
+                                img( src="images/bonus-4.svg", alt="bonus" ).bonus__img
+                                .bonus__title
+                                    span Гарантия
+                                .bonus__text  Действует 2 года на дверь с повреждениями из-за процесса производства, фурнитуру и монтаж наших мастеров.
+
+        section.create
+            .wrap
+                .row
+                    .col-lg-7
+                        .create__left
+                            img( src="images/create-big-2.jpg", alt="bonus", data-create-src='1' ).create__left-gallery.create__gallery
+                            img( src="images/create-2.svg", alt="bonus", data-create-src='2' ).create__left-img
+                            .create__left-descr
+                                strong Доборы
+                                | помогают скрыть зазоры между стеной и дверной <br /> коробкой. Мастера подбирают их под цвет и фактуру двери.
+                    .offset-lg-2.col-lg-6
+                        .create__right
+                            h2.create__right-title Создавайте <br /> завершённый образ <br /> входной двери
+                            p.create__right-text Внутри — с помощью доборов, снаружи — наличников и порталов.
+                            p.create__right-text.create__right-text--last Рассчитываем стоимость <br /> и устанавливаем элементы после монтажа входной двери.
+                            .create__right-img
+                                img( src="images/create-big-1.jpg", alt="bonus" ).create__right-gallery.create__gallery
+                                img( src="images/create-4.svg", alt="bonus" )
+                                .create__left-descr
+                                    strong Наличники и порталы
+                                    | обрамляют верхнюю и боковые части. Дополняют экстерьер квартиры или дома в классическом стиле.
 
 
 
+
+
+        .create-modal
+            .create-modal__close
+                include ../static/images/extras-close.svg
+            .create-modal__wrap
+                img(src='', alt='')
 
 
     script(src="static/js/jquery-3.3.1.min.js", defer)
+    script(src="static/js/jquery.easing.min.js", defer)
+    script(src="static/js/sly-slider.js", defer)
     script(src="static/js/product-entrance.js", defer)

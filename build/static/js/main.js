@@ -181,7 +181,7 @@ $(document).ready(function () {
     speed: 300,
     elasticBounds: 1,
     easing: 'easeOutExpo',
-    dragHandle: 1,
+    dragHandle: 0,
     dynamicHandle: false
   }); // Review Container
 

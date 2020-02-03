@@ -28,4 +28,16 @@ $(function () {
       activeBlock.css('display', 'flex');
     }
   }); // End of strengthen-protection, Tabs
+  // create, Gallery
+
+  $('.create__gallery').on('click', function () {
+    $('body').addClass('fixed');
+    $('.create-modal').fadeIn();
+    var source = $(this).attr('src');
+    $('.create-modal__wrap img').attr('src', source);
+  });
+  $('.create-modal__close').on('click', function () {
+    $('.create-modal').fadeOut(300);
+    $('body').removeClass('fixed');
+  }); //End of create, Gallery
 });

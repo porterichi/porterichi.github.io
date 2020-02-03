@@ -3,6 +3,21 @@
   background-color: $white-2;
   $context: &;
 
+  &--bg {
+    position: relative;
+    padding-bottom: 22px;
+    background-color: transparent;
+    &:before {
+      content: '';
+      width: 100%;
+      height: calc(100% + 97px);
+      position: absolute;
+      top: -97px;
+      left: 0;
+      background: linear-gradient(180deg, #DEE2E3 0%, rgba(222, 226, 227, 0) 100%);
+    }
+  }
+
 
   &__bivalve {
     background-repeat: no-repeat;
@@ -159,6 +174,9 @@ width: 422px;
 height: 180px;
 padding-right: 37px;
 justify-content: flex-end;
+  position: relative;
+  left: 171px;
+  top: 23px;
 
 &-title {
   width: 206px;
@@ -303,6 +321,7 @@ left: calc(50% - 220px);
   font-style: italic;
   transform: rotate(-90deg);
   color: $black-3;
+  z-index: 3;
 }
 
 &--refresh {

@@ -1,11 +1,20 @@
 .strengthen-protection {
+  overflow: hidden;
+  margin-bottom: 174px;
+
+  &__slider {
+    display: flex;
+  }
 
   &__wrap {
     width: 100%;
     background-color: $white-2;
     padding-top: 68px;
     padding-bottom: 62px;
+  }
 
+  &__controll {
+    display: flex;
   }
 
 

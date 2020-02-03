@@ -1,5 +1,7 @@
 .header {
   padding-top: 8px;
+  z-index: 1;
+  position: relative;
 
   &.invisible--door {
     z-index: 10;
