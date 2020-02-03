@@ -4,6 +4,14 @@
   height: 864px;
   margin-bottom: 212px;
 
+  [data-variant-entrance-block="1"] {
+    display: block;
+  }
+
+  &__blocks {
+    display: none;
+  }
+
   .wrap {
     height: 100%;
   }
