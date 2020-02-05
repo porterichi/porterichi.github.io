@@ -1,9 +1,86 @@
 .strengthen-protection {
   overflow: hidden;
   margin-bottom: 174px;
+  height: 100vh;
+
+  &__second  {
+    height: 828px;
+    padding-top: 68px;
+    background-color: $white-2;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+
+    &-img {
+      position: relative;
+      top: 5px;
+      right: 19px;
+      margin-bottom: 69px;
+    }
+
+    &-product {
+      width: 275px;
+      background-color: $grey-8;
+      height: 687px;
+      padding-left: 18px;
+    }
+    &-name {
+      font-size: 27px;
+      letter-spacing: -0.9px;
+      margin-bottom: 6px;
+    }
+    &-small {
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+    &-price {
+      font-family: $rft-font;
+      color: $grey-3;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    &-made {
+      display: flex;
+      align-items: center;
+      margin-top: 111px;
+      padding-left: 3px;
+      span {
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 18px;
+      }
+    }
+    &-title {
+      margin-bottom: 30px;
+    }
+    &-text {
+      margin-bottom: 25px;
+      &--top {
+        width: 183px;
+        margin-bottom: 18px;
+      }
+      &--bottom {
+        width: 202px;
+        margin-bottom: 45px;
+      }
+    }
+    &-block {
+
+      &--first {
+        width: 264px;
+        margin-right: 82px;
+      }
+    }
+  }
 
   &__slider {
+    width: 100%;
+    height: 100vh;
     display: flex;
+    & > section {
+      width: 100%;
+    }
   }
 
   &__wrap {

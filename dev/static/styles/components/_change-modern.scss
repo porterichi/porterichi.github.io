@@ -1,0 +1,77 @@
+.change-modern {
+  margin-bottom: 200px;
+
+  &__left {
+    &-title {
+      width: 500px;
+      margin-bottom: 114px;
+    }
+    .change-modern__miniature {
+      margin-bottom: 118px;
+    }
+  }
+
+  &__right {
+    .change-modern__miniature {
+      margin-top: 6px;
+      margin-bottom: 117px;
+    }
+    .change-modern__snippet {
+      margin-bottom: 150px;
+    }
+  }
+
+  &__door {
+    position: relative;
+    cursor: pointer;
+
+    &-name {
+      font-size: 18px;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    &-bonus {
+      letter-spacing: 0.05em;
+      color: $grey-3;
+      font-size: 16px;
+      font-family: $rft-font;
+      font-weight: 600;
+      text-align: right;
+      position: absolute;
+      right: -18px;
+      margin-top: 18px;
+    }
+  }
+
+  &__snippet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__miniature {
+    position: relative;
+
+    &-top {
+      font-size: 18px;
+      font-style: italic;
+      margin-bottom: 13px;
+    }
+    &-bottom {
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      color: $grey-5;
+      width: 100%;
+      text-align: right;
+      font-family: $rft-font;
+      font-weight: 600;
+      margin-top: 20px;
+      bottom: -34px;
+      right: -21px;
+      position: absolute;
+    }
+    &-img {
+      width: 100%;
+    }
+  }
+
+}

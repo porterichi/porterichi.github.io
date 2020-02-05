@@ -229,37 +229,63 @@ body
             .wrap
                 .row
                     .col-lg-5
-                        h2.entrance-choose__title Выбирайте цвет <br /> и материал, который <br /> вам нравится
-                        ul.entrance-choose__tabs
-                            li.entrance-choose__tabs-item.active
-                                .entrance-choose__tabs-name SteelLak
-                                p.entrance-choose__tabs-descr Покрытие сохраняет первоначальный внешний вид десятки лет. При уходе не требует специальных чистящих средств
-                            li.entrance-choose__tabs-item
-                                .entrance-choose__tabs-name OAK-панели
-                                p.entrance-choose__tabs-descr Покрытие сохраняет первоначальный внешний вид десятки лет. При уходе не требует специальных чистящих средств
+                        .entrance-choose__wrap
+                            h2.entrance-choose__title Выбирайте цвет <br /> и материал, который <br /> вам нравится
+                            ul.entrance-choose__tabs
+                                li.entrance-choose__tabs-item.active(data-choose-entrance-tab='1')
+                                    .entrance-choose__tabs-name SteelLak
+                                    p.entrance-choose__tabs-descr Покрытие сохраняет первоначальный внешний вид десятки лет. При уходе не требует специальных чистящих средств
+                                li.entrance-choose__tabs-item(data-choose-entrance-tab='2')
+                                    .entrance-choose__tabs-name OAK-панели
+                                    p.entrance-choose__tabs-descr Покрытие сохраняет первоначальный внешний вид десятки лет. При уходе не требует специальных чистящих средств
                     .offset-lg-1.col-lg-10
-                        .entrance-choose__material.entrance-choose__material--top
-                            .entrance-choose__material-item.entrance-choose__material-item--small
+                        .entrance-choose-tabs(data-choose-entrance-block='1')
+                            .entrance-choose__material.entrance-choose__material--top
+                                .entrance-choose__material-item.entrance-choose__material-item--small
 
-                                .entrance-choose__material-name PVC
-                                img(src='images/entrance-choose-1.png', alt='').entrance-choose__material-img
-                                .entrance-choose__material-model «Дуб грей»
+                                    .entrance-choose__material-name PVC
+                                    img(src='images/entrance-choose-1.png', alt='').entrance-choose__material-img
+                                    .entrance-choose__material-model «Дуб грей»
 
-                            .entrance-choose__material-item.entrance-choose__material-item--medium
-                                .entrance-choose__material-name PVC
-                                img(src='images/entrance-choose-2.png', alt='').entrance-choose__material-img
-                                .entrance-choose__material-model «Дуб миндальный»
+                                .entrance-choose__material-item.entrance-choose__material-item--medium
+                                    .entrance-choose__material-name PVC
+                                    img(src='images/entrance-choose-2.png', alt='').entrance-choose__material-img
+                                    .entrance-choose__material-model «Дуб миндальный»
 
-                        .entrance-choose__material.entrance-choose__material--bottom
+                            .entrance-choose__material.entrance-choose__material--bottom
 
-                            .entrance-choose__material-item.entrance-choose__material-item--medium
-                                .entrance-choose__material-name PVC
-                                img(src='images/entrance-choose-2.png', alt='').entrance-choose__material-img
-                                .entrance-choose__material-model «Дуб миндальный»
+                                .entrance-choose__material-item.entrance-choose__material-item--medium
+                                    .entrance-choose__material-name PVC
+                                    img(src='images/entrance-choose-2.png', alt='').entrance-choose__material-img
+                                    .entrance-choose__material-model «Дуб миндальный»
 
-                            .entrance-choose__block
-                                h3.entrance-choose__block-title Оценивайте материал вживую
-                                p.entrance-choose__block-text Цвет на мониторе <br /> может отличаться <br /> от реального оттенка. <br /> Мы советуем приехать <br /> в салон, чтобы выбрать материал и цвет двери.
+                                .entrance-choose__block
+                                    h3.entrance-choose__block-title Оценивайте материал вживую
+                                    p.entrance-choose__block-text Цвет на мониторе <br /> может отличаться <br /> от реального оттенка. <br /> Мы советуем приехать <br /> в салон, чтобы выбрать материал и цвет двери.
+
+                        .entrance-choose-tabs(data-choose-entrance-block='2')
+                            .entrance-choose__material.entrance-choose__material--top
+                                .entrance-choose__material-item.entrance-choose__material-item--small
+
+                                    .entrance-choose__material-name PVC2
+                                    img(src='images/entrance-choose-1.png', alt='').entrance-choose__material-img
+                                    .entrance-choose__material-model «Дуб грей»
+
+                                .entrance-choose__material-item.entrance-choose__material-item--medium
+                                    .entrance-choose__material-name PVC
+                                    img(src='images/entrance-choose-2.png', alt='').entrance-choose__material-img
+                                    .entrance-choose__material-model «Дуб миндальный»
+
+                            .entrance-choose__material.entrance-choose__material--bottom
+
+                                .entrance-choose__material-item.entrance-choose__material-item--medium
+                                    .entrance-choose__material-name PVC
+                                    img(src='images/entrance-choose-2.png', alt='').entrance-choose__material-img
+                                    .entrance-choose__material-model «Дуб миндальный»
+
+                                .entrance-choose__block
+                                    h3.entrance-choose__block-title Оценивайте материал вживую
+                                    p.entrance-choose__block-text Цвет на мониторе <br /> может отличаться <br /> от реального оттенка. <br /> Мы советуем приехать <br /> в салон, чтобы выбрать материал и цвет двери.
 
         section.pick-accessories
             h2.pick-accessories__title Подбирайте фурнитуру к цвету отделки и интерьеру
@@ -274,28 +300,49 @@ body
                         img(src='images/pick-3.png', alt='').pick-accessories__static-img
                         p.pick-accessories__static-text Броненакладка и накладка на замки входят в комплект и подбираются под цвет ручек. Предотвращают взлом входной двери механическим способом
                     .pick-accessories__right
-                        .pick-accessories__slider
-                            .pick-accessories__slider-item
-                                .pick-accessories__slider-img
-                                    img(src='images/pick-1.png', alt='')
-                                .pick-accessories__slider-name Ручка Armadillo Pava
-                                ul.pick-accessories__slider-list
-                                    li.pick-accessories__slider-descr Входит в максимальную комплектацию
-                                    li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
-                                    li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
-                            .pick-accessories__slider-item
-                                .pick-accessories__slider-img
-                                    img(src='images/pick-2.png', alt='')
-                                .pick-accessories__slider-name Ручка Armadillo Pava
-                                ul.pick-accessories__slider-list
-                                    li.pick-accessories__slider-descr Входит в максимальную комплектацию
-                                    li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
-                                    li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+                        .pick-accessories__slider-wrap
+                            .pick-accessories__slider
+                                .pick-accessories__slider-item
+                                    .pick-accessories__slider-img
+                                        img(src='images/pick-1.png', alt='')
+                                    .pick-accessories__slider-name Ручка Armadillo Pava
+                                    ul.pick-accessories__slider-list
+                                        li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                        li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                        li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+                                .pick-accessories__slider-item
+                                    .pick-accessories__slider-img
+                                        img(src='images/pick-2.png', alt='')
+                                    .pick-accessories__slider-name Ручка Armadillo Pava
+                                    ul.pick-accessories__slider-list
+                                        li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                        li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                        li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
 
-        section.strengthen-protection
+                                .pick-accessories__slider-item
+                                    .pick-accessories__slider-img
+                                        img(src='images/pick-2.png', alt='')
+                                    .pick-accessories__slider-name Ручка Armadillo Pava
+                                    ul.pick-accessories__slider-list
+                                        li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                        li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                        li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+
+                                .pick-accessories__slider-item
+                                    .pick-accessories__slider-img
+                                        img(src='images/pick-2.png', alt='')
+                                    .pick-accessories__slider-name Ручка Armadillo Pava
+                                    ul.pick-accessories__slider-list
+                                        li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                        li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                        li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+                        .scrollbar
+                             .handle
+
+        section.strengthen-protection#pinContainer
             .strengthen-protection__slider-wrap
-                .strengthen-protection__slider
-                    .strengthen-protection__left
+                .strengthen-protection__slider#slideContainer
+                    section.strengthen-protection__left.first
                         .container
                             .row
                                 .strengthen-protection__wrap
@@ -365,7 +412,90 @@ body
                                                     li.strengthen-protection__deal-item + 35 рублей к стоимости максимальной комплектации
 
 
-                    .strengthen-protection__right
+                    section.strengthen-protection__right.second
+                        .strengthen-protection__left-wrap
+                            ul.strengthen-protection__list
+                                li.strengthen-protection__list-item.active(data-strengthen-tabs='1') Optima
+                                li.strengthen-protection__list-item(data-strengthen-tabs='2') Optima Plus
+                                li.strengthen-protection__list-item Profi 1
+                                li.strengthen-protection__list-item Profi 2
+                                li.strengthen-protection__list-item Profi 2D
+                                li.strengthen-protection__list-item Premium
+                                li.strengthen-protection__list-item Premium Plus
+                                li.strengthen-protection__list-item Brilliant Plus
+                            .strengthen-protection__info.active(data-strengthen-protection='1')
+                                .strengthen-protection__info-img
+                                    img(src='images/protect-1.png', alt='')
+                                .strengthen-protection__info-descr
+                                    .strengthen-protection__info-wrap
+                                        .strengthen-protection__info-left
+                                            .strengthen-protection__block
+                                                .strengthen-protection__block-title Верхний замок
+                                                .strengthen-protection__block-name Kale 257L
+                                            .strengthen-protection__block
+                                                .strengthen-protection__block-title нижний замок
+                                                .strengthen-protection__block-name Kale 252R
+                                            .strengthen-protection__block
+                                                .strengthen-protection__block-title цилиндр
+                                                .strengthen-protection__block-name Kale
+                                            .strengthen-protection__block
+                                                .strengthen-protection__block-title Производство
+                                                .strengthen-protection__block-name Турция
+
+                                        .strengthen-protection__info-right
+                                            .strengthen-protection__info-complect Комплект из сувальдного и цилиндрового замков. Соответствуют 3-му и 4-му, высшему, классу безопасности. Защищены <br /> от высверливания, фрезерования и вбивания ригелей внутрь. Благодаря приводу ручки <br /> с подшипником, замки работают плавно и мягко.
+
+                                    .strengthen-protection__info-tips Устанавливаем в двери оптимальной, усиленной и максимальной комплектации.
+                                    ul.strengthen-protection__deal
+                                        li.strengthen-protection__deal-item + 55 рублей к оптимальной и усиленной комплектации
+                                        li.strengthen-protection__deal-item + 35 рублей к стоимости максимальной комплектации
+
+                            .strengthen-protection__info(data-strengthen-protection='2')
+                                .strengthen-protection__info-img
+                                    img(src='images/protect-1.png', alt='')
+                                .strengthen-protection__info-descr
+                                    .strengthen-protection__info-wrap
+                                        .strengthen-protection__info-left
+                                            .strengthen-protection__block
+                                                .strengthen-protection__block-title Верхний замок2
+                                                .strengthen-protection__block-name Kale 257L
+                                            .strengthen-protection__block
+                                                .strengthen-protection__block-title нижний замок
+                                                .strengthen-protection__block-name Kale 252R
+                                            .strengthen-protection__block
+                                                .strengthen-protection__block-title цилиндр
+                                                .strengthen-protection__block-name Kale
+                                            .strengthen-protection__block
+                                                .strengthen-protection__block-title Производство
+                                                .strengthen-protection__block-name Турция
+
+                                        .strengthen-protection__info-right
+                                            .strengthen-protection__info-complect Комплект из сувальдного и цилиндрового замков. Соответствуют 3-му и 4-му, высшему, классу безопасности. Защищены <br /> от высверливания, фрезерования и вбивания ригелей внутрь. Благодаря приводу ручки <br /> с подшипником, замки работают плавно и мягко.
+
+                                    .strengthen-protection__info-tips Устанавливаем в двери оптимальной, усиленной и максимальной комплектации.
+                                    ul.strengthen-protection__deal
+                                        li.strengthen-protection__deal-item + 55 рублей к оптимальной и усиленной комплектации
+                                        li.strengthen-protection__deal-item + 35 рублей к стоимости максимальной комплектации
+
+        section.strengthen-protection__second
+            .strengthen-protection__second-block.strengthen-protection__second-block--first
+                h2.strengthen-protection__second-title Новый уровень безопасности вашего дома
+                p.strengthen-protection__second-text В&nbsp;любые замки устанавливаем усиленный цилиндр Abus. Штифты из&nbsp;калённой стали и&nbsp;защитная пластина не&nbsp;дают высверлить серцевину замка. Пины образуют 100&nbsp;000 секретных кодов, поэтому открыть замок отмычкой практически невозможно.
+                p.strengthen-protection__second-text С Abus комфортно: разные замки с такими цилиндрами может открывать один ключ
+                .strengthen-protection__second-made
+                    img(src='images/german.svg', alt='Сделано в Германии')
+                    span Сделано <br /> в Германии
+
+            .strengthen-protection__second-block.strengthen-protection__second-product
+                img(src='images/stren-1.png', alt='Сделано в Германии').strengthen-protection__second-img
+                .strengthen-protection__second-name Система M12R
+                .strengthen-protection__second-small Базовая степень защиты
+                p.strengthen-protection__second-text.strengthen-protection__second-text--top 6&nbsp;подпружиненных пинов в&nbsp;основном и&nbsp;6&nbsp;во втором ряду
+                p.strengthen-protection__second-text.strengthen-protection__second-text--bottom подходит для создания мастер-системы, когда все замки открываются одним ключом
+                .strengthen-protection__second-price + 160 рублей
+
+
+
 
         section.bonus
             .container
@@ -422,6 +552,49 @@ body
 
 
 
+        section.change-modern
+            .wrap
+                .row
+                    .col-lg-7
+                        .change-modern__left
+                            h2.change-modern__left-title Меняйте современный дизайн двери на&nbsp;классический с&nbsp;помощью рамок и&nbsp;витражей.
+                            .change-modern__miniature
+                                .change-modern__miniature-top Декоративная рамка С-К
+                                img(src='images/modern-1.jpg', alt='').change-modern__miniature-img
+                                .change-modern__miniature-bottom + 642 рубля
+                            .change-modern__snippet
+                                .change-modern__door
+                                    .change-modern__door-name Без окна
+                                    img(src='images/modern-left-1.png', alt='').change-modern__door-img
+                                    .change-modern__door-bonus + 642 рубля
+                                .change-modern__door
+                                    .change-modern__door-name С окно С–К
+                                    img(src='images/modern-left-2.png', alt='').change-modern__door-img
+                                    .change-modern__door-bonus + 1172 рубля
+                                .change-modern__door
+                                    .change-modern__door-name С витражом
+                                    img(src='images/modern-left-3.png', alt='').change-modern__door-img
+                                    .change-modern__door-bonus + 642 рубля
+                    .offset-lg-2.col-lg-7
+                        .change-modern__right
+                            .change-modern__miniature
+                                .change-modern__miniature-top Декоративная рамка В-К
+                                img(src='images/modern-2.jpg', alt='').change-modern__miniature-img
+                                .change-modern__miniature-bottom + 642 рубля
+                            .change-modern__snippet
+                                .change-modern__door
+                                    .change-modern__door-name Без окна
+                                    img(src='images/modern-right-1.png', alt='').change-modern__door-img
+                                    .change-modern__door-bonus + 642 рубля
+                                .change-modern__door
+                                    .change-modern__door-name С окном Б–К
+                                    img(src='images/modern-right-2.png', alt='').change-modern__door-img
+                                    .change-modern__door-bonus + 1172 рубля
+                                .change-modern__door
+                                    .change-modern__door-name С витражом
+                                    img(src='images/modern-right-3.png', alt='').change-modern__door-img
+                                    .change-modern__door-bonus + 642 рубля
+                            h2.change-modern__left-title Традиционные рамки придают фасаду и интерьеру классические мотивы.
         .create-modal
             .create-modal__close
                 include ../static/images/extras-close.svg
@@ -431,5 +604,13 @@ body
 
     script(src="static/js/jquery-3.3.1.min.js", defer)
     script(src="static/js/jquery.easing.min.js", defer)
+
+    script(src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js')
+
     script(src="static/js/sly-slider.js", defer)
     script(src="static/js/product-entrance.js", defer)
