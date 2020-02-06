@@ -1,7 +1,14 @@
 .strengthen-protection {
   overflow: hidden;
   margin-bottom: 174px;
+  padding-left: 13.46%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &__overflow {
+    overflow: hidden;
+  }
 
   &__second  {
     height: 828px;
@@ -10,6 +17,7 @@
     padding-left: 40px;
     display: flex;
     align-items: center;
+    margin-left: 40px;
 
     &-stars {
       position: absolute;
