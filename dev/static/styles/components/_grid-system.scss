@@ -3,13 +3,13 @@
   height: 100vh;
 
   &__hidden-mobile {
-    @media (max-width: 855px) {
+    @media (max-width: 1319px) {
       display: none;
     }
   }
 
   &__min-mobile {
-    @media (max-width: 359px) {
+    @media (max-width: 855px) {
       display: none;
     }
   }
