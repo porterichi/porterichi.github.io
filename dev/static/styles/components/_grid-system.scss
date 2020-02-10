@@ -18,8 +18,13 @@
     height: 100%;
 
     @media (max-width: 855px) {
-      padding-left: 27px!important;
-      padding-right: 27px!important;
+      padding-left: 73px !important;
+      padding-right: 73px !important;
+    }
+
+    @media (max-width: 855px) {
+      padding-left: 54px !important;
+      padding-right: 54px !important;
     }
 
     & > .row {
