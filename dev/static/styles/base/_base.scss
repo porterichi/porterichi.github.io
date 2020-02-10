@@ -90,20 +90,18 @@ a {
 
 .container {
     /*max-width: 1390px;*/
-  padding-left: 45px;
-  padding-right: 45px;
   @media (max-width: 855px) {
     padding-left: 27px;
     padding-right: 27px;
   }
 }
 .row {
-  margin-right: -45px;
-  margin-left: -45px;
+  margin-right: -18px;
+  margin-left: -18px;
 
   @media (max-width: 855px) {
-    margin-right: -27px;
-    margin-left: -27px;
+    margin-right: -9px;
+    margin-left: -9px;
   }
 
 }
