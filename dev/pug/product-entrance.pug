@@ -164,6 +164,27 @@ body
                         .install__block-number 03
                         .install__block-descr Возможно: <br/> монтаж на вход с улицы в дом
 
+        section.install.install--double
+            p.install__title Куда устанавливать дверь
+            .install__wrap
+                .install__block(data-install='1')
+                    .install__block-hidden(style='background-image: url("images/install-1.jpg")')
+                        .install__block-hidden__number 01
+                        .install__block-hidden__title Лучше место для установки — <br/> из вентилируемого тамбура в дом
+                        .install__block-hidden__descr Так входная дверь будет защищена <br/> от агрессивных атмосферных <br/> факторов: дождя, снега, ветра, <br/> прямых солнечных лучей.
+                    .install__block-wrap
+                        .install__block-number 01
+                        .install__block-descr Оптимально: <br/> из неотапливаемого <br/> тамбура в дом
+
+                .install__block(data-install='2')
+                    .install__block-hidden(style='background-image: url("images/install-2.jpg")')
+                        .install__block-hidden__number 02
+                        .install__block-hidden__title Допустимое место <br/> для установки — <br/> с улицы в тамбур
+                        .install__block-hidden__descr При таком монтаже на входе из тамбура в дом должна быть ещё одна дверь. Тамбур должен быть вентилируемым: это снизит вероятность выпадения конденсата на поверхности изделия.
+                    .install__block-wrap
+                        .install__block-number 02
+                        .install__block-descr Допустимо:<br/> монтаж на вход<br/> с улицы в дом
+
 
         section.measurement
             .container.measurement__background
@@ -290,54 +311,176 @@ body
         section.pick-accessories
             h2.pick-accessories__title Подбирайте фурнитуру к цвету отделки и интерьеру
             ul.pick-accessories__list
-                li.pick-accessories__item «бронза»
-                li.pick-accessories__item «хром»
-                li.pick-accessories__item «золото»
-                li.pick-accessories__item «сатин»
+                li.pick-accessories__item(data-accessories='1').active «бронза»
+                li.pick-accessories__item(data-accessories='2') «хром»
+                li.pick-accessories__item(data-accessories='3') «золото»
+                li.pick-accessories__item(data-accessories='4') «сатин»
             .pick-accessories__tabs
                 .pick-accessories__tabs-item
                     .pick-accessories__static
                         img(src='images/pick-3.png', alt='').pick-accessories__static-img
                         p.pick-accessories__static-text Броненакладка и накладка на замки входят в комплект и подбираются под цвет ручек. Предотвращают взлом входной двери механическим способом
                     .pick-accessories__right
-                        .pick-accessories__slider-wrap
-                            .pick-accessories__slider
-                                .pick-accessories__slider-item
-                                    .pick-accessories__slider-img
-                                        img(src='images/pick-1.png', alt='')
-                                    .pick-accessories__slider-name Ручка Armadillo Pava
-                                    ul.pick-accessories__slider-list
-                                        li.pick-accessories__slider-descr Входит в максимальную комплектацию
-                                        li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
-                                        li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
-                                .pick-accessories__slider-item
-                                    .pick-accessories__slider-img
-                                        img(src='images/pick-2.png', alt='')
-                                    .pick-accessories__slider-name Ручка Armadillo Pava
-                                    ul.pick-accessories__slider-list
-                                        li.pick-accessories__slider-descr Входит в максимальную комплектацию
-                                        li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
-                                        li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+                        .pick-accessories__slider-overflow
+                            .pick-accessories__slider-wrap(data-accessories-tabs='1')
+                                .pick-accessories__slider
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-1.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-2.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
 
-                                .pick-accessories__slider-item
-                                    .pick-accessories__slider-img
-                                        img(src='images/pick-2.png', alt='')
-                                    .pick-accessories__slider-name Ручка Armadillo Pava
-                                    ul.pick-accessories__slider-list
-                                        li.pick-accessories__slider-descr Входит в максимальную комплектацию
-                                        li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
-                                        li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-2.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
 
-                                .pick-accessories__slider-item
-                                    .pick-accessories__slider-img
-                                        img(src='images/pick-2.png', alt='')
-                                    .pick-accessories__slider-name Ручка Armadillo Pava
-                                    ul.pick-accessories__slider-list
-                                        li.pick-accessories__slider-descr Входит в максимальную комплектацию
-                                        li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
-                                        li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
-                        .scrollbar
-                             .handle
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-2.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+                            .scrollbar
+                                 .handle
+                        .pick-accessories__slider-overflow
+                            .pick-accessories__slider-wrap(data-accessories-tabs='2')
+                                .pick-accessories__slider
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-1.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-2.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-2.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-2.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+                            .scrollbar
+                                .handle
+
+                        .pick-accessories__slider-overflow
+                            .pick-accessories__slider-wrap(data-accessories-tabs='3')
+                                .pick-accessories__slider
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-1.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-2.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-2.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-2.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+                            .scrollbar
+                                .handle
+                        .pick-accessories__slider-overflow
+                            .pick-accessories__slider-wrap
+                                .pick-accessories__slider(data-accessories-tabs='4')
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-1.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-2.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-2.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+
+                                    .pick-accessories__slider-item
+                                        .pick-accessories__slider-img
+                                            img(src='images/pick-2.png', alt='')
+                                        .pick-accessories__slider-name Ручка Armadillo Pava
+                                        ul.pick-accessories__slider-list
+                                            li.pick-accessories__slider-descr Входит в максимальную комплектацию
+                                            li.pick-accessories__slider-descr + 35 рублей к базовой или оптимальной компектации
+                                            li.pick-accessories__slider-descr + 45 рублей к усиленной комплектации
+                            .scrollbar
+                                .handle
+
+
+
         section.strengthen-protection-overflow
             .strengthen-protection#pinContainer
                 .strengthen-protection__slider-wrap
@@ -434,7 +577,8 @@ body
                             .strengthen-protection__second-block.strengthen-protection__second-product
                                 .strengthen-protection__second-stars
                                     img(src='images/star.svg', alt='Звезда')
-                                img(src='images/stren-2.png', alt='Сделано в Германии').strengthen-protection__second-img
+                                    img(src='images/star.svg', alt='Звезда')
+                                img(src='images/stren-2.png', alt='Сделано в Германии').strengthen-protection__second-img.strengthen-protection__second-img--right
                                 .strengthen-protection__second-name Система M12R
                                 .strengthen-protection__second-small Базовая степень защиты
                                 p.strengthen-protection__second-text.strengthen-protection__second-text--top 6&nbsp;подпружиненных пинов в&nbsp;основном и&nbsp;6&nbsp;во втором ряду
@@ -443,6 +587,8 @@ body
 
                             .strengthen-protection__second-block.strengthen-protection__second-product
                                 .strengthen-protection__second-stars
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
                                     img(src='images/star.svg', alt='Звезда')
                                 img(src='images/stren-3.png', alt='Сделано в Германии').strengthen-protection__second-img
                                 .strengthen-protection__second-name Система M12R
@@ -454,7 +600,10 @@ body
                             .strengthen-protection__second-block.strengthen-protection__second-product
                                 .strengthen-protection__second-stars
                                     img(src='images/star.svg', alt='Звезда')
-                                img(src='images/stren-4.png', alt='Сделано в Германии').strengthen-protection__second-img
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                img(src='images/stren-4.png', alt='Сделано в Германии').strengthen-protection__second-img.strengthen-protection__second-img--right
                                 .strengthen-protection__second-name Система M12R
                                 .strengthen-protection__second-small Базовая степень защиты
                                 p.strengthen-protection__second-text.strengthen-protection__second-text--top 6&nbsp;подпружиненных пинов в&nbsp;основном и&nbsp;6&nbsp;во втором ряду
@@ -464,7 +613,11 @@ body
                             .strengthen-protection__second-block.strengthen-protection__second-product
                                 .strengthen-protection__second-stars
                                     img(src='images/star.svg', alt='Звезда')
-                                img(src='images/stren-5.png', alt='Сделано в Германии').strengthen-protection__second-img
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                img(src='images/stren-5.png', alt='Сделано в Германии').strengthen-protection__second-img.strengthen-protection__second-img--right
                                 .strengthen-protection__second-name Система M12R
                                 .strengthen-protection__second-small Базовая степень защиты
                                 p.strengthen-protection__second-text.strengthen-protection__second-text--top 6&nbsp;подпружиненных пинов в&nbsp;основном и&nbsp;6&nbsp;во втором ряду
@@ -474,7 +627,12 @@ body
                             .strengthen-protection__second-block.strengthen-protection__second-product
                                 .strengthen-protection__second-stars
                                     img(src='images/star.svg', alt='Звезда')
-                                img(src='images/stren-6.png', alt='Сделано в Германии').strengthen-protection__second-img
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                img(src='images/stren-6.png', alt='Сделано в Германии').strengthen-protection__second-img.strengthen-protection__second-img--right
                                 .strengthen-protection__second-name Система M12R
                                 .strengthen-protection__second-small Базовая степень защиты
                                 p.strengthen-protection__second-text.strengthen-protection__second-text--top 6&nbsp;подпружиненных пинов в&nbsp;основном и&nbsp;6&nbsp;во втором ряду
@@ -484,7 +642,13 @@ body
                             .strengthen-protection__second-block.strengthen-protection__second-product
                                 .strengthen-protection__second-stars
                                     img(src='images/star.svg', alt='Звезда')
-                                img(src='images/stren-7.png', alt='Сделано в Германии').strengthen-protection__second-img
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                    img(src='images/star.svg', alt='Звезда')
+                                img(src='images/stren-7.png', alt='Сделано в Германии').strengthen-protection__second-img.strengthen-protection__second-img--right
                                 .strengthen-protection__second-name Система M12R
                                 .strengthen-protection__second-small Базовая степень защиты
                                 p.strengthen-protection__second-text.strengthen-protection__second-text--top 6&nbsp;подпружиненных пинов в&nbsp;основном и&nbsp;6&nbsp;во втором ряду
@@ -600,11 +764,11 @@ body
                 .row.reliable-fittings__top
                     .col-lg-11
                         img(src='images/reliable-1.jpg', alt='').reliable-fittings__img
-                    .offset-lg-1.col-lg-4
+                    .offset-lg-1.col-lg-4.no-padding
                         .reliable-fittings__block
                             .reliable-fittings__block-title Ручка Hoppe NY
                             .reliable-fittings__block-sub Входит в среднюю комплектацию
-                            p.reliable-fittings__block-text.reliable-fittings__block-text--first Ручка в цвете «Матовый хром». Изготовлена из алюминия.  Благодаря специальному покрытию Resista ручка долго служит, не ржавеет и не окисляется из-за влаги.
+                            p.reliable-fittings__block-text.reliable-fittings__block-text--first Ручка в цвете «Матовый хром». Изготовлена из алюминия. Благодаря специальному покрытию Resista ручка долго служит, не ржавеет и не окисляется из-за влаги.
                             .reliable-fittings__block-title Немецкий замок Siegenia с&nbsp;цилиндром Kale
                             .reliable-fittings__block-sub Входит в среднюю комплектацию
                             p.reliable-fittings__block-text.reliable-fittings__block-text--first По всей высоте полотна установлены четыре усиленные зажима-цапфы. Они обеспечивают оптимальное затяжное усилие для закрывания двери. Корпус цилиндра защищён от взламывания и выбивания.
@@ -616,8 +780,8 @@ body
                             img(src='images/reliable-0.png', alt='').reliable-fittings__miniature-img.reliable-fittings__miniature-img--first
                             h3.reliable-fittings__miniature-title Австрийский замок Maco с цилиндром Securemme
                             .reliable-fittings__miniature-sub Входит в максимальную комплектацию
-                            p.reliable-fittings__miniature-descr При закрывании замка «крюки-штыри» входят в отверстия ответной планки короба и вместе с ригелями цилиндра защищают от механического взлома.
-                    .offset-lg-1.col-lg-4
+                            p.reliable-fittings__miniature-descr.reliable-fittings__miniature-descr--first При закрывании замка «крюки-штыри» входят в отверстия ответной планки короба и вместе с ригелями цилиндра защищают от механического взлома.
+                    .offset-lg-1.col-lg-4.no-padding-right
                         .reliable-fittings__miniature
                             img(src='images/reliable-2.png', alt='').reliable-fittings__miniature-img
                             h3.reliable-fittings__miniature-title Ручка GreenteQ
@@ -628,7 +792,7 @@ body
                             img(src='images/reliable-3.png', alt='').reliable-fittings__miniature-img
                             h3.reliable-fittings__miniature-title Ручка-рейлинг
                             .reliable-fittings__miniature-sub + 90 рублей к оптимальной комплектации
-                            p.reliable-fittings__miniature-descr Ручку устанавливают снаружи, а внутри остаётся нажимная ручка GreenteQ. Защёлка «день-ночь» на ручке-рейлинг позволяет открывать незапертую дверь без ключа.
+                            p.reliable-fittings__miniature-descr.reliable-fittings__miniature-descr--last Ручку устанавливают снаружи, а&nbsp;внутри остаётся нажимная ручка GreenteQ. Защёлка &laquo;день-ночь&raquo; на&nbsp;ручке-рейлинг позволяет открывать незапертую дверь без ключа.
 
 
 

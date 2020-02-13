@@ -1,0 +1,43 @@
+.product-concept {
+
+  &__jumbo {
+    height: 1126px;
+    width: 100%;
+    background-image: url('../../images/concept-jumbo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -107px;
+    margin-bottom: 168px;
+
+    .product-variant__card {
+      padding-right: 36px;
+      padding-left: 39px;
+      margin-top: 170px;
+      padding-top: 59px;
+    }
+
+    .breadcrumbs {
+      margin-top: 0;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .product-variant__description {
+      margin-bottom: 18px;
+    }
+
+    .product-variant__card-price {
+      border-bottom-color: transparent;
+    }
+
+  }
+
+  &__card {
+
+    .product-variant__order {
+      margin-bottom: 21px;
+    }
+
+  }
+
+}

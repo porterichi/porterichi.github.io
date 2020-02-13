@@ -16,6 +16,14 @@
   }
 
   &__miniature {
+    &-descr {
+      &--first {
+        width: 350px;
+      }
+      &--last {
+        width: 345px;
+      }
+    }
     &-img {
       margin-bottom: 16px;
       &--first {

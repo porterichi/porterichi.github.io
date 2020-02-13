@@ -68,6 +68,9 @@
     &:hover {
       color: $grey-5;
     }
+    &.active {
+      color: $grey-5;
+    }
 
     &:not(:last-child) {
       margin-right: 40px;
@@ -81,6 +84,8 @@
     &-item {
       margin-right: 108px;
       width: 510px;
+      color: $black;
+
     }
 
     &-name {

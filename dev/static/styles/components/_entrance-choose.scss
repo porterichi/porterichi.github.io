@@ -5,6 +5,12 @@
   //Context
   $entrance-choose: &;
 
+  &-tabs {
+    &:not([data-choose-entrance-block="1"]) {
+      display: none;
+    }
+  }
+
   &__title {
     margin-bottom: 35px;
   }
