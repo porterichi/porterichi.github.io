@@ -205,9 +205,9 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 1330px,
-  md: 1330px,
-  lg: 1330px,
+  sm: 100%,
+  md: 100%,
+  lg: 1230px,
   xl: 1390px
 ) !default;
 

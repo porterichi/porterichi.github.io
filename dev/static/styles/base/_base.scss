@@ -90,6 +90,10 @@ a {
 
 .container {
   @media (max-width: 1389px) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  @media (max-width: 855px) {
     padding-left: 27px;
     padding-right: 27px;
   }
