@@ -89,9 +89,7 @@ a {
 }
 
 .container {
-  max-width: 1390px!important;
-  width: 1390px!important;
-  @media (max-width: 855px) {
+  @media (max-width: 1389px) {
     padding-left: 27px;
     padding-right: 27px;
   }
