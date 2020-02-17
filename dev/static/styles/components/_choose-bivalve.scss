@@ -12,6 +12,9 @@
   & .catalog-item--bivalve {
     width: 100%;
     margin-bottom: 168px;
+    @media (max-width: 1389px) {
+      padding-left: 9px;
+    }
   }
   & .catalog-factoid {
     margin-top: 41px;
