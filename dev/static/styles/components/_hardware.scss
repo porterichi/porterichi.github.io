@@ -4,6 +4,10 @@
   margin-bottom: 150px;
   overflow: hidden;
 
+  @media (max-width: 1389px) {
+    padding-left: 4%;
+  }
+
   &-invisible {
     margin-bottom: 200px;
   }
