@@ -161,12 +161,18 @@
       .invisible-door__decoration-comment {
         margin-top: 1165px;
         margin-left: -66px;
+        @media (max-width: 1389px) {
+          margin-left: 0;
+        }
       }
       img {
         position: absolute;
         left: 0;
         width: 40%;
         height: 992px;
+        @media (max-width: 1389px) {
+          width: 44.5%;
+        }
       }
     }
 
@@ -175,6 +181,9 @@
       .invisible-door__decoration-comment {
         margin-top: 1068px;
         margin-left: 51%;
+        @media (max-width: 1389px) {
+          margin-left: 16%;
+        }
       }
       img {
         position: absolute;
@@ -182,6 +191,9 @@
         right: 0;
         width: 40%;
         height: 998px;
+        @media (max-width: 1389px) {
+          width: 43%;
+        }
       }
     }
 

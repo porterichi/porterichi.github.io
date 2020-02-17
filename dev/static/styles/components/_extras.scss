@@ -76,12 +76,23 @@
     }
     &-container {
       width: 703px;
+      @media (max-width: 1389px) {
+        width: 400px;
+        height: 80vh;
+      }
     }
     &-item {
       width: 703px;
+      @media (max-width: 1389px) {
+        width: 400px;
+      }
       &__img {
         height: 718px;
         width: 703px;
+        @media (max-width: 1389px) {
+          width: 100%;
+          height: 70vh;
+        }
       }
       &__text {
         font-style: italic;
