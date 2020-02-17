@@ -531,4 +531,14 @@ $(function () {
         },
       offset: 'bottom-in-view'
   });*/
+
+  /*  Super Puper Fix Machine */
+
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    $('.reviews').css('padding-left', '3.7%');
+    $('.hardware').css('padding-left', '3.7%');
+    $('.extras__popup-item__img').css('height', 'auto;');
+  }
 });
