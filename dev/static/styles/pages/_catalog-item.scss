@@ -98,6 +98,10 @@
     & #{$context}__footer {
       margin-top: 19px;
       padding-bottom: 19px;
+      @media (max-width: 1389px) {
+        padding-left: 20px;
+      }
+
     }
 
     & #{$context}__img {
