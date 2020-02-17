@@ -13,6 +13,7 @@
     & > a {
       text-decoration: none;
       cursor: pointer;
+      
     }
   }
 
@@ -48,6 +49,9 @@
     text-decoration: none;
     position: relative;
     display: block;
+    @media (max-width: 1389px) { 
+      text-decoration: underline!important;
+    }
     &:after {
       content: '';
       background-image: url('../../images/link-arrow.svg');
@@ -58,6 +62,10 @@
       position: absolute;
       right: 101px;
       top: 0;
+      @media (max-width: 1389px) { 
+        display: none;
+       }
+
     }
   }
 

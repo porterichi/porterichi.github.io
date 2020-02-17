@@ -8,6 +8,18 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.flex-column {
+  flex-direction: column!important;
+}
+
 main {
   overflow: hidden;
 }
