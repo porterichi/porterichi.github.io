@@ -189,10 +189,10 @@ $paragraph-margin-bottom:   1rem !default;
 // adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoints: (
-  xs: 0,
-  sm: 360px,
-  md: 856px,
-  lg: 1320px,
+  xs: 1320px,
+  sm: 1320px,
+  md: 1320px,
+  lg: 1px,
   xl: 1480px
 ) !default;
 
@@ -205,10 +205,10 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 306px,
-  md: 766px,
-  lg: 1265px,
-  xl: 1426px
+  sm: 1330px,
+  md: 1330px,
+  lg: 1330px,
+  xl: 1390px
 ) !default;
 
 //@include _assert-ascending($container-max-widths, "$container-max-widths");

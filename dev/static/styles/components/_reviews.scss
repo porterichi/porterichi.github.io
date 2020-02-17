@@ -5,6 +5,8 @@
   padding-top: 88px;
   padding-bottom: 74px;
 
+  
+
   &--invisible {
     margin-bottom: 215px;
   }
@@ -64,6 +66,10 @@
     width: 489px;
     border-left: 1px solid $grey;
     padding-left: 18px;
+
+    @media (max-width: 1389px) { 
+      width: 420px;
+     }
 
     &-title {
       letter-spacing: 2.3px;

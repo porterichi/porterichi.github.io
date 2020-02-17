@@ -26,6 +26,11 @@
 
     &:not(:first-child) {
       margin-left: 99px;
+
+      @media (max-width: 1389px) { 
+        margin-left: 60px;
+       }
+        
     }
   }
 

@@ -2,6 +2,14 @@
   position: relative;
   margin-bottom: 180px;
 
+  & .row > .col-lg-6 {
+    @media (max-width: 1389px) { 
+      flex-basis: 35%!important;
+      max-width: 35%!important;
+     }
+    
+  }
+
   &--invisible {
     .similar-style__title {
       margin-top: 77px;

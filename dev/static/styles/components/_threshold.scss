@@ -43,6 +43,11 @@
   &__block {
     position: relative;
     margin-bottom: 70px;
+
+    @media (max-width: 1389px) { 
+      margin-bottom: 30px;
+     }
+
     &--right {
       align-items: flex-end;
       display: flex;

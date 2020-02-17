@@ -25,6 +25,9 @@
     }
     &--big {
       height: 934px;
+      @media (max-width: 1389px) { 
+        width: 100%;
+       }
     }
   }
 }
