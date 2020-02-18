@@ -1,5 +1,68 @@
 .product-concept {
 
+  // Positions for other blocks
+  .action {
+    margin-bottom: 198px;
+  }
+
+  .entrance-variant {
+    height: auto;
+    background-color: $white-2;
+    margin-bottom: 195px;
+
+    &__block {
+      width: 248px;
+    }
+
+    &__title {
+      padding-top: 68px;
+    }
+
+    &__img {
+      position: static;
+      margin-top: 81px;
+    }
+
+    &__text {
+      padding-bottom: 158px;
+    }
+
+    &__block--middle {
+      top: calc(50% + -44px);
+      left: 14px;
+    }
+
+    &__block--top:after {
+      background-image: url(../../images/concept-variant-arrow-1.svg);
+      right: calc(100% + -9px);
+    }
+
+    &__block--bottom {
+      bottom: 94px;
+      left: 15px;
+    }
+
+    &__block--top {
+      left: 14px;
+    }
+
+    .entrance-variant__block--middle:after {
+      background-image: url(../../images/concept-variant-arrow-2.svg);
+      right: calc(100% + -46px);
+    }
+
+    .entrance-variant__block--bottom:after {
+      background-image: url(../../images/concept-variant-arrow-1.svg);
+      top: 57px;
+      right: calc(100% + 5px);
+    }
+
+  }
+
+
+
+  // End of positions for other blocks
+
   &__jumbo {
     height: 1126px;
     width: 100%;
@@ -7,7 +70,6 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-top: -107px;
-    margin-bottom: 168px;
 
     .product-variant__card {
       padding-right: 36px;
@@ -38,6 +100,68 @@
       margin-bottom: 21px;
     }
 
+  }
+
+  &__outside {
+    background-image: linear-gradient(122.06deg, #F8F8F8 13.54%, #EDEDED 86.46%);
+    padding-top: 155px;
+    margin-bottom: 192px;
+
+    &-left {
+      margin-top: 122px;
+    }
+
+    &-sup {
+      font-size: 13px;
+      font-family: $rft-font;
+      font-weight: 700;
+      color: $grey-6;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 22px;
+    }
+
+    &-title {
+      width: 272px;
+      margin-bottom: 30px;
+    }
+
+    &-text {
+      margin-bottom: 27px;
+    }
+
+  }
+
+  &__descr {
+    position: relative;
+
+    &-top {
+      margin-bottom: 190px;
+    }
+
+    &-text {
+      font-size: 18px;
+      line-height: 27px;
+      font-style: italic;
+      color: $black-3;
+      max-width: 345px;
+      margin-top: 26px;
+    }
+
+    &-left {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 54.5%;
+      img {
+        width: 100%;
+        max-height: 630px;
+      }
+      p {
+        text-align: right;
+        margin-left: auto;
+      }
+    }
   }
 
 }
