@@ -1,0 +1,112 @@
+.comparison-table {
+    margin-top: 18px;
+
+    &__block {
+      width: 100%;
+    }
+
+    &__body {
+
+    }
+
+    &__row {
+      display: flex;
+      padding-left: 16px;
+      padding-right: 16px;
+      &:not(:first-child) {
+        border-top: 1px solid $grey-2;
+      }
+
+      &-tips {
+        transition: .25s;
+        cursor: pointer;
+        &:hover {
+          background-color: $grey-14;
+          border-top-color: $grey-14;
+          & + .comparison-table__row {
+            border-top-color: $grey-14;
+          }
+        }
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &-item {
+        font-size: 20px;
+        line-height: 27px;
+        flex-grow: 1;
+        padding-top: 8px;
+        padding-bottom: 9px;
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+        svg {
+          margin-left: 18px;
+        }
+
+
+        &:not(:first-child ) {
+          padding-left: 9px;
+        }
+
+        &:not(:last-child ) {
+          border-right: 1px solid $grey-2;
+        }
+      }
+    }
+
+    &__title {
+      width: 100%;
+      padding-top: 13px;
+      padding-bottom: 16px;
+      padding-left: 18px;
+      font-size: 27px;
+      line-height: 36px;
+      font-family: $minion-display;
+      border-bottom: 1px solid $grey-2;
+      background-image: linear-gradient(172.82deg, #F8F8F8 13.54%, #EDEDED 86.46%);
+
+      &--little {
+        font-size: 20px;
+        line-height: 27px;
+      }
+    }
+
+    &.not-single {
+      .comparison-table__header-item {
+        min-width: auto;
+        flex-grow: 1;
+      }
+    }
+
+    &__header {
+      display: flex;
+      width: 100%;
+      margin-bottom: 25px;
+
+      &-item {
+        background-image: linear-gradient(151.16deg, #F8F8F8 13.54%, #EDEDED 86.46%);
+        padding: 7px 27px 12px;
+        min-width: 352px;
+
+        &:not(:last-child) {
+          margin-right: 18px;
+        }
+
+        &:not(:first-child) {
+          flex-grow: 1;
+        }
+
+
+        & > span {
+          font-size: 20px;
+          font-family: $rft-font;
+          font-weight: 700;
+          line-height: 26px;
+          display: block;
+        }
+      }
+    }
+}
