@@ -1,14 +1,22 @@
 .comparison-table {
     margin-top: 18px;
-    margin-bottom: 250px;
 
     &__block {
       width: 100%;
+      &:last-child {
+        .comparison-table__body .comparison-table__row:last-child {
+          border-bottom: 1px solid $grey-2;
+        }
+      }
     }
 
-    &__body {
-
+    &__sub {
+      font-size: 20px;
+      line-height: 27px;
+      margin-top: 27px;
+      text-align: right;
     }
+
 
     &__row {
       display: flex;
