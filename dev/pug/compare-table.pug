@@ -69,6 +69,8 @@ html(lang="ru-RU")
                                 span  Максимальная, <br/> серия 100
                             .comparison-table__header-item
                                 span  Максимальная, <br/> серия 100
+                            .comparison-table__header-item
+                                span  Максимальная, <br/> серия 100
 
                         .comparison-table__block
                             .comparison-table__title Безопасность и надёжность
@@ -81,6 +83,13 @@ html(lang="ru-RU")
                                      .comparison-table__row-item Толщина металла, мм
                                      .comparison-table__row-item 1,2
                                      .comparison-table__row-item 1,5
+                                     .comparison-table__row-item 1,5
+                                .comparison-table__row
+                                    .comparison-table__row-item Толщина металла, мм
+                                    .comparison-table__row-item 1,2
+                                    .comparison-table__row-item 1,5
+                                    .comparison-table__row-item 1,5
+                                    .comparison-table__row-item 1,5
                                 .comparison-table__row
                                     .comparison-table__row-item Толщина металла, мм
                                     .comparison-table__row-item 1,2
@@ -99,7 +108,9 @@ html(lang="ru-RU")
                                 .comparison-table__row.comparison-table__row-tips
                                      .comparison-table__row-item
                                         | Контуры уплотнения, шт
-                                        include ../static/images/tip.svg
+                                        .comparison-table__row-include
+                                            include ../static/images/tip.svg
+                                            .comparison-table__row-dropdown Сталь усилена пластинами в зоне замков. Благодаря увеличению общей толщины полотна, дверь труднее разрезать ножницами по металлу, сложнее высверлить и выпилить замки.
                                      .comparison-table__row-item 1,2
                                      .comparison-table__row-item 1,5
                                 .comparison-table__row
@@ -133,5 +144,6 @@ html(lang="ru-RU")
                                     .comparison-table__row-item 2 упорные самоцентрирующиеся, <br/>диаметр 22 мм
 
 
-
+    script(src="static/js/jquery-3.3.1.min.js")
+    script(src="static/js/main.js")
 

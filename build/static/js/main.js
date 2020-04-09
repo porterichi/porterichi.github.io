@@ -1,6 +1,23 @@
 "use strict";
 
 $(document).ready(function () {
+  // Comparison Table
+  $('.comparison-table__row-include').on('click', function () {
+    var activeCls = 'js-active-tip';
+    $('body').addClass(activeCls);
+    $(this).closest('.comparison-table__row-tips').addClass(activeCls);
+    $(this).find('.comparison-table__row-dropdown').fadeIn();
+  });
+  $('body').on('mouseup', function (e) {
+    var curr = $(this).find('.comparison-table__row-tips.js-active-tip .comparison-table__row-dropdown');
+
+    if (!curr.is(e.target)) {
+      $('body').addClass('js-active-tip');
+      $(this).find('.comparison-table__row-tips.js-active-tip').removeClass('js-active-tip');
+      curr.hide();
+    }
+  }); // End of Comparison Table
+
   svg4everybody({});
   var state = {
     items: '.catalog-item__color',

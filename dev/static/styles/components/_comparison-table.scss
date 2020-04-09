@@ -17,11 +17,47 @@
       &:not(:first-child) {
         border-top: 1px solid $grey-2;
       }
+      &-include {
+        position: relative;
+        top: 5px;
+      }
+      &-dropdown {
+        position: absolute;
+        top: calc(100% + 5px);
+        right: -64px;
+        width: 305px;
+        background-color: $white;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 27px;
+        padding: 18px 36px 27px 18px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        display: none;
+        &:before {
+          content: '';
+          position: absolute;
+          top: -9px;
+          right: 54px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 19.5px 22px 19.5px;
+          border-color: transparent transparent $white transparent;
+        }
+        &:after {
+          content: '';
+          width: 100%;
+          height: 17px;
+          position: absolute;
+          top: -17px;
+          left: 0;
+        }
+      }
 
       &-tips {
         transition: .25s;
         cursor: pointer;
-        &:hover {
+        &.comparison-table__row-tips:hover {
           background-color: $grey-14;
           border-top-color: $grey-14;
           & + .comparison-table__row {
@@ -42,7 +78,6 @@
         padding-bottom: 9px;
         flex-basis: 100%;
         display: flex;
-        align-items: center;
         svg {
           margin-left: 18px;
         }
