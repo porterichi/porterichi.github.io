@@ -22,7 +22,7 @@ $(document).ready(function () {
     // End of Comparison Table
 
     // Sticky!
-    $(".entrance-choose__wrap").sticky({topSpacing:0});
+    var sticky = new Sticky('.entrance-choose__wrap');
 
 
     svg4everybody({});
