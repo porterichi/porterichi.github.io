@@ -3,6 +3,8 @@
   background-color: $white-2;
   $context: &;
 
+
+
   &__manufacturer {
     display: flex;
     text-transform: uppercase;
@@ -40,10 +42,7 @@
       width: 289px;
       font-style: normal;
       font-weight: normal;
-      padding-left: 18px;
-      padding-top: 22px;
-      padding-right: 18px;
-      padding-bottom: 27px;
+      padding: 22px 18px 27px;
       font-family: $minion-font;
       color: $white;
       display: none;
@@ -404,6 +403,14 @@ left: calc(50% - 220px);
   cursor: pointer;
   position: relative;
   margin-top: 45px;
+  .product-variant__img--disc {
+    transform-origin: 100%;
+    bottom: calc(100% - 13px);
+    top: auto;
+    left: auto;
+    right: calc(100% + 18px);
+    white-space: nowrap;
+  }
 }
 
 }

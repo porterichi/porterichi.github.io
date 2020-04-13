@@ -17,7 +17,21 @@ $(document).ready(function () {
       curr.hide();
     }
   }); // End of Comparison Table
-  // Sticky!
+  // Pick Accessories
+
+  $('.pick-accessories__item').on('click', function () {
+    var itemNum = $(this).data('accessories');
+    var tab = $("[data-accessories-tabs='".concat(itemNum, "']"));
+    var allTabs = $('.pick-accessories__slider-overflow');
+    var allAside = $('.pick-accessories__static-item');
+    var aside = $("[data-accessories-left='".concat(itemNum, "']"));
+    allAside.hide();
+    aside.show();
+    $('.pick-accessories__item').removeClass('active');
+    $(this).addClass('active');
+    allTabs.hide();
+    tab.show();
+  }); // Sticky!
 
   var sticky = new Sticky('.entrance-choose__wrap');
   svg4everybody({});

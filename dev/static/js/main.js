@@ -21,6 +21,25 @@ $(document).ready(function () {
     });
     // End of Comparison Table
 
+    // Pick Accessories
+    $('.pick-accessories__item').on('click', function() {
+        const itemNum = $(this).data('accessories');
+        const tab = $(`[data-accessories-tabs='${itemNum}']`);
+        const allTabs = $('.pick-accessories__slider-overflow');
+        const allAside = $('.pick-accessories__static-item');
+        const aside = $(`[data-accessories-left='${itemNum}']`);
+
+        allAside.hide();
+        aside.show();
+
+        $('.pick-accessories__item').removeClass('active');
+        $(this).addClass('active');
+
+        allTabs.hide();
+        tab.show();
+
+    });
+
     // Sticky!
     var sticky = new Sticky('.entrance-choose__wrap');
 

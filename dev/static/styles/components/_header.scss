@@ -2,6 +2,20 @@
   padding-top: 8px;
   position: relative;
 
+  &-entrance.header {
+    &:before {
+      height: 1234px;
+    }
+  }
+
+  & + .entrance-card {
+    .product-variant {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
   &.invisible--door {
     z-index: 10;
     position: relative;
