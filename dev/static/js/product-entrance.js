@@ -77,10 +77,10 @@ $(function() {
     //End of Choose
 
     // pick-accessories Sly Slider
-    var $frame = $('.pick-accessories__slider-wrap');
+    /*var $frame = $('.pick-accessories__slider-wrap');
     var $wrap = $frame.parent();
 
-    $frame.each(function(){
+
         $frame.sly({
             horizontal: 1,
             itemNav: 'basic',
@@ -93,8 +93,8 @@ $(function() {
             easing: 'easeOutExpo',
             dragHandle: 1,
             dynamicHandle: false
-        });
-    });
+        });*/
+
 
     $('.pick-accessories__slider-overflow').hide();
     $('.pick-accessories__slider-overflow:first-child').show();

@@ -21,13 +21,50 @@ $(document).ready(function () {
     });
     // End of Comparison Table
 
+
+
     // Pick Accessories
+    var $frame = $('.pick-accessories__slider-wrap');
+    var $wrap = $frame.parent();
+
+    $frame.each(function(i, el){
+
+        $(el).sly({
+            horizontal: 1,
+            itemNav: 'basic',
+            mouseDragging: 1,
+            touchDragging: 1,
+            scrollBar: $('.pick-accessories__slider-scrollbar'),
+            scrollBy: 1,
+            speed: 300,
+            elasticBounds: 1,
+            easing: 'easeOutExpo',
+            dragHandle: 1,
+            dynamicHandle: false
+        });
+    });
+    /*$frame.sly({
+        horizontal: 1,
+        itemNav: 'basic',
+        mouseDragging: 1,
+        touchDragging: 1,
+        scrollBar: $('.pick-accessories__slider-scrollbar'),
+        scrollBy: 1,
+        speed: 300,
+        elasticBounds: 1,
+        easing: 'easeOutExpo',
+        dragHandle: 1,
+        dynamicHandle: false
+    });*/
+
+
     $('.pick-accessories__item').on('click', function() {
         const itemNum = $(this).data('accessories');
         const tab = $(`[data-accessories-tabs='${itemNum}']`);
         const allTabs = $('.pick-accessories__slider-overflow');
         const allAside = $('.pick-accessories__static-item');
         const aside = $(`[data-accessories-left='${itemNum}']`);
+
 
         allAside.hide();
         aside.show();

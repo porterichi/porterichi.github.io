@@ -59,23 +59,22 @@ $(function () {
   }); //End of Choose
   // pick-accessories Sly Slider
 
-  var $frame = $('.pick-accessories__slider-wrap');
+  /*var $frame = $('.pick-accessories__slider-wrap');
   var $wrap = $frame.parent();
-  $frame.each(function () {
-    $frame.sly({
-      horizontal: 1,
-      itemNav: 'basic',
-      mouseDragging: 1,
-      touchDragging: 1,
-      scrollBar: $('.pick-accessories__slider-scrollbar'),
-      scrollBy: 1,
-      speed: 300,
-      elasticBounds: 1,
-      easing: 'easeOutExpo',
-      dragHandle: 1,
-      dynamicHandle: false
-    });
-  });
+          $frame.sly({
+          horizontal: 1,
+          itemNav: 'basic',
+          mouseDragging: 1,
+          touchDragging: 1,
+          scrollBar: $('.pick-accessories__slider-scrollbar'),
+          scrollBy: 1,
+          speed: 300,
+          elasticBounds: 1,
+          easing: 'easeOutExpo',
+          dragHandle: 1,
+          dynamicHandle: false
+      });*/
+
   $('.pick-accessories__slider-overflow').hide();
   $('.pick-accessories__slider-overflow:first-child').show(); // pick-accessories Sly Slider
 
