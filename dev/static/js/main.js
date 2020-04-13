@@ -19,9 +19,12 @@ $(document).ready(function () {
 
 
     });
-
-
     // End of Comparison Table
+
+    // Sticky!
+    $(".entrance-choose__wrap").sticky({topSpacing:0});
+
+
     svg4everybody({});
 
     const state = {

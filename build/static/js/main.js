@@ -17,7 +17,11 @@ $(document).ready(function () {
       curr.hide();
     }
   }); // End of Comparison Table
+  // Sticky!
 
+  $(".entrance-choose__wrap").sticky({
+    topSpacing: 0
+  });
   svg4everybody({});
   var state = {
     items: '.catalog-item__color',
