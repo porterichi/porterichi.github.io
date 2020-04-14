@@ -24,12 +24,35 @@ $(document).ready(function () {
 
 
     // Pick Accessories
-    var $frame = $('.pick-accessories__slider-wrap');
+    /*var $frame = $('.pick-accessories__slider-wrap');
     var $wrap = $frame.parent();
+*/
+    var frameColors = {
+        bronze: $('#accessoriesBronze'),
+        chromium: $('#accessoriesChromium'),
+        satin: $('#accessoriesSatin'),
+        gold: $('#accessoriesGold')
+    };
 
-    $frame.each(function(i, el){
+    for( let el in frameColors ) {
+        var $frame = frameColors[el];
+        var $wrap = $frame.parent();
+        $frame.sly({
+            horizontal: 1,
+            itemNav: 'basic',
+            mouseDragging: 1,
+            touchDragging: 1,
+            scrollBar: $wrap.find('.pick-accessories__slider-scrollbar'),
+            scrollBy: 1,
+            speed: 300,
+            elasticBounds: 1,
+            easing: 'easeOutExpo',
+            dragHandle: 1,
+            dynamicHandle: false
+        });
+    }
 
-        $(el).sly({
+       /* $frame.sly({
             horizontal: 1,
             itemNav: 'basic',
             mouseDragging: 1,
@@ -41,8 +64,8 @@ $(document).ready(function () {
             easing: 'easeOutExpo',
             dragHandle: 1,
             dynamicHandle: false
-        });
-    });
+        });*/
+
     /*$frame.sly({
         horizontal: 1,
         itemNav: 'basic',
