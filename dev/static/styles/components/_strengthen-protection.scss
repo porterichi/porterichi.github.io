@@ -17,7 +17,6 @@
     padding-left: 40px;
     display: flex;
     align-items: center;
-    margin-left: 40px;
 
     &-stars {
       position: absolute;
@@ -100,6 +99,9 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    & > .strengthen-protection__left.first {
+      margin-right: 40px;
+    }
     & > section {
       width: 100%;
     }
