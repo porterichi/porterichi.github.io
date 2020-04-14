@@ -16,7 +16,6 @@
     background-color: $white-2;
     padding-left: 40px;
     display: flex;
-    align-items: center;
 
     &-stars {
       position: absolute;
@@ -83,7 +82,6 @@
       }
       &--bottom {
         width: 202px;
-        margin-bottom: 45px;
       }
     }
     &-block {
