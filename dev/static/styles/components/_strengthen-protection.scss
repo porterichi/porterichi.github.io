@@ -141,7 +141,7 @@
       cursor: pointer;
 
       &:hover {
-        color: $grey-5;
+        color: $gold;
       }
 
       &.active {
@@ -163,6 +163,7 @@
   &__info {
     align-items: flex-start;
     display: none;
+    cursor: pointer;
     &[data-strengthen-protection='1'] {
       display: flex;
     }

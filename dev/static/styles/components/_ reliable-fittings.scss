@@ -16,7 +16,37 @@
   }
 
   &__miniature {
+    padding-top: 54px;
+    cursor: pointer;
+
+    &--first {
+      position: relative;
+      &:before {
+        content: '';
+        height: 100%;
+        width: 100px;
+        background-color: $white-2;
+        position: absolute;
+        left: -91px;
+        top: 0;
+      }
+      &:after {
+        content: '';
+        height: 100%;
+        position: absolute;
+        right: -89px;
+        top: 0;
+        width: 123px;
+        background-color: $white-2;
+
+      }
+    }
+
+    &-bg {
+      background-color: $white-2;
+    }
     &-descr {
+      padding-bottom: 54px;
       &--first {
         width: 350px;
       }

@@ -51,6 +51,14 @@ $(function() {
         $('body').removeClass('fixed');
     });
 
+    $('.create-modal__wrap').on('click', function(e) {
+        if($(e.target).hasClass("create-modal__wrap")) {
+            $('.create-modal').fadeOut(300);
+            $('body').removeClass('fixed');
+        }
+
+    });
+
     //End of create, Gallery
 
 

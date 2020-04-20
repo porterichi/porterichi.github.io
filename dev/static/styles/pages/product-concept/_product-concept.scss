@@ -1,5 +1,9 @@
 .product-concept {
 
+  &__descr-img {
+    width: 100%;
+  }
+
   // Positions for other blocks
   .strengthen-protection-overflow--concept {
     margin-bottom: 0;
@@ -219,6 +223,7 @@
     &-descr {
       max-width: 329px;
       margin-bottom: 63px;
+      min-height: 216px;
     }
 
     &-title {

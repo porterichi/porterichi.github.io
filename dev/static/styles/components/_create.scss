@@ -36,7 +36,7 @@
       }
       &.change-modern--modal {
         img {
-          width: 15vw;
+          width: auto;
           height: 60vh;
         }
       }
@@ -71,6 +71,7 @@
       margin-top: -11px;
       strong {
         padding-right: 4px;
+        font-weight: 700;
       }
     }
 

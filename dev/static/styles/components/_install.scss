@@ -8,6 +8,8 @@
 
   $install: &;
 
+
+
   &--double {
     #{$install}__block {
       width: 50%;
@@ -63,6 +65,9 @@
       opacity: 0;
       visibility: hidden;
       transform: translateY(-100%);
+      @media (max-width: 1390px) {
+        padding: 0 10.33%;
+      }
       &__number {
         padding-top: 264px;
         font-size: 22px;

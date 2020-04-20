@@ -3,7 +3,70 @@
   background-color: $white-2;
   $context: &;
 
+  &__colors-title + .catalog-item__colors {
+    margin-bottom: 0;
+  }
 
+  &__new {
+    &-title {
+      font-size: 27px;
+      line-height: 36px;
+      color: $black;
+      margin-bottom: 9px;
+      font-family: $minion-display;
+    }
+    &-subtitle {
+      font-size: 13px;
+      line-height: 18px;
+      color: $grey;
+      margin-bottom: 9px;
+      font-family: $rft-font;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    &-colors {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 350px;
+    }
+    &-color {
+      width: 20px;
+      height: 20px;
+      background-color: $grey;
+      position: relative;
+      margin-bottom: 23px;
+      &:not(:last-child){
+        margin-right: 18px;
+      }
+      &.active:after {
+        content: '';
+        width: 30px;
+        height: 30px;
+        border: 1px solid $grey;
+        position: absolute;
+        left: -5px;
+        top: -5px;
+      }
+    }
+  }
+
+  &__block {
+    &--new {
+      position: relative;
+      &::after {
+        content: '';
+        background-image: url(../../images/new-logo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 112px;
+        height: 112px;
+        position: absolute;
+        top: -29px;
+        right: -52px;
+      }
+    }
+  }
 
   &__manufacturer {
     display: flex;

@@ -49,6 +49,7 @@
       list-style-type: none;
       transition: .25s;
       margin-bottom: 60px;
+
       
       &.active {
         
@@ -67,6 +68,10 @@
       font-size: 27px;
       cursor: pointer;
       margin-bottom: 16px;
+      transition: .25s;
+      &:hover {
+        color: $gold;
+      }
     }
 
     &-descr {

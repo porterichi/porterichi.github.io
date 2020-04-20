@@ -88,7 +88,7 @@
     cursor: pointer;
     transition: .25s;
     &:hover {
-      color: $grey-5;
+      color: $gold;
     }
     &.active {
       color: $grey-5;
@@ -107,7 +107,7 @@
       margin-right: 108px;
       width: 510px;
       color: $black;
-
+      cursor: pointer;
     }
 
     &-name {
