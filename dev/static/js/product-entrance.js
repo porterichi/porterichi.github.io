@@ -1,4 +1,24 @@
 $(function() {
+
+    // Fix Height strengthen-protection block
+    let strengthenHeightArr = [];
+
+    $('.strengthen-protection__second-product').each( function(i, el) {
+        const textBlocks = $(this).find('.strengthen-protection__second-text');
+        let summBlockHeight = 0;
+
+        textBlocks.each(function(){
+            summBlockHeight += $(this).height();
+        });
+
+        return strengthenHeightArr.push(summBlockHeight);
+
+    });
+    const maxHeight = Math.max(...strengthenHeightArr);
+    $('.strengthen-protection__second-product .strengthen-protection__second-text__overflow').height(maxHeight);
+    console.dir(maxHeight);
+
+
     // entrance-variant, Tabs
     $('.entrance-variant__tabs-item').on('click', function() {
         const itemData = $(this).data('variant-entrance');

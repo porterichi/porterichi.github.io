@@ -1,7 +1,20 @@
 "use strict";
 
 $(function () {
-  // entrance-variant, Tabs
+  // Fix Height strengthen-protection block
+  var strengthenHeightArr = [];
+  $('.strengthen-protection__second-product').each(function (i, el) {
+    var textBlocks = $(this).find('.strengthen-protection__second-text');
+    var summBlockHeight = 0;
+    textBlocks.each(function () {
+      summBlockHeight += $(this).height();
+    });
+    return strengthenHeightArr.push(summBlockHeight);
+  });
+  var maxHeight = Math.max.apply(Math, strengthenHeightArr);
+  $('.strengthen-protection__second-product .strengthen-protection__second-text__overflow').height(maxHeight);
+  console.dir(maxHeight); // entrance-variant, Tabs
+
   $('.entrance-variant__tabs-item').on('click', function () {
     var itemData = $(this).data('variant-entrance');
     var blocksCollection = $('[data-variant-entrance-block]');

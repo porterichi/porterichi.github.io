@@ -1,5 +1,9 @@
 .full-item {
   width: 100%;
+  margin-bottom: 180px;
+  &__img {
+    max-width: calc(50% - 13.5px) !important;
+  }
   &__link {
     text-decoration: none;
     width: 100%;
