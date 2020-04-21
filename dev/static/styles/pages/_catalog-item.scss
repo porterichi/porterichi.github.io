@@ -79,7 +79,7 @@
       display: flex;
       justify-content: space-between;
       & > img {
-        width: auto;
+        width: calc(50% - 13.5px);
       }
     }
 
