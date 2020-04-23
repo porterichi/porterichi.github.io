@@ -296,7 +296,6 @@ padding-left: 3px;
 
 &__see {
 display: inline-flex;
-align-items: center;
 background: linear-gradient(131.05deg, #F8F8F8 13.54%, #EDEDED 86.46%);
 width: 422px;
 height: 180px;
@@ -315,6 +314,7 @@ justify-content: flex-end;
   width: 248px;
   font-size: 20px;
   line-height: 27px;
+  padding-top: 22px;
 }
 }
 
