@@ -169,7 +169,7 @@
     align-items: flex-start;
     display: none;
     cursor: pointer;
-    &[data-strengthen-protection='1'] {
+    &.active  {
       display: flex;
     }
 
