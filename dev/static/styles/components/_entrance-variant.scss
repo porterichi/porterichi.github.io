@@ -4,7 +4,7 @@
   height: 864px;
   margin-bottom: 212px;
 
-  [data-variant-entrance-block="1"] {
+  &.active {
     display: block;
   }
 
