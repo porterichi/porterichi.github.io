@@ -3,6 +3,12 @@
   background-color: $white-2;
   $context: &;
 
+  &--entrance {
+    .flip-door {
+      width: auto!important;
+    }
+  }
+
   &__colors-title + .catalog-item__colors {
     margin-bottom: 0;
   }
