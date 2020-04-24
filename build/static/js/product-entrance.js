@@ -1,7 +1,13 @@
 "use strict";
 
 $(function () {
-  // Fix Height strengthen-protection block
+  // Outside transform door
+  $('.product-concept__outside-right').on('click', function () {
+    $(this).toggleClass('active');
+    $('.product-concept__outside-descr.in').toggle();
+    $('.product-concept__outside-descr.out').toggle();
+  }); // Fix Height strengthen-protection block
+
   var strengthenHeightArr = [];
   $('.strengthen-protection__second-product').each(function (i, el) {
     var textBlocks = $(this).find('.strengthen-protection__second-text');

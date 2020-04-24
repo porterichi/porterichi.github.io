@@ -1,5 +1,12 @@
 $(function() {
 
+    // Outside transform door
+    $('.product-concept__outside-right').on('click', function() {
+        $(this).toggleClass('active');
+        $('.product-concept__outside-descr.in').toggle();
+        $('.product-concept__outside-descr.out').toggle();
+    });
+
     // Fix Height strengthen-protection block
     let strengthenHeightArr = [];
 
@@ -7,7 +14,7 @@ $(function() {
         const textBlocks = $(this).find('.strengthen-protection__second-text');
         let summBlockHeight = 0;
 
-        textBlocks.each(function(){
+        textBlocks.each(function() {
             summBlockHeight += $(this).height();
         });
 

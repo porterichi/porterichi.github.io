@@ -48,7 +48,7 @@
     &-item {
       list-style-type: none;
       transition: .25s;
-      margin-bottom: 36px;
+      margin-bottom: 18px;
 
       
       &.active {
@@ -69,6 +69,7 @@
       cursor: pointer;
       margin-bottom: 16px;
       transition: .25s;
+      font-family: $minion-display;
       &:hover {
         color: $gold;
       }
@@ -98,6 +99,7 @@
       right: 19px;
       font-style: italic;
       font-size: 18px;
+      text-align: right;
     }
 
     &-model {

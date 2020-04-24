@@ -33,6 +33,10 @@
     display: inline-flex;
     text-decoration: none;
     color: $black;
+    transition: .25s;
+    &:hover:after {
+      background-color: $gold;
+    }
     &:after {
       content: '';
       position: absolute;
