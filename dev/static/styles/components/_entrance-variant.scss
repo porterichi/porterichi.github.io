@@ -1,5 +1,5 @@
 .entrance-variant {
-  background-color: $green-4;
+  background-color: $white-2;
   position: relative;
   height: 864px;
   margin-bottom: 212px;
@@ -37,8 +37,9 @@
       margin-bottom: 32px;
       transition: .25s;
       cursor: pointer;
+      font-family: $minion-display;
       &:hover {
-        color: $black;
+        color: $gold;
       }
       &.active {
         color: $black;

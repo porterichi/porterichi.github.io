@@ -33,19 +33,24 @@ $(document).ready(function () {
   for (var el in frameColors) {
     var $frame = frameColors[el];
     var $wrap = $frame.parent();
-    $frame.sly({
-      horizontal: 1,
-      itemNav: 'basic',
-      mouseDragging: 1,
-      touchDragging: 1,
-      scrollBar: $wrap.find('.pick-accessories__slider-scrollbar'),
-      scrollBy: 1,
-      speed: 300,
-      elasticBounds: 1,
-      easing: 'easeOutExpo',
-      dragHandle: 1,
-      dynamicHandle: false
-    });
+
+    if (frameColors[el].find('.pick-accessories__slider-item').length > 2) {
+      $frame.sly({
+        horizontal: 1,
+        itemNav: 'basic',
+        mouseDragging: 1,
+        touchDragging: 1,
+        scrollBar: $wrap.find('.pick-accessories__slider-scrollbar'),
+        scrollBy: 1,
+        speed: 300,
+        elasticBounds: 1,
+        easing: 'easeOutExpo',
+        dragHandle: 1,
+        dynamicHandle: false
+      });
+    } else {
+      $wrap.addClass('without-slider');
+    }
   }
   /* $frame.sly({
        horizontal: 1,

@@ -102,16 +102,14 @@ $(function () {
   var wipeAnimation = new TimelineMax() // animate to second panel
   // move back in 3D space
   .to("#slideContainer", 1, {
-    x: -2544
+    x: -2671
   }); // move in to first panel
-  // move back to origin in 3D space
-  // animate to third panel
   // create scene to pin and link animation
 
   new ScrollMagic.Scene({
     triggerElement: "#pinContainer",
     triggerHook: "onLeave",
-    duration: "100%",
+    duration: "250%",
     offset: -75
   }).setPin("#pinContainer").setTween(wipeAnimation).addTo(controller); // define movement of panels
   // change-modern modal

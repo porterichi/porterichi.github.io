@@ -2,8 +2,14 @@
   margin-bottom: 236px;
   overflow: hidden;
   &__slider-overflow {
-
     width: 100%;
+    &.without-slider {
+      & .pick-accessories__slider-scrollbar {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
   }
 
   &__slider-wrap {
