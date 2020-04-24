@@ -187,6 +187,11 @@
     &-right {
       position: relative;
       cursor: pointer;
+      &:hover {
+        .product-concept__outside-change {
+          background-color: rgba(175, 175, 175, .2);
+        }
+      }
 
 
       &-over {
@@ -218,7 +223,8 @@
       position: absolute;
       top: calc( 50% - 40px );
       left: calc( 50% - 40px );
-      background-color: rgba(175, 175, 175, .2);
+      background-color: rgba(175, 175, 175, 0);
+      transition: .25s;
       cursor: pointer;
       border-radius: 50%;
       z-index: 10;
