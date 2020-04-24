@@ -23,7 +23,7 @@ $(function() {
     });
     const maxHeight = Math.max(...strengthenHeightArr);
     $('.strengthen-protection__second-product .strengthen-protection__second-text__overflow').height(maxHeight);
-    console.dir(maxHeight);
+
 
 
     // entrance-variant, Tabs
