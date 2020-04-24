@@ -18,8 +18,7 @@ $(function () {
     return strengthenHeightArr.push(summBlockHeight);
   });
   var maxHeight = Math.max.apply(Math, strengthenHeightArr);
-  $('.strengthen-protection__second-product .strengthen-protection__second-text__overflow').height(maxHeight);
-  console.dir(maxHeight); // entrance-variant, Tabs
+  $('.strengthen-protection__second-product .strengthen-protection__second-text__overflow').height(maxHeight); // entrance-variant, Tabs
 
   $('.entrance-variant__tabs-item').on('click', function () {
     var itemData = $(this).data('variant-entrance');

@@ -10,6 +10,11 @@
 
   &__blocks {
     display: none;
+    &.big {
+      .entrance-variant__block {
+        left: 30px;
+      }
+    }
   }
 
   .wrap {
@@ -50,11 +55,7 @@
 
   &_blocks {
     display: none;
-    &.big {
-      .entrance-variant__block {
-        left: 30px;
-      }
-    }
+
     &:first-child {
       display: block;
     }
