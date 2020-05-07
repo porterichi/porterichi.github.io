@@ -1,0 +1,16 @@
+include components/head
+body
+    include components/header
+    .container
+        .row
+            h1.search__title Поиск
+            .search-block
+                .col-lg-15.search-block__row
+                    .search-block__search
+                        include ../static/images/icons/Search.svg
+                    input(type="search", placeholder="Введите название двери или коллекции").search-block__input
+                    .search-block__close.disabled
+                        include ../static/images/icons/search-close.svg
+
+    script(src="static/js/jquery-3.3.1.min.js", defer)
+    script(src="static/js/search-page.js", defer)
