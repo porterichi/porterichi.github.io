@@ -9,7 +9,15 @@
 
   $context: &;
 
-
+  &-hi {
+    h2.catalog-factoid__title {
+      width: 460px;
+    }
+    .catalog-factoid__img {
+      width: 11px;
+      left: 190px;
+    }
+  }
   @include desktop-to-laptop {
     height: 817px;
   }
@@ -46,7 +54,7 @@
   }
 
   &--grid {
-    width: 100%;
+    width: 607px;
     height: 729px;
     padding-top: 53px;
     padding-left: 36px;

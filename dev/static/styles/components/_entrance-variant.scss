@@ -1,5 +1,5 @@
 .entrance-variant {
-  background-color: $green-4;
+  background-color: $white-2;
   position: relative;
   height: 864px;
   margin-bottom: 212px;
@@ -10,6 +10,11 @@
 
   &__blocks {
     display: none;
+    &.big {
+      .entrance-variant__block {
+        left: 30px;
+      }
+    }
   }
 
   .wrap {
@@ -37,8 +42,9 @@
       margin-bottom: 32px;
       transition: .25s;
       cursor: pointer;
+      font-family: $minion-display;
       &:hover {
-        color: $black;
+        color: $gold;
       }
       &.active {
         color: $black;
@@ -49,6 +55,7 @@
 
   &_blocks {
     display: none;
+
     &:first-child {
       display: block;
     }
@@ -59,9 +66,9 @@
     line-height: 27px;
     width: 246px;
     position: absolute;
+    left: -18px;
     &--top {
       top: 132px;
-      left: 4px;
       &:after {
         content: '';
         position: absolute;
@@ -76,7 +83,6 @@
     }
     &--middle {
       top: calc(50% + 15px);
-      left: 4px;
       &:after {
         content: '';
         position: absolute;
@@ -90,8 +96,7 @@
       }
     }
     &--bottom {
-      bottom: -15px;
-      left: 3px;
+      bottom: 19px;
       &:after {
         content: '';
         position: absolute;
@@ -112,8 +117,10 @@
   }
 
   &__img {
-    position: absolute;
-    top: 100px;
+    margin: 100px auto 0;
+    width: auto;
+    height: 764px;
+    object-fit: contain;
   }
 
 }

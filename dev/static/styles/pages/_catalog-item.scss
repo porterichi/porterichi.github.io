@@ -1,6 +1,6 @@
 .catalog-item {
   position: relative;
-  margin-bottom: 169px;
+  margin-bottom: 180px;
   &:hover {
     .catalog-item__name {
       color: $gold;
@@ -19,11 +19,11 @@
     position: relative;
     &:after {
       content: '';
-      background-image: url('../../images/new-logo.png');
+      background-image: url('../../images/new-logo.svg');
       background-repeat: no-repeat;
       background-position: center;
-      width: 110px;
-      height: 110px;
+      width: 112px;
+      height: 112px;
       position: absolute;
       top: -29px;
       right: -16px;
@@ -79,7 +79,7 @@
       display: flex;
       justify-content: space-between;
       & > img {
-        width: auto;
+        width: calc(50% - 13.5px);
       }
     }
 
@@ -108,7 +108,7 @@
     & #{$context}__img {
       padding-right: 0;
       height: 800px;
-      width: 598px;
+      width: 100%;
 
 
       & > img {

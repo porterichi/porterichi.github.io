@@ -26,11 +26,19 @@ body
                         .product-concept__outside-left
                             .product-concept__outside-sup отделка снаружи
                             h2.product-concept__outside-title SteelLak, &laquo;Чёрно-серый&raquo; с&nbsp;глянцем
-                            p.product-concept__outside-text Хаотичные линии и&nbsp;выверенные пропорции обеспечивают эстетическую привлекательность модели. Игра плоских и&nbsp;объёмных квадратов придаёт фрезеровке глубину, оживляет интерьер.
-                            p.product-concept__outside-text Дверь отлично впишется в&nbsp;современный интерьер, в&nbsp;котором преобладают акценты на&nbsp;геометрических деталях оформления.
+                            .product-concept__outside-descr.in
+                                p.product-concept__outside-text Хаотичные линии и&nbsp;выверенные пропорции обеспечивают эстетическую привлекательность модели. Игра плоских и&nbsp;объёмных квадратов придаёт фрезеровке глубину, оживляет интерьер.
+                                p.product-concept__outside-text Дверь отлично впишется в&nbsp;современный интерьер, в&nbsp;котором преобладают акценты на&nbsp;геометрических деталях оформления.
+                            .product-concept__outside-descr.out
+                                p.product-concept__outside-text 2Хаотичные линии и&nbsp;выверенные пропорции обеспечивают эстетическую привлекательность модели. Игра плоских и&nbsp;объёмных квадратов придаёт фрезеровке глубину, оживляет интерьер.
+                                p.product-concept__outside-text Дверь отлично впишется в&nbsp;современный интерьер, в&nbsp;котором преобладают
                     .offset-lg-3.col-lg-5
                         .product-concept__outside-right
-                            img(src='images/concept-outside.jpg', alt='').product-concept__outside-img
+                            .product-concept__outside-right-over
+                                img(src='images/concept-outside.jpg', alt='').product-concept__outside-img.in
+                                img(src='images/concept-outside.jpg', alt='').product-concept__outside-img.out
+                            .product-concept__outside-change
+                                img(src='images/refresh.svg', alt='')
 
         section.action-block
             .container
@@ -441,3 +449,9 @@ body
                                 span посмотреть презентацию
 
 
+
+    script(src="static/js/jquery-3.3.1.min.js", defer)
+    script(src="static/js/jquery.easing.min.js", defer)
+    script(src="static/js/sticky.js", defer)
+    script(src="static/js/product-entrance.js", defer)
+    script(src="static/js/main.js", defer)

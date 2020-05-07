@@ -3,6 +3,140 @@
   background-color: $white-2;
   $context: &;
 
+  &--entrance {
+    .flip-door {
+      width: auto!important;
+    }
+  }
+
+  &__colors-title + .catalog-item__colors {
+    margin-bottom: 0;
+  }
+
+  &__new {
+    &-title {
+      font-size: 27px;
+      line-height: 36px;
+      color: $black;
+      margin-bottom: 9px;
+      font-family: $minion-display;
+    }
+    &-subtitle {
+      font-size: 13px;
+      line-height: 18px;
+      color: $grey;
+      margin-bottom: 9px;
+      font-family: $rft-font;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    &-colors {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 350px;
+    }
+    &-color {
+      width: 20px;
+      height: 20px;
+      background-color: $grey;
+      position: relative;
+      margin-bottom: 23px;
+      &:not(:last-child){
+        margin-right: 18px;
+      }
+      &.active:after {
+        content: '';
+        width: 30px;
+        height: 30px;
+        border: 1px solid $grey;
+        position: absolute;
+        left: -5px;
+        top: -5px;
+      }
+    }
+  }
+
+  &__block {
+    &--new {
+      position: relative;
+      &::after {
+        content: '';
+        background-image: url(../../images/new-logo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 112px;
+        height: 112px;
+        position: absolute;
+        top: -29px;
+        right: -52px;
+      }
+    }
+  }
+
+  &__manufacturer {
+    display: flex;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+    font-family: "RFTone";
+    font-size: 13px;
+    letter-spacing: 2.2px;
+    padding: 16px 0 16px 0;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+
+    &-name {
+      position: relative;
+      border-bottom: dashed 1px $grey;
+      cursor: pointer;
+      transition: .25s;
+
+      &:hover {
+        color: $gold;
+        border-bottom-color: $gold;
+        .product-variant__manufacturer-dropdown {
+          display: block;
+        }
+      }
+    }
+    &-dropdown {
+      background-color: $grey-5;
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      top: calc(100% + 17px );
+      width: 289px;
+      font-style: normal;
+      font-weight: normal;
+      padding: 22px 18px 27px;
+      font-family: $minion-font;
+      color: $white;
+      display: none;
+      &:before {
+        content: '';
+        width: 100%;
+        height: 18px;
+        position: absolute;
+        top: -18px;
+        left: 0;
+      }
+      .logo {
+        margin-bottom: 12px;
+      }
+      & .text {
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: none;
+        letter-spacing: normal;
+        font-style: normal;
+        font-weight: normal;
+      }
+    }
+  }
+
   &--bg {
     position: relative;
     padding-bottom: 22px;
@@ -187,6 +321,7 @@ justify-content: flex-end;
   width: 248px;
   font-size: 20px;
   line-height: 27px;
+  padding-top: 22px;
 }
 }
 
@@ -333,11 +468,19 @@ left: calc(50% - 220px);
 }
 
 &--entrance {
-  height: 1062px;
+  // height: 1062px;
   width: 100%;
   cursor: pointer;
   position: relative;
   margin-top: 45px;
+  .product-variant__img--disc {
+    transform-origin: 100%;
+    bottom: calc(100% - 13px);
+    top: auto;
+    left: auto;
+    right: calc(100% + 18px);
+    white-space: nowrap;
+  }
 }
 
 }

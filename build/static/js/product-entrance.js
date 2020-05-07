@@ -1,7 +1,25 @@
 "use strict";
 
 $(function () {
-  // entrance-variant, Tabs
+  // Outside transform door
+  $('.product-concept__outside-right').on('click', function () {
+    $(this).toggleClass('active');
+    $('.product-concept__outside-descr.in').toggle();
+    $('.product-concept__outside-descr.out').toggle();
+  }); // Fix Height strengthen-protection block
+
+  var strengthenHeightArr = [];
+  $('.strengthen-protection__second-product').each(function (i, el) {
+    var textBlocks = $(this).find('.strengthen-protection__second-text');
+    var summBlockHeight = 0;
+    textBlocks.each(function () {
+      summBlockHeight += $(this).height();
+    });
+    return strengthenHeightArr.push(summBlockHeight);
+  });
+  var maxHeight = Math.max.apply(Math, strengthenHeightArr);
+  $('.strengthen-protection__second-product .strengthen-protection__second-text__overflow').height(maxHeight); // entrance-variant, Tabs
+
   $('.entrance-variant__tabs-item').on('click', function () {
     var itemData = $(this).data('variant-entrance');
     var blocksCollection = $('[data-variant-entrance-block]');
@@ -40,6 +58,12 @@ $(function () {
   $('.create-modal__close').on('click', function () {
     $('.create-modal').fadeOut(300);
     $('body').removeClass('fixed');
+  });
+  $('.create-modal__wrap').on('click', function (e) {
+    if ($(e.target).hasClass("create-modal__wrap")) {
+      $('.create-modal').fadeOut(300);
+      $('body').removeClass('fixed');
+    }
   }); //End of create, Gallery
   // create, Choose
 
@@ -59,45 +83,40 @@ $(function () {
   }); //End of Choose
   // pick-accessories Sly Slider
 
-  var $frame = $('.pick-accessories__slider-wrap');
+  /*var $frame = $('.pick-accessories__slider-wrap');
   var $wrap = $frame.parent();
-  $frame.sly({
-    horizontal: 1,
-    itemNav: 'basic',
-    smart: 1,
-    activateOn: 'click',
-    mouseDragging: 1,
-    touchDragging: 1,
-    releaseSwing: 1,
-    startAt: 0,
-    scrollBar: $wrap.find('.scrollbar'),
-    scrollBy: 1,
-    speed: 1000,
-    elasticBounds: 1,
-    easing: 'easeOutExpo',
-    dragHandle: 1,
-    dynamicHandle: 1,
-    clickBar: 1
-  }); // pick-accessories Sly Slider
+          $frame.sly({
+          horizontal: 1,
+          itemNav: 'basic',
+          mouseDragging: 1,
+          touchDragging: 1,
+          scrollBar: $('.pick-accessories__slider-scrollbar'),
+          scrollBy: 1,
+          speed: 300,
+          elasticBounds: 1,
+          easing: 'easeOutExpo',
+          dragHandle: 1,
+          dynamicHandle: false
+      });*/
+
+  $('.pick-accessories__slider-overflow').hide();
+  $('.pick-accessories__slider-overflow:first-child').show(); // pick-accessories Sly Slider
 
   var controller = new ScrollMagic.Controller(); // define movement of panels
 
   var wipeAnimation = new TimelineMax() // animate to second panel
   // move back in 3D space
   .to("#slideContainer", 1, {
-    x: -2544
+    x: -2671
   }); // move in to first panel
-  // move back to origin in 3D space
-  // animate to third panel
   // create scene to pin and link animation
 
   new ScrollMagic.Scene({
     triggerElement: "#pinContainer",
     triggerHook: "onLeave",
-    duration: "100%",
+    duration: "250%",
     offset: -75
-  }).setPin("#pinContainer").setTween(wipeAnimation).addIndicators() // add indicators (requires plugin)
-  .addTo(controller); // define movement of panels
+  }).setPin("#pinContainer").setTween(wipeAnimation).addTo(controller); // define movement of panels
   // change-modern modal
 
   $('.change-modern__door').on('click', function () {

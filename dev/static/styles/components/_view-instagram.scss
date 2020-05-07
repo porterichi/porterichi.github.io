@@ -49,8 +49,15 @@
     text-decoration: none;
     position: relative;
     display: block;
+    transition: .25s;
     @media (max-width: 1389px) { 
       text-decoration: underline!important;
+    }
+    &:active {
+      color: $gold;
+    }
+    &:hover:after {
+      background-image: url('../../images/link-arrow-gold.svg');
     }
     &:after {
       content: '';
@@ -62,6 +69,7 @@
       position: absolute;
       right: 101px;
       top: 0;
+      transition: .25s;
       @media (max-width: 1389px) { 
         display: none;
        }

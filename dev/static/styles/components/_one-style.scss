@@ -1,6 +1,7 @@
 .one-style {
   padding-bottom: 85px;
   background-color: $white-3;
+  cursor: pointer;
 
   & + .product-variant {
     background-image: none!important;

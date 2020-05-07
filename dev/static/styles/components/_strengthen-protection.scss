@@ -2,7 +2,7 @@
   overflow: hidden;
   margin-bottom: 174px;
   padding-left: 13.46%;
-  height: 100vh;
+  //height: 100vh;
   display: flex;
   align-items: center;
 
@@ -11,13 +11,11 @@
   }
 
   &__second  {
-    height: 828px;
-    padding-top: 68px;
+    // height: 828px;
+    padding-top: 36px;
     background-color: $white-2;
     padding-left: 40px;
     display: flex;
-    align-items: center;
-    margin-left: 40px;
 
     &-stars {
       position: absolute;
@@ -34,6 +32,7 @@
       top: 5px;
       right: 19px;
       margin-bottom: 69px;
+      height: 247px;
       &--right {
         right: -25px;
       }
@@ -42,10 +41,11 @@
     &-product {
       width: 275px;
       background-color: $grey-8;
-      height: 687px;
       padding-left: 18px;
       position: relative;
       margin-right: 39px;
+      display: table;
+
     }
     &-name {
       font-size: 27px;
@@ -62,6 +62,8 @@
       color: $grey-3;
       font-weight: 600;
       letter-spacing: 0.05em;
+      margin-top: 36px;
+      padding-bottom: 18px;
     }
     &-made {
       display: flex;
@@ -78,14 +80,13 @@
       margin-bottom: 30px;
     }
     &-text {
-      margin-bottom: 25px;
+
       &--top {
         width: 183px;
         margin-bottom: 18px;
       }
       &--bottom {
         width: 202px;
-        margin-bottom: 45px;
       }
     }
     &-block {
@@ -99,8 +100,11 @@
 
   &__slider {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
+    & > .strengthen-protection__left.first {
+      margin-right: 40px;
+    }
     & > section {
       width: 100%;
     }
@@ -112,6 +116,7 @@
     padding-top: 68px;
     padding-bottom: 62px;
     padding-right: 90px;
+    height: 828px;
   }
 
   &__controll {
@@ -142,7 +147,7 @@
       cursor: pointer;
 
       &:hover {
-        color: $grey-5;
+        color: $gold;
       }
 
       &.active {
@@ -164,7 +169,8 @@
   &__info {
     align-items: flex-start;
     display: none;
-    &[data-strengthen-protection='1'] {
+    cursor: pointer;
+    &.active  {
       display: flex;
     }
 

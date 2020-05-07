@@ -1,0 +1,150 @@
+include utils/mixins
+
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+        link(rel="stylesheet" type='text/css' href="./static/css/styles.min.css")
+
+        <!--[if lt IE 9]>
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
+        <![endif]-->
+
+    body
+        header.header
+            .container
+                .row
+                    .header__top
+                        a(href="#").header__cart
+                            include ../static/images/svg/cart.svg
+                            .header__cart-counter
+                                span 3
+                        a(href="#" class="header__logo")
+                            include ../static/images/svg/logo.svg
+                        a(href="tel:+375291613033" class="header__phone") +375 29 161 30 33
+                    .header__bottom
+                        nav.nav
+                            ul.nav__list
+                                li.nav__item
+                                    a(href="#" class="nav__link") входные двери
+                                li.nav__item
+                                    a(href="#" class="nav__link") межкомнатные
+                                li.nav__item
+                                    a(href="#" class="nav__link") комплексные решения
+                                li.nav__item
+                                    a(href="#" class="nav__link") замер
+                                li.nav__item
+                                    a(href="#" class="nav__link") оплата
+                                li.nav__item
+                                    a(href="#" class="nav__link") доставка и установка
+                                li.nav__item
+                                    a(href="#" class="nav__link") контакты
+        main.main-container
+
+            .breadcrumbs
+                .container
+                    .row
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                a.breadcrumbs__link Главная /
+
+            .container
+                .row.flex-column
+                    h1.catalog__title Таблица комплектаций
+
+            section.comparison-table.not-single
+                .container
+                    .row
+                        .comparison-table__header
+                            .comparison-table__header-item
+                                span Технические <br/> характеристики
+                            .comparison-table__header-item
+                                span  Максимальная, <br/> серия 100
+                            .comparison-table__header-item
+                                span  Максимальная, <br/> серия 100
+                            .comparison-table__header-item
+                                span  Максимальная, <br/> серия 100
+
+                        .comparison-table__block
+                            .comparison-table__title Безопасность и надёжность
+                            .comparison-table__body
+                                .comparison-table__row
+                                   .comparison-table__row-item Толщина металла, мм
+                                   .comparison-table__row-item 1,2
+                                   .comparison-table__row-item 1,5
+                                .comparison-table__row
+                                     .comparison-table__row-item Толщина металла, мм
+                                     .comparison-table__row-item 1,2
+                                     .comparison-table__row-item 1,5
+                                     .comparison-table__row-item 1,5
+                                .comparison-table__row
+                                    .comparison-table__row-item Толщина металла, мм
+                                    .comparison-table__row-item 1,2
+                                    .comparison-table__row-item 1,5
+                                    .comparison-table__row-item 1,5
+                                    .comparison-table__row-item 1,5
+                                .comparison-table__row
+                                    .comparison-table__row-item Толщина металла, мм
+                                    .comparison-table__row-item 1,2
+                                    .comparison-table__row-item 1,5
+                                .comparison-table__row
+                                    .comparison-table__row-item Петли, шт
+                                    .comparison-table__row-item 2 на опорном подшипнике, <br/>диаметр 20 мм
+                                    .comparison-table__row-item 2 упорные самоцентрирующиеся, <br/>диаметр 22 мм
+                        .comparison-table__block
+                            .comparison-table__title Защита от шума и посторонних запахов
+                            .comparison-table__body
+                                .comparison-table__row
+                                   .comparison-table__row-item Толщина металла, мм
+                                   .comparison-table__row-item 1,2
+                                   .comparison-table__row-item 1,5
+                                .comparison-table__row.comparison-table__row-tips
+                                     .comparison-table__row-item
+                                        | Контуры уплотнения, шт
+                                        .comparison-table__row-include
+                                            include ../static/images/tip.svg
+                                            .comparison-table__row-dropdown Сталь усилена пластинами в зоне замков. Благодаря увеличению общей толщины полотна, дверь труднее разрезать ножницами по металлу, сложнее высверлить и выпилить замки.
+                                     .comparison-table__row-item 1,2
+                                     .comparison-table__row-item 1,5
+                                .comparison-table__row
+                                    .comparison-table__row-item Толщина металла, мм
+                                    .comparison-table__row-item 1,2
+                                    .comparison-table__row-item 1,5
+                                .comparison-table__row
+                                    .comparison-table__row-item Петли, шт
+                                    .comparison-table__row-item 2 на опорном подшипнике, <br/>диаметр 20 мм
+                                    .comparison-table__row-item 2 упорные самоцентрирующиеся, <br/>диаметр 22 мм
+
+
+                        .comparison-table__block
+                            .comparison-table__title Защита от шума и посторонних запахов
+                            .comparison-table__body
+                                .comparison-table__row
+                                   .comparison-table__row-item Толщина металла, мм
+                                   .comparison-table__row-item 1,2
+                                   .comparison-table__row-item 1,5
+                                .comparison-table__row
+                                     .comparison-table__row-item Толщина металла, мм
+                                     .comparison-table__row-item 1,2
+                                     .comparison-table__row-item 1,5
+                                .comparison-table__row
+                                    .comparison-table__row-item Толщина металла, мм
+                                    .comparison-table__row-item 1,2
+                                    .comparison-table__row-item 1,5
+                                .comparison-table__row
+                                    .comparison-table__row-item Петли, шт
+                                    .comparison-table__row-item 2 на опорном подшипнике, <br/>диаметр 20 мм
+                                    .comparison-table__row-item 2 упорные самоцентрирующиеся, <br/>диаметр 22 мм
+
+            .container
+                .comparison-table__sub Производитель входных дверей — завод «Стальная линия», Республика Беларусь
+    script(src="static/js/jquery-3.3.1.min.js")
+    script(src="static/js/main.js")
+
