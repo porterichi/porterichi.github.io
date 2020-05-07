@@ -1,5 +1,18 @@
 $(function() {
 
+    // entrance-choose__material-img modal
+    $('.entrance-choose__material-item').on('click', function () {
+        $('body').addClass('fixed');
+        $('.create-modal').fadeIn();
+        const source = $(this).find('.entrance-choose__material-img').attr('src');
+        $('.create-modal__wrap').addClass('change-modern--modal');
+        $('.create-modal__wrap img').attr('src', source );
+
+    });
+    // End of entrance-choose__material-img modal
+
+
+
     // Outside transform door
     $('.product-concept__outside-right').on('click', function() {
         $(this).toggleClass('active');
@@ -102,6 +115,11 @@ $(function() {
             tabs.removeClass('active');
             self.addClass('active');
 
+            // Scroll to the top of block
+            $('html, body').animate({
+                scrollTop: $(".entrance-choose").offset().top
+            }, 800);
+
             blockCollection.hide();
             activeBlock.fadeIn(300);
         }
@@ -167,6 +185,8 @@ $(function() {
 
     });
     // End of change-modern modal
+
+
 
 
 });
