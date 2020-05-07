@@ -11,6 +11,76 @@ body
                     input(type="search", placeholder="Введите название двери или коллекции").search-block__input
                     .search-block__close.disabled
                         include ../static/images/icons/search-close.svg
+            .search-tabs
+                .search-tabs__item.search-tabs__item--active
+                    .search-tabs__item-name входные двери
+                    .search-tabs__item-counter 243
+                .search-tabs__item
+                    .search-tabs__item-name межкомнатные
+                    .search-tabs__item-counter 243
+
+        .container.search__wrap
+            .search-container(data-search-container='1')
+                .catalog-item.catalog-item--interior
+                    a(href="#").catalog-item__link
+                        .catalog-item__mask(data-mask='nova')
+                        .catalog-item__img.catalog-item__img--discount
+                            img(class="catalog-item__img--discount" src="images/catalog-item-1.png", alt="catalog item")
+                        .catalog-item__footer
+                            .catalog-item__row
+                                span.catalog-item__name MK01K
+                                span.catalog-item__price от 4 323 руб.
+                            .catalog-item__row
+                                .catalog-item__material-container
+                                    span.catalog-item__material Шпон и эмаль
+                                .catalog-item__colors
+                                    .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                    .catalog-item__color.catalog-item__color--grey
+                                    .catalog-item__color.catalog-item__color--brown
+                                    .catalog-item__color.catalog-item__color--grey-light
+                                    .catalog-item__color.catalog-item__color--multicolor
+                                        .catalog-item__color-dropdown
+                                            span Ещё 25 цветов
+                .catalog-item.catalog-item--interior
+                    a(href="#").catalog-item__link
+                        .catalog-item__mask(data-mask='nova')
+                        .catalog-item__img.catalog-item__img--discount
+                            img(class="catalog-item__img--discount" src="images/catalog-item-1.png", alt="catalog item")
+                        .catalog-item__footer
+                            .catalog-item__row
+                                span.catalog-item__name MK01K
+                                span.catalog-item__price от 4 323 руб.
+                            .catalog-item__row
+                                .catalog-item__material-container
+                                    span.catalog-item__material Шпон и эмаль
+                                .catalog-item__colors
+                                    .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                    .catalog-item__color.catalog-item__color--grey
+                                    .catalog-item__color.catalog-item__color--brown
+                                    .catalog-item__color.catalog-item__color--grey-light
+                                    .catalog-item__color.catalog-item__color--multicolor
+                                        .catalog-item__color-dropdown
+                                            span Ещё 25 цветов
+                .catalog-item.catalog-item--interior
+                    a(href="#").catalog-item__link
+                        .catalog-item__mask(data-mask='nova')
+                        .catalog-item__img.catalog-item__img--discount
+                            img(class="catalog-item__img--discount" src="images/catalog-item-1.png", alt="catalog item")
+                        .catalog-item__footer
+                            .catalog-item__row
+                                span.catalog-item__name MK01K
+                                span.catalog-item__price от 4 323 руб.
+                            .catalog-item__row
+                                .catalog-item__material-container
+                                    span.catalog-item__material Шпон и эмаль
+                                .catalog-item__colors
+                                    .catalog-item__color.catalog-item__color--active.catalog-item__color--black
+                                    .catalog-item__color.catalog-item__color--grey
+                                    .catalog-item__color.catalog-item__color--brown
+                                    .catalog-item__color.catalog-item__color--grey-light
+                                    .catalog-item__color.catalog-item__color--multicolor
+                                        .catalog-item__color-dropdown
+                                            span Ещё 25 цветов
 
     script(src="static/js/jquery-3.3.1.min.js", defer)
     script(src="static/js/search-page.js", defer)
