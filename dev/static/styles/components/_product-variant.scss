@@ -14,6 +14,15 @@
   }
 
   &__new {
+
+    &-double {
+      display: flex;
+      align-items: center;
+      & > .product-variant__new-block:first-child {
+        margin-right: 45px;
+      }
+    }
+
     &-title {
       font-size: 27px;
       line-height: 36px;
@@ -24,8 +33,8 @@
     &-subtitle {
       font-size: 13px;
       line-height: 18px;
-      color: $grey;
-      margin-bottom: 9px;
+      color: $grey-3;
+      margin-bottom: 15px;
       font-family: $rft-font;
       font-weight: 700;
       letter-spacing: 3px;
@@ -35,13 +44,37 @@
       display: flex;
       flex-wrap: wrap;
       max-width: 350px;
+      margin-left: 5px;
     }
     &-color {
       width: 20px;
       height: 20px;
-      background-color: $grey;
+      background-color: $grey-3;
       position: relative;
       margin-bottom: 23px;
+      transition: .25s;
+      position: relative;
+      cursor: pointer;
+
+      &:before {
+        content: attr(data-color);
+        position: absolute;
+        top: -50px;
+        left: 0;
+        background-color: #868686;
+        font-family: "MinionProDisplay";
+        padding: 9px;
+        color: #ffffff;
+        opacity: 0;
+        visibility: hidden;
+        transition: .25s;
+        width: auto;
+        white-space: nowrap;
+      }
+      &:hover:before {
+        opacity: 1;
+        visibility: visible;
+      }
       &:not(:last-child){
         margin-right: 18px;
       }
@@ -49,7 +82,7 @@
         content: '';
         width: 30px;
         height: 30px;
-        border: 1px solid $grey;
+        border: 1px solid $grey-3;
         position: absolute;
         left: -5px;
         top: -5px;
@@ -139,7 +172,7 @@
 
   &--bg {
     position: relative;
-    padding-bottom: 22px;
+    // padding-bottom: 22px;
     background-color: transparent;
     &:before {
       content: '';
@@ -358,6 +391,7 @@ border: 1px solid #9D9DA1;
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 9px;
+  color: $grey-3;
 }
 }
 

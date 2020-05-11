@@ -1,5 +1,13 @@
 $(function() {
 
+    // New Glass color picker
+    $('.product-variant__new-color').on('click', function() {
+        if( !$(this).hasClass('active') ) {
+            $(this).closest('.product-variant__new-colors').find('.product-variant__new-color').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+
     // entrance-choose__material-img modal
     $('.entrance-choose__material-item').on('click', function () {
         $('body').addClass('fixed');
@@ -152,26 +160,48 @@ $(function() {
     $('.pick-accessories__slider-overflow').hide();
     $('.pick-accessories__slider-overflow:first-child').show();
 
-    // pick-accessories Sly Slider
-    var controller = new ScrollMagic.Controller();
 
-    // define movement of panels
-    var wipeAnimation = new TimelineMax()
-    // animate to second panel
-        	// move back in 3D space
-        .to("#slideContainer", 1,   {x: -2671})	// move in to first panel
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        var $frame = $('.strengthen-protection__slider-wrap');
+        var $wrap = $frame.parent();
+        $frame.sly({
+            horizontal: 1,
+            itemNav: 'basic',
+            smart: 1,
+            activateOn: 'click',
+            mouseDragging: 1,
+            touchDragging: 1,
+            scrollBy: 0,
+            speed: 300,
+            releaseSwing: 1,
+            easing: 'easeOutExpo',
+            dragHandle: 1,
+            elasticBounds: 1,
+            dynamicHandle: true
+        });
+    } else {
+        // pick-accessories Sly Slider
+        var controller = new ScrollMagic.Controller();
+
+        // define movement of panels
+        var wipeAnimation = new TimelineMax()
+            // animate to second panel
+            // move back in 3D space
+            .to("#slideContainer", 1,   {x: -2671})	// move in to first panel
 
 
-    // create scene to pin and link animation
-    new ScrollMagic.Scene({
-        triggerElement: "#pinContainer",
-        triggerHook: "onLeave",
-        duration: "250%",
-        offset: -75
-    })
-        .setPin("#pinContainer")
-        .setTween(wipeAnimation)
-        .addTo(controller);
+        // create scene to pin and link animation
+        new ScrollMagic.Scene({
+            triggerElement: "#pinContainer",
+            triggerHook: "onLeave",
+            duration: "250%",
+            offset: -75
+        })
+            .setPin("#pinContainer")
+            .setTween(wipeAnimation)
+            .addTo(controller);
+
+    }
 
     // define movement of panels
 
