@@ -354,7 +354,7 @@ justify-content: flex-end;
   width: 248px;
   font-size: 20px;
   line-height: 27px;
-  padding-top: 22px;
+  padding-top: 2px;
 }
 }
 
@@ -388,7 +388,7 @@ border: 1px solid #9D9DA1;
   text-transform: uppercase;
   font-family: $rft-font;
   font-weight: $bold;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   margin-bottom: 9px;
   color: $grey-3;
@@ -434,7 +434,7 @@ margin-bottom: 32px;
 }
 
 &__description {
-font-size: 19px;
+font-size: 20px;
 line-height: 27px;
 letter-spacing: .5px;
 margin-bottom: 63px;
@@ -557,7 +557,7 @@ position: relative;
   letter-spacing: 3.7px;
   text-transform: uppercase;
   font-family: $rft-font;
-  font-size: 11px;
+  font-size: 13px;
   cursor: pointer;
   will-change: background, color;
   margin-top: 18px;
@@ -580,7 +580,7 @@ position: relative;
     letter-spacing: 3.7px;
     text-transform: uppercase;
     font-family: $rft-font;
-    font-size: 11px;
+    font-size: 13px;
     cursor: pointer;
     will-change: background, color;
     margin-top: 18px;

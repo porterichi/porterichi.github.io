@@ -10,6 +10,15 @@
     background-color: $black-3;
     padding-top: 26px;
     padding-bottom: 39px;
+    &:hover {
+      cursor: pointer;
+      .view-instagram__link {
+        color: $gold;
+        &:after {
+          background-image: url('../../images/link-arrow-gold.svg');
+        }
+      }
+    }
     & > a {
       text-decoration: none;
       cursor: pointer;
