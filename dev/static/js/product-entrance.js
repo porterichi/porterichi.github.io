@@ -11,6 +11,7 @@ $(function() {
     // entrance-choose__material-img modal
 
 
+
     $('.entrance-choose__material-item').on('click', function () {
         $('body').addClass('fixed');
         $('.create-modal').fadeIn(0);
@@ -54,6 +55,31 @@ $(function() {
             startPosition: activeIndex,
             nav: true,
             navText: [leftArrow, rightArrow]
+        });
+
+        $(document).unbind('keyup').keyup(function (event) {
+            if (event.keyCode == 37) {
+                popUp.trigger('prev.owl.carousel');
+            }
+            else if (event.keyCode == 39) {
+                popUp.trigger('next.owl.carousel');
+            }
+
+            else if (event.keyCode == 27) {
+                $('.create-modal').fadeOut(0);
+                $('body').removeClass('fixed');
+
+                $('.entrance-choose__material-item').removeClass('active-img');
+
+                let popUp = $('.create-modal__wrap-bg');
+                $('.create-modal__material').empty();
+                popUp.owlCarousel('destroy');
+                popUp.empty();
+                popUp.removeClass('owl-carousel');
+                popUp.append('<img src="", alt="">');
+            }
+
+
         });
 
         popUp.on('changed.owl.carousel', function(property) {

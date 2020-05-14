@@ -44,6 +44,29 @@ $(function () {
       nav: true,
       navText: [leftArrow, rightArrow]
     });
+    $(document).unbind('keyup').keyup(function (event) {
+      if (event.keyCode == 37) {
+        popUp.trigger('prev.owl.carousel');
+      } else if (event.keyCode == 39) {
+        popUp.trigger('next.owl.carousel');
+      } else if (event.keyCode == 27) {
+        $('.create-modal').fadeOut(0);
+        $('body').removeClass('fixed');
+        $('.entrance-choose__material-item').removeClass('active-img');
+
+        var _popUp = $('.create-modal__wrap-bg');
+
+        $('.create-modal__material').empty();
+
+        _popUp.owlCarousel('destroy');
+
+        _popUp.empty();
+
+        _popUp.removeClass('owl-carousel');
+
+        _popUp.append('<img src="", alt="">');
+      }
+    });
     popUp.on('changed.owl.carousel', function (property) {
       var current = property.item.index;
       var material = $(property.target).find(".owl-item").eq(current).find("img").data('material');
