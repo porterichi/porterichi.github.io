@@ -13,4 +13,19 @@ $(function() {
         closeBtn.addClass(disableClass);
     });
 
+    searchInput.on('focus', function() {
+        let val = $(this).val().length;
+        if(!val) {
+            $(this).attr('placeholder', '');
+        }
+    });
+
+    searchInput.on('blur', function() {
+        let val = $(this).val().length;
+        if(!val) {
+            $(this).attr('placeholder', 'Введите название двери или коллекции');
+        }
+    });
+
+
 });
