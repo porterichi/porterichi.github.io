@@ -22,10 +22,13 @@ html(lang="ru-RU")
             .container
                 .row
                     .header__top
-                        a(href="#").header__cart
-                            include ../static/images/svg/cart.svg
-                            .header__cart-counter
-                                span 3
+                        .header__nav-wrap
+                            a(href="#").header__cart
+                                include ../static/images/svg/cart.svg
+                                .header__cart-counter
+                                    span 3
+                            a(href="#").header__search
+                                include ../static/images/svg/search.svg
                         a(href="#" class="header__logo")
                             include ../static/images/svg/logo.svg
                         a(href="tel:+375291613033" class="header__phone") +375 29 161 30 33
