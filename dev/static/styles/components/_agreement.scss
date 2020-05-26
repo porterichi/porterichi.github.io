@@ -1,0 +1,68 @@
+.agreement {
+  margin-bottom: 180px;
+
+  &__container {
+    .breadcrumbs {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+  ol {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+  }
+
+  h1 {
+    font-size: 61px;
+    line-height: 63px;
+    margin-bottom: 18px;
+    font-family: $minion-display;
+    font-weight: 300;
+    margin-top: 36px;
+  }
+  .reg {
+    font-family: $minion-font;
+    font-size: 25px;
+    line-height: 36px;
+  }
+  h2 {
+    font-family: $minion-display;
+    font-size: 42px;
+    line-height: 54px;
+    margin-top: 54px;
+    margin-bottom: 27px;
+  }
+  p {
+    font-size: 25px;
+    line-height: 36px;
+    margin-bottom: 18px;
+    &.offset-36 {
+      margin-bottom: 36px;
+    }
+    &.offset-27 {
+      margin-bottom: 27px;
+    }
+    &.with-padding {
+      padding-left: 27px;
+      &:last-child {
+        margin-bottom: 36px;
+      }
+    }
+  }
+
+  li {
+    font-size: 25px;
+    line-height: 36px;
+    margin-bottom: 18px;
+    &:last-child {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__list {
+    &--third.padding {
+      padding-left: 27px;
+    }
+  }
+}

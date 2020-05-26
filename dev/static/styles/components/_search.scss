@@ -1,7 +1,10 @@
 .search {
 
   &__wrap {
+    position: relative;
+    &:after {
 
+    }
   }
 
   &-container {
@@ -11,14 +14,6 @@
     margin-top: 64px;
     background-color: $white;
     position: relative;
-    &:after {
-      content: '';
-      width: 100%;
-      height: 161px;
-      position: absolute;
-      top: 0;
-
-    }
   }
 
   &__title {
