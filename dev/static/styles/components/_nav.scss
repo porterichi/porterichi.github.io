@@ -24,9 +24,6 @@
     display: block;
     padding-bottom: 13px;
     line-height: 1!important;
-    @include media-breakpoint-down(lg) {
-      font-size: 11px;
-    }
     &:hover {
       color: $gold;
     }

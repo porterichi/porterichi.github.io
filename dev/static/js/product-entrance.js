@@ -1,12 +1,92 @@
 $(function() {
 
+    // New Glass color picker
+    $('.product-variant__new-color').on('click', function() {
+        if( !$(this).hasClass('active') ) {
+            $(this).closest('.product-variant__new-colors').find('.product-variant__new-color').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+
     // entrance-choose__material-img modal
+
+
+
     $('.entrance-choose__material-item').on('click', function () {
         $('body').addClass('fixed');
-        $('.create-modal').fadeIn();
-        const source = $(this).find('.entrance-choose__material-img').attr('src');
+        $('.create-modal').fadeIn(0);
+
+        $(this).addClass('active-img');
+
+        let popUp = $('.create-modal__wrap-bg');
+        popUp.addClass('owl-carousel');
+        popUp.empty();
+
         $('.create-modal__wrap').addClass('change-modern--modal');
-        $('.create-modal__wrap img').attr('src', source );
+
+        const collect = $(this).closest('.entrance-choose-tabs').find('img');
+        let activeIndex = 0;
+
+        collect.each(function(i, e) {
+            const isActive = $(e).closest('.entrance-choose__material-item').hasClass('active-img');
+            const material = $(e).closest('.entrance-choose__material-item').find('.entrance-choose__material-model').text();
+            const name = $(e).closest('.entrance-choose__material-item').find('.entrance-choose__material-name').text();
+
+            if (isActive) {
+                const source = $(e).attr('src');
+                popUp.append(`<img data-material='${name}, ${material}' src='${ source }'  alt='' data-img-index=${i}> `);
+                activeIndex = i;
+                $('.create-modal__material').text(`${name}, ${material}`);
+                return true;
+            }
+            const source = $(e).attr('src');
+            popUp.append(`<img data-material='${name}, ${material}'  src='${ source }'  alt='' data-img-index=${i}> `);
+        });
+
+        const leftArrow = `<svg width="32" height="62" viewBox="0 0 32 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31 61L1 31L31 1" stroke="#868686" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
+        const rightArrow = `<svg width="32" height="62" viewBox="0 0 32 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 61L31 31L1 1" stroke="#868686" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
+
+            popUp.owlCarousel({
+            items: 1,
+            startPosition: activeIndex,
+            nav: true,
+            navText: [leftArrow, rightArrow]
+        });
+
+        $(document).unbind('keyup').keyup(function (event) {
+            if (event.keyCode == 37) {
+                popUp.trigger('prev.owl.carousel');
+            }
+            else if (event.keyCode == 39) {
+                popUp.trigger('next.owl.carousel');
+            }
+
+            else if (event.keyCode == 27) {
+                $('.create-modal').fadeOut(0);
+                $('body').removeClass('fixed');
+
+                $('.entrance-choose__material-item').removeClass('active-img');
+
+                let popUp = $('.create-modal__wrap-bg');
+                $('.create-modal__material').empty();
+                popUp.owlCarousel('destroy');
+                popUp.empty();
+                popUp.removeClass('owl-carousel');
+                popUp.append('<img src="", alt="">');
+            }
+
+
+        });
+
+        popUp.on('changed.owl.carousel', function(property) {
+            var current = property.item.index;
+            var material = $(property.target).find(".owl-item").eq(current).find("img").data('material');
+            $('.create-modal__material').text(material);
+        })
 
     });
     // End of entrance-choose__material-img modal
@@ -87,17 +167,26 @@ $(function() {
     });
 
     $('.create-modal__close').on('click', function() {
-        $('.create-modal').fadeOut(300);
+        $('.create-modal').fadeOut(0);
         $('body').removeClass('fixed');
+
+        $('.entrance-choose__material-item').removeClass('active-img');
+
+        let popUp = $('.create-modal__wrap-bg');
+        $('.create-modal__material').empty();
+        popUp.owlCarousel('destroy');
+        popUp.empty();
+        popUp.removeClass('owl-carousel');
+        popUp.append('<img src="", alt="">');
     });
 
-    $('.create-modal__wrap').on('click', function(e) {
+    /*$('.create-modal__wrap').on('click', function(e) {
         if($(e.target).hasClass("create-modal__wrap")) {
             $('.create-modal').fadeOut(300);
             $('body').removeClass('fixed');
         }
 
-    });
+    });*/
 
     //End of create, Gallery
 
@@ -152,26 +241,48 @@ $(function() {
     $('.pick-accessories__slider-overflow').hide();
     $('.pick-accessories__slider-overflow:first-child').show();
 
-    // pick-accessories Sly Slider
-    var controller = new ScrollMagic.Controller();
 
-    // define movement of panels
-    var wipeAnimation = new TimelineMax()
-    // animate to second panel
-        	// move back in 3D space
-        .to("#slideContainer", 1,   {x: -2671})	// move in to first panel
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        var $frame = $('.strengthen-protection__slider-wrap');
+        var $wrap = $frame.parent();
+        $frame.sly({
+            horizontal: 1,
+            itemNav: 'basic',
+            smart: 1,
+            activateOn: 'click',
+            mouseDragging: 1,
+            touchDragging: 1,
+            scrollBy: 0,
+            speed: 300,
+            releaseSwing: 1,
+            easing: 'easeOutExpo',
+            dragHandle: 1,
+            elasticBounds: 1,
+            dynamicHandle: true
+        });
+    } else {
+        // pick-accessories Sly Slider
+        var controller = new ScrollMagic.Controller();
+
+        // define movement of panels
+        var wipeAnimation = new TimelineMax()
+            // animate to second panel
+            // move back in 3D space
+            .to("#slideContainer", 1,   {x: -2671})	// move in to first panel
 
 
-    // create scene to pin and link animation
-    new ScrollMagic.Scene({
-        triggerElement: "#pinContainer",
-        triggerHook: "onLeave",
-        duration: "250%",
-        offset: -75
-    })
-        .setPin("#pinContainer")
-        .setTween(wipeAnimation)
-        .addTo(controller);
+        // create scene to pin and link animation
+        new ScrollMagic.Scene({
+            triggerElement: "#pinContainer",
+            triggerHook: "onLeave",
+            duration: "250%",
+            offset: -75
+        })
+            .setPin("#pinContainer")
+            .setTween(wipeAnimation)
+            .addTo(controller);
+
+    }
 
     // define movement of panels
 

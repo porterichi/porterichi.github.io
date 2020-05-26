@@ -1,5 +1,8 @@
 .choose-bivalve {
   width: 100%;
+  & > .row {
+    flex-wrap: nowrap;
+  }
   &__left {
     width: 598px;
   }

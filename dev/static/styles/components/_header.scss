@@ -2,6 +2,30 @@
   padding-top: 8px;
   position: relative;
 
+  &__nav {
+    &-wrap {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__search {
+    width: 28px;
+    height: 29px;
+    position: relative;
+    z-index: 3;
+    padding: 13px 9px 13px 9px;
+    box-sizing: content-box;
+    &:hover {
+      svg {
+        fill: $gold;
+      }
+    }
+    svg {
+      transition: .25s;
+    }
+  }
+
   &-entrance.header {
     &:before {
       height: 1234px;
@@ -62,7 +86,7 @@
     z-index: 3;
     text-decoration: none;
     box-sizing: content-box;
-    padding: 13px 32px;
+    padding: 13px 9px 13px 32px;
     &-counter {
       width: 19px;
       height: 19px;
