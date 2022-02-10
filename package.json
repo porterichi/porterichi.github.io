@@ -41,7 +41,7 @@
     "synp": "^1.5.0"
   },
   "dependencies": {
-    "node-sass": "^4.14.0",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.0",
     "svg4everybody": "^2.1.9"
   }
